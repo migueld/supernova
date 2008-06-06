@@ -1,0 +1,118 @@
+﻿<window id="2007">
+	<defaultcontrol>2</defaultcontrol>
+	<controls>
+		<control type="image">
+			<description>media info background image</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>760</width>
+			<height>120</height>
+			<texture>sub-background-label.png</texture>
+			<visible>Player.ShowCodec</visible>
+		</control>
+		<control type="label" id="10">
+			<description>row 1 label</description>
+			<posx>70</posx>
+			<posy>10</posy>
+			<label>-</label>
+			<align>left</align>
+			<font>font12</font>
+			<visible>Player.ShowCodec</visible>
+		</control>
+		<control type="label" id="11">
+			<description>row 2 label</description>
+			<posx>70</posx>
+			<posy>30</posy>
+			<label>-</label>
+			<align>left</align>
+			<font>font12</font>
+			<visible>Player.ShowCodec</visible>
+		</control>
+		<control type="label" id="12">
+			<description>row 3 label</description>
+			<posx>70</posx>
+			<posy>50</posy>
+			<label>-</label>
+			<align>left</align>
+			<font>font12</font>
+			<visible>Player.ShowCodec</visible>
+		</control>
+		<!-- Media Info -->
+		<control type="image">
+			<description>media info background image</description>
+			<posx>-10</posx>
+			<posy>446</posy>
+			<width>760</width>
+			<height>150</height>
+			<texture>sub-background.png</texture>
+			<visible>Player.HasMedia + Player.ShowInfo</visible>
+			<animation effect="fade" time="500">VisibleChange</animation>
+		</control>
+		<control type="image">
+			<description>cover image</description>
+			<posx>25</posx>
+			<posy>455</posy>
+			<width>100</width>
+			<height>100</height>
+			<info>MusicPlayer.Cover</info>
+			<aspectratio>keep</aspectratio>
+			<visible>Player.HasMedia + Player.ShowInfo</visible>
+			<animation effect="fade" time="500">VisibleChange</animation>
+		</control>
+		<control type="label">
+			<description>Artist label</description>
+			<width>445</width>
+			<posx>125</posx>
+			<posy>458</posy>
+			<info>MusicPlayer.Artist</info>
+			<align>left</align>
+			<font>special12</font>
+			<visible>Player.HasMedia + Player.ShowInfo</visible>
+			<animation effect="fade" time="500">VisibleChange</animation>
+		</control>
+		<control type="label">
+			<description>Title label</description>
+			<width>430</width>
+			<posx>125</posx>
+			<posy>479</posy>
+			<info>MusicPlayer.Title</info>
+			<align>left</align>
+			<font>special13</font>
+			<visible>Player.HasMedia + Player.ShowInfo</visible>
+			<animation effect="fade" time="500">VisibleChange</animation>
+		</control>
+		<control type="label">
+			<description>Album label</description>
+			<width>430</width>
+			<posx>125</posx>
+			<posy>507</posy>
+			<info>MusicPlayer.Album</info>
+			<align>left</align>
+			<font>font10</font>
+			<visible>Player.HasMedia + Player.ShowInfo</visible>
+			<animation effect="fade" time="500">VisibleChange</animation>
+		</control>
+		<control type="label">
+			<description>time label</description>
+			<width>430</width>
+			<posx>125</posx>
+			<posy>528</posy>
+			<label>$INFO[musicplayer.Time]$INFO[musicplayer.Duration, / ]</label>
+			<align>left</align>
+			<font>font10</font>
+			<visible>Player.HasMedia + Player.ShowInfo</visible>
+			<animation effect="fade" time="500">VisibleChange</animation>
+		</control>
+		<control type="label">
+			<description>Playlist</description>
+			<width>100</width>
+			<posx>680</posx>
+			<posy>556</posy>
+			<align>right</align>
+			<label>$INFO[musicplayer.Playlistposition,Track ]$INFO[musicplayer.Playlistlength, / ]</label>
+			<font>font10</font>
+			<visible>Player.HasMedia + Player.ShowInfo</visible>
+			<animation effect="fade" time="500">VisibleChange</animation>
+		</control>
+	</controls>
+</window>

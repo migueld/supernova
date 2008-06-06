@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<strings>
+	<!-- Start home strings -->
+	<string id="31001">Movies</string>
+	<string id="31002">Programs</string>
+	<string id="31003">Music</string>
+	<string id="31004">Photos</string>
+	<string id="31005">Weather</string>
+	<string id="31006">Files</string>
+	<string id="31007">Scripts</string>
+	<string id="31008">Settings</string>
+	<string id="31009">Play Disc</string>
+	<string id="31010">TV Shows</string>
+	<!-- End home strings -->
+
+	<!-- Start video strings -->
+	<string id="31011">Movie Trailers</string>
+	<string id="31012">Video Playlist</string>
+	<!-- End video strings -->
+
+	<!-- Start programs strings -->
+	<string id="31013">Gamesaves</string>
+	<!-- End programs strings -->
+
+	<!-- Start music strings -->
+	<string id="31014">CDDB</string>
+	<!-- End music strings -->
+
+	<!-- Start system strings -->
+	<string id="31015">System</string>
+	<string id="31016">File Manager</string>
+	<string id="31017">Scripts</string>
+	<string id="31018">Gamesaves</string>
+	<string id="31019">Profiles</string>
+	<string id="31020">Skin Settings</string>
+	<string id="31021">About xTV</string>
+	<string id="31022">Power Menu</string>
+	<string id="31023">System Info</string>
+	<!-- End system strings -->
+
+	<!-- Begin skin settings strings -->
+	<string id="31024">Use Scrollbar</string>
+	<string id="31025">Use Media Overlays</string>
+	<string id="31026">Use Watched State Overlays</string>
+	<string id="31027">Use Now Playing Screens</string>
+	<string id="31028">Change Font Color</string>
+	<string id="31029">Now Playing Style Visuals</string>
+	<string id="31030">Choose Custom Background</string>
+	<string id="31031">Reset Custom Background</string>
+	<string id="31032">Visuals Behind Background</string>
+	<string id="31033">Movies Button Links to Library</string>
+	<string id="31068">Information</string>
+	<string id="31069">Download Themes</string>
+	<string id="31070">General</string>
+	<string id="31071">Background</string>
+	<string id="31072">Home Window</string>
+	<string id="31073">Tilt List View Icons</string>
+	<string id="31074">Lock "View As" Panel</string>
+	<string id="31075">Use Startup Playlist</string>
+	<string id="31076">Choose Playlist</string>
+	<string id="31077">TV Shows In Home Menu</string>
+	<string id="31078">YouTube In Home Menu</string>
+	<string id="31079">Weather In Home Menu</string>
+	<string id="31080">Enable Autoscroll</string>
+	<!-- End skin settings strings -->
+
+	<!-- Start progress strings -->
+	<string id="31034">Settings</string>
+	<string id="31035">Video</string>
+	<string id="31036">Audio</string>
+	<string id="31037">Bookmarks</string>
+	<string id="31038">Lyrics</string>
+	<string id="31039">Presets</string>
+	<string id="31040">Visuals</string>
+	<string id="31041">Playlist</string>
+	<string id="31042">Stop</string>
+	<string id="31043">Pause</string>
+	<string id="31044">Play</string>
+	<string id="31045">Paused</string>
+	<string id="31046">Playing</string>
+	<string id="31047">DVD Menu</string>
+	<string id="31048">Record</string>
+	<string id="31049">Recording</string>
+	<string id="31050">|-Skip</string>
+	<string id="31051">Skip-|</string>
+	<string id="31052">Rewind</string>
+	<string id="31053">Rewind-2x</string>
+	<string id="31054">Rewind-4x</string>
+	<string id="31055">Rewind-8x</string>
+	<string id="31056">Rewind-16x</string>
+	<string id="31057">Rewind-32x</string>
+	<string id="31058">Forward</string>
+	<string id="31059">Forward-2x</string>
+	<string id="31060">Forward-4x</string>
+	<string id="31061">Forward-8x</string>
+	<string id="31062">Forward-16x</string>
+	<string id="31063">Forward-32x</string>
+	<!-- End progress strings -->
+
+	<!-- Begin weather strings -->
+	<string id="31064">High</string>
+	<string id="31065">Low</string>
+	<!-- End weather strings -->
+
+	<!-- Begin Misc. strings -->
+	<string id="31066">Muted</string>
+	<string id="31067">Favorites</string>
+	<string id="31090">Exit XBMC</string>
+	<!-- End Misc. strings -->
+</strings>

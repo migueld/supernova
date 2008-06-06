@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!--Language file translated with Team XBMC Translator-->
+<!--Translator: smuto-->
+<!--Email: smuto.promyk@gmail.com-->
+<!--Date of translation: 12/12/2007-->
+<!--$Revision$-->
+<strings>
+  <string id="31001">Filmy</string>
+  <string id="31002">Gry</string>
+  <string id="31003">Muzyka</string>
+  <string id="31004">Fotografie</string>
+  <string id="31005">Pogoda</string>
+  <string id="31006">Pliki</string>
+  <string id="31007">Skrypty</string>
+  <string id="31008">Ustawienia</string>
+  <string id="31009">Odtwarzaj</string>
+  <string id="31010">Seriale</string>
+  <string id="31011">Zwiastuny</string>
+  <string id="31012">Playlista wideo</string>
+  <string id="31013">Stany gier</string>
+  <string id="31014">CDDB</string>
+  <string id="31015">System</string>
+  <string id="31016">Menadżer plików</string>
+  <string id="31017">Skrypty</string>
+  <string id="31018">Stany gier</string>
+  <string id="31019">Profile</string>
+  <string id="31020">Opcje skóry</string>
+  <string id="31021">O skórze xTV</string>
+  <string id="31022">Zamknij</string>
+  <string id="31023">Info o systemie</string>
+  <string id="31024">Pokazuj pasek przewijania</string>
+  <string id="31025">Oznaczaj typy mediów</string>
+  <string id="31026">Oznaczaj obejrzane pozycje</string>
+  <string id="31027">Używaj ekranu "teraz odtwarzam"</string>
+  <string id="31028">Zmień kolor czcionki</string>
+  <string id="31029">Wizualizacja w tle okładki</string>
+  <string id="31030">Wybierz własną tapetę</string>
+  <string id="31031">Usuń tapetę</string>
+  <string id="31032">Wizualizacja w tle</string>
+  <string id="31033">Tryb Biblioteki jako domyślny</string>
+  <string id="31035">Wideo</string>
+  <string id="31036">Audio</string>
+  <string id="31037">Zakładki</string>
+  <string id="31047">Menu DVD</string>
+  <string id="31064">Maksymalnie</string>
+  <string id="31065">Minimalnie</string>
+  <string id="31066">Wyciszone</string>
+  <string id="31067">Ulubione</string>
+  <string id="31068">Zarządzanie</string>
+  <string id="31069">Pobierz motyw</string>
+  <string id="31070">Ogólne</string>
+  <string id="31071">Tło i tapeta</string>
+  <string id="31072">Ekran startowy</string>
+  <string id="31073">Ikony w perspektywie</string>
+  <string id="31074">Zablokuj panel " Widok "</string>
+  <string id="31075">Użyj playlisty startowej</string>
+  <string id="31076">Wybierz playlistę</string>
+  <string id="31077">Przycisk do seriali</string>
+  <string id="31078">Przycisk do YouTube</string>
+  <string id="31079">Informacje o pogodzie</string>
+</strings>

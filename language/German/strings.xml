@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<strings>
+	<!-- Start home strings -->
+	<string id="31001">Filme</string>
+	<string id="31002">Programme</string>
+	<string id="31003">Musik</string>
+	<string id="31004">Fotos</string>
+	<string id="31005">Wetter</string>
+	<string id="31006">Dateien</string>
+	<string id="31007">Skripte</string>
+	<string id="31008">Einstellungen</string>
+	<string id="31009">Disk abspielen</string>
+	<string id="31010">TV-Serien</string>
+	<!-- End home strings -->
+
+	<!-- Start video strings -->
+	<string id="31011">Film Trailer</string>
+	<string id="31012">Video Playlisten</string>
+	<!-- End video strings -->
+
+	<!-- Start programs strings -->
+	<string id="31013">Spielstände</string>
+	<!-- End programs strings -->
+
+	<!-- Start music strings -->
+	<string id="31014">CDDB</string>
+	<!-- End music strings -->
+
+	<!-- Start system strings -->
+	<string id="31015">System</string>
+	<string id="31016">Dateimanager</string>
+	<string id="31017">Skripte</string>
+	<string id="31018">Spielstände</string>
+	<string id="31019">Profile</string>
+	<string id="31020">Skin Einst</string>
+	<string id="31021">Über xTV</string>
+	<string id="31022">Power Menu</string>
+	<string id="31023">System Info</string>
+	<!-- End system strings -->
+
+	<!-- Begin skin settings strings -->
+	<string id="31024">Scrollbar aktiv</string>
+	<string id="31025">Media Overlays verwenden</string>
+	<string id="31026">Gesehen Overlays verwenden</string>
+	<string id="31027">Wiedergabe Screen verwenden</string>
+	<string id="31028">Font Farbe ändern</string>
+	<string id="31029">Visualisierung Stil ändern</string>
+	<string id="31030">Eigener Hintergrund aktiv</string>
+	<string id="31031">Eigenen Hintergrund entfernen</string>
+	<string id="31032">Bilder hinter Hintergrund</string>
+	<string id="31033">Filme-Button zur Datenbank</string>
+	<string id="31068">Information</string>
+	<string id="31069">Themes laden</string>
+	<string id="31070">General</string>
+	<string id="31071">Hintergrund</string>
+	<string id="31072">Hausfenster</string>
+	<string id="31073">Neigungslistenansicht-Ikonen</string>
+	<string id="31074">Schloss "Ansicht Als" Tafel</string>
+	<string id="31075">Gebrauch-Anlauf Playlist</string>
+	<string id="31076">Wählen Sie Playlist</string>
+	<string id="31077">TV-Shows im Hausmenü</string>
+	<string id="31078">YouTube im Hausmenü</string>
+	<string id="31079">Wetter im Hausmenü</string>
+	<!-- End skin settings strings -->
+
+	<!-- Start progress strings -->
+	<string id="31034">Einstellungen</string>
+	<string id="31035">Video</string>
+	<string id="31036">Audio</string>
+	<string id="31037">Favoriten</string>
+	<string id="31038">Texte</string>
+	<string id="31039">Voreinstellungen</string>
+	<string id="31040">Visuals</string>
+	<string id="31041">Playliste</string>
+	<string id="31042">Stop</string>
+	<string id="31043">Pause</string>
+	<string id="31044">Play</string>
+	<string id="31045">Pausiert</string>
+	<string id="31046">Spielt</string>
+	<string id="31047">DVD Menu</string>
+	<string id="31048">Aufnahme</string>
+	<string id="31049">Nimmt auf</string>
+	<string id="31050">|-Skip</string>
+	<string id="31051">Skip-|</string>
+	<string id="31052">Zurück</string>
+	<string id="31053">Zurück-2x</string>
+	<string id="31054">Zurück-4x</string>
+	<string id="31055">Zurück-8x</string>
+	<string id="31056">Zurück-16x</string>
+	<string id="31057">Zurück-32x</string>
+	<string id="31058">Vorwärts</string>
+	<string id="31059">Vorwärts-2x</string>
+	<string id="31060">Vorwärts-4x</string>
+	<string id="31061">Vorwärts-8x</string>
+	<string id="31062">Vorwärts-16x</string>
+	<string id="31063">Vorwärts-32x</string>
+	<!-- End progress strings -->
+
+	<!-- Begin weather strings -->
+	<string id="31064">Hoch</string>
+	<string id="31065">Tief</string>
+	<!-- End weather strings -->
+
+	<!-- Begin Misc. strings -->
+	<string id="31066">Ton aus</string>
+	<string id="31067">Favoriten</string>
+	<!-- End Misc. strings -->
+</strings>

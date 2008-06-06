@@ -1,0 +1,118 @@
+﻿<window id="126">
+	<defaultcontrol always="true">450</defaultcontrol>
+	<allowoverlay>no</allowoverlay>
+	<include>shutdown-ani</include>
+	<coordinates>
+		<system>1</system>
+		<posx>80</posx>
+		<posy>110</posy>
+	</coordinates>
+	<controls>
+		<control type="image" id="1">
+			<description>background image</description>
+			<posx>-15</posx>
+			<posy>-15</posy>
+			<width>560</width>
+			<height>420</height>
+			<texture>button-menu-background.png</texture>
+		</control>
+		<control type="label" id="411">
+			<description>heading label</description>
+			<posx>10</posx>
+			<posy>-2</posy>
+			<width>420</width>
+			<align>left</align>
+			<font>special13</font>
+			<label>1023</label>
+			<textcolor>button-text</textcolor>
+		</control>
+		<control type="label" id="412">
+			<description>path label control</description>
+			<posx>40</posx>
+			<posy>35</posy>
+			<width>440</width>
+			<align>left</align>
+			<font>font12</font>
+			<haspath>true</haspath>
+			<textcolor>button-text</textcolor>
+		</control>
+		<control type="listcontrol" id="450">
+			<description>listcontrol</description>
+			<posx>10</posx>
+			<posy>70</posy>
+			<width>387</width>
+			<height>343</height>
+			<texturefocus>default-button.png</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<onleft>413</onleft>
+			<onright>413</onright>
+			<onup>450</onup>
+			<ondown>450</ondown>
+			<textcolor>button-text</textcolor>
+		</control>
+		<control type="thumbnailpanel" id="451">
+			<description>thumbnailpanel</description>
+			<posx>10</posx>
+			<posy>70</posy>
+			<width>400</width>
+			<height>323</height>
+			<onleft>413</onleft>
+			<onright>413</onright>
+			<onup>451</onup>
+			<ondown>451</ondown>
+		</control>
+		<control type="group">
+			<control type="button" id="413">
+				<description>OK button</description>
+				<posx>410</posx>
+				<posy>70</posy>
+				<width>105</width>
+				<height>45</height>
+				<align>center</align>
+				<label>186</label>
+				<font>font10</font>
+				<texturenofocus>-</texturenofocus>
+				<texturefocus>default-button.png</texturefocus>
+				<onleft>450</onleft>
+				<onright>414</onright>
+				<onup>415</onup>
+				<ondown>414</ondown>
+				<textcolor>button-text</textcolor>
+			</control>
+			<control type="button" id="414">
+				<description>Cancel button</description>
+				<posx>410</posx>
+				<posy>105</posy>
+				<width>105</width>
+				<height>45</height>
+				<align>center</align>
+				<label>222</label>
+				<font>font10</font>
+				<texturenofocus>-</texturenofocus>
+				<texturefocus>default-button.png</texturefocus>
+				<onleft>450</onleft>
+				<onright>415</onright>
+				<onup>413</onup>
+				<ondown>415</ondown>
+				<textcolor>button-text</textcolor>
+			</control>
+			<control type="button" id="415">
+				<description>Create folder button</description>
+				<posx>410</posx>
+				<posy>140</posy>
+				<width>105</width>
+				<height>45</height>
+				<align>center</align>
+				<label>119</label>
+				<font>font10</font>
+				<texturenofocus>-</texturenofocus>
+				<texturefocus>default-button.png</texturefocus>
+				<onleft>450</onleft>
+				<onright>413</onright>
+				<onup>414</onup>
+				<ondown>413</ondown>
+				<textcolor>button-text</textcolor>
+			</control>
+		</control>
+	</controls>
+</window>

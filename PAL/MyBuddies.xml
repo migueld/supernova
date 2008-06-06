@@ -1,0 +1,243 @@
+<window id="2700">
+	<defaultcontrol>3012</defaultcontrol>
+	<allowoverlay>yes</allowoverlay>
+	<controls>
+		<include>background</include>
+		<control type="image" id="3064">
+			<description>Player Avater</description>
+			<include>icon-header-commons</include>
+			<texture>buddyitem-default-avatar.png</texture>
+		</control>
+		<control type="button" id="3051">
+			<description>Username</description>
+			<posx>545</posx>
+			<posy>140</posy>
+			<width>122</width>
+			<align>left</align>
+			<label>-</label>
+			<font>font12</font>
+			<textoffsetx>0</textoffsetx>
+			<textoffsety>0</textoffsety>
+			<texturefocus>-</texturefocus>
+			<texturenofocus>-</texturenofocus>
+		</control>
+		<control type="button" id="3052">
+			<description>Arena Name</description>
+			<posx>60</posx>
+			<posy>40</posy>
+			<width>340</width>
+			<label>-</label>
+			<font>font18</font>
+			<align>left</align>
+			<textoffsetx>7</textoffsetx>
+			<texturefocus>-</texturefocus>
+			<texturenofocus>-</texturenofocus>
+		</control>
+		<control type="listcontrolex" id="3031">
+			<description>Arena List</description>
+			<posx>50</posx>
+			<posy>100</posy>
+			<width>385</width>
+			<height>450</height>
+			<selectedcolor>kai-text</selectedcolor>
+			<textcolor>kai-text-alpha</textcolor>
+			<onleft>3031</onleft>
+			<onright>3012</onright>
+			<onup>3031</onup>
+			<ondown>3031</ondown>
+		</control>
+		<control type="button" id="3012">
+			<description>Mode Button</description>
+			<posx>500</posx>
+			<posy>184</posy>
+			<onleft>3031</onleft>
+			<onright>3012</onright>
+			<onup>3015</onup>
+			<ondown>3013</ondown>
+		</control>
+		<control type="button" id="3013">
+			<description>Join (Friends)</description>
+			<posx>500</posx>
+			<posy>223</posy>
+			<onleft>3031</onleft>
+			<onright>3013</onright>
+			<onup>3012</onup>
+			<ondown>3016</ondown>
+		</control>
+		<control type="button" id="3016">
+			<description>Speex (Friends)</description>
+			<posx>500</posx>
+			<posy>262</posy>
+			<onleft>3031</onleft>
+			<onright>3016</onright>
+			<onup>3013</onup>
+			<ondown>3014</ondown>
+		</control>
+		<control type="button" id="3014">
+			<description>Invite (Friends)</description>
+			<posx>500</posx>
+			<posy>301</posy>
+			<onleft>3031</onleft>
+			<onright>3014</onright>
+			<onup>3016</onup>
+			<ondown>3015</ondown>
+		</control>
+		<control type="button" id="3015">
+			<description>Remove (Friends)</description>
+			<posx>500</posx>
+			<posy>340</posy>
+			<onleft>3031</onleft>
+			<onright>3015</onright>
+			<onup>3014</onup>
+			<ondown>3012</ondown>
+		</control>
+		<control type="button" id="3036">
+			<description>Keyboard (chat)</description>
+			<posx>500</posx>
+			<posy>223</posy>
+			<onleft>3036</onleft>
+			<onright>3036</onright>
+			<onup>3012</onup>
+			<ondown>3012</ondown>
+		</control>
+		<control type="button" id="3033">
+			<description>Play (Arenas)</description>
+			<posx>500</posx>
+			<posy>223</posy>
+			<onleft>3031</onleft>
+			<onright>3033</onright>
+			<onup>3012</onup>
+			<ondown>3035</ondown>
+		</control>
+		<control type="button" id="3035">
+			<description>Host (Arenas)</description>
+			<posx>500</posx>
+			<posy>262</posy>
+			<onleft>3031</onleft>
+			<onright>3035</onright>
+			<onup>3033</onup>
+			<ondown>3034</ondown>
+		</control>
+		<control type="button" id="3034">
+			<description>Add (Arenas)</description>
+			<posx>500</posx>
+			<posy>301</posy>
+			<onleft>3031</onleft>
+			<onright>3034</onright>
+			<onup>3035</onup>
+			<ondown>3012</ondown>
+		</control>
+		<control type="button" id="3051">
+			<description>Username</description>
+			<posx>63</posx>
+			<posy>418</posy>
+			<width>122</width>
+			<align>center</align>
+			<label>-</label>
+			<font>font10</font>
+			<texturefocus>-</texturefocus>
+			<texturenofocus>-</texturenofocus>
+		</control>
+		<control type="image" id="3060">
+			<description>Buddy (offline) icon</description>
+			<posx>500</posx>
+			<posy>400</posy>
+			<width>100</width>
+			<height>100</height>
+			<texture>buddy-offline.png</texture>
+			<colorkey>FFFF00FF</colorkey>
+			<colordiffuse>AAFFFFFF</colordiffuse>
+		</control>
+		<control type="image" id="3061">
+			<description>Buddy (online) icon</description>
+			<posx>500</posx>
+			<posy>400</posy>
+			<width>100</width>
+			<height>100</height>
+			<texture>buddy-online.png</texture>
+			<colorkey>FFFF00FF</colorkey>
+			<colordiffuse>BBFFFFFF</colordiffuse>
+		</control>
+		<control type="image" id="3062">
+			<description>Opponent icon</description>
+			<posx>500</posx>
+			<posy>400</posy>
+			<width>100</width>
+			<height>100</height>
+			<texture>opponent.png</texture>
+			<colorkey>FFFF00FF</colorkey>
+			<colordiffuse>BBFFFFFF</colordiffuse>
+		</control>
+		<control type="image" id="3063">
+			<description>Arena icon</description>
+			<posx>500</posx>
+			<posy>400</posy>
+			<width>100</width>
+			<height>100</height>
+			<texture>arena.png</texture>
+			<colorkey>FFFF00FF</colorkey>
+			<colordiffuse>BBFFFFFF</colordiffuse>
+		</control>
+		<control type="fadelabel" id="3070">
+			<description>Buddy Name</description>
+			<posx>500</posx>
+			<posy>515</posy>
+			<width>205</width>
+			<scroll>true</scroll>
+			<label>-</label>
+			<font>font13</font>
+		</control>
+		<control type="fadelabel" id="3071">
+			<description>Buddy Status</description>
+			<posx>500</posx>
+			<posy>540</posy>
+			<width>212</width>
+			<label>-</label>
+			<font>font10</font>
+		</control>
+		<control type="label" id="3072">
+			<description>Buddy Invitation Status</description>
+			<posx>500</posx>
+			<posy>565</posy>
+			<width>50</width>
+			<label>-</label>
+			<font>font13</font>
+		</control>
+		<control type="label" id="3073">
+			<description>Player Count</description>
+			<posx>240</posx>
+			<posy>47</posy>
+			<label>-</label>
+			<font>font18</font>
+			<textcolor>button-text</textcolor>
+		</control>
+		<control type="image" id="3076">
+			<description>Chat Panel</description>
+			<posx>50</posx>
+			<posy>100</posy>
+			<width>450</width>
+			<height>452</height>
+			<texture>button-menu-background.png</texture>
+		</control>
+		<control type="console" id="3074">
+			<description>Console control</description>
+			<posx>60</posx>
+			<posy>110</posy>
+			<width>430</width>
+			<height>432</height>
+			<font>font12</font>
+			<textcolor>button-text</textcolor>
+			<!-- normal  (pen0) -->
+			<textcolor2>FFF2B466</textcolor2>
+			<!-- action  (pen1) -->
+			<titlecolor>FFA4FFAE</titlecolor>
+			<!-- system  (pen2) -->
+			<selectedcolor>ff0066cc</selectedcolor>
+			<!-- private (pen3) -->
+			<onleft>3074</onleft>
+			<onright>3074</onright>
+			<onup>3074</onup>
+			<ondown>3074</ondown>
+		</control>
+	</controls>
+</window>

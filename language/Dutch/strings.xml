@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<strings>
+	<!-- Start home strings -->
+	<string id="31001">Video</string>
+	<string id="31002">Programma's</string>
+	<string id="31003">Muziek</string>
+	<string id="31004">Afbeeldingen</string>
+	<string id="31005">Weer</string>
+	<string id="31006">Bestandsbeheer</string>
+	<string id="31007">Scripts</string>
+	<string id="31008">Instellingen</string>
+	<string id="31009">CD/DVD afspelen</string>
+	<string id="31010">TV-series</string>
+	<!-- End home strings -->
+
+	<!-- Start video strings -->
+	<string id="31011">Filmtrailers</string>
+	<string id="31012">Video-afspeellijst</string>
+	<!-- End video strings -->
+
+	<!-- Start programs strings -->
+	<string id="31013">Savegames</string>
+	<!-- End programs strings -->
+
+	<!-- Start music strings -->
+	<string id="31014">CDDB</string>
+	<!-- End music strings -->
+
+	<!-- Start system strings -->
+	<string id="31015">Systeem</string>
+	<string id="31016">Bestandsbeheer</string>
+	<string id="31017">Scripts</string>
+	<string id="31018">Savegames</string>
+	<string id="31019">Profielen</string>
+	<string id="31020">Skin-instellingen</string>
+	<string id="31021">Over xTV</string>
+	<string id="31022">Power Menu</string>
+	<string id="31023">Systeeminformatie</string>
+	<!-- End system strings -->
+
+	<!-- Begin skin settings strings -->
+	<string id="31024">Srollbalken gebruiken</string>
+	<string id="31025">Gebruik Media-overlapping</string>
+	<string id="31026">Gebruik Is-bekeken overlapping</string>
+	<string id="31027">Gebruik Nu afspelen-schermen</string>
+	<string id="31028">Verander tekstkleuren</string>
+	<string id="31029">Visualizer in Nu afspelen-stijl</string>
+	<string id="31030">Kies eigen achtergrond</string>
+	<string id="31031">Herstel originele achtergrond</string>
+	<string id="31032">Visualiteiten achter de achtergrond</string>
+	<string id="31033">Video knop koppelt naar bibliotheek</string>
+	<string id="31068">Informatie</string>
+	<string id="31069">Download xTV Skinthema's</string>
+	<string id="31070">Algemeen</string>
+	<string id="31071">Achtergrond</string>
+	<string id="31072">Startscherm</string>
+	<string id="31073">Kantel lijst-iconen</string>
+	<string id="31074">Zet "bekijk als" vast</string>
+	<string id="31075">Gebruik opstart-afspeellijst</string>
+	<string id="31076">Kies afspeellijst</string>
+	<string id="31077">TV-series in Startmenu</string>
+	<string id="31078">YouTube in Startmenu</string>
+	<string id="31079">Weer in Startmenu</string>
+	<!-- End skin settings strings -->
+
+	<!-- Start progress strings -->
+	<string id="31034">Instellingen</string>
+	<string id="31035">Video</string>
+	<string id="31036">Audio</string>
+	<string id="31037">Bookmarks</string>
+	<string id="31038">Lyrics</string>
+	<string id="31039">Presets</string>
+	<string id="31040">Visuals</string>
+	<string id="31041">Afspeellijst</string>
+	<string id="31042">Stop</string>
+	<string id="31043">Pause</string>
+	<string id="31044">Play</string>
+	<string id="31045">Gepauzeerd</string>
+	<string id="31046">Afspelen</string>
+	<string id="31047">DVD-menu</string>
+	<string id="31048">Opnemen</string>
+	<string id="31049">Neemt op</string>
+	<string id="31050">|-Overslaan</string>
+	<string id="31051">Overslaan-|</string>
+	<string id="31052">Terugspoelen</string>
+	<string id="31053">Terugspoelen-2x</string>
+	<string id="31054">Terugspoelen-4x</string>
+	<string id="31055">Terugspoelen-8x</string>
+	<string id="31056">Terugspoelen-16x</string>
+	<string id="31057">Terugspoelen-32x</string>
+	<string id="31058">Vooruitspoelen</string>
+	<string id="31059">Vooruitspoelen-2x</string>
+	<string id="31060">Vooruitspoelen-4x</string>
+	<string id="31061">Vooruitspoelen-8x</string>
+	<string id="31062">Vooruitspoelen-16x</string>
+	<string id="31063">Vooruitspoelen-32x</string>
+	<!-- End progress strings -->
+
+	<!-- Begin weather strings -->
+	<string id="31064">Hoog</string>
+	<string id="31065">Laag</string>
+	<!-- End weather strings -->
+
+	<!-- Begin Misc. strings -->
+	<string id="31066">Geen geluid</string>
+	<string id="31067">Favorieten</string>
+	<!-- End Misc. strings -->
+</strings>

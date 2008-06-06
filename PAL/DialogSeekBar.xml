@@ -1,0 +1,286 @@
+﻿<window id="115">
+	<defaultcontrol>1</defaultcontrol>
+	<visible>Player.Seeking | Player.DisplayAfterSeek | Window.IsActive(VideoOSD) | Window.IsActive(MusicOSD) | Player.Paused | Player.Forwarding | Player.Rewinding</visible>
+	<animation effect="fade" start="0" time="300">WindowOpen</animation>
+	<animation effect="fade" end="0" time="300">WindowClose</animation>
+	<coordinates>
+		<system>1</system>
+		<posx>0</posx>
+		<posy>-20</posy>
+	</coordinates>
+	<controls>
+		<control type="image">
+			<description>Progress Background</description>
+			<posx>50</posx>
+			<posy>500</posy>
+			<width>620</width>
+			<height>50</height>
+			<texture>progressbar-background.png</texture>
+			<visible>[Window.IsActive(2005) | Window.IsActive(2006)]</visible>
+		</control>
+		<!-- playstate labels -->
+		<control type="label">
+			<description>playing</description>
+			<posx>63</posx>
+			<posy>512</posy>
+			<font>font10</font>
+			<label>31046</label>
+			<textcolor>button-text</textcolor>
+			<visible>![Player.Paused | Player.Rewinding | Player.Forwarding]</visible>
+			<visible>[Window.IsActive(2005) | Window.IsActive(2006)]</visible>
+		</control>
+		<control type="label">
+			<description>paused</description>
+			<posx>63</posx>
+			<posy>512</posy>
+			<font>font10</font>
+			<label>31045</label>
+			<textcolor>button-text</textcolor>
+			<visible>Player.Paused</visible>
+			<visible>[Window.IsActive(2005) | Window.IsActive(2006)]</visible>
+		</control>
+		<control type="label">
+			<description>rewind 2x</description>
+			<posx>63</posx>
+			<posy>512</posy>
+			<font>font10</font>
+			<label>31053</label>
+			<textcolor>button-text</textcolor>
+			<visible>Player.Rewinding2x</visible>
+			<visible>[Window.IsActive(2005) | Window.IsActive(2006)]</visible>
+		</control>
+		<control type="label">
+			<description>forward 2x</description>
+			<posx>63</posx>
+			<posy>512</posy>
+			<font>font10</font>
+			<label>31059</label>
+			<textcolor>button-text</textcolor>
+			<visible>Player.Forwarding2x</visible>
+			<visible>[Window.IsActive(2005) | Window.IsActive(2006)]</visible>
+		</control>
+		<control type="label">
+			<description>rewind 4x</description>
+			<posx>63</posx>
+			<posy>512</posy>
+			<font>font10</font>
+			<label>31054</label>
+			<textcolor>button-text</textcolor>
+			<visible>Player.Rewinding4x</visible>
+			<visible>[Window.IsActive(2005) | Window.IsActive(2006)]</visible>
+		</control>
+		<control type="label">
+			<description>forward 4x</description>
+			<posx>63</posx>
+			<posy>512</posy>
+			<font>font10</font>
+			<label>31060</label>
+			<textcolor>button-text</textcolor>
+			<visible>Player.Forwarding4x</visible>
+			<visible>[Window.IsActive(2005) | Window.IsActive(2006)]</visible>
+		</control>
+		<control type="label">
+			<description>rewind 8x</description>
+			<posx>63</posx>
+			<posy>512</posy>
+			<font>font10</font>
+			<label>31055</label>
+			<textcolor>button-text</textcolor>
+			<visible>Player.Rewinding8x</visible>
+			<visible>[Window.IsActive(2005) | Window.IsActive(2006)]</visible>
+		</control>
+		<control type="label">
+			<description>forward 8x</description>
+			<posx>63</posx>
+			<posy>512</posy>
+			<font>font10</font>
+			<label>31061</label>
+			<textcolor>button-text</textcolor>
+			<visible>Player.Forwarding8x</visible>
+			<visible>[Window.IsActive(2005) | Window.IsActive(2006)]</visible>
+		</control>
+		<control type="label">
+			<description>rewind 16x</description>
+			<posx>63</posx>
+			<posy>512</posy>
+			<font>font10</font>
+			<label>31056</label>
+			<textcolor>button-text</textcolor>
+			<visible>Player.Rewinding16x</visible>
+			<visible>[Window.IsActive(2005) | Window.IsActive(2006)]</visible>
+		</control>
+		<control type="label">
+			<description>forward 16x</description>
+			<posx>63</posx>
+			<posy>512</posy>
+			<font>font10</font>
+			<label>31062</label>
+			<textcolor>button-text</textcolor>
+			<visible>Player.Forwarding16x</visible>
+			<visible>[Window.IsActive(2005) | Window.IsActive(2006)]</visible>
+		</control>
+		<control type="label">
+			<description>rewind 32x</description>
+			<posx>63</posx>
+			<posy>512</posy>
+			<font>font10</font>
+			<label>31057</label>
+			<textcolor>button-text</textcolor>
+			<visible>Player.Rewinding32x</visible>
+			<visible>[Window.IsActive(2005) | Window.IsActive(2006)]</visible>
+		</control>
+		<control type="label">
+			<description>forward 32x</description>
+			<posx>63</posx>
+			<posy>512</posy>
+			<font>font10</font>
+			<label>31063</label>
+			<textcolor>button-text</textcolor>
+			<visible>Player.Forwarding32x</visible>
+			<visible>[Window.IsActive(2005) | Window.IsActive(2006)]</visible>
+		</control>
+		<!-- progressbar dialog -->
+		<control type="label">
+			<description>Elapsed Time Label</description>
+			<posx>581</posx>
+			<posy>513</posy>
+			<font>font10</font>
+			<align>right</align>
+			<textcolor>button-text</textcolor>
+			<info>Player.Time</info>
+			<width>100</width>
+			<height>16</height>
+			<visible>!Player.Seeking</visible>
+			<visible>[Window.IsActive(2005) | Window.IsActive(2006)]</visible>
+		</control>
+		<control type="label">
+			<description>Seek Time Label</description>
+			<posx>581</posx>
+			<posy>513</posy>
+			<font>font10</font>
+			<align>right</align>
+			<textcolor>button-text</textcolor>
+			<info>Player.SeekTime</info>
+			<width>100</width>
+			<height>16</height>
+			<visible>Player.Seeking</visible>
+			<visible>[Window.IsActive(2005) | Window.IsActive(2006)]</visible>
+		</control>
+		<control type="label">
+			<description>Duration Label</description>
+			<posx>585</posx>
+			<posy>513</posy>
+			<label>$INFO[Player.Duration,/ ]</label>
+			<font>font10</font>
+			<textcolor>button-text</textcolor>
+			<alignx>left</alignx>
+			<width>100</width>
+			<height>16</height>
+			<visible>[Window.IsActive(2005) | Window.IsActive(2006)]</visible>
+		</control>
+		<control type="progress" id="23">
+			<description>Progressbar</description>
+			<posx>143</posx>
+			<posy>515</posy>
+			<width>380</width>
+			<height>22</height>
+			<info>Player.Progress</info>
+			<texturebg>progressbar-background-blue.png</texturebg>
+			<lefttexture>-</lefttexture>
+			<midtexture>-</midtexture>
+			<righttexture>-</righttexture>
+			<overlaytexture>-</overlaytexture>
+			<visible>[Window.IsActive(2005) | Window.IsActive(2006)]</visible>
+		</control>
+		<control type="slider" id="401">
+			<description>Seek Slider</description>
+			<posx>143</posx>
+			<posy>514</posy>
+			<width>380</width>
+			<height>9</height>
+			<texturesliderbar>seekslider.png</texturesliderbar>
+			<textureslidernib>progress-marker.png</textureslidernib>
+			<textureslidernibfocus>progress-marker.png</textureslidernibfocus>
+			<onup>1</onup>
+			<ondown>1</ondown>
+			<onleft>1</onleft>
+			<onright>1</onright>
+			<visible>[Window.IsActive(2005) | Window.IsActive(2006)]</visible>
+		</control>
+		<!-- Start Progress Control for all Windows Except Fullscreen Video and Music Vis -->
+		<control type="image">
+			<description>Popup Volume Dialog Background</description>
+			<posx>510</posx>
+			<posy>32</posy>
+			<width>190</width>
+			<height>70</height>
+			<texture>button-menu-background.png</texture>
+			<visible>![Window.IsActive(2005) | Window.IsActive(2006)]</visible>
+		</control>
+		<control type="label" id="22">
+			<description>Elapsed Time Label</description>
+			<posx>593</posx>
+			<posy>50</posy>
+			<font>font10</font>
+			<align>right</align>
+			<info>Player.Time</info>
+			<textcolor>button-text</textcolor>
+			<width>100</width>
+			<height>16</height>
+			<visible>!Player.Seeking</visible>
+			<visible>![Window.IsActive(2005) | Window.IsActive(2006)]</visible>
+		</control>
+		<control type="label" id="22">
+			<description>Seek Time Label</description>
+			<posx>593</posx>
+			<posy>50</posy>
+			<font>font10</font>
+			<align>right</align>
+			<info>Player.SeekTime</info>
+			<width>100</width>
+			<height>16</height>
+			<visible>Player.Seeking</visible>
+			<visible>![Window.IsActive(2005) | Window.IsActive(2006)]</visible>
+		</control>
+		<control type="label" id="0">
+			<description>Duration Label</description>
+			<posx>598</posx>
+			<posy>50</posy>
+			<label>$INFO[Player.Duration,/ ]</label>
+			<font>font10</font>
+			<align>left</align>
+			<width>100</width>
+			<height>16</height>
+			<visible>![Window.IsActive(2005) | Window.IsActive(2006)]</visible>
+		</control>
+		<control type="progress" id="23">
+			<description>Progressbar</description>
+			<posx>520</posx>
+			<posy>83</posy>
+			<width>170</width>
+			<height>12</height>
+			<info>Player.Progress</info>
+			<texturebg>progressbar-background-blue.png</texturebg>
+			<lefttexture>-</lefttexture>
+			<midtexture>-</midtexture>
+			<righttexture>-</righttexture>
+			<overlaytexture>-</overlaytexture>
+			<visible>![Window.IsActive(2005) | Window.IsActive(2006)]</visible>
+		</control>
+		<control type="slider" id="401">
+			<description>Seek Slider</description>
+			<posx>520</posx>
+			<posy>78</posy>
+			<width>170</width>
+			<height>9</height>
+			<texturesliderbar>seekslider.png</texturesliderbar>
+			<textureslidernib>progress-marker.png</textureslidernib>
+			<textureslidernibfocus>progress-marker.png</textureslidernibfocus>
+			<onup>1</onup>
+			<ondown>1</ondown>
+			<onleft>1</onleft>
+			<onright>1</onright>
+			<visible>![Window.IsActive(2005) | Window.IsActive(2006)]</visible>
+		</control>
+	</controls>
+</window>            

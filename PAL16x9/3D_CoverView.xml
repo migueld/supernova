@@ -1,0 +1,584 @@
+<includes>
+	<include name="Coverflow">
+		<control type="wraplist" id="57">
+			<viewtype label="Coverflow">Wraplist</viewtype>
+			<posx>-80</posx>
+			<posy>150</posy>
+			<width>800</width>
+			<height>420</height>
+			<onleft>57</onleft>
+			<onright>57</onright>
+			<onup>2</onup>
+			<ondown>2</ondown>
+			<scrolltime>100</scrolltime>
+			<include>list-fade</include>
+			<focusposition>2</focusposition>
+			<orientation>horizontal</orientation>
+			<itemlayout height="390" width="140">
+			</itemlayout>
+			<focusedlayout height="410" width="320">
+			</focusedlayout>
+		</control>
+		<control type="group" id="3011">
+			<posy>95</posy>
+			<camera x="360" y="288" />
+			<visible>Control.IsVisible(57) + Container.OnNext</visible>
+                        <animation effect="slide" end="-50,0" time="200" reversible="false">Hidden</animation>
+			<include>list-fade</include>
+			<control type="image">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>200</width>
+				<height>375</height>
+				<info>Container.ListItem(-5).Icon</info>
+				<animation effect="rotatey" center="-40" start="-60" end="-60" time="0" condition="true">Conditional</animation>
+			</control>
+			<control type="image">
+				<posx>0</posx>
+				<posy>375</posy>
+				<width>200</width>
+				<height>375</height>
+				<info>Container.ListItem(-5).Icon</info>
+				<animation effect="rotatey" center="-40" start="-60" end="-60" time="0" condition="true">Conditional</animation>
+				<texture flipy="true" diffuse="fade.png">-</texture>
+			</control>
+			<control type="image">
+				<posx>50</posx>
+				<posy>0</posy>
+				<width>200</width>
+				<height>375</height>
+				<info>Container.ListItem(-4).Icon</info>
+				<animation effect="rotatey" center="10" start="-60" end="-60" time="0" condition="true">Conditional</animation>
+			</control>
+			<control type="image">
+				<posx>50</posx>
+				<posy>375</posy>
+				<width>200</width>
+				<height>375</height>
+				<info>Container.ListItem(-4).Icon</info>
+				<animation effect="rotatey" center="10" start="-60" end="-60" time="0" condition="true">Conditional</animation>
+				<texture flipy="true" diffuse="fade.png">-</texture>
+			</control>
+			<control type="image">
+				<posx>100</posx>
+				<posy>0</posy>
+				<width>200</width>
+				<height>375</height>
+				<info>Container.ListItem(-3).Icon</info>
+				<animation effect="rotatey" center="60" start="-60" end="-60" time="0" condition="true">Conditional</animation>
+			</control>
+			<control type="image">
+				<posx>100</posx>
+				<posy>375</posy>
+				<width>200</width>
+				<height>375</height>
+				<info>Container.ListItem(-3).Icon</info>
+				<animation effect="rotatey" center="60" start="-60" end="-60" time="0" condition="true">Conditional</animation>
+				<texture flipy="true" diffuse="fade.png">-</texture>
+			</control>
+			<control type="image">
+				<posx>150</posx>
+				<posy>0</posy>
+				<width>200</width>
+				<height>375</height>
+				<info>Container.ListItem(-2).Icon</info>
+				<animation effect="rotatey" center="110" start="-60" end="-60" time="0" condition="true">Conditional</animation>
+			</control>
+			<control type="image">
+				<posx>150</posx>
+				<posy>375</posy>
+				<width>200</width>
+				<height>375</height>
+				<info>Container.ListItem(-2).Icon</info>
+				<animation effect="rotatey" center="110" start="-60" end="-60" time="0" condition="true">Conditional</animation>
+				<texture flipy="true" diffuse="fade.png">-</texture>
+			</control>
+			<control type="image">
+				<posx>570</posx>
+				<posy>0</posy>
+				<width>200</width>
+				<height>375</height>
+				<info>Container.ListItem(4).Icon</info>
+				<animation effect="rotatey" center="810" start="60" end="60" time="0" condition="true">Conditional</animation>
+			</control>
+			<control type="image">
+				<posx>570</posx>
+				<posy>375</posy>
+				<width>200</width>
+				<height>375</height>
+				<info>Container.ListItem(4).Icon</info>
+				<animation effect="rotatey" center="810" start="60" end="60" time="0" condition="true">Conditional</animation>
+				<texture flipy="true" diffuse="fade.png">-</texture>
+			</control>
+			<control type="image">
+				<posx>520</posx>
+				<posy>0</posy>
+				<width>200</width>
+				<height>375</height>
+				<info>Container.ListItem(3).Icon</info>
+				<animation effect="rotatey" center="760" start="60" end="60" time="0" condition="true">Conditional</animation>
+			</control>
+			<control type="image">
+				<posx>520</posx>
+				<posy>375</posy>
+				<width>200</width>
+				<height>375</height>
+				<info>Container.ListItem(3).Icon</info>
+				<animation effect="rotatey" center="760" start="60" end="60" time="0" condition="true">Conditional</animation>
+				<texture flipy="true" diffuse="fade.png">-</texture>
+			</control>
+			<control type="image">
+				<posx>470</posx>
+				<posy>0</posy>
+				<width>200</width>
+				<height>375</height>
+				<info>Container.ListItem(2).Icon</info>
+				<animation effect="rotatey" center="710" start="60" end="60" time="0" condition="true">Conditional</animation>
+			</control>
+			<control type="image">
+				<posx>470</posx>
+				<posy>375</posy>
+				<width>200</width>
+				<height>375</height>
+				<info>Container.ListItem(2).Icon</info>
+				<animation effect="rotatey" center="710" start="60" end="60" time="0" condition="true">Conditional</animation>
+				<texture flipy="true" diffuse="fade.png">-</texture>
+			</control>
+			<control type="image">
+				<posx>420</posx>
+				<posy>0</posy>
+				<width>200</width>
+				<height>375</height>
+				<info>Container.ListItem(1).Icon</info>
+				<animation effect="rotatey" center="660" start="60" end="60" time="0" condition="true">Conditional</animation>
+			</control>
+			<control type="image">
+				<posx>420</posx>
+				<posy>375</posy>
+				<width>200</width>
+				<height>375</height>
+				<info>Container.ListItem(1).Icon</info>
+				<animation effect="rotatey" center="660" start="60" end="60" time="0" condition="true">Conditional</animation>
+				<texture flipy="true" diffuse="fade.png">-</texture>
+			</control>
+			<control type="group">
+				<visible>Control.IsVisible(57) + Container.OnNext</visible>
+				<animation effect="slide" end="-60,0" time="200" reversible="false">Hidden</animation>
+				<control type="image">
+					<posx>260</posx>
+					<posy>0</posy>
+					<width>200</width>
+					<height>375</height>
+					<info>Container.ListItem(-1).Icon</info>
+					<visible>Container.OnNext</visible>
+					<animation effect="rotatey" center="220" start="0" end="-60" time="200" reversible="false">Hidden</animation>
+				</control>
+				<control type="image">
+					<posx>260</posx>
+					<posy>375</posy>
+					<width>200</width>
+					<height>375</height>
+					<info>Container.ListItem(-1).Icon</info>
+					<visible>Container.OnNext</visible>
+					<animation effect="rotatey" center="220" start="0" end="-60" time="200" reversible="false">Hidden</animation>
+					<texture flipy="true" diffuse="fade.png">-</texture>
+				</control>
+				<control type="image">
+					<posx>370</posx>
+					<posy>0</posy>
+					<width>200</width>
+					<height>375</height>
+					<info>Container.ListItem(0).Icon</info>
+					<visible>Container.OnNext</visible>
+					<animation effect="rotatey" center="610" start="0" end="-60" time="200" reversible="false">Hidden</animation>
+					<animation effect="rotatey" center="610" start="60" end="60" time="200" condition="true">Conditional</animation>
+				</control>
+				<control type="image">
+					<posx>370</posx>
+					<posy>375</posy>
+					<width>200</width>
+					<height>375</height>
+					<info>Container.ListItem(0).Icon</info>
+					<visible>Container.OnNext</visible>
+					<animation effect="rotatey" center="610" start="0" end="-60" time="200" reversible="false">Hidden</animation>
+					<animation effect="rotatey" center="610" start="60" end="60" time="200" condition="true">Conditional</animation>
+					<texture flipy="true" diffuse="fade.png">-</texture>
+				</control>
+			</control>
+		</control>
+		<control type="group" id="3012">
+			<posy>95</posy>
+			<camera x="360" y="288" />
+			<visible>Control.IsVisible(57) + Container.OnPrevious</visible>
+                        <animation effect="slide" end="50,0" time="200" reversible="false">Hidden</animation>
+			<include>list-fade</include>
+			<control type="image">
+				<posx>-50</posx>
+				<posy>0</posy>
+				<width>200</width>
+				<height>375</height>
+				<info>Container.ListItem(-4).Icon</info>
+				<animation effect="rotatey" center="-90" start="-60" end="-60" time="0" condition="true">Conditional</animation>
+			</control>
+			<control type="image">
+				<posx>-50</posx>
+				<posy>375</posy>
+				<width>200</width>
+				<height>375</height>
+				<info>Container.ListItem(-4).Icon</info>
+				<animation effect="rotatey" center="-90" start="-60" end="-60" time="0" condition="true">Conditional</animation>
+				<texture flipy="true" diffuse="fade.png">-</texture>
+			</control>
+			<control type="image">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>200</width>
+				<height>375</height>
+				<info>Container.ListItem(-3).Icon</info>
+				<animation effect="rotatey" center="-40" start="-60" end="-60" time="0" condition="true">Conditional</animation>
+			</control>
+			<control type="image">
+				<posx>0</posx>
+				<posy>375</posy>
+				<width>200</width>
+				<height>375</height>
+				<info>Container.ListItem(-3).Icon</info>
+				<animation effect="rotatey" center="-40" start="-60" end="-60" time="0" condition="true">Conditional</animation>
+				<texture flipy="true" diffuse="fade.png">-</texture>
+			</control>
+			<control type="image">
+				<posx>50</posx>
+				<posy>0</posy>
+				<width>200</width>
+				<height>375</height>
+				<info>Container.ListItem(-2).Icon</info>
+				<animation effect="rotatey" center="10" start="-60" end="-60" time="0" condition="true">Conditional</animation>
+			</control>
+			<control type="image">
+				<posx>50</posx>
+				<posy>375</posy>
+				<width>200</width>
+				<height>375</height>
+				<info>Container.ListItem(-2).Icon</info>
+				<animation effect="rotatey" center="10" start="-60" end="-60" time="0" condition="true">Conditional</animation>
+				<texture flipy="true" diffuse="fade.png">-</texture>
+			</control>
+			<control type="image">
+				<posx>100</posx>
+				<posy>0</posy>
+				<width>200</width>
+				<height>375</height>
+				<info>Container.ListItem(-1).Icon</info>
+				<animation effect="rotatey" center="60" start="-60" end="-60" time="0" condition="true">Conditional</animation>
+			</control>
+			<control type="image">
+				<posx>100</posx>
+				<posy>375</posy>
+				<width>200</width>
+				<height>375</height>
+				<info>Container.ListItem(-1).Icon</info>
+				<animation effect="rotatey" center="60" start="-60" end="-60" time="0" condition="true">Conditional</animation>
+				<texture flipy="true" diffuse="fade.png">-</texture>
+			</control>
+			<control type="image">
+				<posx>520</posx>
+				<posy>0</posy>
+				<width>200</width>
+				<height>375</height>
+				<info>Container.ListItem(5).Icon</info>
+				<animation effect="rotatey" center="760" start="60" end="60" time="0" condition="true">Conditional</animation>
+			</control>
+			<control type="image">
+				<posx>520</posx>
+				<posy>375</posy>
+				<width>200</width>
+				<height>375</height>
+				<info>Container.ListItem(5).Icon</info>
+				<animation effect="rotatey" center="760" start="60" end="60" time="0" condition="true">Conditional</animation>
+				<texture flipy="true" diffuse="fade.png">-</texture>
+			</control>
+			<control type="image">
+				<posx>470</posx>
+				<posy>0</posy>
+				<width>200</width>
+				<height>375</height>
+				<info>Container.ListItem(4).Icon</info>
+				<animation effect="rotatey" center="710" start="60" end="60" time="0" condition="true">Conditional</animation>
+			</control>
+			<control type="image">
+				<posx>470</posx>
+				<posy>375</posy>
+				<width>200</width>
+				<height>375</height>
+				<info>Container.ListItem(4).Icon</info>
+				<animation effect="rotatey" center="710" start="60" end="60" time="0" condition="true">Conditional</animation>
+				<texture flipy="true" diffuse="fade.png">-</texture>
+			</control>
+			<control type="image">
+				<posx>420</posx>
+				<posy>0</posy>
+				<width>200</width>
+				<height>375</height>
+				<info>Container.ListItem(3).Icon</info>
+				<animation effect="rotatey" center="660" start="60" end="60" time="0" condition="true">Conditional</animation>
+			</control>
+			<control type="image">
+				<posx>420</posx>
+				<posy>375</posy>
+				<width>200</width>
+				<height>375</height>
+				<info>Container.ListItem(3).Icon</info>
+				<animation effect="rotatey" center="660" start="60" end="60" time="0" condition="true">Conditional</animation>
+				<texture flipy="true" diffuse="fade.png">-</texture>
+			</control>
+			<control type="image">
+				<posx>370</posx>
+				<posy>0</posy>
+				<width>200</width>
+				<height>375</height>
+				<info>Container.ListItem(2).Icon</info>
+				<animation effect="rotatey" center="610" start="60" end="60" time="0" condition="true">Conditional</animation>
+			</control>
+			<control type="image">
+				<posx>370</posx>
+				<posy>375</posy>
+				<width>200</width>
+				<height>375</height>
+				<info>Container.ListItem(2).Icon</info>
+				<animation effect="rotatey" center="610" start="60" end="60" time="0" condition="true">Conditional</animation>
+				<texture flipy="true" diffuse="fade.png">-</texture>
+			</control>
+			<control type="group">
+				<visible>Control.IsVisible(57) + Container.OnPrevious</visible>
+				<animation effect="slide" end="60,0" time="200" reversible="false">Hidden</animation>
+				<control type="image">
+					<posx>260</posx>
+					<posy>0</posy>
+					<width>200</width>
+					<height>375</height>
+					<info>Container.ListItem(1).Icon</info>
+					<visible>Container.OnPrevious</visible>
+					<animation effect="rotatey" center="500" start="0" end="60" time="200" reversible="false">Hidden</animation>
+				</control>
+				<control type="image">
+					<posx>260</posx>
+					<posy>375</posy>
+					<width>200</width>
+					<height>375</height>
+					<info>Container.ListItem(1).Icon</info>
+					<visible>Container.OnPrevious</visible>
+					<animation effect="rotatey" center="500" start="0" end="60" time="200" reversible="false">Hidden</animation>
+					<texture flipy="true" diffuse="fade.png">-</texture>
+				</control>
+				<control type="image">
+					<posx>150</posx>
+					<posy>0</posy>
+					<width>200</width>
+					<height>375</height>
+					<info>Container.ListItem(0).Icon</info>
+					<visible>Container.OnPrevious</visible>
+					<animation effect="rotatey" center="110" start="0" end="60" time="200" reversible="false">Hidden</animation>
+					<animation effect="rotatey" center="110" start="-60" end="-60" time="0" condition="true">Conditional</animation>
+				</control>
+				<control type="image">
+					<posx>150</posx>
+					<posy>375</posy>
+					<width>200</width>
+					<height>375</height>
+					<info>Container.ListItem(0).Icon</info>
+					<visible>Container.OnPrevious</visible>
+					<animation effect="rotatey" center="110" start="0" end="60" time="200" reversible="false">Hidden</animation>
+					<animation effect="rotatey" center="110" start="-60" end="-60" time="0" condition="true">Conditional</animation>
+					<texture flipy="true" diffuse="fade.png">-</texture>
+				</control>
+			</control>
+		</control>
+		<control type="group" id="3010">
+			<posy>95</posy>
+			<camera x="360" y="288" />
+			<visible>Control.IsVisible(57) + !Control.IsVisible(3011)  + !Control.IsVisible(3012)</visible>
+			<include>list-fade</include>
+			<control type="image">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>200</width>
+				<height>375</height>
+				<info>Container.ListItem(-4).Icon</info>
+				<animation effect="rotatey" center="-40" start="-60" end="-60" time="0" condition="true">Conditional</animation>
+			</control>
+			<control type="image">
+				<posx>0</posx>
+				<posy>375</posy>
+				<width>200</width>
+				<height>375</height>
+				<info>Container.ListItem(-4).Icon</info>
+				<animation effect="rotatey" center="-40" start="-60" end="-60" time="0" condition="true">Conditional</animation>
+				<texture flipy="true" diffuse="fade.png">-</texture>
+			</control>
+			<control type="image">
+				<posx>50</posx>
+				<posy>0</posy>
+				<width>200</width>
+				<height>375</height>
+				<info>Container.ListItem(-3).Icon</info>
+				<animation effect="rotatey" center="10" start="-60" end="-60" time="0" condition="true">Conditional</animation>
+			</control>
+			<control type="image">
+				<posx>50</posx>
+				<posy>375</posy>
+				<width>200</width>
+				<height>375</height>
+				<info>Container.ListItem(-3).Icon</info>
+				<animation effect="rotatey" center="10" start="-60" end="-60" time="0" condition="true">Conditional</animation>
+				<texture flipy="true" diffuse="fade.png">-</texture>
+			</control>
+			<control type="image">
+				<posx>100</posx>
+				<posy>0</posy>
+				<width>200</width>
+				<height>375</height>
+				<info>Container.ListItem(-2).Icon</info>
+				<animation effect="rotatey" center="60" start="-60" end="-60" time="0" condition="true">Conditional</animation>
+			</control>
+			<control type="image">
+				<posx>100</posx>
+				<posy>375</posy>
+				<width>200</width>
+				<height>375</height>
+				<info>Container.ListItem(-2).Icon</info>
+				<animation effect="rotatey" center="60" start="-60" end="-60" time="0" condition="true">Conditional</animation>
+				<texture flipy="true" diffuse="fade.png">-</texture>
+			</control>
+			<control type="image">
+				<posx>150</posx>
+				<posy>0</posy>
+				<width>200</width>
+				<height>375</height>
+				<info>Container.ListItem(-1).Icon</info>
+				<animation effect="rotatey" center="110" start="-60" end="-60" time="0" condition="true">Conditional</animation>
+			</control>
+			<control type="image">
+				<posx>150</posx>
+				<posy>375</posy>
+				<width>200</width>
+				<height>375</height>
+				<info>Container.ListItem(-1).Icon</info>
+				<animation effect="rotatey" center="110" start="-60" end="-60" time="0" condition="true">Conditional</animation>
+				<texture flipy="true" diffuse="fade.png">-</texture>
+			</control>
+			<control type="image">
+				<posx>520</posx>
+				<posy>0</posy>
+				<width>200</width>
+				<height>375</height>
+				<info>Container.ListItem(4).Icon</info>
+				<animation effect="rotatey" center="760" start="60" end="60" time="0" condition="true">Conditional</animation>
+			</control>
+			<control type="image">
+				<posx>520</posx>
+				<posy>375</posy>
+				<width>200</width>
+				<height>375</height>
+				<info>Container.ListItem(4).Icon</info>
+				<animation effect="rotatey" center="760" start="60" end="60" time="0" condition="true">Conditional</animation>
+				<texture flipy="true" diffuse="fade.png">-</texture>
+			</control>
+			<control type="image">
+				<posx>470</posx>
+				<posy>0</posy>
+				<width>200</width>
+				<height>375</height>
+				<info>Container.ListItem(3).Icon</info>
+				<animation effect="rotatey" center="710" start="60" end="60" time="0" condition="true">Conditional</animation>
+			</control>
+			<control type="image">
+				<posx>470</posx>
+				<posy>375</posy>
+				<width>200</width>
+				<height>375</height>
+				<info>Container.ListItem(3).Icon</info>
+				<animation effect="rotatey" center="710" start="60" end="60" time="0" condition="true">Conditional</animation>
+				<texture flipy="true" diffuse="fade.png">-</texture>
+			</control>
+			<control type="image">
+				<posx>420</posx>
+				<posy>0</posy>
+				<width>200</width>
+				<height>375</height>
+				<info>Container.ListItem(2).Icon</info>
+				<animation effect="rotatey" center="660" start="60" end="60" time="0" condition="true">Conditional</animation>
+			</control>
+			<control type="image">
+				<posx>420</posx>
+				<posy>375</posy>
+				<width>200</width>
+				<height>375</height>
+				<info>Container.ListItem(2).Icon</info>
+				<animation effect="rotatey" center="660" start="60" end="60" time="0" condition="true">Conditional</animation>
+				<texture flipy="true" diffuse="fade.png">-</texture>
+			</control>
+			<control type="image">
+				<posx>370</posx>
+				<posy>0</posy>
+				<width>200</width>
+				<height>375</height>
+				<info>Container.ListItem(1).Icon</info>
+				<animation effect="rotatey" center="610" start="60" end="60" time="0" condition="true">Conditional</animation>
+			</control>
+			<control type="image">
+				<posx>370</posx>
+				<posy>375</posy>
+				<width>200</width>
+				<height>375</height>
+				<info>Container.ListItem(1).Icon</info>
+				<animation effect="rotatey" center="610" start="60" end="60" time="0" condition="true">Conditional</animation>
+				<texture flipy="true" diffuse="fade.png">-</texture>
+			</control>
+			<control type="image">
+				<posx>260</posx>
+				<posy>0</posy>
+				<width>200</width>
+				<height>375</height>
+				<aspectratio>stretch</aspectratio>
+				<visible>!Contol.HasFocus(57)</visible>
+				<info>Container.ListItem(0).Icon</info>
+			</control>
+			<control type="image">
+				<posx>260</posx>
+				<posy>375</posy>
+				<width>200</width>
+				<height>375</height>
+				<aspectratio>stretch</aspectratio>
+				<visible>!Contol.HasFocus(57)</visible>
+				<info>Container.ListItem(0).Icon</info>
+				<texture flipy="true" diffuse="fade.png">-</texture>
+			</control>
+	</control>
+		<control type="label">
+			<posx>200</posx>
+			<posy>255</posy>
+			<width>485</width>
+			<height>22</height>
+			<aligny>center</aligny>
+			<align>center</align>
+			<info>ListItem.Label</info>
+			<font>special13</font>
+			<visible>false</visible>
+			<!-- <visible>Control.IsVisible(57)</visible> -->
+		</control>
+		<control type="label">
+			<posx>10</posx>
+			<posy>545</posy>
+			<width>500</width>
+			<height>30</height>
+			<font>font18</font>
+			<align>left</align>
+			<textcolor>button-text</textcolor>
+			<selectedcolor>listselectedtext</selectedcolor>
+			<scroll>true</scroll>
+			<info>ListItem.Label</info>
+			<textoffsetx>0</textoffsetx>
+			<visible>Control.IsVisible(57)</visible>
+		</control>
+	</include>
+</includes>

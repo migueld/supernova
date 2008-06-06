@@ -1,0 +1,260 @@
+<window id="135">
+	<defaultcontrol always="true">10</defaultcontrol>
+	<allowoverlay>yes</allowoverlay>
+	<animation effect="fade" time="1000">WindowOpen</animation>
+	<animation effect="fade" time="1000">WindowClose</animation>
+	<controls>
+		<control type="image">
+			<description>background</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>720</width>
+			<height>576</height>
+			<texture>background.png</texture>
+			<visible>!Skin.String(custom-background)</visible>
+		</control>
+		<control type="image">
+			<description>custom background</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>720</width>
+			<height>576</height>
+			<info>Skin.String(custom-background)</info>
+		</control>
+		<control type="image">
+			<description>Music Logo</description>
+			<include>icon-header-commons</include>
+			<texture>icon-music.png</texture>
+		</control>
+		<control type="fadelabel" id="20">
+			<description>Album Label</description>
+			<posx>535</posx>
+			<posy>40</posy>
+			<width>170</width>
+			<scroll>true</scroll>
+			<include>songinfo</include>
+			<font>font20</font>
+		</control>
+		<control type="label">
+			<description>Album Title</description>
+			<posx>55</posx>
+			<posy>330</posy>
+			<width>90</width>
+			<label>170</label>
+			<font>font12</font>
+		</control>
+		<control type="label">
+			<description>Genre Title</description>
+			<posx>55</posx>
+			<posy>350</posy>
+			<width>90</width>
+			<label>174</label>
+			<font>font12</font>
+		</control>
+		<control type="label">
+			<description>Year Title</description>
+			<posx>55</posx>
+			<posy>370</posy>
+			<width>90</width>
+			<label>201</label>
+			<font>font12</font>
+		</control>
+		<control type="label">
+			<description>Track Number Title</description>
+			<posx>55</posx>
+			<posy>390</posy>
+			<width>90</width>
+			<label>$LOCALIZE[435] :</label>
+			<font>font12</font>
+		</control>
+		<control type="label">
+			<description>Rating Title</description>
+			<posx>55</posx>
+			<posy>410</posy>
+			<width>90</width>
+			<label>173</label>
+			<font>font12</font>
+		</control>
+		<control type="fadelabel">
+			<description>Album value</description>
+			<posx>162</posx>
+			<posy>330</posy>
+			<width>190</width>
+			<info>ListItem.Album</info>
+			<font>font12</font>
+		</control>
+		<control type="fadelabel">
+			<description>Genre value</description>
+			<posx>162</posx>
+			<posy>350</posy>
+			<width>190</width>
+			<info>ListItem.Genre</info>
+			<font>font12</font>
+		</control>
+		<control type="fadelabel">
+			<description>year value</description>
+			<posx>162</posx>
+			<posy>370</posy>
+			<width>190</width>
+			<info>ListItem.Year</info>
+			<font>font12</font>
+		</control>
+		<control type="fadelabel">
+			<description>Track Number value</description>
+			<posx>162</posx>
+			<posy>390</posy>
+			<width>190</width>
+			<info>ListItem.TrackNumber</info>
+			<font>font12</font>
+		</control>
+		<control type="image">
+			<description>Rating value</description>
+			<posx>102</posx>
+			<posy>415</posy>
+			<width>190</width>
+			<height>20</height>
+			<info>ListItem.Rating</info>
+			<aspectratio>keep</aspectratio>
+			<font>font12</font>
+		</control>
+		<control type="image">
+			<description>Cover image</description>
+			<posx>80</posx>
+			<posy>50</posy>
+			<width>250</width>
+			<height>250</height>
+			<info>ListItem.Icon</info>
+			<aspectratio>keep</aspectratio>
+		</control>
+		<control type="label">
+			<description>Song Title value</description>
+			<posx>45</posx>
+			<posy>300</posy>
+			<width>310</width>
+			<font>font12</font>
+			<info>ListItem.Title</info>
+		</control>
+		<control type="image">
+			<description>seperator</description>
+			<posx>45</posx>
+			<posy>325</posy>
+			<width>310</width>
+			<height>5</height>
+			<texture>separator.png</texture>
+		</control>
+		<control type="textbox">
+			<description>textarea</description>
+			<posx>405</posx>
+			<posy>90</posy>
+			<width>285</width>
+			<height>421</height>
+			<info>ListItem.Comment</info>
+			<onleft>5</onleft>
+			<onright>50</onright>
+			<onup>5</onup>
+			<ondown>5</ondown>
+			<textcolor>button-text</textcolor>
+			<spinposx>3100</spinposx>
+			<spinposy>1900</spinposy>
+		</control>
+		<control type="button" id="10">
+			<description>Yes button</description>
+			<posx>50</posx>
+			<posy>520</posy>
+			<width>120</width>
+			<height>37</height>
+			<label>186</label>
+			<align>center</align>
+			<textcolor>button-text</textcolor>
+			<onleft>15</onleft>
+			<onright>11</onright>
+			<onup>10</onup>
+			<ondown>10</ondown>
+		</control>
+		<control type="button" id="11">
+			<description>No button</description>
+			<posx>170</posx>
+			<posy>520</posy>
+			<width>120</width>
+			<height>37</height>
+			<label>222</label>
+			<align>center</align>
+			<onleft>10</onleft>
+			<onright>13</onright>
+			<onup>11</onup>
+			<ondown>11</ondown>
+		</control>
+		<control type="button" id="13">
+			<description>Get Thumb button</description>
+			<posx>290</posx>
+			<posy>520</posy>
+			<width>120</width>
+			<height>37</height>
+			<label>13405</label>
+			<align>center</align>
+			<onleft>11</onleft>
+			<onright>12</onright>
+			<onup>13</onup>
+			<ondown>13</ondown>
+		</control>
+		<control type="button" id="12">
+			<description>Album Info button</description>
+			<posx>410</posx>
+			<posy>520</posy>
+			<width>120</width>
+			<height>37</height>
+			<label>10523</label>
+			<align>center</align>
+			<onleft>13</onleft>
+			<onright>14</onright>
+			<onup>12</onup>
+			<ondown>12</ondown>
+		</control>
+		<control type="image">
+			<description>fake rating button</description>
+			<posx>530</posx>
+			<posy>520</posy>
+			<width>120</width>
+			<height>37</height>
+			<texture>default-button.png</texture>
+			<visible>[Control.HasFocus(14) | Control.HasFocus(15)]</visible>
+		</control>
+		<control type="label">
+			<description>Rating Button Label</description>
+			<posx>537</posx>
+			<posy>520</posy>
+			<width>70</width>
+			<height>37</height>
+			<aligny>center</aligny>
+			<include>rating</include>
+		</control>
+		<control type="button" id="14">
+			<description>Decrease Rating</description>
+			<posx>607</posx>
+			<posy>530</posy>
+			<width>15</width>
+			<height>15</height>
+			<onclick>DecreaseRating</onclick>
+			<texturenofocus>scroll-down.png</texturenofocus>
+			<texturefocus>scroll-down-focus.png</texturefocus>
+			<onleft>12</onleft>
+			<onright>15</onright>
+			<ondown>14</ondown>
+			<onup>14</onup>
+		</control>
+		<control type="button" id="15">
+			<description>Increase Rating</description>
+			<posx>625</posx>
+			<posy>530</posy>
+			<width>15</width>
+			<height>15</height>
+			<onclick>IncreaseRating</onclick>
+			<texturenofocus>scroll-up.png</texturenofocus>
+			<texturefocus>scroll-up-focus.png</texturefocus>
+			<onleft>14</onleft>
+			<onright>10</onright>
+			<ondown>15</ondown>
+			<onup>15</onup>
+		</control>
+	</controls>
+</window>

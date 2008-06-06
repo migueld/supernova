@@ -1,0 +1,389 @@
+<window id="502">
+	<defaultcontrol always="true">50</defaultcontrol>
+	<allowoverlay>yes</allowoverlay>
+	<previouswindow>Home</previouswindow>
+	<controls>
+		<include>background</include>
+		<include>#files</include>
+		<control type="image">
+			<description>Music Logo</description>
+			<include>icon-header-commons</include>
+			<include>icon-ani</include>
+			<texture>icon-music.png</texture>
+		</control>
+		<control type="image">
+			<description>Music Logo Reflection</description>
+			<include>icon-header-reflect-commons</include>
+			<include>icon-reflection-ani</include>
+			<texture flipy="true" diffuse="fade.png">icon-music.png</texture>
+		</control>
+		<control type="label">
+			<description>Music Label</description>
+			<posx>535</posx>
+			<posy>40</posy>
+			<label>31003</label>
+			<font>font20</font>
+			<textcolor>button-text</textcolor>
+		</control>
+		<control type="label">
+			<description>Album label</description>
+			<posx>45</posx>
+			<posy>320</posy>
+			<width>310</width>
+			<height>200</height>
+			<label>$INFO[ListItem.Album]</label>
+			<scroll>true</scroll>
+			<font>font12</font>
+			<textcolor>button-text</textcolor>
+			<visible>Control.IsVisible(50) + System.IdleTime(2)</visible>
+		</control>
+		<control type="label">
+			<description>Artist label</description>
+			<posx>60</posx>
+			<posy>370</posy>
+			<width>200</width>
+			<height>200</height>
+			<label>Artist:</label>
+			<font>font11</font>
+			<alignx>right</alignx>
+			<textcolor>FF9E9E9E</textcolor>
+			<visible>Control.IsVisible(50) + System.IdleTime(2)</visible>
+		</control>
+		<control type="label">
+			<description>Artist value</description>
+			<posx>110</posx>
+			<posy>370</posy>
+			<width>200</width>
+			<height>200</height>
+			<label>$INFO[ListItem.Artist]</label>
+			<scroll>true</scroll>
+			<font>font11</font>
+			<textcolor>button-text</textcolor>
+			<visible>Control.IsVisible(50) + System.IdleTime(2)</visible>
+		</control>
+		<control type="label">
+			<description>Genre label</description>
+			<posx>60</posx>
+			<posy>390</posy>
+			<width>200</width>
+			<height>200</height>
+			<label>Genre:</label>
+			<font>font11</font>
+			<alignx>right</alignx>
+			<textcolor>FF9E9E9E</textcolor>
+			<visible>Control.IsVisible(50) + System.IdleTime(2)</visible>
+		</control>
+		<control type="label">
+			<description>Genre value</description>
+			<posx>110</posx>
+			<posy>390</posy>
+			<width>200</width>
+			<height>200</height>
+			<label>$INFO[ListItem.Genre]</label>
+			<scroll>true</scroll>
+			<font>font11</font>
+			<textcolor>button-text</textcolor>
+			<visible>Control.IsVisible(50) + System.IdleTime(2)</visible>
+		</control>
+		<control type="label">
+			<description>Year label</description>
+			<posx>67</posx>
+			<posy>410</posy>
+			<width>200</width>
+			<height>200</height>
+			<label>Year:</label>
+			<font>font11</font>
+			<alignx>right</alignx>
+			<textcolor>FF9E9E9E</textcolor>
+			<visible>Control.IsVisible(50) + System.IdleTime(2)</visible>
+		</control>
+		<control type="label">
+			<description>Year label</description>
+			<posx>110</posx>
+			<posy>410</posy>
+			<width>200</width>
+			<height>200</height>
+			<label>$INFO[ListItem.Year]</label>
+			<font>font11</font>
+			<textcolor>button-text</textcolor>
+			<visible>Control.IsVisible(50) + System.IdleTime(2)</visible>
+		</control>
+		<control type="image">
+			<description>seperator</description>
+			<posx>45</posx>
+			<posy>360</posy>
+			<width>310</width>
+			<height>5</height>
+			<texture>separator.png</texture>
+			<visible>Control.IsVisible(50) + System.IdleTime(2)</visible>
+		</control>
+		<control type="image">
+			<description>seperator</description>
+			<posx>45</posx>
+			<posy>445</posy>
+			<width>310</width>
+			<height>5</height>
+			<texture>separator.png</texture>
+			<visible>Control.IsVisible(50) + System.IdleTime(2)</visible>
+		</control>
+		<control type="image" id="999">
+			<description>list item icon</description>
+			<posx>20</posx>
+			<posy>100</posy>
+			<width>350</width>
+			<height>350</height>
+			<info>ListItem.Icon</info>
+			<aspectratio>keep</aspectratio>
+			<visible>Control.IsVisible(50)</visible>
+			<include>list-fade</include>
+			<animation effect="zoom" end="80,50,250,250" time="150" condition="Control.IsVisible(50) + System.IdleTime(2)">Conditional</animation>
+		</control>
+		<control type="image">
+			<description>list item icon reflection</description>
+			<posx>20</posx>
+			<posy>450</posy>
+			<width>350</width>
+			<height>350</height>
+			<info>ListItem.Icon</info>
+			<texture flipy="true" diffuse="fade2.png">-</texture>
+			<aspectratio>keep</aspectratio>
+			<visible>Control.IsVisible(50) + !System.IdleTime(2)</visible>
+			<visible>!Window.Next(Home)</visible>
+			<include>list-fade</include>
+		</control>
+
+		<include>ListView</include>
+		<include>List2</include>
+		<include>IconView</include>
+		<include>BigIconView</include>
+		<include>WrapView</include>
+		<include>WideIconView</include>
+		<include>BigWideView</include>
+		<include>AlbumCoverflow</include>
+		<include>PageControl</include>
+		<control type="group">
+			<visible>!Skin.HasSetting(view-as-lock)</visible>
+			<control type="image">
+				<description>Background shadow</description>
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>720</width>
+				<height>576</height>
+				<texture>black.png</texture>
+				<include>button-fade</include>
+				<include>View-as</include>
+			</control>
+			<control type="image">
+				<description>Button Background</description>
+				<posx>260</posx>
+				<posy>170</posy>
+				<width>225</width>
+				<height>295</height>
+				<texture>button-menu-background.png</texture>
+				<include>button-fade</include>
+				<include>View-as</include>
+			</control>
+			<control type="button" id="2">
+				<description>View As Icons button</description>
+				<posx>270</posx>
+				<posy>180</posy>
+				<width>205</width>
+				<height>45</height>
+				<font>font12</font>
+				<label>100</label>
+				<textoffsetx>10</textoffsetx>
+				<aligny>center</aligny>
+				<texturefocus>default-button.png</texturefocus>
+				<texturenofocus>-</texturenofocus>
+				<onleft>50</onleft>
+				<onright>50</onright>
+				<onup>16</onup>
+				<ondown>3</ondown>
+				<textcolor>button-text</textcolor>
+				<include>button-fade</include>
+				<include>View-as</include>
+			</control>
+			<control type="button" id="3">
+				<description>Sort by button</description>
+				<posx>270</posx>
+				<posy>225</posy>
+				<width>205</width>
+				<height>45</height>
+				<font>font12</font>
+				<label>103</label>
+				<textoffsetx>10</textoffsetx>
+				<texturefocus>default-button.png</texturefocus>
+				<texturenofocus>-</texturenofocus>
+				<onleft>50</onleft>
+				<onright>4</onright>
+				<onup>2</onup>
+				<ondown>5</ondown>
+				<textcolor>button-text</textcolor>
+				<include>button-fade</include>
+				<include>View-as</include>
+			</control>
+			<control type="togglebutton" id="4">
+				<description>Sort asc</description>
+				<posx>440</posx>
+				<posy>240</posy>
+				<label>-</label>
+				<onleft>3</onleft>
+				<onright>50</onright>
+				<onup>2</onup>
+				<ondown>5</ondown>
+				<include>button-fade</include>
+				<include>View-as</include>
+			</control>
+			<control type="radiobutton" id="5">
+				<description>Library button</description>
+				<posx>270</posx>
+				<posy>270</posy>
+				<width>205</width>
+				<height>45</height>
+				<font>font12</font>
+				<textoffsetx>10</textoffsetx>
+				<label>$LOCALIZE[14022] $LOCALIZE[456]</label>
+				<onclick>ReplaceWindow(mymusicfiles)</onclick>
+				<selected>Window.IsVisible(mymusiclibrary)</selected>
+				<onleft>50</onleft>
+				<onright>50</onright>
+				<onup>3</onup>
+				<ondown>8</ondown>
+				<textcolor>button-text</textcolor>
+				<include>button-fade</include>
+				<include>View-as</include>
+			</control>
+			<control type="button" id="8">
+				<description>Search button</description>
+				<posx>270</posx>
+				<posy>315</posy>
+				<width>205</width>
+				<height>45</height>
+				<font>font12</font>
+				<label>137</label>
+				<textoffsetx>10</textoffsetx>
+				<onleft>50</onleft>
+				<onright>50</onright>
+				<onup>5</onup>
+				<ondown>17</ondown>
+				<textcolor>button-text</textcolor>
+				<include>button-fade</include>
+				<include>View-as</include>
+			</control>
+			<control type="button" id="17">
+				<description>CDDB Button</description>
+				<posx>270</posx>
+				<posy>360</posy>
+				<width>205</width>
+				<height>45</height>
+				<font>font12</font>
+				<label>31014</label>
+				<textoffsetx>10</textoffsetx>
+				<onleft>50</onleft>
+				<onright>50</onright>
+				<onup>8</onup>
+				<ondown>16</ondown>
+				<textcolor>button-text</textcolor>
+				<include>button-fade</include>
+				<include>View-as</include>
+			</control>
+			<control type="radiobutton" id="16">
+				<description>Party Mode button</description>
+				<posx>270</posx>
+				<posy>405</posy>
+				<width>205</width>
+				<height>45</height>
+				<font>font12</font>
+				<label>589</label>
+				<onleft>50</onleft>
+				<onright>50</onright>
+				<textoffsetx>10</textoffsetx>
+				<onup>17</onup>
+				<ondown>2</ondown>
+				<textcolor>button-text</textcolor>
+				<include>button-fade</include>
+				<include>View-as</include>
+			</control>
+			<!-- media infos (music) -->
+			<control type="image">
+				<description>cover image</description>
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>116</width>
+				<height>99</height>
+				<info>MusicPlayer.Cover</info>
+				<aspectratio>keep</aspectratio>
+				<visible>Skin.HasSetting(overlay) + !System.IdleTime(2)</visible>
+			</control>
+			<control type="label">
+				<description>Artist label</description>
+				<width>235</width>
+				<posx>118</posx>
+				<posy>5</posy>
+				<info>MusicPlayer.Artist</info>
+				<align>left</align>
+				<font>font10</font>
+				<visible>Skin.HasSetting(overlay) + !System.IdleTime(2)</visible>
+			</control>
+			<control type="label">
+				<description>Title label</description>
+				<width>235</width>
+				<posx>118</posx>
+				<posy>30</posy>
+				<info>MusicPlayer.Title</info>
+				<align>left</align>
+				<font>font12</font>
+				<visible>Skin.HasSetting(overlay) + !System.IdleTime(2)</visible>
+			</control>
+			<control type="label">
+				<description>Album label</description>
+				<width>235</width>
+				<posx>118</posx>
+				<posy>55</posy>
+				<info>MusicPlayer.Album</info>
+				<align>left</align>
+				<font>font10</font>
+				<visible>Skin.HasSetting(overlay) + !System.IdleTime(2)</visible>
+			</control>
+			<control type="label">
+				<description>Time label</description>
+				<width>235</width>
+				<posx>118</posx>
+				<posy>70</posy>
+				<label>$INFO[MusicPlayer.Time]$INFO[MusicPlayer.Duration, / ]</label>
+				<align>left</align>
+				<font>font10</font>
+				<visible>Skin.HasSetting(overlay) + !System.IdleTime(2)</visible>
+			</control>
+			<!-- media infos (video) -->
+			<control type="videowindow">
+				<description>video preview window</description>
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>116</width>
+				<height>99</height>
+				<visible>Skin.HasSetting(overlay) + !System.IdleTime(2)</visible>
+			</control>
+			<control type="label">
+				<description>Video Title label</description>
+				<width>235</width>
+				<posx>118</posx>
+				<posy>5</posy>
+				<info>VideoPlayer.Title</info>
+				<align>left</align>
+				<font>font12</font>
+				<visible>Skin.HasSetting(overlay) + !System.IdleTime(2)</visible>
+			</control>
+			<control type="label">
+				<description>Time label</description>
+				<width>235</width>
+				<posx>118</posx>
+				<posy>30</posy>
+				<label>$INFO[Player.Time]$INFO[Player.Duration, / ]</label>
+				<align>left</align>
+				<font>font10</font>
+				<visible>[Skin.HasSetting(overlay) + Player.HasVideo] + !System.IdleTime(2)</visible>
+			</control>
+		</control>
+	</controls>
+</window>  

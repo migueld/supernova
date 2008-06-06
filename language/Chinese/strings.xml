@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<strings>
+	<!-- Start home strings -->
+	<string id="31001">電影</string>
+	<string id="31002">程式</string>
+	<string id="31003">音樂</string>
+	<string id="31004">圖片</string>
+	<string id="31005">氣象</string>
+	<string id="31006">檔案</string>
+	<string id="31007">腳本</string>
+	<string id="31008">設定</string>
+	<string id="31009">播放碟片</string>
+	<string id="31010">電視節目</string>
+	<!-- End home strings -->
+
+	<!-- Start video strings -->
+	<string id="31011">電影預告</string>
+	<string id="31012">影片播放列表</string>
+	<!-- End video strings -->
+
+	<!-- Start programs strings -->
+	<string id="31013">遊戲存檔</string>
+	<!-- End programs strings -->
+
+	<!-- Start music strings -->
+	<string id="31014">CDDB</string>
+	<!-- End music strings -->
+
+	<!-- Start system strings -->
+	<string id="31015">系統</string>
+	<string id="31016">檔案總管</string>
+	<string id="31017">腳本</string>
+	<string id="31018">遊戲存檔</string>
+	<string id="31019">預設檔</string>
+	<string id="31020">桌面設定</string>
+	<string id="31021">關於 xTV</string>
+	<string id="31022">關機選單</string>
+	<string id="31023">系統資訊</string>
+	<!-- End system strings -->
+
+	<!-- Begin skin settings strings -->
+	<string id="31024">啟用滑動軸</string>
+	<string id="31025">啟用媒體透視效果</string>
+	<string id="31026">啟用已播出透視效果</string>
+	<string id="31027">啟用現正播出螢幕</string>
+	<string id="31028">改變字體顏色</string>
+	<string id="31029">現正播出視覺效果</string>
+	<string id="31030">選用自訂背景</string>
+	<string id="31031">重設自訂背景</string>
+	<string id="31032">背景視覺效果</string>
+	<string id="31033">電影資料庫連結按鈕</string>
+	<string id="31068">資訊</string>
+	<string id="31069">下載主題</string>
+	<string id="31070">一般</string>
+	<string id="31071">背景</string>
+	<string id="31072">主頁面</string>
+	<string id="31073">傾斜列表瀏覽圖示</string>
+	<string id="31074">鎖定 "瀏覽方式" 面板</string>
+	<string id="31075">啟用啟動時播放列表</string>
+	<string id="31076">選擇播放列表</string>
+	<string id="31077">電視節目按鈕在主選單</string>
+	<string id="31078">YouTube 按鈕在主選單</string>
+	<string id="31079">氣象按鈕在主選單</string>
+	<!-- End skin settings strings -->
+
+	<!-- Start progress strings -->
+	<string id="31034">設定</string>
+	<string id="31035">影片</string>
+	<string id="31036">音樂</string>
+	<string id="31037">書籤</string>
+	<string id="31038">歌詞</string>
+	<string id="31039">預設</string>
+	<string id="31040">視覺效果</string>
+	<string id="31041">播放列表</string>
+	<string id="31042">停止</string>
+	<string id="31043">暫停</string>
+	<string id="31044">播放</string>
+	<string id="31045">暫停中</string>
+	<string id="31046">播放中</string>
+	<string id="31047">DVD 選單</string>
+	<string id="31048">側錄</string>
+	<string id="31049">側錄中</string>
+	<string id="31050">|-跳過</string>
+	<string id="31051">跳過-|</string>
+	<string id="31052">回轉</string>
+	<string id="31053">回轉-2x</string>
+	<string id="31054">回轉-4x</string>
+	<string id="31055">回轉-8x</string>
+	<string id="31056">回轉-16x</string>
+	<string id="31057">回轉-32x</string>
+	<string id="31058">前進</string>
+	<string id="31059">前進-2x</string>
+	<string id="31060">前進-4x</string>
+	<string id="31061">前進-8x</string>
+	<string id="31062">前進-16x</string>
+	<string id="31063">前進-32x</string>
+	<!-- End progress strings -->
+
+	<!-- Begin weather strings -->
+	<string id="31064">最高溫</string>
+	<string id="31065">最低溫</string>
+	<!-- End weather strings -->
+
+	<!-- Begin Misc. strings -->
+	<string id="31066">靜音中</string>
+	<string id="31067">我的最愛</string>
+	<!-- End Misc. strings -->
+</strings>

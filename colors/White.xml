@@ -1,0 +1,15 @@
+<colors>
+	<color name="button-text">FF000000</color>
+	<color name="rss-headline-text">FF000000</color>
+	<color name="rss-title-text">ff0066cc</color>
+	<color name="info-text">ff0066cc</color>
+	<color name="listselectedtext">ff0066cc</color>
+	<color name="listselectedcolor">ff0066cc</color>
+	<color name="kai-text-alpha">55000000F</color>
+	<color name="kai-text">FFFF0000</color>
+	<color name="disabled-text">FF000000</color>
+	<color name="osd-nf">77FFFFFF</color>
+	<color name="recording-nf">77EE0000</color>
+	<color name="recording">FFEE0000</color>
+	<color name="shutdown-text">77000000</color>
+</colors>

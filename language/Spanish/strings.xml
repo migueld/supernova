@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<strings>
+	<!-- Start home strings -->
+	<string id="31001">Películas</string>
+	<string id="31002">Programas</string>
+	<string id="31003">Música</string>
+	<string id="31004">Fotos</string>
+	<string id="31005">El Tiempo</string>
+	<string id="31006">Archivos</string>
+	<string id="31007">Scripts</string>
+	<string id="31008">Configuración</string>
+	<string id="31009">Reproducir Disco</string>
+	<string id="31010">Programas de TV</string>
+	<!-- End home strings -->
+
+	<!-- Start video strings -->
+	<string id="31011">Trailers de Películas</string>
+	<string id="31012">Lista de Reproducción de Videos</string>
+	<!-- End video strings -->
+
+	<!-- Start programs strings -->
+	<string id="31013">Partidas guardadas</string>
+	<!-- End programs strings -->
+
+	<!-- Start music strings -->
+	<string id="31014">CDDB</string>
+	<!-- End music strings -->
+
+	<!-- Start system strings -->
+	<string id="31015">Sistema</string>
+	<string id="31016">Administrador de Archivos</string>
+	<string id="31017">Scripts</string>
+	<string id="31018">Partidas guardadas</string>
+	<string id="31019">Perfiles</string>
+	<string id="31020">Configuración del Skin</string>
+	<string id="31021">Acerca de xTV</string>
+	<string id="31022">Power Menu</string>
+	<string id="31023">Informacíon del Sistema</string>
+	<!-- End system strings -->
+
+	<!-- Begin skin settings strings -->
+	<string id="31024">Usar Barra de Desplazamiento</string>
+	<string id="31025">Usar Sobreimpresión de Medios</string>
+	<string id="31026">Usar Sobreimpresión del Estado de Visualización</string>
+	<string id="31027">Usar pantallas Ahora Reproduciendo</string>
+	<string id="31028">Cambiar el color de la fuente</string>
+	<string id="31029">Visualizaciones del estilo de Ahora Reproduciendo</string>
+	<string id="31030">Elegir fondo personalizado</string>
+	<string id="31031">Fondo de Encargo Reinicializado</string>
+	<string id="31032">Visuals Detrás de Fondo</string>
+	<string id="31033">Botón de Películas Une para Biblioteca</string>
+	<string id="31068">Información</string>
+	<string id="31069">Temas de Telecarga</string>
+	<string id="31070">General</string>
+	<string id="31071">Fondo</string>
+	<string id="31072">Ventana de Casa</string>
+	<string id="31073">Iconos de Vista de Lista de Inclinación</string>
+	<string id="31074">Cerradura "Vista Como" Panel</string>
+	<string id="31075">Arranque de Uso Playlist</string>
+	<string id="31076">Elija Playlist</string>
+	<string id="31077">Programas de televisión En Menú de Casa</string>
+	<string id="31078">YouTube En Menú de Casa</string>
+	<string id="31079">Tiempo En Menú de Casa</string>
+	<!-- End skin settings strings -->
+
+	<!-- Start progress strings -->
+	<string id="31034">Configuración</string>
+	<string id="31035">Video</string>
+	<string id="31036">Audio</string>
+	<string id="31037">Favoritos</string>
+	<string id="31038">Letras</string>
+	<string id="31039">Presintonias</string>
+	<string id="31040">Visualizaciónes</string>
+	<string id="31041">Listas de Reproducción</string>
+	<string id="31042">Parar</string>
+	<string id="31043">Pausa</string>
+	<string id="31044">Reproducir</string>
+	<string id="31045">Pausado</string>
+	<string id="31046">Reproduciendo</string>
+	<string id="31047">Menu del DVD</string>
+	<string id="31048">Grabar</string>
+	<string id="31049">Grabando</string>
+	<string id="31050">|-Saltar</string>
+	<string id="31051">Saltar-|</string>
+	<string id="31052">Rebobinar</string>
+	<string id="31053">Rebobinar-2x</string>
+	<string id="31054">Rebobinar-4x</string>
+	<string id="31055">Rebobinar-8x</string>
+	<string id="31056">Rebobinar-16x</string>
+	<string id="31057">Rebobinar-32x</string>
+	<string id="31058">Adelantar</string>
+	<string id="31059">Adelantar-2x</string>
+	<string id="31060">Adelantar-4x</string>
+	<string id="31061">Adelantar-8x</string>
+	<string id="31062">Adelantar-16x</string>
+	<string id="31063">Adelantar-32x</string>
+	<!-- End progress strings -->
+
+	<!-- Begin weather strings -->
+	<string id="31064">Alto</string>
+	<string id="31065">Bajo</string>
+	<!-- End weather strings -->
+
+	<!-- Begin Misc. strings -->
+	<string id="31066">Silenciado</string>
+	<string id="31067">Favoritos</string>
+	<!-- End Misc. strings -->
+</strings>

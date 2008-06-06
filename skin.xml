@@ -1,0 +1,14 @@
+<skin>
+  <defaultresolution>pal</defaultresolution>
+  <defaultresolutionwide>pal16x9</defaultresolutionwide>
+  <version>2.1</version>
+  
+  <credits>
+    <skinname>CenterStage</skinname>
+    <name>by David McLoud</name>
+    <name>Enrique Osuna</name>
+    <name>Jan Litzinger</name>
+    <name>Thanks to the CenterStageProject Team</name>
+
+  </credits>
+</skin>

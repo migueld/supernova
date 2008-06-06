@@ -1,0 +1,61 @@
+﻿<window id="104">
+	<defaultcontrol>1</defaultcontrol>
+	<coordinates>
+		<system>1</system>
+		<posx>560</posx>
+		<posy>10</posy>
+	</coordinates>
+	<controls>
+		<control type="image" id="0">
+			<description>Popup Volume Dialog Background</description>
+			<posx>1</posx>
+			<posy>2</posy>
+			<width>140</width>
+			<height>90</height>
+			<texture>button-menu-background-solid.png</texture>
+			<visible>!Window.IsActive(113)</visible>
+		</control>
+		<control type="progress">
+			<description>progress control</description>
+			<posx>10</posx>
+			<posy>49</posy>
+			<width>120</width>
+			<height>17</height>
+			<info>Player.Volume</info>
+			<texturebg>volume-back.png</texturebg>
+			<lefttexture>-</lefttexture>
+			<midtexture>progress-middle.png</midtexture>
+			<righttexture>-</righttexture>
+			<overlaytexture>-</overlaytexture>
+			<visible>!Window.IsActive(113)</visible>
+		</control>
+		<control type="image">
+			<description>Volume bar overlay</description>
+			<posx>10</posx>
+			<posy>64</posy>
+			<width>120</width>
+			<height>20</height>
+			<texture>volume-overlay.png</texture>
+			<visible>!Window.IsActive(113)</visible>
+		</control>
+		<control type="label" id="0">
+			<description>Volume Label</description>
+			<posx>123</posx>
+			<posy>25</posy>
+			<font>font10</font>
+			<align>right</align>
+			<info>Player.Volume</info>
+			<width>70</width>
+			<height>16</height>
+			<visible>!Window.IsActive(113)</visible>
+		</control>
+		<control type="image">
+			<posx>16</posx>
+			<posy>15</posy>
+			<width>60</width>
+			<height>60</height>
+			<texture>volume-thingy.png</texture>
+			<visible>!Window.IsActive(113)</visible>
+		</control>
+	</controls>
+</window>

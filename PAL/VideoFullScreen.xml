@@ -1,0 +1,124 @@
+﻿<window id="2005">
+	<defaultcontrol>13</defaultcontrol>
+	<visible>!Window.IsActive(2004)</visible>
+	<allowoverlay>no</allowoverlay>
+	<controls>
+		<!-- codec infos -->
+		<control type="image">
+			<description>media info background image</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>760</width>
+			<height>120</height>
+			<texture>sub-background-label.png</texture>
+		</control>
+		<control type="label" id="10">
+			<description>row 1 label</description>
+			<posx>70</posx>
+			<posy>10</posy>
+			<label>-</label>
+			<align>left</align>
+			<font>font12</font>
+		</control>
+		<control type="label" id="11">
+			<description>row 2 label</description>
+			<posx>70</posx>
+			<posy>30</posy>
+			<label>-</label>
+			<align>left</align>
+			<font>font12</font>
+		</control>
+		<control type="label" id="12">
+			<description>row 3 label</description>
+			<posx>70</posx>
+			<posy>50</posy>
+			<label>-</label>
+			<align>left</align>
+			<font>font12</font>
+		</control>
+		<!-- buffering dialog -->
+		<control type="label" id="24">
+			<description>buffering label</description>
+			<posx>210</posx>
+			<posy>520</posy>
+			<label>15107</label>
+			<width>291</width>
+			<align>center</align>
+			<font>font12</font>
+			<textcolor>button-text</textcolor>
+		</control>
+		<!-- media infos -->
+		<control type="image" id="1">
+			<description>media info background image</description>
+			<posx>-10</posx>
+			<posy>436</posy>
+			<width>760</width>
+			<height>140</height>
+			<texture>sub-background.png</texture>
+			<visible>Player.ShowInfo</visible>
+		</control>
+		<control type="image" id="1">
+			<description>cover image</description>
+			<posx>75</posx>
+			<posy>445</posy>
+			<width>100</width>
+			<height>100</height>
+			<info>videoplayer.cover</info>
+			<aspectratio>keep</aspectratio>
+			<visible>player.ShowInfo</visible>
+		</control>
+		<control type="label" id="1">
+			<description>current_event_name</description>
+			<width>350</width>
+			<posx>180</posx>
+			<posy>497</posy>
+			<info>videoplayer.title</info>
+			<align>left</align>
+			<scroll>true</scroll>
+			<font>special13</font>
+			<visible>Player.ShowInfo</visible>
+		</control>
+		<control type="label" id="4">
+			<description>current_event_year</description>
+			<width>430</width>
+			<posx>180</posx>
+			<posy>520</posy>
+			<info>VideoPlayer.Year</info>
+			<align>left</align>
+			<scroll>true</scroll>
+			<font>font12</font>
+			<visible>Player.ShowInfo</visible>
+		</control>
+		<control type="label" id="6">
+			<description>Current Progress Label</description>
+			<posx>595</posx>
+			<posy>497</posy>
+			<font>special13</font>
+			<align>right</align>
+			<info>Player.Time</info>
+			<width>100</width>
+			<visible>Player.ShowInfo</visible>
+		</control>
+		<control type="label" id="5">
+			<description>Length Label</description>
+			<width>200</width>
+			<posx>600</posx>
+			<posy>497</posy>
+			<align>left</align>
+			<font>special13</font>
+			<label>$INFO[Player.Duration,/ ]</label>
+			<visible>Player.ShowInfo</visible>
+		</control>
+		<control type="label" id="2">
+			<description>current_event_description</description>
+			<width>200</width>
+			<posx>690</posx>
+			<posy>520</posy>
+			<info>videoplayer.genre</info>
+			<align>right</align>
+			<scroll>true</scroll>
+			<font>font12</font>
+			<visible>Player.ShowInfo</visible>
+		</control>
+	</controls>
+</window>

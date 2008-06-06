@@ -1,0 +1,604 @@
+﻿<window id="2901">
+	<defaultcontrol>213</defaultcontrol>
+	<animation effect="fade" start="0" time="300">WindowOpen</animation>
+	<animation effect="fade" end="0" time="300">WindowClose</animation>
+	<coordinates>
+		<system>1</system>
+		<posx>110</posx>
+		<posy>491</posy>
+	</coordinates>
+	<controls>
+		<control type="image">
+			<description>Panel</description>
+			<posx>-17</posx>
+			<posy>-8</posy>
+			<height>106</height>
+			<width>523</width>
+			<texture>osd-panel.png</texture>
+			<visible>!VideoPlayer.HasMenu</visible>
+		</control>
+		<control type="image">
+			<description>Panel</description>
+			<posx>-47</posx>
+			<posy>-8</posy>
+			<height>106</height>
+			<width>587</width>
+			<texture>osd-panel.png</texture>
+			<visible>VideoPlayer.HasMenu</visible>
+		</control>
+		<!-- Start OSD Text Without DVD Menu Option -->
+		<control type="label">
+			<description>skip back text nf</description>
+			<posx>2</posx>
+			<posy>28</posy>
+			<font>font11</font>
+			<textcolor>osd-nf</textcolor>
+			<label>31050</label>
+			<visible>!VideoPlayer.HasMenu</visible>
+		</control>
+		<control type="label">
+			<description>skip back text fo</description>
+			<posx>2</posx>
+			<posy>28</posy>
+			<font>font11</font>
+			<textcolor>button-text</textcolor>
+			<label>31050</label>
+			<visible>Control.HasFocus(210)</visible>
+			<visible>!VideoPlayer.HasMenu</visible>
+		</control>
+		<control type="label">
+			<description>rewind text nf</description>
+			<posx>48</posx>
+			<posy>28</posy>
+			<font>font11</font>
+			<textcolor>osd-nf</textcolor>
+			<label>31052</label>
+			<visible>!VideoPlayer.HasMenu</visible>
+		</control>
+		<control type="label">
+			<description>rewind text fo</description>
+			<posx>48</posx>
+			<posy>28</posy>
+			<font>font11</font>
+			<textcolor>button-text</textcolor>
+			<label>31052</label>
+			<visible>Control.HasFocus(211)</visible>
+			<visible>!VideoPlayer.HasMenu</visible>
+		</control>
+		<control type="label">
+			<description>play text nf</description>
+			<posx>106</posx>
+			<posy>28</posy>
+			<font>font11</font>
+			<textcolor>osd-nf</textcolor>
+			<label>31044</label>
+			<visible>Player.Paused | Player.Rewinding | Player.Forwarding</visible>
+			<visible>!VideoPlayer.HasMenu</visible>
+		</control>
+		<control type="label">
+			<description>play text fo</description>
+			<posx>106</posx>
+			<posy>28</posy>
+			<font>font11</font>
+			<textcolor>button-text</textcolor>
+			<label>31044</label>
+			<visible>[Player.Paused | Player.Rewinding | Player.Forwarding] + Control.HasFocus(213)</visible>
+			<visible>!VideoPlayer.HasMenu</visible>
+		</control>
+		<control type="label">
+			<description>pause text nf</description>
+			<posx>106</posx>
+			<posy>28</posy>
+			<font>font11</font>
+			<textcolor>osd-nf</textcolor>
+			<label>31043</label>
+			<visible>![Player.Paused | Player.Rewinding | Player.Forwarding]</visible>
+			<visible>!VideoPlayer.HasMenu</visible>
+		</control>
+		<control type="label">
+			<description>pause text fo</description>
+			<posx>106</posx>
+			<posy>28</posy>
+			<font>font11</font>
+			<textcolor>button-text</textcolor>
+			<label>31043</label>
+			<visible>![Player.Paused | Player.Rewinding | Player.Forwarding] + Control.HasFocus(213)</visible>
+			<visible>!VideoPlayer.HasMenu</visible>
+		</control>
+		<control type="label">
+			<description>forward text nf</description>
+			<posx>153</posx>
+			<posy>28</posy>
+			<font>font11</font>
+			<textcolor>osd-nf</textcolor>
+			<label>31058</label>
+			<visible>!VideoPlayer.HasMenu</visible>
+		</control>
+		<control type="label">
+			<description>forward text fo</description>
+			<posx>153</posx>
+			<posy>28</posy>
+			<font>font11</font>
+			<textcolor>button-text</textcolor>
+			<label>31058</label>
+			<visible>Control.HasFocus(214)</visible>
+			<visible>!VideoPlayer.HasMenu</visible>
+		</control>
+		<control type="label">
+			<description>skip forward text nf</description>
+			<posx>215</posx>
+			<posy>28</posy>
+			<font>font11</font>
+			<textcolor>osd-nf</textcolor>
+			<label>31051</label>
+			<visible>!VideoPlayer.HasMenu</visible>
+		</control>
+		<control type="label">
+			<description>skip forward text fo</description>
+			<posx>215</posx>
+			<posy>28</posy>
+			<font>font11</font>
+			<textcolor>button-text</textcolor>
+			<label>31051</label>
+			<visible>Control.HasFocus(215)</visible>
+			<visible>!VideoPlayer.HasMenu</visible>
+		</control>
+		<control type="label">
+			<description>playlist text nf</description>
+			<posx>263</posx>
+			<posy>28</posy>
+			<font>font11</font>
+			<textcolor>osd-nf</textcolor>
+			<label>31041</label>
+			<visible>!VideoPlayer.HasMenu</visible>
+		</control>
+		<control type="label">
+			<description>playlist text fo</description>
+			<posx>263</posx>
+			<posy>28</posy>
+			<font>font11</font>
+			<textcolor>button-text</textcolor>
+			<label>31041</label>
+			<visible>Control.HasFocus(918)</visible>
+			<visible>!VideoPlayer.HasMenu</visible>
+		</control>
+		<control type="label">
+			<description>audio text nf</description>
+			<posx>319</posx>
+			<posy>28</posy>
+			<font>font11</font>
+			<textcolor>osd-nf</textcolor>
+			<label>31036</label>
+			<visible>!VideoPlayer.HasMenu</visible>
+		</control>
+		<control type="label">
+			<description>audio text fo</description>
+			<posx>319</posx>
+			<posy>28</posy>
+			<font>font11</font>
+			<textcolor>button-text</textcolor>
+			<label>31036</label>
+			<visible>Control.HasFocus(921)</visible>
+			<visible>!VideoPlayer.HasMenu</visible>
+		</control>
+		<control type="label">
+			<description>video text nf</description>
+			<posx>366</posx>
+			<posy>28</posy>
+			<font>font11</font>
+			<textcolor>osd-nf</textcolor>
+			<label>31035</label>
+			<visible>!VideoPlayer.HasMenu</visible>
+		</control>
+		<control type="label">
+			<description>video text fo</description>
+			<posx>366</posx>
+			<posy>28</posy>
+			<font>font11</font>
+			<textcolor>button-text</textcolor>
+			<label>31035</label>
+			<visible>Control.HasFocus(920)</visible>
+			<visible>!VideoPlayer.HasMenu</visible>
+		</control>
+		<control type="label">
+			<description>bookmarks text nf</description>
+			<posx>410</posx>
+			<posy>28</posy>
+			<font>font11</font>
+			<textcolor>osd-nf</textcolor>
+			<label>31037</label>
+			<visible>!VideoPlayer.HasMenu</visible>
+		</control>
+		<control type="label">
+			<description>bookmarks text fo</description>
+			<posx>410</posx>
+			<posy>28</posy>
+			<font>font11</font>
+			<textcolor>button-text</textcolor>
+			<label>31037</label>
+			<visible>Control.HasFocus(919)</visible>
+			<visible>!VideoPlayer.HasMenu</visible>
+		</control>
+		<!-- End OSD Text Without DVD Menu Option -->
+		<!-- Start OSD Text With DVD Menu Option -->
+		<control type="label">
+			<description>skip back text nf</description>
+			<posx>-28</posx>
+			<posy>28</posy>
+			<font>font11</font>
+			<textcolor>osd-nf</textcolor>
+			<label>31050</label>
+			<visible>VideoPlayer.HasMenu</visible>
+		</control>
+		<control type="label">
+			<description>skip back text fo</description>
+			<posx>-28</posx>
+			<posy>28</posy>
+			<font>font11</font>
+			<textcolor>button-text</textcolor>
+			<label>31050</label>
+			<visible>Control.HasFocus(210)</visible>
+			<visible>VideoPlayer.HasMenu</visible>
+		</control>
+		<control type="label">
+			<description>rewind text nf</description>
+			<posx>18</posx>
+			<posy>28</posy>
+			<font>font11</font>
+			<textcolor>osd-nf</textcolor>
+			<label>31052</label>
+			<visible>VideoPlayer.HasMenu</visible>
+		</control>
+		<control type="label">
+			<description>rewind text fo</description>
+			<posx>18</posx>
+			<posy>28</posy>
+			<font>font11</font>
+			<textcolor>button-text</textcolor>
+			<label>31052</label>
+			<visible>Control.HasFocus(211)</visible>
+			<visible>VideoPlayer.HasMenu</visible>
+		</control>
+		<control type="label">
+			<description>play text nf</description>
+			<posx>75</posx>
+			<posy>28</posy>
+			<font>font11</font>
+			<textcolor>osd-nf</textcolor>
+			<label>31044</label>
+			<visible>Player.Paused | Player.Rewinding | Player.Forwarding</visible>
+			<visible>VideoPlayer.HasMenu</visible>
+		</control>
+		<control type="label">
+			<description>play text fo</description>
+			<posx>75</posx>
+			<posy>28</posy>
+			<font>font11</font>
+			<textcolor>button-text</textcolor>
+			<label>31044</label>
+			<visible>[Player.Paused | Player.Rewinding | Player.Forwarding] + Control.HasFocus(213)</visible>
+			<visible>VideoPlayer.HasMenu</visible>
+		</control>
+		<control type="label">
+			<description>pause text nf</description>
+			<posx>75</posx>
+			<posy>28</posy>
+			<font>font11</font>
+			<textcolor>osd-nf</textcolor>
+			<label>31043</label>
+			<visible>![Player.Paused | Player.Rewinding | Player.Forwarding]</visible>
+			<visible>VideoPlayer.HasMenu</visible>
+		</control>
+		<control type="label">
+			<description>pause text fo</description>
+			<posx>75</posx>
+			<posy>28</posy>
+			<font>font11</font>
+			<textcolor>button-text</textcolor>
+			<label>31043</label>
+			<visible>![Player.Paused | Player.Rewinding | Player.Forwarding] + Control.HasFocus(213)</visible>
+			<visible>VideoPlayer.HasMenu</visible>
+		</control>
+		<control type="label">
+			<description>forward text nf</description>
+			<posx>120</posx>
+			<posy>28</posy>
+			<font>font11</font>
+			<textcolor>osd-nf</textcolor>
+			<label>31058</label>
+			<visible>VideoPlayer.HasMenu</visible>
+		</control>
+		<control type="label">
+			<description>forward text fo</description>
+			<posx>120</posx>
+			<posy>28</posy>
+			<font>font11</font>
+			<textcolor>button-text</textcolor>
+			<label>31058</label>
+			<visible>Control.HasFocus(214)</visible>
+			<visible>VideoPlayer.HasMenu</visible>
+		</control>
+		<control type="label">
+			<description>skip forward text nf</description>
+			<posx>179</posx>
+			<posy>28</posy>
+			<font>font11</font>
+			<textcolor>osd-nf</textcolor>
+			<label>31051</label>
+			<visible>VideoPlayer.HasMenu</visible>
+		</control>
+		<control type="label">
+			<description>skip forward text fo</description>
+			<posx>179</posx>
+			<posy>28</posy>
+			<font>font11</font>
+			<textcolor>button-text</textcolor>
+			<label>31051</label>
+			<visible>Control.HasFocus(215)</visible>
+			<visible>VideoPlayer.HasMenu</visible>
+		</control>
+		<control type="label">
+			<description>playlist text nf</description>
+			<posx>225</posx>
+			<posy>28</posy>
+			<width>100</width>
+			<font>font11</font>
+			<textcolor>osd-nf</textcolor>
+			<label>31041</label>
+			<visible>VideoPlayer.HasMenu</visible>
+		</control>
+		<control type="label">
+			<description>playlist text fo</description>
+			<posx>225</posx>
+			<posy>28</posy>
+			<width>100</width>
+			<font>font11</font>
+			<textcolor>button-text</textcolor>
+			<label>31041</label>
+			<visible>Control.HasFocus(918)</visible>
+			<visible>VideoPlayer.HasMenu</visible>
+		</control>
+		<control type="label">
+			<description>audio text nf</description>
+			<posx>281</posx>
+			<posy>28</posy>
+			<font>font11</font>
+			<textcolor>osd-nf</textcolor>
+			<label>31036</label>
+			<visible>VideoPlayer.HasMenu</visible>
+		</control>
+		<control type="label">
+			<description>audio text fo</description>
+			<posx>281</posx>
+			<posy>28</posy>
+			<font>font11</font>
+			<textcolor>button-text</textcolor>
+			<label>31036</label>
+			<visible>Control.HasFocus(921)</visible>
+			<visible>VideoPlayer.HasMenu</visible>
+		</control>
+		<control type="label">
+			<description>video text nf</description>
+			<posx>327</posx>
+			<posy>28</posy>
+			<font>font11</font>
+			<textcolor>osd-nf</textcolor>
+			<label>31035</label>
+			<visible>VideoPlayer.HasMenu</visible>
+		</control>
+		<control type="label">
+			<description>video text fo</description>
+			<posx>327</posx>
+			<posy>28</posy>
+			<font>font11</font>
+			<textcolor>button-text</textcolor>
+			<label>31035</label>
+			<visible>Control.HasFocus(920)</visible>
+			<visible>VideoPlayer.HasMenu</visible>
+		</control>
+		<control type="label">
+			<description>bookmarks text nf</description>
+			<posx>373</posx>
+			<posy>28</posy>
+			<font>font11</font>
+			<textcolor>osd-nf</textcolor>
+			<label>31037</label>
+			<visible>VideoPlayer.HasMenu</visible>
+		</control>
+		<control type="label">
+			<description>bookmarks text fo</description>
+			<posx>373</posx>
+			<posy>28</posy>
+			<font>font11</font>
+			<textcolor>button-text</textcolor>
+			<label>31037</label>
+			<visible>Control.HasFocus(919)</visible>
+			<visible>VideoPlayer.HasMenu</visible>
+		</control>
+		<control type="label">
+			<description>DVD menu text nf</description>
+			<posx>450</posx>
+			<posy>28</posy>
+			<font>font11</font>
+			<textcolor>osd-nf</textcolor>
+			<label>31047</label>
+			<visible>VideoPlayer.HasMenu</visible>
+		</control>
+		<control type="label">
+			<description>DVD menu text fo</description>
+			<posx>450</posx>
+			<posy>28</posy>
+			<font>font11</font>
+			<textcolor>button-text</textcolor>
+			<label>31047</label>
+			<visible>Control.HasFocus(208)</visible>
+			<visible>VideoPlayer.HasMenu</visible>
+		</control>
+		<!-- End OSD Text With DVD Menu Option -->
+		<control type="button" id="210">
+			<description>Skip Bwd</description>
+			<posx>23</posx>
+			<posy>26</posy>
+			<width>45</width>
+			<height>50</height>
+			<texturefocus>-</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<onclick>XBMC.PlayerControl(Previous)</onclick>
+			<textoffsetx>0</textoffsetx>
+			<textoffsety>0</textoffsety>
+			<textcolor>button-text</textcolor>
+			<label>31050</label>
+			<font>-</font>
+			<onleft>208</onleft>
+			<onright>211</onright>
+			<onup>210</onup>
+			<ondown>210</ondown>
+		</control>
+		<control type="button" id="211">
+			<description>Rewind</description>
+			<posx>58</posx>
+			<posy>26</posy>
+			<width>45</width>
+			<height>50</height>
+			<texturefocus>-</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<label>-</label>
+			<font>-</font>
+			<onleft>210</onleft>
+			<onright>213</onright>
+			<onup>211</onup>
+			<ondown>211</ondown>
+			<onclick>XBMC.PlayerControl(Rewind)</onclick>
+		</control>
+		<control type="togglebutton" id="213">
+			<description>Play\Pause</description>
+			<posx>93</posx>
+			<posy>28</posy>
+			<texturefocus>-</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<alttexturefocus>-</alttexturefocus>
+			<alttexturenofocus>-</alttexturenofocus>
+			<usealtlabel>-</usealtlabel>
+			<textcolor>button-text</textcolor>
+			<font>font11</font>
+			<onleft>211</onleft>
+			<onright>214</onright>
+			<onup>213</onup>
+			<ondown>213</ondown>
+			<onclick>XBMC.PlayerControl(Play)</onclick>
+		</control>
+		<control type="button" id="214">
+			<description>Fast Forward</description>
+			<posx>128</posx>
+			<posy>26</posy>
+			<width>45</width>
+			<height>50</height>
+			<texturefocus>-</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<label>-</label>
+			<font>-</font>
+			<onleft>213</onleft>
+			<onright>215</onright>
+			<onup>214</onup>
+			<ondown>214</ondown>
+			<onclick>XBMC.PlayerControl(Forward)</onclick>
+		</control>
+		<control type="button" id="215">
+			<description>Skip Fwd</description>
+			<posx>163</posx>
+			<posy>26</posy>
+			<width>45</width>
+			<height>50</height>
+			<texturefocus>-</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<onclick>XBMC.PlayerControl(Next)</onclick>
+			<label>-</label>
+			<font>-</font>
+			<onleft>214</onleft>
+			<onright>918</onright>
+			<onup>215</onup>
+			<ondown>215</ondown>
+		</control>
+		<control type="button" id="918">
+			<description>playlist buton</description>
+			<posx>198</posx>
+			<posy>26</posy>
+			<width>45</width>
+			<height>50</height>
+			<texturefocus>-</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<onclick>XBMC.ActivateWindow(28)</onclick>
+			<label>-</label>
+			<font>-</font>
+			<onleft>215</onleft>
+			<onright>921</onright>
+			<onup>918</onup>
+			<ondown>918</ondown>
+		</control>
+		<control type="button" id="921">
+			<description>Audio Menu</description>
+			<posx>233</posx>
+			<posy>26</posy>
+			<width>45</width>
+			<height>50</height>
+			<texturefocus>-</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<onclick>XBMC.ActivateWindow(124)</onclick>
+			<label>-</label>
+			<font>-</font>
+			<onleft>918</onleft>
+			<onright>920</onright>
+			<onup>921</onup>
+			<ondown>921</ondown>
+		</control>
+		<control type="button" id="920">
+			<description>Video Menu</description>
+			<posx>268</posx>
+			<posy>26</posy>
+			<width>45</width>
+			<height>50</height>
+			<texturefocus>-</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<onclick>XBMC.ActivateWindow(123)</onclick>
+			<label>-</label>
+			<font>-</font>
+			<onleft>921</onleft>
+			<onright>919</onright>
+			<onup>920</onup>
+			<ondown>920</ondown>
+		</control>
+		<control type="button" id="919">
+			<description>Bookmarks Menu</description>
+			<posx>303</posx>
+			<posy>26</posy>
+			<width>45</width>
+			<height>50</height>
+			<texturefocus>-</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<onclick>XBMC.ActivateWindow(125)</onclick>
+			<label>-</label>
+			<font>-</font>
+			<onleft>920</onleft>
+			<onright>208</onright>
+			<onup>919</onup>
+			<ondown>919</ondown>
+		</control>
+		<control type="button" id="208">
+			<description>DVD Menu</description>
+			<posx>303</posx>
+			<posy>26</posy>
+			<width>45</width>
+			<height>50</height>
+			<texturefocus>-</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<onclick>XBMC.PlayerControl(ShowVideoMenu)</onclick>
+			<label>-</label>
+			<font>-</font>
+			<onleft>919</onleft>
+			<onright>210</onright>
+			<onup>208</onup>
+			<ondown>208</ondown>
+			<visible>VideoPlayer.HasMenu</visible>
+		</control>
+	</controls>
+</window>           

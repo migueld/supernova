@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<strings>
+
+	<!-- Start home strings -->
+	<string id="31001">Films</string>
+	<string id="31002">Programmes</string>
+	<string id="31003">Musiques</string>
+	<string id="31004">Photos</string>
+	<string id="31005">Météo</string>
+	<string id="31006">Fichiers</string>
+	<string id="31007">Scripts</string>
+	<string id="31008">Réglages</string>
+	<string id="31009">Lire le Disque</string>
+	<string id="31010">Série TV</string>
+	<!-- End home strings -->
+
+	<!-- Start video strings -->
+	<string id="31011">Bandes Annonces</string>
+	<string id="31012">Playlist Vidéo</string>
+	<!-- End video strings -->
+
+	<!-- Start programs strings -->
+	<string id="31013">Sauvegardes</string>
+	<!-- End programs strings -->
+
+	<!-- Start music strings -->
+	<string id="31014">CDDB</string>
+	<!-- End music strings -->
+
+	<!-- Start system strings -->
+	<string id="31015">Système</string>
+	<string id="31016">Gestionnaire de Fichiers</string>
+	<string id="31017">Scripts</string>
+	<string id="31018">Sauvegardes</string>
+	<string id="31019">Profils</string>
+	<string id="31020">Réglages Skin</string>
+	<string id="31021">A propos d' xTV</string>
+	<string id="31022">Eteindre</string>
+	<string id="31023">Info Système</string>
+	<!-- End system strings -->
+
+	<!-- Begin skin settings strings -->
+	<string id="31024">Ajouter Barre de défilement</string>
+	<string id="31025">Superpositions sur les Media</string>
+	<string id="31026">Utiliser l'état déjà-vu</string>
+	<string id="31027">Ecran lecture en cours</string>
+	<string id="31028">Changer Couleur du Texte</string>
+	<string id="31029">Style visuel En Lecture</string>
+	<string id="31030">Choisir un Fond Perso.</string>
+	<string id="31031">Réinitialiser le Fond Perso.</string>
+	<string id="31032">Visualisations arrière-plan</string>
+	<string id="31033">Bouton Films vers Biblio.</string>
+	<string id="31068">Information</string>
+	<string id="31069">Télécharger des Thèmes</string>
+	<string id="31070">Général</string>
+	<string id="31071">Arrière-plan</string>
+	<string id="31072">Page d'Accueil</string>
+	<string id="31073">Enlever la vue Liste</string>
+	<string id="31074">Verrouiller changement vue</string>
+	<string id="31075">Playlist au Démarrage</string>
+	<string id="31076">Choisir Playlist</string>
+	<string id="31077">Série TV sur l'Accueil</string>
+	<string id="31078">YouTube sur l'Accueil</string>
+	<string id="31079">Météo sur l'Accueil</string>
+	<!-- End skin settings strings -->
+
+	<!-- Start progress strings -->
+	<string id="31034">Paramètres</string>
+	<string id="31035">Vidéo</string>
+	<string id="31036">Audio</string>
+	<string id="31037">Signets</string>
+	<string id="31038">Lyrics</string>
+	<string id="31039">Préréglages</string>
+	<string id="31040">Visuels</string>
+	<string id="31041">Playlist</string>
+	<string id="31042">Stop</string>
+	<string id="31043">Pause</string>
+	<string id="31044">Lecture</string>
+	<string id="31045">En Pause</string>
+	<string id="31046">Lecture</string>
+	<string id="31047">Menu DVD</string>
+	<string id="31048">Enregistrer</string>
+	<string id="31049">Enregistrement</string>
+	<string id="31050">|-Retour</string>
+	<string id="31051">Avance-|</string>
+	<string id="31052">Retour</string>
+	<string id="31053">Retour-2x</string>
+	<string id="31054">Retour-4x</string>
+	<string id="31055">Retour-8x</string>
+	<string id="31056">Retour-16x</string>
+	<string id="31057">Retour-32x</string>
+	<string id="31058">Avance</string>
+	<string id="31059">Avance-2x</string>
+	<string id="31060">Avance-4x</string>
+	<string id="31061">Avance-8x</string>
+	<string id="31062">Avance-16x</string>
+	<string id="31063">Avance-32x</string>
+	<!-- End progress strings -->
+
+	<!-- Begin weather strings -->
+	<string id="31064">Haut</string>
+	<string id="31065">Bas</string>
+	<!-- End weather strings -->
+
+	<!-- Begin Misc. strings -->
+	<string id="31066">Muet</string>
+	<string id="31067">Favoris</string>
+	<!-- End Misc. strings -->
+</strings>
+
+
+
+
+
+
+
+
