@@ -28,24 +28,42 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
     <defaultcontrol always="false">5</defaultcontrol>
     <allowoverlay>yes</allowoverlay>
     <controls>
+
+        <!-- Main User Interface Start -->
+        <!-- Background stage floor -->
+        <control type="image">
+            <description>Stage floor</description>
+            <posx>-4</posx>
+            <posy>0</posy>
+            <width>728</width>
+            <height>590</height>
+            <aspectratio/>
+            <texture>StageFloor16x9.png</texture>
+        </control>
+        
         <!-- Hidden Elements Start -->
         <!-- Main controller that drives the main display, this control is hidden -->
-        <control type="fixedlist" id="5">
-            <visible allowhiddenfocus="true">no</visible>
-            <onleft>5</onleft>
-            <onright>5</onright>
+        <control type="wraplist" id="5">
             <onup>5</onup>
             <ondown>5</ondown>
             <orientation>horizontal</orientation>
             <focusposition>2</focusposition>
-            <itemlayout width="166" height="33">
-                <control type="label">
-                    <info>ListItem.label</info>
+            <posx>-145</posx>
+            <posy>150</posy>
+            <width>900</width>
+            <height>300</height>
+            <itemlayout width="200" height="400">
+                <control type="image">
+                    <width>200</width>
+                    <height>400</height>
+                    <info>ListItem.Icon</info>
                 </control>
             </itemlayout>
-            <focusedlayout width="166" height="40">
-                <control type="label">
-                    <info>ListItem.label</info>
+            <focusedlayout width="200" height="400">
+                <control type="image">
+                    <width>200</width>
+                    <height>400</height>
+                    <info>ListItem.Icon</info>
                 </control>
             </focusedlayout>
             <!-- Control elements -->
@@ -94,66 +112,6 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
             </content>
         </control>
         <!-- Hidden elements End -->
-
-        <!-- Main User Interface Start -->
-        <!-- Background stage floor -->
-        <control type="image">
-            <description>Stage floor</description>
-            <posx>0</posx>
-            <posy>0</posy>
-            <width>720</width>
-            <height>576</height>
-            <aspectratio/>
-            <texture>StageFloor16x9.png</texture>
-        </control>
-        
-        <!-- Main visible control elements -->
-        <control type="group">
-            <visible>!Control.IsVisible(3001) + !Control.IsVisible(3002)</visible>
-            <!-- Focused Element (Larger)-->
-            <control type="image">
-                <posx>270</posx>
-                <posy>165</posy>
-                <width>180</width>
-                <height>380</height>
-                <info>Container(5).ListItem(0).ActualIcon</info>
-                <aspectratio aligny="bottom">keep</aspectratio>
-            </control>
-
-            <!-- Unfocused Element (Smaller/blurred?) -->
-            <control type="image">
-                <posx>-90</posx>
-                <posy>165</posy>
-                <width>180</width>
-                <height>300</height>
-                <info>Container(5).ListItem(-2).Thumb</info>
-                <aspectratio aligny="bottom">keep</aspectratio>
-            </control>
-            <control type="image">
-                <posx>90</posx>
-                <posy>180</posy>
-                <width>180</width>
-                <height>300</height>
-                <info>Container(5).ListItem(-1).Thumb</info>
-                <aspectratio aligny="bottom">keep</aspectratio>
-            </control>
-            <control type="image">
-                <posx>450</posx>
-                <posy>180</posy>
-                <width>180</width>
-                <height>300</height>
-                <info>Container(5).ListItem(1).Thumb</info>
-                <aspectratio aligny="bottom">keep</aspectratio>
-            </control>
-            <control type="image">
-                <posx>630</posx>
-                <posy>165</posy>
-                <width>180</width>
-                <height>300</height>
-                <info>Container(5).ListItem(2).Thumb</info>
-                <aspectratio aligny="bottom">keep</aspectratio>
-            </control>
-        </control>
 
         <!-- Spot light overlay -->
         <control type="image">
