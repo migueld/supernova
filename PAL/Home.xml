@@ -136,6 +136,18 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
             <font>font20</font>
             <textcolor>button-text</textcolor>
         </control>
+
+		<control type="rss">
+			<description>rss feed</description>
+			<posx>0</posx>
+			<posy>545</posy>
+			<width>720</width>
+			<font>font12</font>
+			<urlset>1</urlset>
+			<textcolor>info-text</textcolor>
+			<titlecolor>rss-title-text</titlecolor>
+			<headlinecolor>rss-headline-text</headlinecolor>
+		</control>
         <!-- Main User Interface End -->
     </controls>
 </window>
