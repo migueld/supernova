@@ -107,15 +107,65 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
             <texture>StageFloor16x9.png</texture>
         </control>
         
-        <!-- Main visible control elements -->
-        <control type="group">
-            <visible>!Control.IsVisible(3001) + !Control.IsVisible(3002)</visible>
+        <!-- Animated display of the elements available to choose from, the group below are not animated -->
+        <control type="group" id="3001">
+            <visible>Container(5).OnNext + !Container(5).OnPrevious</visible>
+            <animation effect="slide" start="180,0" end="0,0" time="400" acceleration="+1" reversible="false">Hidden</animation>
+
             <!-- Focused Element (Larger)-->
             <control type="image">
                 <posx>270</posx>
                 <posy>165</posy>
                 <width>180</width>
-                <height>380</height>
+                <height>300</height>
+                <info>Container(5).ListItem(0).ActualIcon</info>
+                <aspectratio aligny="bottom">keep</aspectratio>
+            </control>
+
+            <!-- Unfocused Element (Smaller/blurred?) -->
+            <control type="image">
+                <posx>-90</posx>
+                <posy>165</posy>
+                <width>180</width>
+                <height>300</height>
+                <info>Container(5).ListItem(-2).Thumb</info>
+                <aspectratio aligny="bottom">keep</aspectratio>
+            </control>
+            <control type="image">
+                <posx>90</posx>
+                <posy>180</posy>
+                <width>180</width>
+                <height>300</height>
+                <info>Container(5).ListItem(-1).Thumb</info>
+                <aspectratio aligny="bottom">keep</aspectratio>
+            </control>
+            <control type="image">
+                <posx>450</posx>
+                <posy>180</posy>
+                <width>180</width>
+                <height>300</height>
+                <info>Container(5).ListItem(1).Thumb</info>
+                <aspectratio aligny="bottom">keep</aspectratio>
+            </control>
+            <control type="image">
+                <posx>630</posx>
+                <posy>165</posy>
+                <width>180</width>
+                <height>300</height>
+                <info>Container(5).ListItem(2).Thumb</info>
+                <aspectratio aligny="bottom">keep</aspectratio>
+            </control>
+        </control>
+        
+        <!-- Static display of the elements available to choose from, the above group of elements are animated -->
+        <control type="group">
+            <visible>!Control.IsVisible(3001)</visible>
+            <!-- Focused Element (Larger)-->
+            <control type="image">
+                <posx>270</posx>
+                <posy>165</posy>
+                <width>180</width>
+                <height>300</height>
                 <info>Container(5).ListItem(0).ActualIcon</info>
                 <aspectratio aligny="bottom">keep</aspectratio>
             </control>
