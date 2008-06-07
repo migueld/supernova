@@ -1,547 +1,183 @@
+<!---------------------------------------------------------------------------
+Home.xml: CenterStageProject - User Interface [PAL]
+-----------------------------------------------------------------------------
+Copyright (C) 2008 The CenterStage Project Development Team
+
+$Id$
+
+Authors:
+    Jan Litzinger [tragnar]
+    Faustino E. Osuna [riqueDaFreak]
+
+This program is free software; you can redistribute it and/or modify it
+under the terms of the GNU General Public License as published by the Free
+Software Foundation; either version 2 of the License, or (at your option)
+any later version.
+
+This program is distributed in the hope that it will be useful, but WITHOUT
+ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
+FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for
+more details.
+
+You should have received a copy of the GNU General Public License along with
+this program; if not, write to the Free Software Foundation, Inc., 51
+Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
+--------------------------------------------------------------------------->
+<?xml version="1.0"?>
 <window id="0">
-	<defaultcontrol always="false">5</defaultcontrol>
-	<allowoverlay>yes</allowoverlay>
-	<controls>
-		<include>background</include>
+    <defaultcontrol always="false">5</defaultcontrol>
+    <allowoverlay>yes</allowoverlay>
+    <controls>
+        <!-- Hidden Elements Start -->
+        <!-- Main controller that drives the main display, this control is hidden -->
+        <control type="fixedlist" id="5">
+            <visible allowhiddenfocus="true">no</visible>
+            <onleft>5</onleft>
+            <onright>5</onright>
+            <onup>5</onup>
+            <ondown>5</ondown>
+            <orientation>horizontal</orientation>
+            <focusposition>2</focusposition>
+            <itemlayout width="166" height="33">
+                <control type="label">
+                    <info>ListItem.label</info>
+                </control>
+            </itemlayout>
+            <focusedlayout width="166" height="40">
+                <control type="label">
+                    <info>ListItem.label</info>
+                </control>
+            </focusedlayout>
+            <!-- Control elements -->
+            <content>
+                <item>
+                    <!-- Reload Skin -->
+                    <label>20183</label>
+                    <onclick>XBMC.ReloadSkin()</onclick>
+                </item>
+                <item>
+                    <!-- My Pictures -->
+                    <icon>Icons/Photo.png</icon>
+                    <thumb>Icons/Photo.png</thumb>
+                    <label>1</label>
+                    <onclick>ActivateWindow(MyPictures)</onclick>
+                </item>
+                <item>
+                    <!-- My Music -->
+                    <icon>Icons/Music.png</icon>
+                    <thumb>Icons/Music.png</thumb>
+                    <label>2</label>
+                    <onclick>ActivateWindow(MyMusic)</onclick>
+                </item>
+                <item>
+                    <!-- My Videos -->
+                    <icon>Icons/Movies.png</icon>
+                    <thumb>Icons/Movies.png</thumb>
+                    <label>3</label>
+                    <onclick>ActivateWindow(MyVideo)</onclick>
+                </item>
+                <item>
+                    <!-- Settings -->
+                    <icon>Icons/MainMenu.png</icon>
+                    <thumb>Icons/MainMenu.png</thumb>
+                    <label>5</label>
+                    <onclick>ActivateWindow(Settings)</onclick>
+                </item>
+                <item>
+                    <!-- DVD -->
+                    <icon>Icons/DVDDisc.png</icon>
+                    <thumb>Icons/DVDDisc.png</thumb>
+                    <label>31009</label>
+                    <onclick>XBMC.PlayDVD</onclick>
+                    <visible>System.HasMediaDVD</visible>
+                </item>
+            </content>
+        </control>
+        <!-- Hidden elements End -->
 
-<!-- Stagefloor -->
-		<control type="image">
-			<description>Stagefloor</description>
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>720</width>
-			<height>576</height>
-			<aspectratio></aspectratio>
-			<texture>StageFloor16x9.png</texture>
-		</control>
-		
+        <!-- Main User Interface Start -->
+        <!-- Background stage floor -->
+        <control type="image">
+            <description>Stage floor</description>
+            <posx>0</posx>
+            <posy>0</posy>
+            <width>720</width>
+            <height>576</height>
+            <aspectratio/>
+            <texture>StageFloor16x9.png</texture>
+        </control>
+        
+        <!-- Main visible control elements -->
+        <control type="group">
+            <visible>!Control.IsVisible(3001) + !Control.IsVisible(3002)</visible>
+            <!-- Focused Element (Larger)-->
+            <control type="image">
+                <posx>270</posx>
+                <posy>165</posy>
+                <width>180</width>
+                <height>380</height>
+                <info>Container(5).ListItem(0).ActualIcon</info>
+                <aspectratio aligny="bottom">keep</aspectratio>
+            </control>
 
+            <!-- Unfocused Element (Smaller/blurred?) -->
+            <control type="image">
+                <posx>-90</posx>
+                <posy>165</posy>
+                <width>180</width>
+                <height>300</height>
+                <info>Container(5).ListItem(-2).Thumb</info>
+                <aspectratio aligny="bottom">keep</aspectratio>
+            </control>
+            <control type="image">
+                <posx>90</posx>
+                <posy>180</posy>
+                <width>180</width>
+                <height>300</height>
+                <info>Container(5).ListItem(-1).Thumb</info>
+                <aspectratio aligny="bottom">keep</aspectratio>
+            </control>
+            <control type="image">
+                <posx>450</posx>
+                <posy>180</posy>
+                <width>180</width>
+                <height>300</height>
+                <info>Container(5).ListItem(1).Thumb</info>
+                <aspectratio aligny="bottom">keep</aspectratio>
+            </control>
+            <control type="image">
+                <posx>630</posx>
+                <posy>165</posy>
+                <width>180</width>
+                <height>300</height>
+                <info>Container(5).ListItem(2).Thumb</info>
+                <aspectratio aligny="bottom">keep</aspectratio>
+            </control>
+        </control>
 
-<!-- Animation of Main Icons to the right -->
-		<control type="group" id="3001">
-			<visible>Container(5).OnNext</visible>
-			<animation effect="slide" start="0,0" end="0,0" time="400" reversible="false">Hidden</animation>
-			
-			<control type="group">
-				<posx>-270</posx>
-				<posy>130</posy>
-				<width>180</width>
-				<height>360</height>
-				<visible>Container(5).OnNext</visible>
-				<animation type="WindowOpen">
-				   <effect type="slide" start="0,0" end="180,0" time="400" acceleration="-1" reversible="false" />
-				   <effect type="zoom" start="0,0" end="180,0" time="400" center="auto" reversible="false" />
-				</animation>
-				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>180</width>
-					<height>360</height>
-					<info>Container(5).Listitem(2).ActualIcon</info>
-					<aspectratio>keep</aspectratio>
-				</control>
-			</control>
-			
-			<control type="group">
-				<posx>-90</posx>
-				<posy>140</posy>
-				<width>200</width>
-				<height>400</height>
-				<visible>Container(5).OnNext</visible>
-				<animation effect="slide" start="0,0" end="180,0" time="400" acceleration="-1" reversible="false">Hidden</animation>
-				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>200</width>
-					<height>400</height>
-					<info>Container(5).Listitem(1).ActualIcon</info>
-					<aspectratio>keep</aspectratio>
-				</control>
-			</control>
-			
-			<control type="group">
-				<posx>90</posx>
-				<posy>150</posy>
-				<width>220</width>
-				<height>440</height>
-				<visible>Container(5).OnNext</visible>
-				<animation effect="slide" start="0,0" end="180,0" time="400" acceleration="-1"  reversible="false">Hidden</animation>
-				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>220</width>
-					<height>440</height>
-					<info>Container(5).Listitem(0).ActualIcon</info>
-					<aspectratio>keep</aspectratio>
-				</control>
-			</control>
-			
-			<control type="group">
-				<posx>260</posx>
-				<posy>140</posy>
-				<width>200</width>
-				<height>400</height>
-				<visible>Container(5).OnNext</visible>
-				<animation effect="slide" start="0,0" end="180,0" time="400" acceleration="-1"  reversible="false">Hidden</animation>
-				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>200</width>
-					<height>400</height>
-					<info>Container(5).Listitem(-1).ActualIcon</info>
-					<aspectratio>keep</aspectratio>
-				</control>
-			</control>
-		
-		    <control type="group">
-				<posx>450</posx>
-				<posy>130</posy>
-				<width>180</width>
-				<height>360</height>
-				<visible>Container(5).OnNext</visible>
-				<animation effect="slide" start="0,0" end="180,0"  time="400" acceleration="-1"  reversible="false">Hidden</animation>
-				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>180</width>
-					<height>360</height>
-					<info>Container(5).Listitem(-2).ActualIcon</info>
-					<aspectratio>keep</aspectratio>
-				</control>
-			</control>
-			
-			<control type="group">
-				<posx>630</posx>
-				<posy>130</posy>
-				<width>180</width>
-				<height>360</height>
-				<visible>Container(5).OnNext</visible>
-				<animation effect="slide" start="0,0" end="180,0"  time="400" acceleration="-1"  reversible="false">Hidden</animation>
-				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>180</width>
-					<height>360</height>
-					<info>Container(5).Listitem(-3).ActualIcon</info>
-					<aspectratio>keep</aspectratio>
-				</control>
-			</control>
-			
-		</control>
-		
+        <!-- Spot light overlay -->
+        <control type="image">
+            <description>Spot light overlay</description>
+            <posx>-4</posx>
+            <posy>0</posy>
+            <width>724</width>
+            <height>576</height>
+            <aspectratio/>
+            <texture>Spotlight16x9.png</texture>
+        </control>
 
-<!-- Animation of Main Icons to the left -->
-		<control type="group" id="3002">
-			<visible>Container(5).OnPrevious</visible>
-			<animation effect="slide" start="0,0" end="0,0" time="400" reversible="false">Hidden</animation>
-			
-			<control type="group">
-				<posx>-90</posx>
-				<posy>130</posy>
-				<width>180</width>
-				<height>360</height>
-				<visible>Container(5).OnPrevious</visible>
-				<animation effect="slide" start="0,0" end="-180,0" time="400" acceleration="-1" reversible="false">Hidden</animation>
-				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>180</width>
-					<height>360</height>
-					<info>Container(5).Listitem(3).ActualIcon</info>
-					<aspectratio>keep</aspectratio>
-				</control>
-			</control>
-			
-			<control type="group">
-				<posx>90</posx>
-				<posy>130</posy>
-				<width>180</width>
-				<height>360</height>
-				<visible>Container(5).OnPrevious</visible>
-				<animation effect="slide" start="0,0" end="-180,0" time="400" acceleration="-1"  reversible="false">Hidden</animation>
-				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>180</width>
-					<height>360</height>
-					<info>Container(5).Listitem(2).ActualIcon</info>
-					<aspectratio>keep</aspectratio>
-				</control>
-			</control>
-			
-			<control type="group">
-				<posx>260</posx>
-				<posy>140</posy>
-				<width>200</width>
-				<height>400</height>
-				<visible>Container(5).OnPrevious</visible>
-				<animation effect="slide" start="0,0" end="-180,0" time="400" acceleration="-1"  reversible="false">Hidden</animation>
-				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>200</width>
-					<height>400</height>
-					<info>Container(5).Listitem(1).ActualIcon</info>
-					<aspectratio>keep</aspectratio>
-				</control>
-			</control>
-		
-		    <control type="group">
-				<posx>450</posx>
-				<posy>150</posy>
-				<width>220</width>
-				<height>440</height>
-				<visible>Container(5).OnPrevious</visible>
-				<animation effect="slide" start="0,0" end="-180,0"  time="400" acceleration="-1"  reversible="false">Hidden</animation>
-				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>220</width>
-					<height>440</height>
-					<info>Container(5).Listitem(0).ActualIcon</info>
-					<aspectratio>keep</aspectratio>
-				</control>
-			</control>
-			
-			<control type="group">
-				<posx>630</posx>
-				<posy>140</posy>
-				<width>200</width>
-				<height>400</height>
-				<visible>Container(5).OnPrevious</visible>
-				<animation effect="slide" start="0,0" end="-180,0"  time="400" acceleration="-1"  reversible="false">Hidden</animation>
-				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>200</width>
-					<height>400</height>
-					<info>Container(5).Listitem(-1).ActualIcon</info>
-					<aspectratio>keep</aspectratio>
-				</control>
-			</control>
-
-			<control type="group">
-				<posx>810</posx>
-				<posy>130</posy>
-				<width>180</width>
-				<height>360</height>
-				<visible>Container(5).OnPrevious</visible>
-				<animation effect="slide" start="0,0" end="-180,0"  time="400" acceleration="-1"  reversible="false">Hidden</animation>
-				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>180</width>
-					<height>360</height>
-					<info>Container(5).Listitem(-2).ActualIcon</info>
-					<aspectratio>keep</aspectratio>
-				</control>
-			</control>
-		</control>
-		
-<!-- Main Icons -->
-		<control type="group">
-			<visible>!Control.IsVisible(3001)  + !Control.IsVisible(3002)</visible>
-
-			<control type="group">
-			
-			  <description>Home Buttons</description>
-			
-				<posx>-90</posx>
-				<posy>120</posy>
-				<width>180</width>
-				<height>360</height>
-				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>180</width>
-					<height>360</height>
-					<info>Container(5).Listitem(2).ActualIcon</info>
-					<aspectratio aligny="bottom">keep</aspectratio>
-				</control>
-			</control>
-			<control type="group">
-				<posx>75</posx>
-				<posy>120</posy>
-				<width>200</width>
-				<height>400</height>
-				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>200</width>
-					<height>400</height>
-					<info>Container(5).Listitem(1).ActualIcon</info>
-					<aspectratio aligny="bottom">keep</aspectratio>
-				</control>
-			</control>
-			<control type="group">
-				<posx>255</posx>
-				<posy>130</posy>
-				<width>220</width>
-				<height>440</height>
-				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>220</width>
-					<height>440</height>
-					<info>Container(5).Listitem(0).ActualIcon</info>
-					<aspectratio aligny="bottom">keep</aspectratio>
-				</control>
-			</control>
-			<control type="group">
-				<posx>445</posx>
-				<posy>120</posy>
-				<width>200</width>
-				<height>400</height>
-				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>200</width>
-					<height>400</height>
-					<info>Container(5).Listitem(-1).ActualIcon</info>
-					<aspectratio aligny="bottom">keep</aspectratio>
-				</control>
-			</control>
-			<control type="group">
-				<posx>630</posx>
-				<posy>120</posy>
-				<width>180</width>
-				<height>360</height>
-				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>180</width>
-					<height>360</height>
-					<info>Container(5).Listitem(-2).ActualIcon</info>
-					<aspectratio aligny="bottom">keep</aspectratio>
-				</control>
-			</control>
-			
-		</control>
-		
-<!-- media infos (music) -->
-		<!-- control type="image" id="1">
-			<description>cover image</description>
-			<posx>45</posx>
-			<posy>442</posy>
-			<width>80</width>
-			<height>90</height>
-			<info>MusicPlayer.Cover</info>
-			<include>homemediainfo</include>
-			<visible>Skin.HasSetting(overlay)  + Player.HasAudio</visible>
-			<aspectratio align="right">keep</aspectratio>
-		</control>
-		<control type="label" id="1">
-			<description>Artist label</description>
-			<width>235</width>
-			<posx>146</posx>
-			<posy>440</posy>
-			<info>MusicPlayer.Artist</info>
-			<align>left</align>
-			<font>font10</font>
-			<include>homemediainfo</include>
-			<visible>Skin.HasSetting(overlay)  + Player.HasAudio</visible>
-		</control>
-		<control type="label" id="1">
-			<description>Title label</description>
-			<width>235</width>
-			<posx>146</posx>
-			<posy>465</posy>
-			<info>MusicPlayer.Title</info>
-			<align>left</align>
-			<font>font12</font>
-			<include>homemediainfo</include>
-			<visible>Skin.HasSetting(overlay)  + Player.HasAudio</visible>
-		</control>
-		<control type="label" id="1">
-			<description>Album label</description>
-			<width>235</width>
-			<posx>146</posx>
-			<posy>490</posy>
-			<info>MusicPlayer.Album</info>
-			<align>left</align>
-			<font>font10</font>
-			<include>homemediainfo</include>
-			<visible>Skin.HasSetting(overlay)  + Player.HasAudio</visible>
-		</control>
-		<control type="label" id="1">
-			<description>Time label</description>
-			<width>235</width>
-			<posx>146</posx>
-			<posy>515</posy>
-			<label>$INFO[MusicPlayer.Time]$INFO[MusicPlayer.Duration, / ]</label>
-			<align>left</align>
-			<font>font10</font>
-			<include>homemediainfo</include>
-			<visible>Skin.HasSetting(overlay)  + Player.HasAudio</visible>
-		</control -->
-		<!-- media infos (video) -->
-		<!-- control type="videowindow" id="1">
-			<description>video preview window</description>
-			<posx>45</posx>
-			<posy>438</posy>
-			<width>116</width>
-			<height>99</height>
-			<include>homemediainfo</include>
-			<visible>Skin.HasSetting(overlay) + Player.HasVideo</visible>
-		</control>
-		<control type="label" id="1">
-			<description>Video Title label</description>
-			<width>235</width>
-			<posx>170</posx>
-			<posy>440</posy>
-			<info>VideoPlayer.Title</info>
-			<align>left</align>
-			<font>font12</font>
-			<include>homemediainfo</include>
-			<visible>Skin.HasSetting(overlay) + Player.HasVideo</visible>
-		</control>
-		<control type="label" id="1">
-			<description>Genre label</description>
-			<width>235</width>
-			<posx>170</posx>
-			<posy>465</posy>
-			<info>VideoPlayer.Genre</info>
-			<align>left</align>
-			<font>font10</font>
-			<include>homemediainfo</include>
-			<visible>Skin.HasSetting(overlay) + Player.HasVideo</visible>
-		</control>
-		<control type="label" id="1">
-			<description>Time label</description>
-			<width>235</width>
-			<posx>170</posx>
-			<posy>515</posy>
-			<label>$INFO[VideoPlayer.Time]$INFO[VideoPlayer.Duration, / ]</label>
-			<align>left</align>
-			<font>font10</font>
-			<include>homemediainfo</include>
-			<visible>Skin.HasSetting(overlay) + Player.HasVideo</visible>
-		</control -->
-
-		
-<!-- Spotlight -->
-		<control type="image">
-			<description>Spotlight</description>
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>720</width>
-			<height>576</height>
-			<aspectratio></aspectratio>
-			<texture>Spotlight16x9.png</texture>
-		</control>
-		
-<!-- list view with single item as title -->
-		<control type="list" id="5">
-			<posx>0</posx>
-			<posy>40</posy>
-			<height>40</height>
-			<width>720</width>
-			<onleft>5</onleft>  
-			<onright>5</onright>
-			<onup>5</onup>      
-			<ondown>5</ondown>  
-			<itemlayout height="40">
-				<control type="label">
-					<posx>360</posx>
-					<posy>0</posy>
-					<width>720</width>
-					<height>40</height>
-					<info>ListItem.label</info>
-					<align>center</align>
-					<aligny>center</aligny>
-					<font>font20</font>
-					<textcolor>button-text</textcolor>
-				</control>
-			</itemlayout>
-			<focusedlayout height="40">
-				<control type="label">
-					<posx>360</posx>
-					<posy>0</posy>
-					<width>720</width>
-					<height>40</height>
-					<info>ListItem.label</info>
-					<align>center</align>
-					<aligny>center</aligny>
-					<font>font20</font>
-					<textcolor>button-text</textcolor>
-				</control>
-			</focusedlayout>
-			
-<!-- main icons definition -->
-			<content>
-				<item>
-				 	<icon>Icons/Movies.png</icon>
-				 	<thumb>icon-video-blur1.png</thumb>
-					<label>31001</label>
-					<onclick>ActivateWindow(MyVideoFiles)</onclick>
-					<visible>!Skin.HasSetting(movie-library)</visible>
-                 
-				</item>
-				<item>
-				 	<icon>Icons/Movies.png</icon>
-				 	<thumb>icon-video-blur1.png</thumb>
-					<label>31001</label>
-					<onclick>ActivateWindow(MyVideoLibrary,MovieTitles)</onclick>
-					<visible>Skin.HasSetting(movie-library)</visible>
-				</item>
-				<item>
-				 	<icon>Icons/TV.png</icon>
-				 	<thumb>icon-tv-blur1.png</thumb>
-					<label>31010</label>
-					<onclick>ActivateWindow(MyVideoLibrary,tvshowtitles)</onclick>
-					<visible>!Skin.HasSetting(tv-library)</visible>
-				</item>
-				<item>
-				 	<icon>icon-youtube.png</icon>
-				 	<thumb>icon-youtube-blur1.png</thumb>
-					<label>YouTube</label>
-					<onclick>XBMC.RunScript(Q:\scripts\YouTube\default.py)</onclick>
-					<visible>Skin.HasSetting(home-youtube)</visible>
-				</item>
-				<item>
-				 	<icon>Icons/Music.png</icon>
-				 	<thumb>icon-music-blur1.png</thumb>
-					<label>31003</label>
-					<onclick>ActivateWindow(MyMusic)</onclick>
-				</item>
-				<item>
-				 	<icon>Icons/Programms.png</icon>
-				 	<thumb>icon-programs-blur1.png</thumb>
-					<label>31002</label>
-					<onclick>ActivateWindow(MyPrograms)</onclick>
-				</item>
-				<item>
-				 	<icon>Icons/Photo.png</icon>
-				 	<thumb>icon-photo-blur1.png</thumb>
-					<label>31004</label>
-					<onclick>ActivateWindow(MyPictures)</onclick>
-				</item>
-				<item>
-				 	<icon>icon-weather.png</icon>
-				 	<thumb>icon-weather-blur1.png</thumb>
-					<label>31005</label>
-					<onclick>ActivateWindow(Weather)</onclick>
-					<visible>Skin.HasSetting(home-weather)</visible>
-				</item>
-				<item>
-				 	<icon>Icons/MainMenu.png</icon>
-				 	<thumb>icon-settings-blur1.png</thumb>
-					<label>31015</label>
-					<onclick>ActivateWindow(50)</onclick>
-				</item>
-				<item>
-				 	<icon>Icons/DVDDissc.png</icon>
-				 	<thumb>icon-disc-blur1.png</thumb>
-					<label>31009</label>
-					<onclick>XBMC.PlayDVD</onclick>
-					<visible>System.HasMediaDVD</visible>
-				</item>
-			</content>
-		</control>
-		
-
-		
-<!-- page info -->
-		<include>page-info</include>
-	</controls>
-</window>        
+        <!-- Currently selected item's label -->
+        <control type="label">
+            <posx>0</posx>
+            <posy>40</posy>
+            <width>720</width>
+            <height>40</height>
+            <info>Container(5).ListItem.Label</info>
+            <align>center</align>
+            <aligny>center</aligny>
+            <font>font20</font>
+            <textcolor>button-text</textcolor>
+        </control>
+        <!-- Main User Interface End -->
+    </controls>
+</window>
