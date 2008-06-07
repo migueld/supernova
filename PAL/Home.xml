@@ -3,7 +3,8 @@
 	<allowoverlay>yes</allowoverlay>
 	<controls>
 		<include>background</include>
-		<!-- Stagefloor -->
+
+<!-- Stagefloor -->
 		<control type="image">
 			<description>Stagefloor</description>
 			<posx>0</posx>
@@ -14,259 +15,23 @@
 			<texture>StageFloor16x9.png</texture>
 		</control>
 		
-		<!-- main buttons -->
-		<!-- list view with single item as title -->
-		<control type="list" id="5">
-			<posx>310</posx>
-			<posy>100</posy>
-			<height>40</height>
-			<width>100</width>
-			<onleft>5</onleft>   <!-- ??? -->
-			<onright>5</onright> <!-- ??? -->
-			<onup>5</onup>       <!-- ??? -->
-			<ondown>5</ondown>   <!-- ??? -->
-			<itemlayout height="40">
-				<control type="label">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>100</width>
-					<height>40</height>
-					<info>ListItem.label</info>
-					<align>center</align>
-					<aligny>center</aligny>
-					<font>font13</font>
-					<textcolor>button-text</textcolor>
-				</control>
-				<!-- control type="image">
-					<posx>265</posx>
-					<posy>-18</posy>
-					<width>25</width>
-					<height>75</height>
-					<texture>home-buttonarrow-alpha.png</texture>
-					<aspectratio align="right">keep</aspectratio>
-				</control -->
-			</itemlayout>
-			<focusedlayout height="40">
-				<!-- control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>100</width>
-					<height>40</height>
-					<texture>default-button.png</texture>
-				</control -->
-				<control type="label">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>100</width>
-					<height>40</height>
-					<info>ListItem.label</info>
-					<aligny>center</aligny>
-					<align>center</align>
-					<font>font13</font>
-					<textcolor>button-text</textcolor>
-				</control>
-				<!-- control type="image">
-					<posx>265</posx>
-					<posy>-18</posy>
-					<width>25</width>
-					<height>75</height>
-					<texture>home-buttonarrow.png</texture>
-					<aspectratio align="right">keep</aspectratio>
-				</control -->
-			</focusedlayout>
-			
-			<!-- main icons -->
-			<content>
-				<item>
-				 	<icon>Icons/Movies.png</icon>
-				 	<thumb>icon-video-blur1.png</thumb>
-					<label>31001</label>
-					<onclick>ActivateWindow(MyVideoFiles)</onclick>
-					<visible>!Skin.HasSetting(movie-library)</visible>
-                 
-				</item>
-				<item>
-				 	<icon>Icons/Movies.png</icon>
-				 	<thumb>icon-video-blur1.png</thumb>
-					<label>31001</label>
-					<onclick>ActivateWindow(MyVideoLibrary,MovieTitles)</onclick>
-					<visible>Skin.HasSetting(movie-library)</visible>
-				</item>
-				<item>
-				 	<icon>Icons/TV.png</icon>
-				 	<thumb>icon-tv-blur1.png</thumb>
-					<label>31010</label>
-					<onclick>ActivateWindow(MyVideoLibrary,tvshowtitles)</onclick>
-					<visible>!Skin.HasSetting(tv-library)</visible>
-				</item>
-				<item>
-				 	<icon>icon-youtube.png</icon>
-				 	<thumb>icon-youtube-blur1.png</thumb>
-					<label>YouTube</label>
-					<onclick>XBMC.RunScript(Q:\scripts\YouTube\default.py)</onclick>
-					<visible>Skin.HasSetting(home-youtube)</visible>
-				</item>
-				<item>
-				 	<icon>Icons/Music.png</icon>
-				 	<thumb>icon-music-blur1.png</thumb>
-					<label>31003</label>
-					<onclick>ActivateWindow(MyMusic)</onclick>
-				</item>
-				<item>
-				 	<icon>Icons/Programms.png</icon>
-				 	<thumb>icon-programs-blur1.png</thumb>
-					<label>31002</label>
-					<onclick>ActivateWindow(MyPrograms)</onclick>
-				</item>
-				<item>
-				 	<icon>Icons/Photo.png</icon>
-				 	<thumb>icon-photo-blur1.png</thumb>
-					<label>31004</label>
-					<onclick>ActivateWindow(MyPictures)</onclick>
-				</item>
-				<item>
-				 	<icon>icon-weather.png</icon>
-				 	<thumb>icon-weather-blur1.png</thumb>
-					<label>31005</label>
-					<onclick>ActivateWindow(Weather)</onclick>
-					<visible>Skin.HasSetting(home-weather)</visible>
-				</item>
-				<item>
-				 	<icon>Icons/MainMenu.png</icon>
-				 	<thumb>icon-settings-blur1.png</thumb>
-					<label>31015</label>
-					<onclick>ActivateWindow(50)</onclick>
-				</item>
-				<item>
-				 	<icon>Icons/DVDDissc.png</icon>
-				 	<thumb>icon-disc-blur1.png</thumb>
-					<label>31009</label>
-					<onclick>XBMC.PlayDVD</onclick>
-					<visible>System.HasMediaDVD</visible>
-				</item>
-			</content>
-		</control>
-		
-		<!-- control type="group" id="3002">
-			<visible>Container(5).OnPrevious</visible>
-			<animation effect="fade" start="100" end="100" time="200" reversible="false">Hidden</animation>
-			<control type="group">
-				<posx>30</posx>
-				<posy>150</posy>
-				<width>50</width>
-				<height>100</height>
-				<visible>Container(5).OnPrevious</visible>
-				<animation effect="slide" end="-100,0" time="200" reversible="false">Hidden</animation>
-				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>50</width>
-					<height>50</height>
-					<info>Container(5).Listitem(3).Thumb</info>
-					<aspectratio aligny="bottom">keep</aspectratio>
-				</control>
-				<control type="image">
-					<posx>0</posx>
-					<posy>50</posy>
-					<width>50</width>
-					<height>50</height>
-					<texture flipy="true" diffuse="fade.png" />
-					<info>Container(5).Listitem(3).Thumb</info>
-					<aspectratio aligny="top">keep</aspectratio>
-				</control>
-			</control>
-			<control type="group">
-				<posx>95</posx>
-				<posy>160</posy>
-				<width>65</width>
-				<height>130</height>
-				<visible>Container(5).OnPrevious</visible>
-				<animation effect="zoom" start="95,160,65,130" end="30,150,50,100" time="200" reversible="false">Hidden</animation>
-				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>65</width>
-					<height>65</height>
-					<info>Container(5).Listitem(2).Thumb</info>
-					<aspectratio aligny="bottom">keep</aspectratio>
-				</control>
-				<control type="image">
-					<posx>0</posx>
-					<posy>65</posy>
-					<width>65</width>
-					<height>65</height>
-					<texture flipy="true" diffuse="fade.png" />
-					<info>Container(5).Listitem(2).Thumb</info>
-					<aspectratio aligny="top">keep</aspectratio>
-				</control>
-			</control>
-			<control type="group">
-				<posx>140</posx>
-				<posy>145</posy>
-				<width>230</width>
-				<height>460</height>
-				<visible>Container(5).OnPrevious</visible>
-				<animation effect="zoom" start="140,145,230,460" end="95,160,65,130" time="200" reversible="false">Hidden</animation>
-				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>230</width>
-					<height>230</height>
-					<info>Container(5).Listitem(1).Thumb</info>
-					<aspectratio aligny="bottom">keep</aspectratio>
-				</control>
-				<control type="image">
-					<posx>0</posx>
-					<posy>230</posy>
-					<width>230</width>
-					<height>230</height>
-					<texture flipy="true" diffuse="fade.png" />
-					<info>Container(5).Listitem(1).Thumb</info>
-					<aspectratio aligny="top">keep</aspectratio>
-				</control>
-			</control>
-			<control type="group">
-				<posx>-340</posx>
-				<posy>225</posy>
-				<width>230</width>
-				<height>460</height>
-				<visible>Container(5).OnPrevious</visible>
-				<animation effect="slide" start="0,0" end="400,-80" delay="50" time="150" reversible="false">Hidden</animation>
-				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>230</width>
-					<height>230</height>
-					<info>Container(5).Listitem(0).ActualIcon</info>
-					<aspectratio aligny="bottom">keep</aspectratio>
-				</control>
-				<control type="image">
-					<posx>0</posx>
-					<posy>230</posy>
-					<width>230</width>
-					<height>230</height>
-					<texture flipy="true" diffuse="fade.png" />
-					<info>Container(5).Listitem(0).ActualIcon</info>
-					<aspectratio aligny="top">keep</aspectratio>
-				</control>
-			</control>
-		</control -->
 
 
 <!-- Animation of Main Icons to the right -->
-
-
 		<control type="group" id="3001">
 			<visible>Container(5).OnNext</visible>
 			<animation effect="slide" start="0,0" end="0,0" time="400" reversible="false">Hidden</animation>
 			
 			<control type="group">
 				<posx>-270</posx>
-				<posy>140</posy>
+				<posy>130</posy>
 				<width>180</width>
 				<height>360</height>
 				<visible>Container(5).OnNext</visible>
-				<animation effect="slide" start="0,0" end="180,0" time="400" acceleration="-1" reversible="false">Hidden</animation>
+				<animation type="WindowOpen">
+				   <effect type="slide" start="0,0" end="180,0" time="400" acceleration="-1" reversible="false" />
+				   <effect type="zoom" start="0,0" end="180,0" time="400" center="auto" reversible="false" />
+				</animation>
 				<control type="image">
 					<posx>0</posx>
 					<posy>0</posy>
@@ -275,98 +40,62 @@
 					<info>Container(5).Listitem(2).ActualIcon</info>
 					<aspectratio>keep</aspectratio>
 				</control>
-				<!-- control type="image">
-					<posx>0</posx>
-					<posy>50</posy>
-					<width>50</width>
-					<height>50</height>
-					<texture flipy="true" diffuse="fade.png" />
-					<info>Container(5).Listitem(2).Thumb</info>
-					<aspectratio aligny="top">keep</aspectratio>
-				</control -->
 			</control>
 			
 			<control type="group">
 				<posx>-90</posx>
 				<posy>140</posy>
-				<width>180</width>
-				<height>360</height>
+				<width>200</width>
+				<height>400</height>
 				<visible>Container(5).OnNext</visible>
 				<animation effect="slide" start="0,0" end="180,0" time="400" acceleration="-1" reversible="false">Hidden</animation>
 				<control type="image">
 					<posx>0</posx>
 					<posy>0</posy>
-					<width>180</width>
-					<height>360</height>
+					<width>200</width>
+					<height>400</height>
 					<info>Container(5).Listitem(1).ActualIcon</info>
 					<aspectratio>keep</aspectratio>
 				</control>
-				<!-- control type="image">
-					<posx>0</posx>
-					<posy>50</posy>
-					<width>50</width>
-					<height>50</height>
-					<texture flipy="true" diffuse="fade.png" />
-					<info>Container(5).Listitem(2).Thumb</info>
-					<aspectratio aligny="top">keep</aspectratio>
-				</control -->
 			</control>
 			
 			<control type="group">
 				<posx>90</posx>
-				<posy>140</posy>
-				<width>180</width>
-				<height>360</height>
+				<posy>150</posy>
+				<width>220</width>
+				<height>440</height>
 				<visible>Container(5).OnNext</visible>
 				<animation effect="slide" start="0,0" end="180,0" time="400" acceleration="-1"  reversible="false">Hidden</animation>
 				<control type="image">
 					<posx>0</posx>
 					<posy>0</posy>
-					<width>180</width>
-					<height>360</height>
+					<width>220</width>
+					<height>440</height>
 					<info>Container(5).Listitem(0).ActualIcon</info>
 					<aspectratio>keep</aspectratio>
 				</control>
-				<!-- control type="image">
-					<posx>0</posx>
-					<posy>50</posy>
-					<width>50</width>
-					<height>50</height>
-					<texture flipy="true" diffuse="fade.png" />
-					<info>Container(5).Listitem(1).Thumb</info>
-					<aspectratio aligny="top">keep</aspectratio>
-				</control -->
 			</control>
 			
 			<control type="group">
-				<posx>270</posx>
+				<posx>260</posx>
 				<posy>140</posy>
-				<width>180</width>
-				<height>360</height>
+				<width>200</width>
+				<height>400</height>
 				<visible>Container(5).OnNext</visible>
 				<animation effect="slide" start="0,0" end="180,0" time="400" acceleration="-1"  reversible="false">Hidden</animation>
 				<control type="image">
 					<posx>0</posx>
 					<posy>0</posy>
-					<width>180</width>
-					<height>360</height>
+					<width>200</width>
+					<height>400</height>
 					<info>Container(5).Listitem(-1).ActualIcon</info>
 					<aspectratio>keep</aspectratio>
 				</control>
-				<!-- control type="image">
-					<posx>0</posx>
-					<posy>65</posy>
-					<width>65</width>
-					<height>65</height>
-					<texture flipy="true" diffuse="fade.png" />
-					<info>Container(5).Listitem(0).Thumb</info>
-					<aspectratio aligny="top">keep</aspectratio>
-				</control -->
 			</control>
 		
 		    <control type="group">
 				<posx>450</posx>
-				<posy>140</posy>
+				<posy>130</posy>
 				<width>180</width>
 				<height>360</height>
 				<visible>Container(5).OnNext</visible>
@@ -379,20 +108,11 @@
 					<info>Container(5).Listitem(-2).ActualIcon</info>
 					<aspectratio>keep</aspectratio>
 				</control>
-				<!-- control type="image">
-					<posx>0</posx>
-					<posy>230</posy>
-					<width>230</width>
-					<height>230</height>
-					<texture flipy="true" diffuse="fade.png" />
-					<info>Container(5).Listitem(-1).ActualIcon</info>
-					<aspectratio aligny="top">keep</aspectratio>
-				</control -->
 			</control>
 			
 			<control type="group">
 				<posx>630</posx>
-				<posy>140</posy>
+				<posy>130</posy>
 				<width>180</width>
 				<height>360</height>
 				<visible>Container(5).OnNext</visible>
@@ -405,29 +125,19 @@
 					<info>Container(5).Listitem(-3).ActualIcon</info>
 					<aspectratio>keep</aspectratio>
 				</control>
-				<!-- control type="image">
-					<posx>0</posx>
-					<posy>230</posy>
-					<width>230</width>
-					<height>230</height>
-					<texture flipy="true" diffuse="fade.png" />
-					<info>Container(5).Listitem(-2).ActualIcon</info>
-					<aspectratio aligny="top">keep</aspectratio>
-				</control -->
 			</control>
 			
 		</control>
 		
-		<!-- Animation of Main Icons to the left -->
 
-
+<!-- Animation of Main Icons to the left -->
 		<control type="group" id="3002">
 			<visible>Container(5).OnPrevious</visible>
 			<animation effect="slide" start="0,0" end="0,0" time="400" reversible="false">Hidden</animation>
 			
 			<control type="group">
 				<posx>-90</posx>
-				<posy>140</posy>
+				<posy>130</posy>
 				<width>180</width>
 				<height>360</height>
 				<visible>Container(5).OnPrevious</visible>
@@ -444,7 +154,7 @@
 			
 			<control type="group">
 				<posx>90</posx>
-				<posy>140</posy>
+				<posy>130</posy>
 				<width>180</width>
 				<height>360</height>
 				<visible>Container(5).OnPrevious</visible>
@@ -460,17 +170,17 @@
 			</control>
 			
 			<control type="group">
-				<posx>270</posx>
+				<posx>260</posx>
 				<posy>140</posy>
-				<width>180</width>
-				<height>360</height>
+				<width>200</width>
+				<height>400</height>
 				<visible>Container(5).OnPrevious</visible>
 				<animation effect="slide" start="0,0" end="-180,0" time="400" acceleration="-1"  reversible="false">Hidden</animation>
 				<control type="image">
 					<posx>0</posx>
 					<posy>0</posy>
-					<width>180</width>
-					<height>360</height>
+					<width>200</width>
+					<height>400</height>
 					<info>Container(5).Listitem(1).ActualIcon</info>
 					<aspectratio>keep</aspectratio>
 				</control>
@@ -478,16 +188,16 @@
 		
 		    <control type="group">
 				<posx>450</posx>
-				<posy>140</posy>
-				<width>180</width>
-				<height>360</height>
+				<posy>150</posy>
+				<width>220</width>
+				<height>440</height>
 				<visible>Container(5).OnPrevious</visible>
 				<animation effect="slide" start="0,0" end="-180,0"  time="400" acceleration="-1"  reversible="false">Hidden</animation>
 				<control type="image">
 					<posx>0</posx>
 					<posy>0</posy>
-					<width>180</width>
-					<height>360</height>
+					<width>220</width>
+					<height>440</height>
 					<info>Container(5).Listitem(0).ActualIcon</info>
 					<aspectratio>keep</aspectratio>
 				</control>
@@ -496,15 +206,15 @@
 			<control type="group">
 				<posx>630</posx>
 				<posy>140</posy>
-				<width>180</width>
-				<height>360</height>
+				<width>200</width>
+				<height>400</height>
 				<visible>Container(5).OnPrevious</visible>
 				<animation effect="slide" start="0,0" end="-180,0"  time="400" acceleration="-1"  reversible="false">Hidden</animation>
 				<control type="image">
 					<posx>0</posx>
 					<posy>0</posy>
-					<width>180</width>
-					<height>360</height>
+					<width>200</width>
+					<height>400</height>
 					<info>Container(5).Listitem(-1).ActualIcon</info>
 					<aspectratio>keep</aspectratio>
 				</control>
@@ -512,7 +222,7 @@
 
 			<control type="group">
 				<posx>810</posx>
-				<posy>140</posy>
+				<posy>130</posy>
 				<width>180</width>
 				<height>360</height>
 				<visible>Container(5).OnPrevious</visible>
@@ -528,8 +238,7 @@
 			</control>
 		</control>
 		
-		<!-- Main Icons -->
-
+<!-- Main Icons -->
 		<control type="group">
 			<visible>!Control.IsVisible(3001)  + !Control.IsVisible(3002)</visible>
 
@@ -538,7 +247,7 @@
 			  <description>Home Buttons</description>
 			
 				<posx>-90</posx>
-				<posy>140</posy>
+				<posy>120</posy>
 				<width>180</width>
 				<height>360</height>
 				<control type="image">
@@ -549,88 +258,52 @@
 					<info>Container(5).Listitem(2).ActualIcon</info>
 					<aspectratio aligny="bottom">keep</aspectratio>
 				</control>
-				<!-- control type="image">
-					<posx>0</posx>
-					<posy>180</posy>
-					<width>180</width>
-					<height>180</height>
-					<texture flipy="true" diffuse="fade.png" />
-					<info>Container(5).Listitem(2).ActualIcon</info>
-					<aspectratio aligny="top">keep</aspectratio>
-				</control -->
 			</control>
 			<control type="group">
-				<posx>90</posx>
-				<posy>140</posy>
-				<width>170</width>
-				<height>360</height>
+				<posx>75</posx>
+				<posy>120</posy>
+				<width>200</width>
+				<height>400</height>
 				<control type="image">
 					<posx>0</posx>
 					<posy>0</posy>
-					<width>180</width>
-					<height>360</height>
-					<info>Container(5).Listitem(1).ActualIcon</info>
-					<aspectratio aligny="bottom">keep</aspectratio>
-				</control>
-				<!-- control type="image">
-					<posx>0</posx>
-					<posy>180</posy>
-					<width>180</width>
-					<height>180</height>
-					<texture flipy="true" diffuse="fade.png" />
-					<info>Container(5).Listitem(1).ActualIcon</info>
-					<aspectratio aligny="top">keep</aspectratio>
-				</control -->
-			</control>
-			<control type="group">
-				<posx>270</posx>
-				<posy>140</posy>
-				<width>180</width>
-				<height>360</height>
-				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>180</width>
-					<height>360</height>
-					<info>Container(5).Listitem(0).ActualIcon</info>
-					<aspectratio aligny="bottom">keep</aspectratio>
-				</control>
-				<!-- control type="image">
-					<posx>0</posx>
-					<posy>200</posy>
 					<width>200</width>
-					<height>200</height>
-					<texture flipy="true" diffuse="fade.png" />
-					<info>Container(5).Listitem(0).ActualIcon</info>
-					<aspectratio aligny="top">keep</aspectratio>
-				</control -->
+					<height>400</height>
+					<info>Container(5).Listitem(1).ActualIcon</info>
+					<aspectratio aligny="bottom">keep</aspectratio>
+				</control>
 			</control>
 			<control type="group">
-				<posx>450</posx>
-				<posy>140</posy>
-				<width>180</width>
-				<height>360</height>
+				<posx>255</posx>
+				<posy>130</posy>
+				<width>220</width>
+				<height>440</height>
 				<control type="image">
 					<posx>0</posx>
 					<posy>0</posy>
-					<width>180</width>
-					<height>360</height>
+					<width>220</width>
+					<height>440</height>
+					<info>Container(5).Listitem(0).ActualIcon</info>
+					<aspectratio aligny="bottom">keep</aspectratio>
+				</control>
+			</control>
+			<control type="group">
+				<posx>445</posx>
+				<posy>120</posy>
+				<width>200</width>
+				<height>400</height>
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>200</width>
+					<height>400</height>
 					<info>Container(5).Listitem(-1).ActualIcon</info>
 					<aspectratio aligny="bottom">keep</aspectratio>
 				</control>
-				<!-- control type="image">
-					<posx>0</posx>
-					<posy>180</posy>
-					<width>180</width>
-					<height>180</height>
-					<texture flipy="true" diffuse="fade.png" />
-					<info>Container(5).Listitem(-1).ActualIcon</info>
-					<aspectratio aligny="top">keep</aspectratio>
-				</control -->
 			</control>
 			<control type="group">
 				<posx>630</posx>
-				<posy>140</posy>
+				<posy>120</posy>
 				<width>180</width>
 				<height>360</height>
 				<control type="image">
@@ -641,20 +314,11 @@
 					<info>Container(5).Listitem(-2).ActualIcon</info>
 					<aspectratio aligny="bottom">keep</aspectratio>
 				</control>
-				<!-- control type="image">
-					<posx>0</posx>
-					<posy>180</posy>
-					<width>180</width>
-					<height>180</height>
-					<texture flipy="true" diffuse="fade.png" />
-					<info>Container(5).Listitem(-2).ActualIcon</info>
-					<aspectratio aligny="top">keep</aspectratio>
-				</control -->
 			</control>
 			
 		</control>
 		
-		<!-- media infos (music) -->
+<!-- media infos (music) -->
 		<!-- control type="image" id="1">
 			<description>cover image</description>
 			<posx>45</posx>
@@ -755,7 +419,7 @@
 		</control -->
 
 		
-		<!-- Spotlight -->
+<!-- Spotlight -->
 		<control type="image">
 			<description>Spotlight</description>
 			<posx>0</posx>
@@ -766,7 +430,118 @@
 			<texture>Spotlight16x9.png</texture>
 		</control>
 		
-		<!-- page info -->
+<!-- list view with single item as title -->
+		<control type="list" id="5">
+			<posx>0</posx>
+			<posy>40</posy>
+			<height>40</height>
+			<width>720</width>
+			<onleft>5</onleft>  
+			<onright>5</onright>
+			<onup>5</onup>      
+			<ondown>5</ondown>  
+			<itemlayout height="40">
+				<control type="label">
+					<posx>360</posx>
+					<posy>0</posy>
+					<width>720</width>
+					<height>40</height>
+					<info>ListItem.label</info>
+					<align>center</align>
+					<aligny>center</aligny>
+					<font>font20</font>
+					<textcolor>button-text</textcolor>
+				</control>
+			</itemlayout>
+			<focusedlayout height="40">
+				<control type="label">
+					<posx>360</posx>
+					<posy>0</posy>
+					<width>720</width>
+					<height>40</height>
+					<info>ListItem.label</info>
+					<align>center</align>
+					<aligny>center</aligny>
+					<font>font20</font>
+					<textcolor>button-text</textcolor>
+				</control>
+			</focusedlayout>
+			
+<!-- main icons definition -->
+			<content>
+				<item>
+				 	<icon>Icons/Movies.png</icon>
+				 	<thumb>icon-video-blur1.png</thumb>
+					<label>31001</label>
+					<onclick>ActivateWindow(MyVideoFiles)</onclick>
+					<visible>!Skin.HasSetting(movie-library)</visible>
+                 
+				</item>
+				<item>
+				 	<icon>Icons/Movies.png</icon>
+				 	<thumb>icon-video-blur1.png</thumb>
+					<label>31001</label>
+					<onclick>ActivateWindow(MyVideoLibrary,MovieTitles)</onclick>
+					<visible>Skin.HasSetting(movie-library)</visible>
+				</item>
+				<item>
+				 	<icon>Icons/TV.png</icon>
+				 	<thumb>icon-tv-blur1.png</thumb>
+					<label>31010</label>
+					<onclick>ActivateWindow(MyVideoLibrary,tvshowtitles)</onclick>
+					<visible>!Skin.HasSetting(tv-library)</visible>
+				</item>
+				<item>
+				 	<icon>icon-youtube.png</icon>
+				 	<thumb>icon-youtube-blur1.png</thumb>
+					<label>YouTube</label>
+					<onclick>XBMC.RunScript(Q:\scripts\YouTube\default.py)</onclick>
+					<visible>Skin.HasSetting(home-youtube)</visible>
+				</item>
+				<item>
+				 	<icon>Icons/Music.png</icon>
+				 	<thumb>icon-music-blur1.png</thumb>
+					<label>31003</label>
+					<onclick>ActivateWindow(MyMusic)</onclick>
+				</item>
+				<item>
+				 	<icon>Icons/Programms.png</icon>
+				 	<thumb>icon-programs-blur1.png</thumb>
+					<label>31002</label>
+					<onclick>ActivateWindow(MyPrograms)</onclick>
+				</item>
+				<item>
+				 	<icon>Icons/Photo.png</icon>
+				 	<thumb>icon-photo-blur1.png</thumb>
+					<label>31004</label>
+					<onclick>ActivateWindow(MyPictures)</onclick>
+				</item>
+				<item>
+				 	<icon>icon-weather.png</icon>
+				 	<thumb>icon-weather-blur1.png</thumb>
+					<label>31005</label>
+					<onclick>ActivateWindow(Weather)</onclick>
+					<visible>Skin.HasSetting(home-weather)</visible>
+				</item>
+				<item>
+				 	<icon>Icons/MainMenu.png</icon>
+				 	<thumb>icon-settings-blur1.png</thumb>
+					<label>31015</label>
+					<onclick>ActivateWindow(50)</onclick>
+				</item>
+				<item>
+				 	<icon>Icons/DVDDissc.png</icon>
+				 	<thumb>icon-disc-blur1.png</thumb>
+					<label>31009</label>
+					<onclick>XBMC.PlayDVD</onclick>
+					<visible>System.HasMediaDVD</visible>
+				</item>
+			</content>
+		</control>
+		
+
+		
+<!-- page info -->
 		<include>page-info</include>
 	</controls>
 </window>        
