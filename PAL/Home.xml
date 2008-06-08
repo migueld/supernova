@@ -137,10 +137,19 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
             <textcolor>button-text</textcolor>
         </control>
 
+        <control type="image">
+            <posx>-4</posx>
+            <posy>461</posy>
+            <width>728</width>
+            <height>63</height>
+            <aspectratio>keep</aspectratio>
+            <texture>Main-Page-Satusbar-Background.png</texture>
+        </control>
+        
 		<control type="rss">
 			<description>rss feed</description>
 			<posx>0</posx>
-			<posy>545</posy>
+			<posy>537</posy>
 			<width>720</width>
 			<font>font12</font>
 			<urlset>1</urlset>
