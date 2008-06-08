@@ -51,7 +51,7 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
             <posx>-145</posx>
             <posy>150</posy>
             <width>900</width>
-            <height>300</height>
+            <height>265</height>
             <itemlayout width="200" height="400">
                 <control type="image">
                     <width>200</width>
@@ -75,36 +75,43 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
                 </item>
                 <item>
                     <!-- My Pictures -->
-                    <icon>Icons/Photo.png</icon>
-                    <thumb>Icons/Photo.png</thumb>
+                    <icon>Icons/MainMenu-Photo.png</icon>
+                    <thumb>Icons/MainMenu-Photo.png</thumb>
                     <label>1</label>
                     <onclick>ActivateWindow(MyPictures)</onclick>
                 </item>
                 <item>
                     <!-- My Music -->
-                    <icon>Icons/Music.png</icon>
-                    <thumb>Icons/Music.png</thumb>
+                    <icon>Icons/MainMenu-Music.png</icon>
+                    <thumb>Icons/MainMenu-Music.png</thumb>
                     <label>2</label>
                     <onclick>ActivateWindow(MyMusic)</onclick>
                 </item>
                 <item>
                     <!-- My Videos -->
-                    <icon>Icons/Movies.png</icon>
-                    <thumb>Icons/Movies.png</thumb>
+                    <icon>Icons/MainMenu-Movies.png</icon>
+                    <thumb>Icons/MainMenu-Movies.png</thumb>
                     <label>3</label>
                     <onclick>ActivateWindow(MyVideo)</onclick>
                 </item>
                 <item>
+                    <!-- My Videos -->
+                    <icon>Icons/MainMenu-TV.png</icon>
+                    <thumb>Icons/MainMenu-TV.png</thumb>
+                    <label>4</label>
+                    <onclick>ActivateWindow(MyVideo)</onclick>
+                </item>
+                <item>
                     <!-- Settings -->
-                    <icon>Icons/MainMenu.png</icon>
-                    <thumb>Icons/MainMenu.png</thumb>
+                    <icon>Icons/MainMenu-Preferences.png</icon>
+                    <thumb>Icons/MainMenu-Preferences.png</thumb>
                     <label>5</label>
                     <onclick>ActivateWindow(Settings)</onclick>
                 </item>
                 <item>
                     <!-- DVD -->
-                    <icon>Icons/DVDDisc.png</icon>
-                    <thumb>Icons/DVDDisc.png</thumb>
+                    <icon>Icons/MainMenu-DVDDisc.png</icon>
+                    <thumb>Icons/MainMenu-DVDDisc.png</thumb>
                     <label>31009</label>
                     <onclick>XBMC.PlayDVD</onclick>
                     <visible>System.HasMediaDVD</visible>
