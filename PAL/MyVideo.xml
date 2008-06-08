@@ -6,7 +6,8 @@
 	    <!-- Main List -->
  		<control type="list" id="4000">
             <animation effect="fade" time="400" delay="150" start="0" end="100" condition="[!Skin.HasSetting(animated) + !Skin.HasSetting(tween_animated)]">WindowOpen</animation>
-
+            <pulseonselect>yes</pulseonselect>
+            
 			<posx>113</posx>
 			<posy>133</posy>
 			<height>381</height>
@@ -183,6 +184,7 @@
     	    <!-- Breadcrumb Buttons -->
     		<control type="button" id="3001">
                 <animation effect="slide" tween="cubic" time="300" delay="250" start="-105,0" end="0,0" acceleration="+1.5" condition="[!Skin.HasSetting(animated) + !Skin.HasSetting(tween_animated)]">WindowOpen</animation>
+                <pulseonselect>no</pulseonselect>
     		    <posx>70</posx>
     		    <posy>55</posy>
     		    <width>105</width>
@@ -198,6 +200,7 @@
     	    
     		<control type="button" id="3000">
                 <animation effect="slide" tween="cubic" time="300" delay="100" start="-100,0" end="0,0" acceleration="+1.5" condition="[!Skin.HasSetting(animated) + !Skin.HasSetting(tween_animated)]">WindowOpen</animation>
+                <pulseonselect>no</pulseonselect>
     		    <posx>-4</posx>
     		    <posy>55</posy>
     		    <width>99</width>
