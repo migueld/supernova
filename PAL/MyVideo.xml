@@ -1,10 +1,12 @@
 <window id="6">
-	<defaultcontrol>4000</defaultcontrol>
+	<defaultcontrol always="yes">4000</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
 	<previouswindow>Home</previouswindow>
 	<controls>
 	    <!-- Main List -->
  		<control type="list" id="4000">
+            <animation effect="fade" time="400" delay="150" start="0" end="100" condition="[!Skin.HasSetting(animated) + !Skin.HasSetting(tween_animated)]">WindowOpen</animation>
+
 			<posx>113</posx>
 			<posy>133</posy>
 			<height>381</height>
@@ -112,6 +114,7 @@
 				 	<thumb>Icons/Movies-Disc.png</thumb>
 					<label>DVD</label>
 					<onclick>ActivateWindow(MyVideoFiles)</onclick>
+					<visible>System.HasMediaDVD</visible>
 				</item>
             </content>
 		</control>
@@ -125,54 +128,89 @@
 		    <texture>Module-Spotlight.png</texture>
 	    </control>
 	    
-	    <!-- Bread crumb Background -->
-		<control type="image">
-		    <posx>-4</posx>
-		    <posy>-1</posy>
-		    <width>728</width>
-		    <height>84</height>
-		    <aspectratio>keep</aspectratio>
-		    <texture>Module-Breadcrumb-Background.png</texture>
-	    </control>
-	    
-	    <!-- Breadcrumb Title -->
-		<control type="image">
-		    <posx>13</posx>
-		    <posy>6</posy>
-		    <width>157</width>
-		    <height>47</height>
-		    <aspectratio>keep</aspectratio>
-		    <texture>Movies-Headline.png</texture>
-	    </control>
-	    
-	    <!-- Breadcrumb Buttons -->
-		<control type="button" id="3001">
-    		<animation effect="slide" tween="bounce" time="200" delay="50" start="-150,0" end="0,0" acceleration="+1.5" condition="[!Skin.HasSetting(animated) + !Skin.HasSetting(tween_animated)]">WindowOpen</animation>
-		    <posx>70</posx>
-		    <posy>55</posy>
-		    <width>120</width>
-		    <height>28</height>
-		    <aspectratio aligny="top">keep</aspectratio>
-			<texturefocus>Module-Breadcrumb-Button-Movies-Selected.png</texturefocus>
-			<texturenofocus>Module-Breadcrumb-Button-Movies-Normal.png</texturenofocus>
-			<onleft>3000</onleft>
-			<onright>3000</onright>
-			<ondown>4000</ondown>
-			<onup>4000</onup>
-	    </control>
-		<control type="button" id="3000">
-    		<animation effect="slide" tween="bounce" time="200" start="-100,0" end="0,0" acceleration="+1.5" condition="[!Skin.HasSetting(animated) + !Skin.HasSetting(tween_animated)]">WindowOpen</animation>
-		    <posx>-15</posx>
-		    <posy>55</posy>
-		    <width>120</width>
-		    <height>28</height>
-		    <aspectratio aligny="top">keep</aspectratio>
-			<texturefocus>Module-Breadcrumb-Button-MainMenu-Selected.png</texturefocus>
-			<texturenofocus>Module-Breadcrumb-Button-MainMenu-Normal.png</texturenofocus>
-			<onleft>3001</onleft>
-			<onright>3001</onright>
-			<ondown>4000</ondown>
-			<onup>4000</onup>
+	    <!-- Breadcrumb and Title -->
+	    <control type="group">
+    	    <!-- Breadcrumb Background -->
+    	    <control type="image">
+    	        <animation effect="slide" time="200" delay="50" start="0,-30" end="0,0" tween="cubic" condition="[!Skin.HasSetting(animated) + !Skin.HasSetting(tween_animated)]">WindowOpen</animation>
+    	        <posx>-4</posx>
+    	        <posy>55</posy>
+    	        <width>727</width>
+    	        <height>47</height>
+    	        <texture>Module-Breadcrumb-Background.png</texture>
+            </control>
+
+    		<control type="group">
+    		    <animation type="WindowOpen" condition="[!Skin.HasSetting(animated) + !Skin.HasSetting(tween_animated)]">
+                    <effect type="fade" time="50" delay="0" start="0" end="100" />
+                    <effect type="slide" time="150" delay="0" start="0,-10" end="0,0" tween="cubic"/>
+		        </animation>
+                <!-- <animation effect="slide" time="1000" delay="0" start="0,-10" end="0,0" acceleration="+5" condition="[!Skin.HasSetting(animated) + !Skin.HasSetting(tween_animated)]">WindowOpen</animation> -->
+                <!-- <animation effect="fade" time="250" delay="0" start="0" end="100" condition="[!Skin.HasSetting(animated) + !Skin.HasSetting(tween_animated)]">WindowOpen</animation> -->
+    	        <!-- Top edging -->
+    	        <control type="image">
+    	            <posx>-4</posx>
+    	            <posy>0</posy>
+    	            <width>728</width>
+    	            <height>6</height>
+        		    <texture>Module-Window-Title-Edging.png</texture>
+    		    </control>
+		    
+    		    <!-- Title background -->
+                <control type="image">
+                    <posx>-4</posx>
+                    <posy>6</posy>
+                    <width>728</width>
+                    <height>56</height>
+                    <texture>Module-Window-Title-Background.png</texture>
+                </control>
+            </control>
+
+            <!-- Title text -->
+    		<control type="image">
+    		    <animation type="WindowOpen" condition="[!Skin.HasSetting(animated) + !Skin.HasSetting(tween_animated)]">
+                    <effect type="fade" time="50" delay="75" start="0" end="100" />
+                    <effect type="slide" time="150" delay="75" start="-50,0" end="0,0" tween="cubic"/>
+		        </animation>
+    		    <posx>13</posx>
+    		    <posy>6</posy>
+    		    <width>157</width>
+    		    <height>47</height>
+    		    <aspectratio>keep</aspectratio>
+    		    <texture>Movies-Headline.png</texture>
+    	    </control>
+
+    	    <!-- Breadcrumb Buttons -->
+    		<control type="button" id="3001">
+                <animation effect="slide" tween="cubic" time="300" delay="250" start="-105,0" end="0,0" acceleration="+1.5" condition="[!Skin.HasSetting(animated) + !Skin.HasSetting(tween_animated)]">WindowOpen</animation>
+    		    <posx>70</posx>
+    		    <posy>55</posy>
+    		    <width>105</width>
+    		    <height>28</height>
+    		    <aspectratio aligny="top">keep</aspectratio>
+    			<texturefocus>Module-Breadcrumb-Button-Movies-Selected.png</texturefocus>
+    			<texturenofocus>Module-Breadcrumb-Button-Movies-Normal.png</texturenofocus>
+    			<onleft>3000</onleft>
+    			<onright>3000</onright>
+    			<ondown>4000</ondown>
+    			<onup>4000</onup>
+    	    </control>
+    	    
+    		<control type="button" id="3000">
+                <animation effect="slide" tween="cubic" time="300" delay="100" start="-100,0" end="0,0" acceleration="+1.5" condition="[!Skin.HasSetting(animated) + !Skin.HasSetting(tween_animated)]">WindowOpen</animation>
+    		    <posx>-4</posx>
+    		    <posy>55</posy>
+    		    <width>99</width>
+    		    <height>28</height>
+    		    <aspectratio aligny="top">keep</aspectratio>
+    			<texturefocus>Module-Breadcrumb-Button-MainMenu-Selected.png</texturefocus>
+    			<texturenofocus>Module-Breadcrumb-Button-MainMenu-Normal.png</texturenofocus>
+    			<onclick>ActivateWindow(0)</onclick>
+    			<onleft>3001</onleft>
+    			<onright>3001</onright>
+    			<ondown>4000</ondown>
+    			<onup>4000</onup>
+    	    </control>
 	    </control>
 	</controls>
 </window>  
