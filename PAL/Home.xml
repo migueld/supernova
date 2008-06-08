@@ -137,6 +137,7 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
             <textcolor>button-text</textcolor>
         </control>
 
+        <!-- Status bar background -->
         <control type="image">
             <posx>-4</posx>
             <posy>461</posy>
@@ -146,16 +147,30 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
             <texture>Main-Page-Satusbar-Background.png</texture>
         </control>
         
-		<control type="rss">
-			<description>rss feed</description>
-			<posx>0</posx>
-			<posy>537</posy>
-			<width>720</width>
-			<font>font12</font>
-			<urlset>1</urlset>
-			<textcolor>info-text</textcolor>
-			<titlecolor>rss-title-text</titlecolor>
-			<headlinecolor>rss-headline-text</headlinecolor>
+        <!-- RSS Scrolling Feed -->
+        <control type="group">
+            <!-- RSS Feed -->
+    		<control type="rss">
+    			<description>rss feed</description>
+    			<posx>0</posx>
+    			<posy>537</posy>
+    			<width>720</width>
+    			<font>font12</font>
+    			<urlset>1</urlset>
+    			<textcolor>info-text</textcolor>
+    			<titlecolor>rss-title-text</titlecolor>
+    			<headlinecolor>rss-headline-text</headlinecolor>
+    		</control>
+    		
+    		<!-- RSS Spotlight -->
+    		<control type="image">
+    		    <posx>0</posx>
+    		    <posy>524</posy>
+    		    <width>720</width>
+    		    <height>54</height>
+    		    <aspectratio>keep</aspectratio>
+    		    <texture>Main-Page-RSS-Spotlight.png</texture>
+		    </control>
 		</control>
         <!-- Main User Interface End -->
     </controls>
