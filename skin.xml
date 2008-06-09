@@ -28,7 +28,7 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
   <defaultresolutionwide>pal16x9</defaultresolutionwide>
   <version>2.1</version>
   
-  <effectslowdown>3</effectslowdown>
+  <effectslowdown>5</effectslowdown>
   <credits>
     <skinname>CenterStage</skinname>
     <name>by David McLoud</name>
