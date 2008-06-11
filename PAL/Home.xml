@@ -33,10 +33,10 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
         <!-- Background stage floor -->
         <control type="image">
             <description>Stage floor</description>
-            <posx>-4</posx>
+            <posx>0</posx>
             <posy>0</posy>
-            <width>728</width>
-            <height>590</height>
+            <width>720</width>
+            <height>576</height>
             <aspectratio/>
             <texture>StageFloor16x9.png</texture>
         </control>
@@ -123,9 +123,9 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
         <!-- Spot light overlay -->
         <control type="image">
             <description>Spot light overlay</description>
-            <posx>-4</posx>
+            <posx>0</posx>
             <posy>0</posy>
-            <width>724</width>
+            <width>720</width>
             <height>576</height>
             <aspectratio/>
             <texture>Spotlight16x9.png</texture>
@@ -146,9 +146,9 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
 
         <!-- Status bar background -->
         <control type="image">
-            <posx>-4</posx>
+            <posx>0</posx>
             <posy>461</posy>
-            <width>728</width>
+            <width>720</width>
             <height>63</height>
             <aspectratio>keep</aspectratio>
             <texture>Main-Page-Satusbar-Background.png</texture>
