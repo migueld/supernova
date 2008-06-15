@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-16"?>
 <!---------------------------------------------------------------------------
 Home.xml: CenterStageProject - User Interface [PAL]
 -----------------------------------------------------------------------------
@@ -23,7 +24,6 @@ You should have received a copy of the GNU General Public License along with
 this program; if not, write to the Free Software Foundation, Inc., 51
 Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
 --------------------------------------------------------------------------->
-<?xml version="1.0"?>
 <window id="0">
     <defaultcontrol always="false">5</defaultcontrol>
     <allowoverlay>yes</allowoverlay>
@@ -48,24 +48,28 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
             <ondown>5</ondown>
             <orientation>horizontal</orientation>
             <focusposition>2</focusposition>
-            <posx>-145</posx>
+            <posx>-140</posx>
             <posy>150</posy>
-            <width>900</width>
-            <height>265</height>
-            <itemlayout width="200" height="400">
-                <control type="image">
-                    <width>200</width>
-                    <height>400</height>
-                    <info>ListItem.Icon</info>
-                </control>
-            </itemlayout>
+            <width>940</width>
+            <height>400</height>
             <focusedlayout width="200" height="400">
                 <control type="image">
-                    <width>200</width>
+                    <animation reversible="false" effect="zoom" center="120,10" start="100" end="115" time="100">focus</animation>
+                    <animation reversible="false" effect="zoom" center="120,10" start="115" end="100" time="100">unfocus</animation>
+                    <posx>29</posx>
+                    <width>142</width>
                     <height>400</height>
                     <info>ListItem.Icon</info>
                 </control>
             </focusedlayout>
+            <itemlayout width="200" height="400">
+                <control type="image">
+                    <posx>29</posx>
+                    <width>142</width>
+                    <height>400</height>
+                    <info>ListItem.Icon</info>
+                </control>
+            </itemlayout>
             <!-- Control elements -->
             <content>
                 <item>
@@ -134,9 +138,9 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
         <!-- Currently selected item's label -->
         <control type="label">
             <posx>0</posx>
-            <posy>40</posy>
+            <posy>58</posy>
             <width>720</width>
-            <height>40</height>
+            <height>17</height>
             <info>Container(5).ListItem.Label</info>
             <align>center</align>
             <aligny>center</aligny>
@@ -144,14 +148,57 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
             <textcolor>button-text</textcolor>
         </control>
 
-        <!-- Status bar background -->
-        <control type="image">
-            <posx>0</posx>
-            <posy>461</posy>
-            <width>720</width>
-            <height>63</height>
-            <aspectratio>keep</aspectratio>
-            <texture>Main-Page-Satusbar-Background.png</texture>
+        <control type="group">
+            <!-- Status bar background -->
+            <control type="image">
+                <posx>0</posx>
+                <posy>461</posy>
+                <width>720</width>
+                <height>63</height>
+                <aspectratio>keep</aspectratio>
+                <texture>Main-Page-Statusbar-Background.png</texture>
+            </control>
+
+            <!-- Last Played Widget -->
+            <control type="group">
+                <control type="image">
+                    <posx>110</posx>
+                    <posy>505</posy>
+                    <width>156</width>
+                    <height>14</height>
+                    <texture>Main-Page-Statusbar-Timeline.png</texture>
+                </control>
+                <control type="image">
+                    <posx>200</posx>
+                    <posy>506</posy>
+                    <width>7</width>
+                    <height>11</height>
+                    <texture>Main-Page-Statusbar-Timeline-Slider.png</texture>
+                </control>
+                <control type="label">
+                    <posx>230</posx>
+                    <posy>505</posy>
+                    <width>36</width>
+                    <align>center</align>
+                    <label>[B]1:30:10[/B]</label>
+                    <font>font10</font>
+                    <textcolor>ff000000</textcolor>
+                </control>
+                <control type="label">
+                    <posx>110</posx>
+                    <posy>470</posy>
+                    <label>Last Played</label>
+                    <font>font12</font>
+                    <textcolor>dfdedede</textcolor>
+                </control>
+                <control type="label">
+                    <posx>110</posx>
+                    <posy>487</posy>
+                    <label>Star Wars: Clone Wars</label>
+                    <font>font11</font>
+                    <textcolor>55555555</textcolor>
+                </control>
+            </control>
         </control>
         
         <!-- RSS Scrolling Feed -->
