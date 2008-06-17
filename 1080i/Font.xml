@@ -2,49 +2,49 @@
 	<fontset id="Default" unicode="true">
 		<font>
 			<name>font10</name>
-			<filename>xTV.ttf</filename>
-			<size>24</size>
-			<aspect>1.05</aspect>
+			<filename>Arial.ttf</filename>
+			<size>9</size>
+			<aspect>0.35</aspect>
 		</font>
 		<font>
 			<name>font11</name>
-			<filename>xTV.ttf</filename>
+			<filename>Arial.ttf</filename>
 			<size>24</size>
 			<aspect>1.05</aspect>
 		</font>
 		<font>
 			<name>font12</name>
-			<filename>xTV.ttf</filename>
+			<filename>Arial.ttf</filename>
 			<size>28</size>
 			<aspect>1.05</aspect>
 		</font>
 		<font>
 			<name>font13</name>
-			<filename>xTV.ttf</filename>
+			<filename>Arial.ttf</filename>
 			<size>32</size>
 			<aspect>1.05</aspect>
 		</font>
 		<font>
 			<name>font18</name>
-			<filename>xTV.ttf</filename>
+			<filename>Arial.ttf</filename>
 			<size>28</size>
 			<aspect>1.05</aspect>
 		</font>
 		<font>
 			<name>font20</name>
-			<filename>xTV.ttf</filename>
+			<filename>Arial.ttf</filename>
 			<size>40</size>
 			<style>bold</style>
 			<aspect>1.05</aspect>
 		</font>
 		<font>
 			<name>font22</name>
-			<filename>xTV.ttf</filename>
+			<filename>Arial.ttf</filename>
 			<size>40</size>
 		</font>
 		<font>
 			<name>font28</name>
-			<filename>xTV.ttf</filename>
+			<filename>Arial.ttf</filename>
 			<size>52</size>
 			<aspect>1.05</aspect>
 		</font>
@@ -53,8 +53,8 @@
 		<font>
 			<name>font10</name>
 			<filename>LucidaGrandeBold.ttf</filename>
-			<size>24</size>
-			<aspect>1</aspect>
+			<size>9</size>
+			<aspect>0.35</aspect>
 		</font>
 		<font>
 			<name>font11</name>
