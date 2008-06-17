@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-16"?>
+<!---------------------------------------------------------------------------
+IncludesModuleView.xml: CenterStageProject - User Interface [PAL]
+-----------------------------------------------------------------------------
+Copyright (C) 2008 The CenterStage Project Development Team
+
+$Id$
+
+Authors:
+    Jan Litzinger [tragnar]
+    Faustino E. Osuna [riqueDaFreak]
+
+This program is free software; you can redistribute it and/or modify it
+under the terms of the GNU General Public License as published by the Free
+Software Foundation; either version 2 of the License, or (at your option)
+any later version.
+
+This program is distributed in the hope that it will be useful, but WITHOUT
+ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
+FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for
+more details.
+
+You should have received a copy of the GNU General Public License along with
+this program; if not, write to the Free Software Foundation, Inc., 51
+Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
+--------------------------------------------------------------------------->
+<includes>
+    <include name="module-list-box">
+        <animation effect="fade" time="800" delay="400" start="0" end="100">WindowOpen</animation>
+        <pulseonselect>yes</pulseonselect>
+    
+    	<posx>113</posx>
+    	<posy>133</posy>
+    	<height>381</height>
+    	<width>494</width>
+    	<onleft>4000</onleft>
+    	<onright>4000</onright>
+    	<onup>3000</onup>
+    	<ondown>3000</ondown>
+    	<itemlayout height="63">
+    		<control type="image">
+    			<posx>0</posx>
+    			<posy>13</posy>
+    			<width>39</width>
+    			<height>37</height>
+    			<info>ListItem.Icon</info>
+    			<aspectratio>keep</aspectratio>
+    		</control>
+            <control type="image">
+                <posx>47</posx>
+                <posy>8</posy>
+                <width>425</width>
+                <height>48</height>
+                <texture>Module-List-Item-Normal.png</texture>
+            </control>
+    		<control type="label">
+    			<posx>65</posx>
+    			<posy>8</posy>
+    			<width>265</width>
+    			<height>48</height>
+    			<info>ListItem.label</info>
+    			<aligny>center</aligny>
+    			<font>font13</font>
+    			<textcolor>button-text</textcolor>
+    		</control>
+    	</itemlayout>
+    	<focusedlayout height="63">
+    		<control type="image">
+    			<posx>0</posx>
+    			<posy>13</posy>
+    			<width>39</width>
+    			<height>37</height>
+    			<info>ListItem.Icon</info>
+    			<aspectratio>keep</aspectratio>
+    		</control>
+    		<control type="image">
+    			<posx>47</posx>
+    			<posy>8</posy>
+    			<width>425</width>
+    			<height>48</height>
+    			<texture>Module-List-Item-Selected.png</texture>
+    			<visible>Control.HasFocus(4000)</visible>
+    		</control>
+            <control type="image">
+                <posx>47</posx>
+                <posy>8</posy>
+                <width>425</width>
+                <height>48</height>
+                <texture>Module-List-Item-Normal.png</texture>
+    			<visible>!Control.HasFocus(4000)</visible>
+            </control>
+    		<control type="label">
+    			<posx>65</posx>
+    			<posy>8</posy>
+    			<width>265</width>
+    			<height>48</height>
+    			<info>ListItem.label</info>
+    			<aligny>center</aligny>
+    			<font>font13</font>
+    			<textcolor>button-text</textcolor>
+    		</control>
+    	</focusedlayout>
+    </include>
+
+    <include name="module-spotlight">
+    	<control type="image">
+    	    <posx>0</posx>
+    	    <posy>0</posy>
+    	    <width>720</width>
+    	    <height>576</height>
+    	    <texture>Module-Spotlight.png</texture>
+        </control>
+    </include>
+
+    <include name="module-title-and-breadcrumb-background">
+        <!-- Breadcrumb Background -->
+        <control type="image">
+            <posx>0</posx>
+            <posy>55</posy>
+            <width>720</width>
+            <height>47</height>
+            <texture>Module-Breadcrumb-Background.png</texture>
+        </control>
+
+        <!-- Title Background -->
+    	<control type="group">
+            <!-- Top edging -->
+            <control type="image">
+                <posx>0</posx>
+                <posy>0</posy>
+                <width>720</width>
+                <height>6</height>
+    		    <texture>Module-Window-Title-Edging.png</texture>
+    	    </control>
+    
+    	    <!-- Title background -->
+            <control type="image">
+                <posx>0</posx>
+                <posy>6</posy>
+                <width>720</width>
+                <height>56</height>
+                <texture>Module-Window-Title-Background.png</texture>
+            </control>
+        </control>
+    </include>
+    
+    <include name="module-title-and-breadcrumb-background-animated">
+        <!-- Breadcrumb Background -->
+        <control type="image">
+            <animation effect="slide" time="400" delay="100" start="0,-30" end="0,0" tween="cubic">WindowOpen</animation>
+            <posx>0</posx>
+            <posy>55</posy>
+            <width>720</width>
+            <height>47</height>
+            <texture>Module-Breadcrumb-Background.png</texture>
+        </control>
+
+        <!-- Title Background -->
+    	<control type="group">
+    	    <animation type="WindowOpen">
+                <effect type="fade" time="100" delay="0" start="0" end="100" />
+                <effect type="slide" time="300" delay="0" start="0,-10" end="0,0" tween="cubic"/>
+            </animation>
+            <!-- Top edging -->
+            <control type="image">
+                <posx>0</posx>
+                <posy>0</posy>
+                <width>720</width>
+                <height>6</height>
+    		    <texture>Module-Window-Title-Edging.png</texture>
+    	    </control>
+    
+    	    <!-- Title background -->
+            <control type="image">
+                <posx>0</posx>
+                <posy>6</posy>
+                <width>720</width>
+                <height>56</height>
+                <texture>Module-Window-Title-Background.png</texture>
+            </control>
+        </control>
+    </include>
+
+    <include name="module-title-animation">
+        <animation type="WindowOpen">
+            <effect type="fade" time="100" delay="150" start="0" end="100" />
+            <effect type="slide" time="300" delay="150" start="-50,0" end="0,0" tween="cubic"/>
+        </animation>
+    </include>
+</includes>

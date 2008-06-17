@@ -1,219 +1,29 @@
+<?xml version="1.0" encoding="UTF-16"?>
+<!---------------------------------------------------------------------------
+Includes.xml: CenterStageProject - User Interface [PAL]
+-----------------------------------------------------------------------------
+Copyright (C) 2008 The CenterStage Project Development Team
+
+$Id$
+
+Authors:
+    Jan Litzinger [tragnar]
+    Faustino E. Osuna [riqueDaFreak]
+
+This program is free software; you can redistribute it and/or modify it
+under the terms of the GNU General Public License as published by the Free
+Software Foundation; either version 2 of the License, or (at your option)
+any later version.
+
+This program is distributed in the hope that it will be useful, but WITHOUT
+ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
+FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for
+more details.
+
+You should have received a copy of the GNU General Public License along with
+this program; if not, write to the Free Software Foundation, Inc., 51
+Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
+--------------------------------------------------------------------------->
 <includes>
-	<include file="CommonViewTypes.xml">-</include>
-	<include file="Defaults.xml">-</include>
-	<include file="3D_CoverView.xml">-</include>
-	<include file="3D_AlbumView.xml">-</include>
-	<!-- Begin iTV string includes -->
-	<!-- Start xTV box image include -->
-	<include name="xtv-box">
-		<control type="image">
-			<description>Xtv Logo</description>
-			<posx>-30</posx>
-			<posy>70</posy>
-			<width>440</width>
-			<height>440</height>
-			<aspectratio>keep</aspectratio>
-			<texture>Xtv-Logo-Big.png</texture>
-			<animation effect="fade" start="0" delay="150" time="50" condition="Window.Previous(Home) + !Window.Previous(Settings)">WindowOpen</animation>
-			<animation effect="fade" start="10" time="0" condition="Window.Next(Home)">WindowClose</animation>
-		</control>
-	</include>
-	<!-- End xTV box image include -->
-	<!-- Start Home Media Overlay -->
-	<include name="homemediainfo">
-		<visible>!Skin.HasSetting(homepageMusicinfo)</visible>
-		<animation effect="fade" time="200">VisibleChange</animation>
-		<animation effect="slide" time="500" start="-400,0" end="0,0" acceleration="-1.1" delay="0">WindowOpen</animation>
-		<animation effect="slide" time="300" start="0,0" end="-400,0" acceleration="-1.3" delay="0">WindowClose</animation>
-	</include>
-	<!-- End Home Media Overlay -->
-	<!-- Start Number of Files Include -->
-	<include name="#files">
-		<control type="label" id="12">
-			<description>number of files text label</description>
-			<posx>680</posx>
-			<posy>556</posy>
-			<align>right</align>
-			<label>-</label>
-			<font>font10</font>
-			<textcolor>button-text</textcolor>
-			<include>list-fade</include>
-		</control>
-	</include>
-	<!-- End Number of Files Include -->
-	<!-- Start List Item Icon Include -->
-	<include name="ListView-Icon">
-		<control type="image">
-			<description>list item icon</description>
-			<posx>20</posx>
-			<posy>100</posy>
-			<width>350</width>
-			<height>350</height>
-			<info>ListItem.Icon</info>
-			<aspectratio>keep</aspectratio>
-			<visible>Control.IsVisible(50)</visible>
-			<animation effect="rotatey" start="-20" end="-20" time="0" condition="Skin.HasSetting(tilted-icons)">Conditional</animation>
-			<include>list-fade</include>
-		</control>
-		<control type="image">
-			<description>list item icon reflection</description>
-			<posx>20</posx>
-			<posy>450</posy>
-			<width>350</width>
-			<height>350</height>
-			<info>ListItem.Icon</info>
-			<texture flipy="true" diffuse="fade2.png">-</texture>
-			<aspectratio>keep</aspectratio>
-			<visible>Control.IsVisible(50)</visible>
-			<animation effect="rotatey" start="-20" end="-20" time="0" condition="Skin.HasSetting(tilted-icons)">Conditional</animation>
-			<include>list-fade</include>
-		</control>
-	</include>
-	<!-- Start Fake Overlay Include -->
-	<include name="Fake-Overlay">
-		<!-- Video Stuff -->
-		<control type="videowindow">
-			<description>video preview window</description>
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>116</width>
-			<height>99</height>
-			<aspectratio>keep</aspectratio>
-			<visible>![System.IdleTime(64) | Window.IsActive(Home) | Window.IsActive(MyVideoLibrary) | Window.IsActive(MyMusicLibrary)]</visible>
-			<visible>Player.HasVideo + Skin.HasSetting(overlay)</visible>
-		</control>
-		<control type="label">
-			<description>Video Title label</description>
-			<width>235</width>
-			<posx>118</posx>
-			<posy>5</posy>
-			<info>VideoPlayer.Title</info>
-			<align>left</align>
-			<font>font12</font>
-			<visible>![System.IdleTime(64) | Window.IsActive(Home) | Window.IsActive(MyVideoLibrary) | Window.IsActive(MyMusicLibrary)]</visible>
-			<visible>Player.HasVideo + Skin.HasSetting(overlay)</visible>
-		</control>
-		<control type="label">
-			<description>Time label</description>
-			<width>235</width>
-			<posx>118</posx>
-			<posy>30</posy>
-			<label>$INFO[Player.Time]$INFO[Player.Duration, / ]</label>
-			<align>left</align>
-			<font>font10</font>
-			<visible>![System.IdleTime(64) | Window.IsActive(Home) | Window.IsActive(MyVideoLibrary) | Window.IsActive(MyMusicLibrary)]</visible>
-			<visible>Player.HasVideo + Skin.HasSetting(overlay)</visible>
-		</control>
-		<!-- Audio Stuff -->
-		<control type="image">
-			<description>cover image</description>
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>116</width>
-			<height>99</height>
-			<info>MusicPlayer.Cover</info>
-			<aspectratio>keep</aspectratio>
-			<visible>![System.IdleTime(64) | Window.IsActive(Home) | Window.IsActive(MyVideoLibrary) | Window.IsActive(MyMusicLibrary)]</visible>
-			<visible>Player.HasAudio + Skin.HasSetting(overlay)</visible>
-		</control>
-		<control type="label">
-			<description>Artist label</description>
-			<width>235</width>
-			<posx>118</posx>
-			<posy>5</posy>
-			<info>MusicPlayer.Artist</info>
-			<align>left</align>
-			<font>font10</font>
-			<visible>![System.IdleTime(64) | Window.IsActive(Home) | Window.IsActive(MyVideoLibrary) | Window.IsActive(MyMusicLibrary)]</visible>
-			<visible>Player.HasAudio + Skin.HasSetting(overlay)</visible>
-		</control>
-		<control type="label">
-			<description>Title label</description>
-			<width>235</width>
-			<posx>118</posx>
-			<posy>30</posy>
-			<info>MusicPlayer.Title</info>
-			<align>left</align>
-			<font>font12</font>
-			<visible>![System.IdleTime(64) | Window.IsActive(Home) | Window.IsActive(MyVideoLibrary) | Window.IsActive(MyMusicLibrary)]</visible>
-			<visible>Player.HasAudio + Skin.HasSetting(overlay)</visible>
-		</control>
-		<control type="label">
-			<description>Album label</description>
-			<width>235</width>
-			<posx>118</posx>
-			<posy>55</posy>
-			<info>MusicPlayer.Album</info>
-			<align>left</align>
-			<font>font10</font>
-			<visible>![System.IdleTime(64) | Window.IsActive(Home) | Window.IsActive(MyVideoLibrary) | Window.IsActive(MyMusicLibrary)]</visible>
-			<visible>Player.HasAudio + Skin.HasSetting(overlay)</visible>
-		</control>
-		<control type="label">
-			<description>Time label</description>
-			<width>235</width>
-			<posx>118</posx>
-			<posy>70</posy>
-			<label>$INFO[MusicPlayer.Time]$INFO[MusicPlayer.Duration, / ]</label>
-			<align>left</align>
-			<font>font10</font>
-			<visible>![System.IdleTime(64) | Window.IsActive(Home) | Window.IsActive(MyVideoLibrary) | Window.IsActive(MyMusicLibrary)]</visible>
-			<visible>Player.HasAudio + Skin.HasSetting(overlay)</visible>
-		</control>
-	</include>
-	<!-- End Fake Overlay Include -->
-	<include name="icon-header-commons">
-		<posx>485</posx>
-		<posy>35</posy>
-		<width>45</width>
-		<height>45</height>
-		<aspectratio aligny="bottom">keep</aspectratio>
-	</include>
-	<include name="icon-header-reflect-commons">
-		<posx>140</posx>
-		<posy>375</posy>
-		<width>230</width>
-		<height>230</height>
-		<aspectratio aligny="top">keep</aspectratio>
-		<visible>Window.Next(Home)</visible>
-	</include>
-	<!-- Start Animation Includes -->
-	<include name="button-fade">
-		<animation effect="fade" start="0" time="300">Visible</animation>
-	</include>
-	<include name="shutdown-ani">
-		<animation effect="slide" start="0,450" time="200">WindowOpen</animation>
-		<animation effect="slide" end="0,450" time="200">WindowClose</animation>
-	</include>
-	<include name="list-fade">
-		<animation effect="fade" start="0" delay="150" time="50" condition="Window.Previous(Home)">WindowOpen</animation>
-		<animation effect="fade" start="0" time="10" condition="Window. Next(Home)">WindowClose</animation>
-	</include>
-	<include name="icon-ani">
-		<animation effect="zoom" start="485,35,45,45" end="140,145,230,230" time="175" condition="Window.Next(Home)">WindowClose</animation>
-		<animation effect="zoom" start="140,145,230,230"  end="485,35,45,45" time="175" condition="Window.Previous(Home)">WindowOpen</animation>
-	</include>
-	<include name="icon-reflection-ani">
-		<animation effect="fade" start="0" end="100" time="25" delay="150" condition="Window.Next(Home)">Visible</animation>
-	</include>
-	<!-- End Animation Includes -->
-	<!-- Start Visibility Includes -->
-	<include name="View-as">
-		<visible allowhiddenfocus="true">![Window.Next(Home) | Control.HasFocus(50) | Control.HasFocus(51) | Control.HasFocus(52) | Control.HasFocus(53) | Control.HasFocus(54) | Control.HasFocus(55) | Control.HasFocus(56) | Control.HasFocus(57) | Control.HasFocus(58) | Control.HasFocus(59) | Control.HasFocus(23) | Control.HasFocus(100)]</visible>
-	</include>
-	<!-- End Visibility Includes -->
-	<!-- Start Autoscroll Includes -->
-	<include name="AutoScroll1x">
-	         <align>justify</align>
-	         <autoscroll time="3000" delay="3000">Skin.HasSetting(AutoScroll)</autoscroll>
-	</include>
-	<include name="AutoScroll2x">
-	         <align>justify</align>
-	         <autoscroll time="2000" delay="3000">Skin.HasSetting(AutoScroll)</autoscroll>
-	</include>
-	<include name="AutoScroll3x">
-	         <align>justify</align>
-	         <autoscroll time="1000" delay="3000">Skin.HasSetting(AutoScroll)</autoscroll>
-	</include>
-	<!-- End Autoscroll Includes -->
+	<include file="IncludesModuleView.xml" />
 </includes>
