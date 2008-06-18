@@ -69,21 +69,21 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
     			<info>ListItem.Icon</info>
     			<aspectratio>keep</aspectratio>
     		</control>
-    		<control type="image">
-    			<posx>47</posx>
-    			<posy>8</posy>
-    			<width>425</width>
-    			<height>48</height>
-    			<texture>Module-List-Item-Selected.png</texture>
-    			<visible>Control.HasFocus(4000)</visible>
-    		</control>
+            <control type="image">
+                <posx>47</posx>
+                <posy>8</posy>
+                <width>425</width>
+                <height>48</height>
+                <texture>Module-List-Item-Selected.png</texture>
+                <visible>[Control.IsVisible(4000) + Control.HasFocus(4000)] | [Control.IsVisible(4001) + Control.HasFocus(4001)]</visible>
+            </control>
             <control type="image">
                 <posx>47</posx>
                 <posy>8</posy>
                 <width>425</width>
                 <height>48</height>
                 <texture>Module-List-Item-Normal.png</texture>
-    			<visible>!Control.HasFocus(4000)</visible>
+                <visible>[Control.IsVisible(4000) + !Control.HasFocus(4000)] | [Control.IsVisible(4001) + !Control.HasFocus(4001)]</visible>
             </control>
     		<control type="label">
     			<posx>65</posx>

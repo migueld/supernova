@@ -32,65 +32,8 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
 	    <!-- List of Library Sort Options -->
 	    <control type="group" id="5000">
 	        <defaultcontrol>4000</defaultcontrol>
-     		<control type="list" id="4001">
-                <animation effect="fade" time="800" start="0" end="100">Visible</animation>
-     		    <include>module-list-box</include>
-                <content>
-    				<item>
-    				 	<icon>Icons/Movies-Disc.png</icon>
-    				 	<thumb>Icons/Movies-Disc.png</thumb>
-    					<label>DVD</label>
-    					<onclick>ActivateWindow(MyVideoFiles)</onclick>
-    				</item>
-                </content>
-                <visible>false</visible>
-        	    <onup>5001</onup>
-        	    <ondown>5001</ondown>
-    		</control>
-
      		<control type="list" id="4000">
      		    <include>module-list-box</include>
-                <content>
-    				<item>
-    				 	<icon>Icons/Movies-Library.png</icon>
-    				 	<thumb>Icons/Movies-Library.png</thumb>
-    					<label>Library</label>
-                        <onclick>Control.SetVisible(4000,0)</onclick>
-                        <onclick>Control.SetVisible(4001,1)</onclick>
-                        <onclick>SetFocus(4001)</onclick>
-    				</item>
-    				<item>
-    				 	<icon>Icons/Movies-Actors.png</icon>
-    				 	<thumb>Icons/Movies-Actors.png</thumb>
-    					<label>Actors</label>
-    					<onclick>ActivateWindow(MyVideoFiles)</onclick>
-    				</item>
-    				<item>
-    				 	<icon>Icons/Movies-Directors.png</icon>
-    				 	<thumb>Icons/Movies-Directors.png</thumb>
-    					<label>Directors</label>
-    					<onclick>ActivateWindow(MyVideoFiles)</onclick>
-    				</item>
-    				<item>
-    				 	<icon>Icons/Movies-Genres.png</icon>
-    				 	<thumb>Icons/Movies-Genres.png</thumb>
-    					<label>Genres</label>
-    					<onclick>ActivateWindow(MyVideoFiles)</onclick>
-    				</item>
-    				<item>
-    				 	<icon>Icons/Movies-Playlists.png</icon>
-    				 	<thumb>Icons/Movies-Playlists.png</thumb>
-    					<label>Playlists</label>
-    					<onclick>ActivateWindow(MyVideoFiles)</onclick>
-    				</item>
-    				<item>
-    				 	<icon>Icons/Movies-Disc.png</icon>
-    				 	<thumb>Icons/Movies-Disc.png</thumb>
-    					<label>DVD</label>
-    					<onclick>ActivateWindow(MyVideoFiles)</onclick>
-    					<visible>System.HasMediadvd</visible>
-    				</item>
-                </content>
         	    <onup>5001</onup>
         	    <ondown>5001</ondown>
     		</control>
@@ -110,13 +53,12 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
 
                 <!-- Movies Headline -->
                 <!-- Container.Content(parameter) 	 musicvideos -->
-        		<control type="image">
+        		<control type="image" id="4010">
         		    <posx>13</posx>
         		    <posy>6</posy>
         		    <height>47</height>
         		    <width>157</width>
         		    <aspectratio>keep</aspectratio>
-        		    <texture>Movies-Headline.png</texture>
         	    </control>
     	    </control>
 	    </control>
@@ -126,46 +68,46 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
 	        <defaultcontrol>3000</defaultcontrol>
 	        
     	    <!-- 2 Position: Movies Menu | TV Menu | Music Menu -->
-    		<control type="button" id="3002">
+            <!-- <control type="button" id="3002">
                 <animation effect="slide" tween="cubic" time="600" start="-105,0" end="0,0" acceleration="+1.5">Visible</animation>
                 <pulseonselect>no</pulseonselect>
-    		    <posx>160</posx>
-    		    <posy>55</posy>
-    		    <width>94</width>
-    		    <height>27</height>
-				<hitrect x="90" y="55" w="78" h="28" />
-    		    <aspectratio aligny="top">keep</aspectratio>
-    			<texturefocus>Module-Breadcrumb-Button-Movies-Selected.png</texturefocus>
-    			<texturenofocus>Module-Breadcrumb-Button-Movies-Normal.png</texturenofocus>
-    			<onclick>ReplaceWindow(6)</onclick>
-    			<onleft>3001</onleft>
-    			<onright>3000</onright>
-        	    <onup>5000</onup>
-        	    <ondown>5000</ondown>
-    			<visible>Control.IsVisible(4001)</visible>
-    			<enable>!Control.IsVisible(4001)</enable>
-    	    </control>
+                <posx>160</posx>
+                <posy>55</posy>
+                <width>94</width>
+                <height>27</height>
+                <hitrect x="90" y="55" w="78" h="28" />
+                <aspectratio aligny="top">keep</aspectratio>
+                <texturefocus>Module-Breadcrumb-Button-Movies-Selected.png</texturefocus>
+                <texturenofocus>Module-Breadcrumb-Button-Movies-Normal.png</texturenofocus>
+                <onclick>ReplaceWindow(6)</onclick>
+                <onleft>3001</onleft>
+                <onright>3000</onright>
+                <onup>5000</onup>
+                <ondown>5000</ondown>
+                <visible>Control.IsVisible(4001)</visible>
+                <enable>!Control.IsVisible(4001)</enable>
+            </control> -->
     	    <!-- 2 Position: Movies Menu | TV Menu | Music Menu -->
     	    
     	    <!-- 1 Position: Movies Menu | TV Menu | Music Menu -->
-    		<control type="button" id="3001">
+            <!-- <control type="button" id="3001">
                 <animation effect="slide" tween="cubic" time="600" delay="400" start="-105,0" end="0,0" acceleration="+1.5">WindowOpen</animation>
                 <pulseonselect>no</pulseonselect>
-    		    <posx>85</posx>
-    		    <posy>55</posy>
-    		    <width>94</width>
-    		    <height>27</height>
-				<hitrect x="90" y="55" w="78" h="28" />
-    		    <aspectratio aligny="top">keep</aspectratio>
-    			<texturefocus>Module-Breadcrumb-Button-Movies-Selected.png</texturefocus>
-    			<texturenofocus>Module-Breadcrumb-Button-Movies-Normal.png</texturenofocus>
-    			<onclick>ReplaceWindow(6)</onclick>
-    			<onleft>3000</onleft>
-    			<onright>3002</onright>
-        	    <onup>5000</onup>
-        	    <ondown>5000</ondown>
-    			<enable>!Control.IsVisible(4000)</enable>
-    	    </control>
+                <posx>85</posx>
+                <posy>55</posy>
+                <width>94</width>
+                <height>27</height>
+                <hitrect x="90" y="55" w="78" h="28" />
+                <aspectratio aligny="top">keep</aspectratio>
+                <texturefocus>Module-Breadcrumb-Button-Movies-Selected.png</texturefocus>
+                <texturenofocus>Module-Breadcrumb-Button-Movies-Normal.png</texturenofocus>
+                <onclick>ReplaceWindow(6)</onclick>
+                <onleft>3000</onleft>
+                <onright>3002</onright>
+                <onup>5000</onup>
+                <ondown>5000</ondown>
+                <enable>!Control.IsVisible(4000)</enable>
+            </control> -->
     	    <!-- 1 Position: Movies Menu | TV Menu | Music Menu -->
     	    
     	    <!-- 0 Position: Main Menu-->
@@ -188,6 +130,5 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
     	    </control>
     	    <!-- 0 Position: Main Menu-->
 	    </control>
-        
 	</controls>
 </window>
