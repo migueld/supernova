@@ -27,7 +27,7 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
   <defaultresolution>pal</defaultresolution>
   <defaultresolutionwide>pal16x9</defaultresolutionwide>
   <version>2.1</version>
-  
+  <effectslowdown>5</effectslowdown>
   <credits>
     <skinname>CenterStage</skinname>
     <name>by David McLeod</name>
