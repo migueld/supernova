@@ -64,71 +64,196 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
 	    </control>
 
     	<!-- Breadcrumb Buttons -->
-    	<control type="group" id="5001">
-	        <defaultcontrol>3000</defaultcontrol>
-	        
-    	    <!-- 2 Position: Movies Menu | TV Menu | Music Menu -->
-            <!-- <control type="button" id="3002">
-                <animation effect="slide" tween="cubic" time="600" start="-105,0" end="0,0" acceleration="+1.5">Visible</animation>
+        <!-- <control type="group" id="5001"> -->
+            <!-- Selected Text Color: ffa1a0a0 -->
+            <!-- Normal Text Color: ffffffff -->
+            <!-- width = 190 -->
+
+            <!-- <control type="button" id="3006">
+                <animation effect="slide" tween="cubic" time="600" start="-116,0" end="0,0" acceleration="+1.5">Visible</animation>
+                <animation effect="slide" tween="cubic" time="600" delay="500" start="-116,0" end="0,0" acceleration="+1.5">WindowOpen</animation>
                 <pulseonselect>no</pulseonselect>
-                <posx>160</posx>
+                <posx>583</posx>
                 <posy>55</posy>
-                <width>94</width>
+                <width>116</width> 
                 <height>27</height>
-                <hitrect x="90" y="55" w="78" h="28" />
+                <hitrect x="0" y="55" w="90" h="28" />
                 <aspectratio aligny="top">keep</aspectratio>
-                <texturefocus>Module-Breadcrumb-Button-Movies-Selected.png</texturefocus>
-                <texturenofocus>Module-Breadcrumb-Button-Movies-Normal.png</texturenofocus>
-                <onclick>ReplaceWindow(6)</onclick>
-                <onleft>3001</onleft>
+                <texturefocus>Module-Breadcrumb-Button-Selected.png</texturefocus>
+                <texturenofocus>Module-Breadcrumb-Button-Normal.png</texturenofocus>
+                <textoffsetx>17</textoffsetx>
+                <align>right</align>
+                <aligny>center</aligny>
+                <focusedcolor>ffa1a0a0</focusedcolor>
+                <textcolor>ffffffff</textcolor>
+                <font>font13</font>
+                <onleft>3005</onleft>
                 <onright>3000</onright>
                 <onup>5000</onup>
                 <ondown>5000</ondown>
-                <visible>Control.IsVisible(4001)</visible>
-                <enable>!Control.IsVisible(4001)</enable>
-            </control> -->
-    	    <!-- 2 Position: Movies Menu | TV Menu | Music Menu -->
-    	    
-    	    <!-- 1 Position: Movies Menu | TV Menu | Music Menu -->
-            <!-- <control type="button" id="3001">
-                <animation effect="slide" tween="cubic" time="600" delay="400" start="-105,0" end="0,0" acceleration="+1.5">WindowOpen</animation>
+                <enable>Control.IsVisible(3007)</enable>
+                <visible>false</visible>
+            </control>
+            <control type="button" id="3005">
+                <animation effect="slide" tween="cubic" time="600" start="-116,0" end="0,0" acceleration="+1.5">Visible</animation>
+                <animation effect="slide" tween="cubic" time="600" delay="500" start="-116,0" end="0,0" acceleration="+1.5">WindowOpen</animation>
                 <pulseonselect>no</pulseonselect>
-                <posx>85</posx>
+                <posx>484</posx>
                 <posy>55</posy>
-                <width>94</width>
+                <width>116</width> 
                 <height>27</height>
-                <hitrect x="90" y="55" w="78" h="28" />
+                <hitrect x="0" y="55" w="90" h="28" />
                 <aspectratio aligny="top">keep</aspectratio>
-                <texturefocus>Module-Breadcrumb-Button-Movies-Selected.png</texturefocus>
-                <texturenofocus>Module-Breadcrumb-Button-Movies-Normal.png</texturenofocus>
-                <onclick>ReplaceWindow(6)</onclick>
-                <onleft>3000</onleft>
-                <onright>3002</onright>
+                <texturefocus>Module-Breadcrumb-Button-Selected.png</texturefocus>
+                <texturenofocus>Module-Breadcrumb-Button-Normal.png</texturenofocus>
+                <textoffsetx>17</textoffsetx>
+                <align>right</align>
+                <aligny>center</aligny>
+                <focusedcolor>ffa1a0a0</focusedcolor>
+                <textcolor>ffffffff</textcolor>
+                <font>font13</font>
+                <onleft>3004</onleft>
+                <onright>3006</onright>
                 <onup>5000</onup>
                 <ondown>5000</ondown>
-                <enable>!Control.IsVisible(4000)</enable>
-            </control> -->
-    	    <!-- 1 Position: Movies Menu | TV Menu | Music Menu -->
-    	    
-    	    <!-- 0 Position: Main Menu-->
-    		<control type="button" id="3000">
-                <animation effect="slide" tween="cubic" time="600" delay="200" start="-100,0" end="0,0" acceleration="+1.5">WindowOpen</animation>
+                <enable>Control.IsVisible(3006)</enable>
+                <visible>false</visible>
+            </control>
+            <control type="button" id="3004">
+                <animation effect="slide" tween="cubic" time="600" start="-116,0" end="0,0" acceleration="+1.5">Visible</animation>
+                <animation effect="slide" tween="cubic" time="600" delay="500" start="-116,0" end="0,0" acceleration="+1.5">WindowOpen</animation>
                 <pulseonselect>no</pulseonselect>
-    		    <posx>0</posx>
-    		    <posy>55</posy>
-    		    <width>105</width> 
-    		    <height>27</height>
-				<hitrect x="0" y="55" w="90" h="28" />
-    		    <aspectratio aligny="top">keep</aspectratio>
-    			<texturefocus>Module-Breadcrumb-Button-MainMenu-Selected.png</texturefocus>
-    			<texturenofocus>Module-Breadcrumb-Button-MainMenu-Normal.png</texturenofocus>
-    			<onclick>ReplaceWindow(0)</onclick>
-    			<onleft>3002</onleft>
-    			<onright>3001</onright>
-        	    <onup>5000</onup>
-        	    <ondown>5000</ondown>
-    	    </control>
-    	    <!-- 0 Position: Main Menu-->
-	    </control>
+                <posx>385</posx>
+                <posy>55</posy>
+                <width>116</width> 
+                <height>27</height>
+                <hitrect x="0" y="55" w="90" h="28" />
+                <aspectratio aligny="top">keep</aspectratio>
+                <texturefocus>Module-Breadcrumb-Button-Selected.png</texturefocus>
+                <texturenofocus>Module-Breadcrumb-Button-Normal.png</texturenofocus>
+                <textoffsetx>17</textoffsetx>
+                <align>right</align>
+                <aligny>center</aligny>
+                <focusedcolor>ffa1a0a0</focusedcolor>
+                <textcolor>ffffffff</textcolor>
+                <font>font13</font>
+                <onleft>3003</onleft>
+                <onright>3005</onright>
+                <onup>5000</onup>
+                <ondown>5000</ondown>
+                <enable>Control.IsVisible(3005)</enable>
+                <visible>false</visible>
+            </control>
+            <control type="button" id="3003">
+                <animation effect="slide" tween="cubic" time="600" start="-116,0" end="0,0" acceleration="+1.5">Visible</animation>
+                <animation effect="slide" tween="cubic" time="600" delay="500" start="-116,0" end="0,0" acceleration="+1.5">WindowOpen</animation>
+                <pulseonselect>no</pulseonselect>
+                <posx>286</posx>
+                <posy>55</posy>
+                <width>116</width> 
+                <height>27</height>
+                <hitrect x="0" y="55" w="90" h="28" />
+                <aspectratio aligny="top">keep</aspectratio>
+                <texturefocus>Module-Breadcrumb-Button-Selected.png</texturefocus>
+                <texturenofocus>Module-Breadcrumb-Button-Normal.png</texturenofocus>
+                <textoffsetx>17</textoffsetx>
+                <align>right</align>
+                <aligny>center</aligny>
+                <focusedcolor>ffa1a0a0</focusedcolor>
+                <textcolor>ffffffff</textcolor>
+                <font>font13</font>
+                <onleft>3002</onleft>
+                <onright>3004</onright>
+                <onup>5000</onup>
+                <ondown>5000</ondown>
+                <enable>Control.IsVisible(3004)</enable>
+                <visible>false</visible>
+            </control>
+            <control type="button" id="3002">
+                <animation effect="slide" tween="cubic" time="600" start="-116,0" end="0,0" acceleration="+1.5">Visible</animation>
+                <animation effect="slide" tween="cubic" time="600" delay="500" start="-116,0" end="0,0" acceleration="+1.5">WindowOpen</animation>
+                <pulseonselect>no</pulseonselect>
+                <posx>187</posx>
+                <posy>55</posy>
+                <width>116</width> 
+                <height>27</height>
+                <hitrect x="0" y="55" w="90" h="28" />
+                <aspectratio aligny="top">keep</aspectratio>
+                <texturefocus>Module-Breadcrumb-Button-Selected.png</texturefocus>
+                <texturenofocus>Module-Breadcrumb-Button-Normal.png</texturenofocus>
+                <textoffsetx>17</textoffsetx>
+                <align>right</align>
+                <aligny>center</aligny>
+                <focusedcolor>ffa1a0a0</focusedcolor>
+                <textcolor>ffffffff</textcolor>
+                <font>font13</font>
+                <onleft>3001</onleft>
+                <onright>3003</onright>
+                <onup>5000</onup>
+                <ondown>5000</ondown>
+                <enable>Control.IsVisible(3003)</enable>
+                <visible>true</visible>
+            </control>
+            <control type="group" id="3001">
+                <animation effect="slide" tween="cubic" time="600" start="-116,0" end="0,0" acceleration="+1.5">Visible</animation>
+                <animation effect="slide" tween="cubic" time="600" delay="500" start="-116,0" end="0,0" acceleration="+1.5">WindowOpen</animation>
+                <posx>88</posx>
+                <posy>55</posy>
+                <width>116</width> 
+                <height>27</height>
+
+                <control type="button" id="5001">
+                    <pulseonselect>no</pulseonselect>
+                    <posx>0</posx>
+                    <posy>0</posy>
+                    <width>116</width> 
+                    <height>27</height>
+                    <hitrect x="0" y="55" w="90" h="28" />
+                    <aspectratio aligny="top">keep</aspectratio>
+                    <texturefocus>Module-Breadcrumb-Button-Selected.png</texturefocus>
+                    <texturenofocus>Module-Breadcrumb-Button-Normal.png</texturenofocus>
+                    <textoffsetx>17</textoffsetx>
+                    <align>right</align>
+                    <aligny>center</aligny>
+                    <focusedcolor>ffa1a0a0</focusedcolor>
+                    <textcolor>ffffffff</textcolor>
+                    <font>font13</font>
+                    <onleft>3000</onleft>
+                    <onright>3002</onright>
+                    <onup>5000</onup>
+                    <ondown>5000</ondown>
+                    <enable>Control.IsVisible(3002)</enable>
+                </control>
+                <control type="label">
+                    <posx>17</posx>
+                    <posy>0</posy>
+                    <width>82</width>
+                    <height>26</height>
+                    <font>font13</font>
+                    <aligny>center</aligny>
+                    <label>Movies Menu Extending beyond the bounds of this control</label>
+                    <textcolor>ff9b9a9a</textcolor>
+                </control>
+            </control> -->
+            <control type="button" id="3000">
+                <animation effect="slide" tween="cubic" time="600" delay="200" start="-105,0" end="0,0" acceleration="+1.5">WindowOpen</animation>
+                <pulseonselect>no</pulseonselect>
+                <posx>0</posx>
+                <posy>55</posy>
+                <width>105</width> 
+                <height>27</height>
+                <hitrect x="0" y="55" w="90" h="28" />
+                <aspectratio aligny="top">keep</aspectratio>
+                <texturefocus>Module-Breadcrumb-Button-MainMenu-Selected.png</texturefocus>
+                <texturenofocus>Module-Breadcrumb-Button-MainMenu-Normal.png</texturenofocus>
+                <onclick>ReplaceWindow(0)</onclick>
+                <onleft>3006</onleft>
+                <onright>3001</onright>
+                <onup>5000</onup>
+                <ondown>5000</ondown>
+                <enable>Control.IsVisible(3001)</enable>
+                <label>Main Menu</label>
+            </control>
+        <!-- </control> -->
 	</controls>
 </window>

@@ -144,7 +144,7 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
             <info>Container(5).ListItem.Label</info>
             <align>center</align>
             <aligny>center</aligny>
-            <font>font20</font>
+            <font>font28</font>
             <textcolor>button-text</textcolor>
         </control>
 
@@ -177,7 +177,7 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
                 </control>
                 <control type="label">
                     <posx>230</posx>
-                    <posy>505</posy>
+                    <posy>504</posy>
                     <width>36</width>
                     <align>center</align>
                     <label>[B]1:30:10[/B]</label>
