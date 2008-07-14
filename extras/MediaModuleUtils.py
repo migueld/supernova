@@ -1,18 +1,19 @@
 import os
-import pickle
 import sys
 import traceback
 
 import xbmcgui
 import xbmc
-
+        
 class MediaModuleWindow(xbmcgui.WindowXML):
-    CONTROL_MODULE_TITLE          = 4010
-    CONTROL_MAIN_LIST             = 4000
-    CONTROL_BREADCRUMB_BUTTON0    = 3000
-
-    STATE_MODULE_WINDOW           = 0
-    STATE_MODULE_MEDIA_LIST       = 1
+    CONTROL_MODULE_TITLE                = 4010
+    CONTROL_MAIN_LIST                   = 4000
+    CONTROL_BREADCRUMB_MODULE_GROUP     = 5000
+                                        
+    STATE_MODULE_WINDOW                 = 0
+    STATE_MODULE_MEDIA_LIST             = 1
+    
+    UI_BREADCRUMB_ARROW_WIDTH           = 17
 
     LIST_ITEMS = {
         'movies': [ 
@@ -30,12 +31,23 @@ class MediaModuleWindow(xbmcgui.WindowXML):
     def pushBreadcrumb(self, name):
         xbmc.lock()
         try:
-            # Create background
+            if len(self.breadcrumbs) > 0: 
+                oldCrumb = self.breadcrumbs[-1]
+            else:
+                oldCrumb = self.breadcrumb
+            posX = oldCrumb['button'].getPosX() + oldCrumb['button'].getWidth() - MediaModuleWindow.UI_BREADCRUMB_ARROW_WIDTH
+            crumb = {
+                'button': xbmcgui.ControlButton(buttonPosX, 55, 105, 27, '', focusTexture='Module-Breadcrumb-Button-MainMenu-Selected.png', 
+                                                noFocusTexture='Module-Breadcrumb-Button-MainMenu-Normal.png')
+                # 'label':
+            }
             # Create label
             # Push to list
-            # Add to window
-            # Add animation
+            crumb['button'].setVisible(False)
             self.breadcrumbs.append(crumb)
+            self.insertControl(crumb['button'], oldCrumb['button'], True)
+            crumb['button'].setAnimations([('Visible', 'effect=slide tween=cubic time=600 delay=600 start=-105,0 end=0.0')])
+            crumb['button'].setVisible(True)
         finally:
             xbmc.unlock()
         return
@@ -81,17 +93,27 @@ class MediaModuleWindow(xbmcgui.WindowXML):
             self.state = self.STATE_MODULE_WINDOW
             self.mediaType = sys.argv[1]
             self.breadcrumbs = []
-        
-            # self.controlGroup = xbmcgui.ControlGroup(0,0,125,100);
-            # self.controlGroup.addControl(xbmcgui.ControlLabel(0, 0, 125, 75, 'Status', angle=45))
-            # self.addControl(self.controlGroup)
-            
-            moduleTitleImage = self.getControl(MediaModuleWindow.CONTROL_MODULE_TITLE)
-            moduleTitleImage.setImage(self.mediaType.capitalize() + '-Headline.png')
-        
-            self.mainList = self.getControl(MediaModuleWindow.CONTROL_MAIN_LIST)
-            self.replaceList(self.mainList, self.LIST_ITEMS[self.mediaType])
 
+            control = self.getControl(5000) #xbmcgui.ControlLabel(0, 0, 125, 75, 'Status')
+            # self.addControl(control)
+            control.setVisible(False)
+            
+            # moduleTitleImage = self.getControl(MediaModuleWindow.CONTROL_MODULE_TITLE)
+            # moduleTitleImage.setImage(self.mediaType.capitalize() + '-Headline.png')
+        
+            # self.mainList = self.getControl(MediaModuleWindow.CONTROL_MAIN_LIST)
+            # self.replaceList(self.mainList, self.LIST_ITEMS[self.mediaType])
+            # self.breadcrumb = self.getControl(MediaModuleWindow.CONTROL_BREADCRUMB_MODULE_GROUP)
+
+            # self.controlGroup = xbmcgui.ControlGroup(0,0,125,100);
+            # self.addControl(self.controlGroup)
+            # self.controlGroup.addControl(xbmcgui.ControlLabel(0, 0, 125, 75, 'Status', angle=45))
+            
+            # self.pushBreadCrumb('Testing')
+            # self.button = xbmcgui.ControlButton(88, 55, 105, 27, '', focusTexture='Module-Breadcrumb-Button-MainMenu-Selected.png', noFocusTexture='Module-Breadcrumb-Button-MainMenu-Normal.png')
+            # self.insertControl(self.button, self.breadcrumb, True)
+            # self.button.setVisible(False)
+            # self.button.setAnimations([('Visible', 'effect=slide tween=cubic time=600 delay=800 start=-105,0 end=0.0')])
             # <control type="button" id="3000">
             #     <animation effect="slide" tween="cubic" time="600" delay="200" start="-105,0" end="0,0" acceleration="+1.5">WindowOpen</animation>
             #     <pulseonselect>no</pulseonselect>
@@ -111,30 +133,33 @@ class MediaModuleWindow(xbmcgui.WindowXML):
             #     <enable>Control.IsVisible(3001)</enable>
             # </control>
             # 
-            self.button = 0
         finally:
             xbmcgui.unlock()
 
     def onAction(self, action):
-        if action.getId() == xbmcgui.ACTION_PREVIOUS_MENU:
-            self.close()
-        elif action.getId() == xbmcgui.ACTION_SELECT_ITEM:
-            if (self.getFocus().getId() == self.mainList.getId()):
-                self.onClick(self.mainList.getSelectedItem())
+        try:
+            if action.getId() == xbmcgui.ACTION_PREVIOUS_MENU:
+                self.close()
+            elif action.getId() == xbmcgui.ACTION_SELECT_ITEM:
+                if (self.getFocus().getId() == self.mainList.getId()):
+                    self.onClick(self.mainList.getSelectedItem())
+        except:
+            xbmc.log('Exception (onAction): ' + str(sys.exc_info()[0]))
+            traceback.print_exc()
+            
+            # In the instance that an exception occurred lets see if the action was to go to the previous menu
+            # if it was, then lets do this!
+            if action.getId() == xbmcgui.ACTION_PREVIOUS_MENU:
+                self.close()
     
     def onClick(self, controlId):
         if controlId == self.mainList.getId():
             print "On Click: " + str(controlId)
-            self.pushBreadcrumb('MainMenu')
+            # self.pushBreadcrumb('MainMenu')
         return
 
     def onFocus(self, controlId):
         print "On Focus: " + str(controlId)
-        self.button = xbmcgui.ControlButton(88, 55, 105, 27, '', focusTexture='Module-Breadcrumb-Button-MainMenu-Selected.png', noFocusTexture='Module-Breadcrumb-Button-MainMenu-Normal.png')
-        print "Bread Crumb: "
-        self.breadcrumb = self.getControl(MediaModuleWindow.CONTROL_BREADCRUMB_BUTTON0)
-        print self.breadcrumb
-        self.insertControl(self.button, self.breadcrumb, True)
         return
     
     def replaceList(self, listController, items):

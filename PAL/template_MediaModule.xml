@@ -193,19 +193,19 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
                 <ondown>5000</ondown>
                 <enable>Control.IsVisible(3003)</enable>
                 <visible>true</visible>
-            </control>
-            <control type="group" id="3001">
-                <animation effect="slide" tween="cubic" time="600" start="-116,0" end="0,0" acceleration="+1.5">Visible</animation>
+            </control> -->
+            <!-- <control type="group" id="3001">
                 <animation effect="slide" tween="cubic" time="600" delay="500" start="-116,0" end="0,0" acceleration="+1.5">WindowOpen</animation>
                 <posx>88</posx>
                 <posy>55</posy>
                 <width>116</width> 
-                <height>27</height>
+                <height>27</height> -->
 
-                <control type="button" id="5001">
+                <!-- <control type="button" id="5001">
+                    <animation effect="slide" tween="cubic" time="600" delay="500" start="-116,0" end="0,0" acceleration="+1.5">WindowOpen</animation>
                     <pulseonselect>no</pulseonselect>
-                    <posx>0</posx>
-                    <posy>0</posy>
+                    <posx>88</posx>
+                    <posy>55</posy>
                     <width>116</width> 
                     <height>27</height>
                     <hitrect x="0" y="55" w="90" h="28" />
@@ -225,34 +225,50 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
                     <enable>Control.IsVisible(3002)</enable>
                 </control>
                 <control type="label">
-                    <posx>17</posx>
-                    <posy>0</posy>
+                    <animation effect="slide" tween="cubic" time="600" delay="500" start="-116,0" end="0,0" acceleration="+1.5">WindowOpen</animation>
+                    <posx>105</posx>
+                    <posy>55</posy>
                     <width>82</width>
                     <height>26</height>
                     <font>font13</font>
                     <aligny>center</aligny>
                     <label>Movies Menu Extending beyond the bounds of this control</label>
                     <textcolor>ff9b9a9a</textcolor>
-                </control>
-            </control> -->
-            <control type="button" id="3000">
+                </control> -->
+            <!-- </control> -->
+            <control type="group" id="5000">
                 <animation effect="slide" tween="cubic" time="600" delay="200" start="-105,0" end="0,0" acceleration="+1.5">WindowOpen</animation>
-                <pulseonselect>no</pulseonselect>
                 <posx>0</posx>
                 <posy>55</posy>
-                <width>105</width> 
+                <width>105</width>
                 <height>27</height>
-                <hitrect x="0" y="55" w="90" h="28" />
-                <aspectratio aligny="top">keep</aspectratio>
-                <texturefocus>Module-Breadcrumb-Button-MainMenu-Selected.png</texturefocus>
-                <texturenofocus>Module-Breadcrumb-Button-MainMenu-Normal.png</texturenofocus>
-                <onclick>ReplaceWindow(0)</onclick>
-                <onleft>3006</onleft>
-                <onright>3001</onright>
-                <onup>5000</onup>
-                <ondown>5000</ondown>
-                <enable>Control.IsVisible(3001)</enable>
-                <label>Main Menu</label>
+                <control type="button">
+                    <pulseonselect>no</pulseonselect>
+                    <posx>0</posx>
+                    <posy>0</posy>
+                    <width>105</width> 
+                    <height>27</height>
+                    <visible>true</visible>
+                    <hitrect x="0" y="55" w="90" h="28" />
+                    <aspectratio aligny="top">keep</aspectratio>
+                    <texturefocus>Module-Breadcrumb-Button-Selected.png</texturefocus>
+                    <texturenofocus>Module-Breadcrumb-Button-Normal.png</texturenofocus>
+                    <onclick>ReplaceWindow(0)</onclick>
+                    <enable>Control.IsVisible(3001)</enable>
+                    <label>Main Menu</label>
+                    <font>font13</font>
+                    <textcolor>breadcrumb-text</textcolor>
+                    <disabledcolor>breadcrumb-text</disabledcolor>
+                    <textoffsetx>35</textoffsetx>
+                    <textoffsety>3</textoffsety>
+                </control>
+                <control type="image">
+                    <posx>18</posx>
+                    <posy>5</posy>
+                    <width>10</width> 
+                    <height>14</height>
+                    <texture>Icons/Breadcrumb-Home.png</texture>
+                </control>
             </control>
         <!-- </control> -->
 	</controls>
