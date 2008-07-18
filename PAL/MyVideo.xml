@@ -32,24 +32,8 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
 	    <!-- List of Library Sort Options -->
 	    <control type="group" id="5000">
 	        <defaultcontrol>4000</defaultcontrol>
-     		<control type="list" id="4001">
-                <animation effect="fade" time="800" start="0" end="100">Visible</animation>
-     		    <include>module-list-box</include>
-                <content>
-    				<item>
-    				 	<icon>Icons/Movies-Disc.png</icon>
-    				 	<thumb>Icons/Movies-Disc.png</thumb>
-    					<label>DVD</label>
-    					<onclick>ActivateWindow(MyVideoFiles)</onclick>
-    				</item>
-                </content>
-                <visible>false</visible>
-        	    <onup>5001</onup>
-        	    <ondown>5001</ondown>
-    		</control>
-
      		<control type="list" id="4000">
-     		    <include>module-list-box</include>
+     		    <include>module-menu-list-box</include>
                 <content>
     				<item>
     				 	<icon>Icons/Movies-Library.png</icon>
@@ -98,15 +82,15 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
 		<!-- List of Library Sort Options -->
 
 	    <!-- Spotlight -->
-        <include>module-spotlight</include>
+        <include>module-menu-spotlight</include>
 	    
 	    <!-- Title -->
 	    <control type="group">
-            <include>module-title-and-breadcrumb-background-animated</include>
+            <include>module-menu-title-and-breadcrumb-background</include>
 
             <!-- Title text -->
             <control type="group">
-                <include>module-title-animation</include>
+                <include>module-menu-title-animation</include>
 
                 <!-- Movies Headline -->
                 <!-- Container.Content(parameter) 	 musicvideos -->
@@ -116,7 +100,7 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
         		    <height>47</height>
         		    <width>157</width>
         		    <aspectratio>keep</aspectratio>
-        		    <texture>Movies-Headline.png</texture>
+        		    <texture>Module-Menu/Title-Headline-Movies.png</texture>
         	    </control>
     	    </control>
 	    </control>
@@ -130,8 +114,8 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
             <height>27</height>
             <hitrect x="0" y="55" w="90" h="28" />
             <aspectratio aligny="top">keep</aspectratio>
-            <texturefocus>Module-Breadcrumb-Button-Selected.png</texturefocus>
-            <texturenofocus>Module-Breadcrumb-Button-Normal.png</texturenofocus>
+            <texturefocus>Module-Menu/Breadcrumb-Button-Selected.png</texturefocus>
+            <texturenofocus>Module-Menu/Breadcrumb-Button-Normal.png</texturenofocus>
             <textoffsetx>17</textoffsetx>
             <align>right</align>
             <aligny>center</aligny>
@@ -171,8 +155,8 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
                 <visible>true</visible>
                 <hitrect x="0" y="55" w="90" h="28" />
                 <aspectratio aligny="top">keep</aspectratio>
-                <texturefocus>Module-Breadcrumb-Button-Selected.png</texturefocus>
-                <texturenofocus>Module-Breadcrumb-Button-Normal.png</texturenofocus>
+                <texturefocus>Module-Menu/Breadcrumb-Button-Selected.png</texturefocus>
+                <texturenofocus>Module-Menu/Breadcrumb-Button-Normal.png</texturenofocus>
                 <onclick>ReplaceWindow(0)</onclick>
                 <onleft>3006</onleft>
                 <onright>3001</onright>
