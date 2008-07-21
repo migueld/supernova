@@ -1,5 +1,5 @@
 ﻿<!---------------------------------------------------------------------------
-Startup.xml: CenterStageProject - User Interface [PAL16x9]
+Startup.xml: CenterStageProject - User Interface [PAL]
 -----------------------------------------------------------------------------
 Copyright (C) 2008 The CenterStage Project Development Team
 
@@ -28,7 +28,7 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
 	<allowoverlay>no</allowoverlay>
 	<controls>
 		<control type="button" id="10">
-			<description>Launch application without playlist.</description>
+			<description>Launch application without playlist</description>
 			<onfocus>ReplaceWindow(Home)</onfocus>
 			<texturenofocus>-</texturenofocus>
 			<texturefocus>-</texturefocus>
@@ -42,7 +42,7 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
 			<texturenofocus>-</texturenofocus>
 			<texturefocus>-</texturefocus>
 			<animation effect="fade" delay="300" end="100">Focus</animation>
-			<visible>Skin.HasSetting(startup-playlist)</visible>
+			<visible>Skin.Hassetting(startup-playlist)</visible>
 		</control>
 		<control type="image">
 			<description>Background image</description>
@@ -50,7 +50,7 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
 			<posy>0</posy>
 			<width>720</width>
 			<height>576</height>
-			<texture>Startup16x9.png</texture>
+			<texture>Startup.png</texture>
 			<animation effect="fade" end="0" time="50">WindowClose</animation>
 		</control>
 	</controls>

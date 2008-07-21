@@ -3,33 +3,35 @@
 		<font>
 			<name>font10</name>
 			<filename>LucidaGrandeBold.ttf</filename>
-			<size>10</size>
+			<size>12</size>
 		</font>
 		<font>
 			<name>font11</name>
 			<filename>LucidaGrandeBold.ttf</filename>
-			<size>11</size>
+			<size>14</size>
 		</font>
 		<font>
 			<name>font12</name>
 			<filename>LucidaGrandeBold.ttf</filename>
-			<size>12</size>
+			<size>15</size>
 		</font>
 		<font>
 			<name>font13</name>
-			<filename>Arial.ttf</filename>
-			<size>13</size>
+			<filename>LucidaGrandeBold.ttf</filename>
+			<size>16</size>
 		</font>
 		<font>
 			<name>font18</name>
 			<filename>LucidaGrandeBold.ttf</filename>
 			<size>18</size>
+			
 		</font>
 		<font>
 			<name>font20</name>
 			<filename>LucidaGrandeBold.ttf</filename>
 			<size>20</size>
 			<style>bold</style>
+			
 		</font>
 		<font>
 			<name>font22</name>
@@ -40,6 +42,7 @@
 			<name>font28</name>
 			<filename>LucidaGrandeBold.ttf</filename>
 			<size>28</size>
+			
 		</font>
 	</fontset>
 </fonts>
