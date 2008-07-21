@@ -24,34 +24,11 @@ this program; if not, write to the Free Software Foundation, Inc., 51
 Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
 --------------------------------------------------------------------------->
 <window>
-	<defaultcontrol always="true">10</defaultcontrol>
-	<allowoverlay>no</allowoverlay>
+	<defaultcontrol always="true">1</defaultcontrol>
 	<controls>
-		<control type="button" id="10">
-			<description>Launch application without playlist</description>
-			<onfocus>ReplaceWindow(Home)</onfocus>
-			<texturenofocus>-</texturenofocus>
-			<texturefocus>-</texturefocus>
-			<animation effect="fade" delay="300" end="100">Focus</animation>
-			<visible>!Skin.Hassetting(startup-playlist)</visible>
-		</control>
-		<control type="button" id="10">
-			<description>Launch application with playlist</description>
-			<onfocus>XBMC.PlayMedia($INFO[Skin.String(playlist)])</onfocus>
-			<onfocus>ReplaceWindow(Home)</onfocus>
-			<texturenofocus>-</texturenofocus>
-			<texturefocus>-</texturefocus>
-			<animation effect="fade" delay="300" end="100">Focus</animation>
-			<visible>Skin.Hassetting(startup-playlist)</visible>
-		</control>
-		<control type="image">
-			<description>Background image</description>
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>720</width>
-			<height>576</height>
-			<texture>Startup.png</texture>
-			<animation effect="fade" end="0" time="50">WindowClose</animation>
-		</control>
+    	<control type="button" id="1">
+    		<onfocus>ReplaceWindow(Home)</onfocus>
+    		<animation effect="fade" time="1000">Focus</animation>
+    	</control>
 	</controls>
 </window>

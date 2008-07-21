@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-16"?>
 <!---------------------------------------------------------------------------
 Home.xml: CenterStageProject - User Interface [PAL]
 -----------------------------------------------------------------------------
@@ -28,7 +27,6 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
     <defaultcontrol always="false">5</defaultcontrol>
     <allowoverlay>yes</allowoverlay>
     <controls>
-
         <!-- Main User Interface Start -->
         <!-- Background stage floor -->
         <control type="image">
@@ -40,7 +38,7 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
             <aspectratio/>
             <texture>Main-Menu/StageFloor16x9.png</texture>
         </control>
-        
+    
         <!-- Hidden Elements Start -->
         <!-- Main controller that drives the main display, this control is hidden -->
         <control type="wraplist" id="5">
@@ -220,5 +218,7 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
 		    </control>
 		</control>
         <!-- Main User Interface End -->
+
+        <include>window-fader</include>
     </controls>
 </window>
