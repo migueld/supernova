@@ -79,35 +79,35 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
                     <!-- My Pictures -->
                     <icon>Icons/Main-Menu-Photo.png</icon>
                     <thumb>Icons/Main-Menu-Photo.png</thumb>
-                    <label>1</label>
+                    <label>31001</label>
                     <onclick>ActivateWindow(MyPictures)</onclick>
                 </item>
                 <item>
                     <!-- My Music -->
                     <icon>Icons/Main-Menu-Music.png</icon>
                     <thumb>Icons/Main-Menu-Music.png</thumb>
-                    <label>2</label>
+                    <label>31002</label>
                     <onclick>ActivateWindow(MyMusic)</onclick>
                 </item>
                 <item>
                     <!-- My Videos -->
                     <icon>Icons/Main-Menu-Movies.png</icon>
                     <thumb>Icons/Main-Menu-Movies.png</thumb>
-                    <label>3</label>
+                    <label>31003</label>
                     <onclick>ActivateWindow(MyVideo)</onclick>
                 </item>
                 <item>
                     <!-- Settings -->
                     <icon>Icons/Main-Menu-Preferences.png</icon>
                     <thumb>Icons/Main-Menu-Preferences.png</thumb>
-                    <label>5</label>
+                    <label>31004</label>
                     <onclick>ActivateWindow(Settings)</onclick>
                 </item>
                 <item>
                     <!-- DVD -->
                     <icon>Icons/Main-Menu-DVDDisc.png</icon>
                     <thumb>Icons/Main-Menu-DVDDisc.png</thumb>
-                    <label>31009</label>
+                    <label>31005</label>
                     <onclick>XBMC.PlayDVD</onclick>
                     <visible>System.HasMediaDVD</visible>
                 </item>
