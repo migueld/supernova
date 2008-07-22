@@ -27,7 +27,6 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
     <defaultcontrol always="false">5</defaultcontrol>
     <allowoverlay>yes</allowoverlay>
     <controls>
-        <!-- Main User Interface Start -->
         <!-- Background stage floor -->
         <control type="image">
             <description>Stage floor</description>
@@ -39,7 +38,6 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
             <texture>Main-Menu/StageFloor16x9.png</texture>
         </control>
     
-        <!-- Hidden Elements Start -->
         <!-- Main controller that drives the main display, this control is hidden -->
         <control type="wraplist" id="5">
             <onup>5</onup>
@@ -57,7 +55,7 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
                     <posx>29</posx>
                     <width>142</width>
                     <height>400</height>
-                    <info>ListItem.Icon</info>
+                    <info>ListItem.ActualIcon</info>
                 </control>
             </focusedlayout>
             <itemlayout width="200" height="400">
@@ -65,7 +63,7 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
                     <posx>29</posx>
                     <width>142</width>
                     <height>400</height>
-                    <info>ListItem.Icon</info>
+                    <info>ListItem.ActualIcon</info>
                 </control>
             </itemlayout>
             <!-- Control elements -->
@@ -76,45 +74,44 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
                     <onclick>XBMC.ReloadSkin()</onclick>
                 </item>
                 <item>
-                    <!-- My Pictures -->
+                    <!-- My Pictures (2) -->
                     <icon>Icons/Main-Menu-Photo.png</icon>
-                    <thumb>Icons/Main-Menu-Photo.png</thumb>
+                    <thumb>Icons/Main-Menu-Photo-No-Shadow.png</thumb>
                     <label>31001</label>
                     <onclick>ActivateWindow(MyPictures)</onclick>
                 </item>
                 <item>
-                    <!-- My Music -->
+                    <!-- My Music (500,501) -->
                     <icon>Icons/Main-Menu-Music.png</icon>
-                    <thumb>Icons/Main-Menu-Music.png</thumb>
+                    <thumb>Icons/Main-Menu-Music-No-Shadow.png</thumb>
                     <label>31002</label>
                     <onclick>ActivateWindow(MyMusic)</onclick>
                 </item>
                 <item>
-                    <!-- My Videos -->
+                    <!-- My Videos (24,25) -->
                     <icon>Icons/Main-Menu-Movies.png</icon>
-                    <thumb>Icons/Main-Menu-Movies.png</thumb>
+                    <thumb>Icons/Main-Menu-Movies-No-Shadow.png</thumb>
                     <label>31003</label>
                     <onclick>ActivateWindow(MyVideo)</onclick>
                 </item>
                 <item>
-                    <!-- Settings -->
+                    <!-- Settings (4) -->
                     <icon>Icons/Main-Menu-Preferences.png</icon>
-                    <thumb>Icons/Main-Menu-Preferences.png</thumb>
+                    <thumb>Icons/Main-Menu-Preferences-No-Shadow.png</thumb>
                     <label>31004</label>
                     <onclick>ActivateWindow(Settings)</onclick>
                 </item>
                 <item>
-                    <!-- DVD -->
+                    <!-- DVD (Unk)-->
                     <icon>Icons/Main-Menu-DVDDisc.png</icon>
-                    <thumb>Icons/Main-Menu-DVDDisc.png</thumb>
+                    <thumb>Icons/Main-Menu-DVDDisc-No-Shadow.png</thumb>
                     <label>31005</label>
                     <onclick>XBMC.PlayDVD</onclick>
                     <visible>System.HasMediaDVD</visible>
                 </item>
             </content>
         </control>
-        <!-- Hidden elements End -->
-
+        
         <!-- Spot light overlay -->
         <control type="image">
             <description>Spot light overlay</description>
@@ -139,7 +136,8 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
             <textcolor>button-text</textcolor>
         </control>
 
-        <control type="group">
+        <!-- Widget bar -->
+        <!-- <control type="group"> -->
             <!-- Status bar background -->
             <!-- <control type="image">
                 <posx>0</posx>
@@ -190,7 +188,7 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
                     <textcolor>55555555</textcolor>
                 </control>
             </control> -->
-        </control>
+        <!-- </control> -->
         
         <!-- RSS Scrolling Feed -->
         <control type="group">
@@ -217,7 +215,19 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
     		    <texture>Main-Menu/RSS-Spotlight.png</texture>
 		    </control>
 		</control>
-        <!-- Main User Interface End -->
+
+        <control type="image" id="6">
+            <posy>149</posy>
+            <posx>275</posx>
+            <width>164</width>
+            <height>230</height>
+            <info>Container(5).ListItem(0).Thumb</info>
+            <visible>Window.Next(24) | Window.Next(25) | Window.Next(2) | Window.Next(4) | Window.Next(500) | Window.Next(501)</visible>
+            <animation type="Conditional" condition="Control.IsVisible(6)" reversible="false">
+                <effect type="zoom" time="300" start="100" end="500" tween="cubic" easing="inout" acceleration="10" center="auto"/>
+                <effect type="fade" time="200" start="100" end="0"/>
+            </animation>
+        </control>
 
         <include>window-fader</include>
     </controls>
