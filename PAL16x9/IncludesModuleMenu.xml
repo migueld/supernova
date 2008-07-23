@@ -113,42 +113,58 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
         <control type="image">
             <animation effect="slide" time="400" delay="100" start="0,-30" end="0,0" tween="cubic">WindowOpen</animation>
             <posx>0</posx>
-            <posy>55</posy>
+            <posy>54</posy>
             <width>720</width>
-            <height>47</height>
+            <height>27</height>
             <texture>Module-Menu/Breadcrumb-Background.png</texture>
         </control>
 
-        <!-- Title Background -->
-    	<control type="group">
+	    <!-- Title background -->
+        <control type="image">
     	    <animation type="WindowOpen">
                 <effect type="fade" time="100" delay="0" start="0" end="100" />
                 <effect type="slide" time="300" delay="0" start="0,-10" end="0,0" tween="cubic"/>
             </animation>
-            <!-- Top edging -->
-            <control type="image">
-                <posx>0</posx>
-                <posy>0</posy>
-                <width>720</width>
-                <height>6</height>
-    		    <texture>Module-Menu/Title-Edging.png</texture>
-    	    </control>
-    
-    	    <!-- Title background -->
-            <control type="image">
-                <posx>0</posx>
-                <posy>6</posy>
-                <width>720</width>
-                <height>56</height>
-                <texture>Module-Menu/Title-Background.png</texture>
-            </control>
+            <posx>0</posx>
+            <posy>6</posy>
+            <width>720</width>
+            <height>57</height>
+            <texture>Module-Menu/Title-Background.png</texture>
         </control>
     </include>
 
+    <include name="module-menu-title-edging-overlay">
+        <control type="image">
+    	    <animation type="WindowOpen">
+                <effect type="fade" time="100" delay="0" start="0" end="100" />
+                <effect type="slide" time="300" delay="0" start="0,-10" end="0,0" tween="cubic"/>
+            </animation>
+            <posx>0</posx>
+            <posy>0</posy>
+            <width>720</width>
+            <height>54</height>
+		    <texture>Module-Menu/Title-Edging.png</texture>
+	    </control>
+    </include>
+    
     <include name="module-menu-title-animation">
         <animation type="WindowOpen">
             <effect type="fade" time="100" delay="150" start="0" end="100" />
             <effect type="slide" time="300" delay="150" start="-50,0" end="0,0" tween="cubic"/>
         </animation>
+    </include>
+    
+    <include name="module-menu-breadcrumb-button">
+        <posy>54</posy>
+        <width>116</width>
+        <height>27</height>
+        <texturefocus>Module-Menu/Breadcrumb-Button-Selected.png</texturefocus>
+        <texturenofocus>Module-Menu/Breadcrumb-Button-Normal.png</texturenofocus>
+        <pulseonselect>no</pulseonselect>
+        <font>font11</font>
+        <textoffsetx>20</textoffsetx>
+        <textoffsety>3</textoffsety>
+        <textcolor>breadcrumb-text</textcolor>
+        <disabledcolor>breadcrumb-text</disabledcolor>
     </include>
 </includes>

@@ -91,49 +91,41 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
                 <include>module-menu-title-animation</include>
 
                 <!-- Movies Headline -->
-                <!-- Container.Content(parameter) 	 musicvideos -->
-        		<control type="image">
+                <control type="label">
         		    <posx>13</posx>
-        		    <posy>6</posy>
+        		    <posy>-10</posy>
         		    <height>47</height>
-        		    <width>157</width>
-        		    <aspectratio>keep</aspectratio>
-        		    <texture>Module-Menu/Title-Headline-Movies.png</texture>
-        	    </control>
+        		    <width>707</width>
+        		    <aligny>bottom</aligny>
+        		    <textcolor>color-module-menu-title</textcolor>
+        		    <font>font-module-menu-title</font>
+        		    <label>31003</label>
+                </control>
+                
+                <include>module-menu-title-edging-overlay</include>
     	    </control>
 	    </control>
 
         <control type="button" id="3001">
+            <include>module-menu-breadcrumb-button</include>
+            
             <animation effect="slide" tween="cubic" time="600" delay="500" start="-116,0" end="0,0" acceleration="+1.5">WindowOpen</animation>
             <posx>88</posx>
-            <posy>55</posy>
-            <width>116</width>
-            <height>27</height>
-            <visible>true</visible>
-            <colordiffuse>FFFFFFFF</colordiffuse>
-            <texturefocus>Module-Menu/Breadcrumb-Button-Selected.png</texturefocus>
-            <texturenofocus>Module-Menu/Breadcrumb-Button-Normal.png</texturenofocus>
             <label>36000</label>
-            <font>font10</font>
-            <textcolor>breadcrumb-text</textcolor>
-            <disabledcolor>breadcrumb-text</disabledcolor>
-            <align></align>
-            <aligny>center</aligny>
-            <textoffsetx>20</textoffsetx>
-            <textoffsety></textoffsety>
-            <pulseonselect>no</pulseonselect>
+
+            <visible>true</visible>
+            <enable>Control.IsVisible(3002)</enable>
             <onclick>ReplaceWindow(6)</onclick>
             <onup>4000</onup>
             <ondown>4000</ondown>
             <onleft>3000</onleft>
             <onright>3000</onright>
-            <enable>Control.IsVisible(3002)</enable>
         </control>
 
         <control type="group">
             <animation effect="slide" tween="cubic" time="600" delay="200" start="-105,0" end="0,0" acceleration="+1.5">WindowOpen</animation>
             <posx>0</posx>
-            <posy>55</posy>
+            <posy>54</posy>
             <width>105</width>
             <height>27</height>
             <control type="button" id="3000">
@@ -145,13 +137,11 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
                 <texturefocus>Module-Menu/Breadcrumb-Button-Selected.png</texturefocus>
                 <texturenofocus>Module-Menu/Breadcrumb-Button-Normal.png</texturenofocus>
                 <label>Main Menu</label>
-                <font>font10</font>
+                <font>font11</font>
                 <textcolor>breadcrumb-text</textcolor>
                 <disabledcolor>breadcrumb-text</disabledcolor>
-                <align></align>
-                <aligny>center</aligny>
                 <textoffsetx>35</textoffsetx>
-                <textoffsety></textoffsety>
+                <textoffsety>3</textoffsety>
                 <pulseonselect>no</pulseonselect>
                 <onclick>ReplaceWindow(0)</onclick>
                 <onleft>3001</onleft>
@@ -162,7 +152,7 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
             </control>
             <control type="image">
                 <posx>18</posx>
-                <posy>5</posy>
+                <posy>6</posy>
                 <width>10</width> 
                 <height>14</height>
                 <texture>Icons/Breadcrumb-Home.png</texture>

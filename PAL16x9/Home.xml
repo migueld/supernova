@@ -224,8 +224,8 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
             <info>Container(5).ListItem(0).Thumb</info>
             <visible>Window.Next(24) | Window.Next(25) | Window.Next(2) | Window.Next(4) | Window.Next(500) | Window.Next(501)</visible>
             <animation type="Conditional" condition="Control.IsVisible(6)" reversible="false">
-                <effect type="zoom" time="300" start="100" end="500" tween="cubic" easing="inout" acceleration="10" center="auto"/>
-                <effect type="fade" time="200" start="100" end="0"/>
+                <effect type="zoom" time="600" start="100" end="500" tween="cubic" easing="inout" acceleration="10" center="auto"/>
+                <effect type="fade" time="400" start="100" end="0"/>
             </animation>
         </control>
 
