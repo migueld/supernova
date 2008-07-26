@@ -25,58 +25,25 @@ this program; if not, write to the Free Software Foundation, Inc., 51
 Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
 --------------------------------------------------------------------------->
 <window id="6">
-	<defaultcontrol always="true">4000</defaultcontrol>
+	<defaultcontrol always="true">56</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
 	<previouswindow>Home</previouswindow>
 	<controls>
 	    <!-- List of Library Sort Options -->
-        <defaultcontrol>4000</defaultcontrol>
- 		<control type="list" id="4000">
- 		    <include>module-menu-list-box</include>
-            <content>
-				<item>
-				 	<icon>Icons/Movies-Library.png</icon>
-				 	<thumb>Icons/Movies-Library.png</thumb>
-					<label>36001</label>
-                    <onclick>Control.SetVisible(4000,0)</onclick>
-                    <onclick>Control.SetVisible(4001,1)</onclick>
-                    <onclick>SetFocus(4001)</onclick>
-				</item>
-				<item>
-				 	<icon>Icons/Movies-Actors.png</icon>
-				 	<thumb>Icons/Movies-Actors.png</thumb>
-					<label>36002</label>
-					<onclick>ActivateWindow(MyVideoFiles)</onclick>
-				</item>
-				<item>
-				 	<icon>Icons/Movies-Directors.png</icon>
-				 	<thumb>Icons/Movies-Directors.png</thumb>
-					<label>36003</label>
-					<onclick>ActivateWindow(MyVideoFiles)</onclick>
-				</item>
-				<item>
-				 	<icon>Icons/Movies-Genres.png</icon>
-				 	<thumb>Icons/Movies-Genres.png</thumb>
-					<label>36004</label>
-					<onclick>ActivateWindow(MyVideoFiles)</onclick>
-				</item>
-				<item>
-				 	<icon>Icons/Movies-Playlists.png</icon>
-				 	<thumb>Icons/Movies-Playlists.png</thumb>
-					<label>36005</label>
-					<onclick>ActivateWindow(MyVideoFiles)</onclick>
-				</item>
-				<item>
-				 	<icon>Icons/Movies-Disc.png</icon>
-				 	<thumb>Icons/Movies-Disc.png</thumb>
-					<label>36006</label>
-					<onclick>ActivateWindow(MyVideoFiles)</onclick>
-					<visible>System.HasMediadvd</visible>
-				</item>
-            </content>
+        <defaultcontrol>56</defaultcontrol>
+ 		<control type="list" id="56">
+ 		    <include>module-menu-main-list-box</include>
     	    <onup>3000</onup>
     	    <ondown>3000</ondown>
+    	    <visible>Container.Content(movies)</visible>
 		</control>
+ 		<control type="list" id="56">
+ 		    <include>module-menu-file-list-box</include>
+    	    <onup>3000</onup>
+    	    <ondown>3000</ondown>
+    	    <visible>!Container.Content(movies)</visible>
+		</control>
+		
 		<!-- List of Library Sort Options -->
 
 	    <!-- Spotlight -->
@@ -116,8 +83,8 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
             <visible>true</visible>
             <enable>Control.IsVisible(3002)</enable>
             <onclick>ReplaceWindow(6)</onclick>
-            <onup>4000</onup>
-            <ondown>4000</ondown>
+            <onup>56</onup>
+            <ondown>56</ondown>
             <onleft>3000</onleft>
             <onright>3000</onright>
         </control>
@@ -141,13 +108,13 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
                 <textcolor>breadcrumb-text</textcolor>
                 <disabledcolor>breadcrumb-text</disabledcolor>
                 <textoffsetx>35</textoffsetx>
-                <textoffsety>3</textoffsety>
+                <textoffsety>5</textoffsety>
                 <pulseonselect>no</pulseonselect>
                 <onclick>ReplaceWindow(0)</onclick>
                 <onleft>3001</onleft>
                 <onright>3001</onright>
-                <onup>4000</onup>
-                <ondown>4000</ondown>
+                <onup>56</onup>
+                <ondown>56</ondown>
                 <enable>Control.IsVisible(3001)</enable>
             </control>
             <control type="image">

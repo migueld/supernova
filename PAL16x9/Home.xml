@@ -92,7 +92,7 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
                     <icon>Icons/Main-Menu-Movies.png</icon>
                     <thumb>Icons/Main-Menu-Movies-No-Shadow.png</thumb>
                     <label>31003</label>
-                    <onclick>ActivateWindow(MyVideo)</onclick>
+                    <onclick>ActivateWindow(MyVideoFiles, "F:\")</onclick>
                 </item>
                 <item>
                     <!-- Settings (4) -->
