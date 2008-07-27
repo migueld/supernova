@@ -8,16 +8,11 @@
 	    <control type="group">
             <include>osd-menu-noninteractive</include>
             <!-- Volume Level Progress -->
+            <!-- Movie Progress -->
             <control type="progress">
                 <posx>97</posx>
                 <posy>35</posy>
-                <width>525</width>
-                <height>23</height>
                 <info>Player.Volume</info>
-                <texturebg border="1">OSD-Menu/Progress-Bar-Background.png</texturebg>
-                <lefttexture>Clear.png</lefttexture>
-                <righttexture>Clear.png</righttexture>
-                <midtexture border="2">OSD-Menu/Progress-Bar.png</midtexture>
             </control>
             <!-- Icons -->
             <control type="image">
