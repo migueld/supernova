@@ -1,0 +1,51 @@
+<window id="2000">
+	<defaultcontrol>3</defaultcontrol>
+	<include>shutdown-ani</include>
+	<controls>
+		<control type="image">
+			<description>background image</description>
+			<posx>10</posx>
+			<posy>50</posy>
+			<width>390</width>
+			<height>506</height>
+			<texture border="20">button-menu-background.png</texture>
+		</control>
+		<control type="label" id="2">
+			<description>number of files text label</description>
+			<posx>315</posx>
+			<posy>520</posy>
+			<label>-</label>
+			<font>font10</font>
+		</control>
+		<control type="listcontrol" id="3">
+			<description>Movies list</description>
+			<posx>20</posx>
+			<posy>60</posy>
+			<width>370</width>
+			<height>486</height>
+			<texturefocus>default-button.png</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<onleft>5</onleft>
+			<onright>5</onright>
+			<onup>3</onup>
+			<ondown>3</ondown>
+			<font>font12</font>
+			<textcolor>button-text</textcolor>
+		</control>
+		<control type="button" id="5">
+			<description>Manual Button</description>
+			<posx>220</posx>
+			<posy>515</posy>
+			<width>80</width>
+			<height>30</height>
+			<font>font10</font>
+			<label>368</label>
+			<align>center</align>
+			<onleft>3</onleft>
+			<onright>3</onright>
+			<onup>3</onup>
+			<ondown>3</ondown>
+			<textcolor>button-text</textcolor>
+		</control>
+	</controls>
+</window>

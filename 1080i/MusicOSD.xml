@@ -1,0 +1,698 @@
+﻿<window id="120">
+	<defaultcontrol>213</defaultcontrol>
+	<animation effect="fade" start="0" time="300">WindowOpen</animation>
+	<animation effect="fade" end="0" time="300">WindowClose</animation>
+	<coordinates>
+		<system>1</system>
+		<posx>90</posx>
+		<posy>491</posy>
+	</coordinates>
+	<controls>
+		<control type="image">
+			<description>Panel</description>
+			<posx>-17</posx>
+			<posy>-8</posy>
+			<height>106</height>
+			<width>563</width>
+			<texture>osd-panel.png</texture>
+			<visible>!Player.CanRecord</visible>
+		</control>
+		<control type="image">
+			<description>Panel</description>
+			<posx>-50</posx>
+			<posy>-8</posy>
+			<height>106</height>
+			<width>635</width>
+			<texture>osd-panel.png</texture>
+			<visible>Player.CanRecord</visible>
+		</control>
+		<!-- Start OSD Text -->
+		<!-- Start OSD Text if Player Can't Record -->
+		<control type="label">
+			<description>skip back text nf</description>
+			<posx>2</posx>
+			<posy>28</posy>
+			<font>font11</font>
+			<textcolor>osd-nf</textcolor>
+			<label>31050</label>
+			<visible>!Player.CanRecord</visible>
+		</control>
+		<control type="label">
+			<description>skip back text fo</description>
+			<posx>2</posx>
+			<posy>28</posy>
+			<font>font11</font>
+			<textcolor>button-text</textcolor>
+			<label>31050</label>
+			<visible>Control.HasFocus(210)</visible>
+			<visible>!Player.CanRecord</visible>
+		</control>
+		<control type="label">
+			<description>rewind text nf</description>
+			<posx>48</posx>
+			<posy>28</posy>
+			<font>font11</font>
+			<textcolor>osd-nf</textcolor>
+			<label>31052</label>
+			<visible>!Player.CanRecord</visible>
+		</control>
+		<control type="label">
+			<description>rewind text fo</description>
+			<posx>48</posx>
+			<posy>28</posy>
+			<font>font11</font>
+			<textcolor>button-text</textcolor>
+			<label>31052</label>
+			<visible>Control.HasFocus(211)</visible>
+			<visible>!Player.CanRecord</visible>
+		</control>
+		<control type="label">
+			<description>play text nf</description>
+			<posx>106</posx>
+			<posy>28</posy>
+			<font>font11</font>
+			<textcolor>osd-nf</textcolor>
+			<label>31044</label>
+			<visible>Player.Paused | Player.Rewinding | Player.Forwarding</visible>
+			<visible>!Player.CanRecord</visible>
+		</control>
+		<control type="label">
+			<description>play text fo</description>
+			<posx>106</posx>
+			<posy>28</posy>
+			<font>font11</font>
+			<textcolor>button-text</textcolor>
+			<label>31044</label>
+			<visible>[Player.Paused | Player.Rewinding | Player.Forwarding] + Control.HasFocus(213)</visible>
+			<visible>!Player.CanRecord</visible>
+		</control>
+		<control type="label">
+			<description>pause text nf</description>
+			<posx>106</posx>
+			<posy>28</posy>
+			<font>font11</font>
+			<textcolor>osd-nf</textcolor>
+			<label>31043</label>
+			<visible>![Player.Paused | Player.Rewinding | Player.Forwarding]</visible>
+			<visible>!Player.CanRecord</visible>
+		</control>
+		<control type="label">
+			<description>pause text fo</description>
+			<posx>106</posx>
+			<posy>28</posy>
+			<font>font11</font>
+			<textcolor>button-text</textcolor>
+			<label>31043</label>
+			<visible>![Player.Paused | Player.Rewinding | Player.Forwarding] + Control.HasFocus(213)</visible>
+			<visible>!Player.CanRecord</visible>
+		</control>
+		<control type="label">
+			<description>forward text nf</description>
+			<posx>153</posx>
+			<posy>28</posy>
+			<font>font11</font>
+			<textcolor>osd-nf</textcolor>
+			<label>31058</label>
+			<visible>!Player.CanRecord</visible>
+		</control>
+		<control type="label">
+			<description>forward text fo</description>
+			<posx>153</posx>
+			<posy>28</posy>
+			<font>font11</font>
+			<textcolor>button-text</textcolor>
+			<label>31058</label>
+			<visible>Control.HasFocus(214)</visible>
+			<visible>!Player.CanRecord</visible>
+		</control>
+		<control type="label">
+			<description>skip forward text nf</description>
+			<posx>215</posx>
+			<posy>28</posy>
+			<font>font11</font>
+			<textcolor>osd-nf</textcolor>
+			<label>31051</label>
+			<visible>!Player.CanRecord</visible>
+		</control>
+		<control type="label">
+			<description>skip forward text fo</description>
+			<posx>215</posx>
+			<posy>28</posy>
+			<font>font11</font>
+			<textcolor>button-text</textcolor>
+			<label>31051</label>
+			<visible>Control.HasFocus(215)</visible>
+			<visible>!Player.CanRecord</visible>
+		</control>
+		<control type="label">
+			<description>playlist text nf</description>
+			<posx>263</posx>
+			<posy>28</posy>
+			<width>100</width>
+			<font>font11</font>
+			<textcolor>osd-nf</textcolor>
+			<label>31041</label>
+			<visible>!Player.CanRecord</visible>
+		</control>
+		<control type="label">
+			<description>playlist text fo</description>
+			<posx>263</posx>
+			<posy>28</posy>
+			<width>100</width>
+			<font>font11</font>
+			<textcolor>button-text</textcolor>
+			<label>31041</label>
+			<visible>Control.HasFocus(499)</visible>
+			<visible>!Player.CanRecord</visible>
+		</control>
+		<control type="label">
+			<description>visual select text nf</description>
+			<posx>319</posx>
+			<posy>28</posy>
+			<font>font11</font>
+			<textcolor>osd-nf</textcolor>
+			<label>31040</label>
+			<visible>!Player.CanRecord</visible>
+		</control>
+		<control type="label">
+			<description>visual select text fo</description>
+			<posx>319</posx>
+			<posy>28</posy>
+			<font>font11</font>
+			<textcolor>button-text</textcolor>
+			<label>31040</label>
+			<visible>Control.HasFocus(500)</visible>
+			<visible>!Player.CanRecord</visible>
+		</control>
+		<control type="label">
+			<description>presets text nf</description>
+			<posx>373</posx>
+			<posy>28</posy>
+			<font>font11</font>
+			<textcolor>osd-nf</textcolor>
+			<label>31039</label>
+			<visible>!Player.CanRecord</visible>
+		</control>
+		<control type="label">
+			<description>preset text fo</description>
+			<posx>373</posx>
+			<posy>28</posy>
+			<font>font11</font>
+			<textcolor>button-text</textcolor>
+			<label>31039</label>
+			<visible>Control.HasFocus(220)</visible>
+			<visible>!Player.CanRecord</visible>
+		</control>
+		<control type="label">
+			<description>settings text nf</description>
+			<posx>425</posx>
+			<posy>28</posy>
+			<font>font11</font>
+			<textcolor>osd-nf</textcolor>
+			<label>31034</label>
+			<visible>!Player.CanRecord</visible>
+		</control>
+		<control type="label">
+			<description>settings text fo</description>
+			<posx>425</posx>
+			<posy>28</posy>
+			<font>font11</font>
+			<textcolor>button-text</textcolor>
+			<label>31034</label>
+			<visible>Control.HasFocus(219)</visible>
+			<visible>!Player.CanRecord</visible>
+		</control>
+		<control type="label">
+			<description>lyrics text nf</description>
+			<posx>485</posx>
+			<posy>28</posy>
+			<font>font11</font>
+			<textcolor>osd-nf</textcolor>
+			<label>31038</label>
+			<visible>!Player.CanRecord</visible>
+		</control>
+		<control type="label">
+			<description>lyrics text fo</description>
+			<posx>485</posx>
+			<posy>28</posy>
+			<font>font11</font>
+			<textcolor>button-text</textcolor>
+			<label>31038</label>
+			<visible>Control.HasFocus(2)</visible>
+			<visible>!Player.CanRecord</visible>
+		</control>
+		<!-- End OSD Text if Player Can't Record -->
+		<!-- Start OSD Text if Player Can Record -->
+		<control type="label">
+			<description>skip back text nf</description>
+			<posx>-31</posx>
+			<posy>28</posy>
+			<font>font11</font>
+			<textcolor>osd-nf</textcolor>
+			<label>31050</label>
+			<visible>Player.CanRecord</visible>
+		</control>
+		<control type="label">
+			<description>skip back text fo</description>
+			<posx>-31</posx>
+			<posy>28</posy>
+			<font>font11</font>
+			<textcolor>button-text</textcolor>
+			<label>31050</label>
+			<visible>Control.HasFocus(210)</visible>
+			<visible>Player.CanRecord</visible>
+		</control>
+		<control type="label">
+			<description>rewind text nf</description>
+			<posx>16</posx>
+			<posy>28</posy>
+			<font>font11</font>
+			<textcolor>osd-nf</textcolor>
+			<label>31052</label>
+			<visible>Player.CanRecord</visible>
+		</control>
+		<control type="label">
+			<description>rewind text fo</description>
+			<posx>16</posx>
+			<posy>28</posy>
+			<font>font11</font>
+			<textcolor>button-text</textcolor>
+			<label>31052</label>
+			<visible>Control.HasFocus(211)</visible>
+			<visible>Player.CanRecord</visible>
+		</control>
+		<control type="label">
+			<description>play text nf</description>
+			<posx>73</posx>
+			<posy>28</posy>
+			<font>font11</font>
+			<textcolor>osd-nf</textcolor>
+			<label>31044</label>
+			<visible>Player.Paused | Player.Rewinding | Player.Forwarding</visible>
+			<visible>Player.CanRecord</visible>
+		</control>
+		<control type="label">
+			<description>play text fo</description>
+			<posx>73</posx>
+			<posy>28</posy>
+			<font>font11</font>
+			<textcolor>button-text</textcolor>
+			<label>31044</label>
+			<visible>[Player.Paused | Player.Rewinding | Player.Forwarding] + Control.HasFocus(213)</visible>
+			<visible>Player.CanRecord</visible>
+		</control>
+		<control type="label">
+			<description>pause text nf</description>
+			<posx>73</posx>
+			<posy>28</posy>
+			<font>font11</font>
+			<textcolor>osd-nf</textcolor>
+			<label>31043</label>
+			<visible>![Player.Paused | Player.Rewinding | Player.Forwarding]</visible>
+			<visible>Player.CanRecord</visible>
+		</control>
+		<control type="label">
+			<description>pause text fo</description>
+			<posx>73</posx>
+			<posy>28</posy>
+			<font>font11</font>
+			<textcolor>button-text</textcolor>
+			<label>31043</label>
+			<visible>![Player.Paused | Player.Rewinding | Player.Forwarding] + Control.HasFocus(213)</visible>
+			<visible>Player.CanRecord</visible>
+		</control>
+		<control type="label">
+			<description>forward text nf</description>
+			<posx>121</posx>
+			<posy>28</posy>
+			<font>font11</font>
+			<textcolor>osd-nf</textcolor>
+			<label>31058</label>
+			<visible>Player.CanRecord</visible>
+		</control>
+		<control type="label">
+			<description>forward text fo</description>
+			<posx>121</posx>
+			<posy>28</posy>
+			<font>font11</font>
+			<textcolor>button-text</textcolor>
+			<label>31058</label>
+			<visible>Control.HasFocus(214)</visible>
+			<visible>Player.CanRecord</visible>
+		</control>
+		<control type="label">
+			<description>skip forward text nf</description>
+			<posx>182</posx>
+			<posy>28</posy>
+			<font>font11</font>
+			<textcolor>osd-nf</textcolor>
+			<label>31051</label>
+			<visible>Player.CanRecord</visible>
+		</control>
+		<control type="label">
+			<description>skip forward text fo</description>
+			<posx>182</posx>
+			<posy>28</posy>
+			<font>font11</font>
+			<textcolor>button-text</textcolor>
+			<label>31051</label>
+			<visible>Control.HasFocus(215)</visible>
+			<visible>Player.CanRecord</visible>
+		</control>
+		<control type="label">
+			<description>playlist text nf</description>
+			<posx>229</posx>
+			<posy>28</posy>
+			<width>100</width>
+			<font>font11</font>
+			<textcolor>osd-nf</textcolor>
+			<label>31041</label>
+			<visible>Player.CanRecord</visible>
+		</control>
+		<control type="label">
+			<description>playlist text fo</description>
+			<posx>229</posx>
+			<posy>28</posy>
+			<width>100</width>
+			<font>font11</font>
+			<textcolor>button-text</textcolor>
+			<label>31041</label>
+			<visible>Control.HasFocus(499)</visible>
+			<visible>Player.CanRecord</visible>
+		</control>
+		<control type="label">
+			<description>visual select text nf</description>
+			<posx>286</posx>
+			<posy>28</posy>
+			<font>font11</font>
+			<textcolor>osd-nf</textcolor>
+			<label>31040</label>
+			<visible>Player.CanRecord</visible>
+		</control>
+		<control type="label">
+			<description>visual select text fo</description>
+			<posx>286</posx>
+			<posy>28</posy>
+			<font>font11</font>
+			<textcolor>button-text</textcolor>
+			<label>31040</label>
+			<visible>Control.HasFocus(500)</visible>
+			<visible>Player.CanRecord</visible>
+		</control>
+		<control type="label">
+			<description>presets text nf</description>
+			<posx>339</posx>
+			<posy>28</posy>
+			<font>font11</font>
+			<textcolor>osd-nf</textcolor>
+			<label>31039</label>
+			<visible>Player.CanRecord</visible>
+		</control>
+		<control type="label">
+			<description>preset text fo</description>
+			<posx>339</posx>
+			<posy>28</posy>
+			<font>font11</font>
+			<textcolor>button-text</textcolor>
+			<label>31039</label>
+			<visible>Control.HasFocus(220)</visible>
+			<visible>Player.CanRecord</visible>
+		</control>
+		<control type="label">
+			<description>settings text nf</description>
+			<posx>392</posx>
+			<posy>28</posy>
+			<font>font11</font>
+			<textcolor>osd-nf</textcolor>
+			<label>31034</label>
+			<visible>Player.CanRecord</visible>
+		</control>
+		<control type="label">
+			<description>settings text fo</description>
+			<posx>392</posx>
+			<posy>28</posy>
+			<font>font11</font>
+			<textcolor>button-text</textcolor>
+			<label>31034</label>
+			<visible>Control.HasFocus(219)</visible>
+			<visible>Player.CanRecord</visible>
+		</control>
+		<control type="label">
+			<description>lyrics text nf</description>
+			<posx>452</posx>
+			<posy>28</posy>
+			<font>font11</font>
+			<textcolor>osd-nf</textcolor>
+			<label>31038</label>
+			<visible>Player.CanRecord</visible>
+		</control>
+		<control type="label">
+			<description>lyrics text fo</description>
+			<posx>452</posx>
+			<posy>28</posy>
+			<font>font11</font>
+			<textcolor>button-text</textcolor>
+			<label>31038</label>
+			<visible>Control.HasFocus(2)</visible>
+			<visible>Player.CanRecord</visible>
+		</control>
+		<control type="label">
+			<description>record text nf</description>
+			<posx>497</posx>
+			<posy>28</posy>
+			<font>font11</font>
+			<textcolor>osd-nf</textcolor>
+			<label>31048</label>
+			<visible>Player.CanRecord + !Player.Recording</visible>
+		</control>
+		<control type="label">
+			<description>record text fo</description>
+			<posx>497</posx>
+			<posy>28</posy>
+			<font>font11</font>
+			<textcolor>button-text</textcolor>
+			<label>31048</label>
+			<visible>Control.HasFocus(3)</visible>
+			<visible>Player.CanRecord + !Player.Recording</visible>
+		</control>
+		<control type="label">
+			<description>red recording text nf</description>
+			<posx>497</posx>
+			<posy>28</posy>
+			<font>font11</font>
+			<textcolor>recording-nf</textcolor>
+			<label>31049</label>
+			<visible>Player.Recording</visible>
+		</control>
+		<control type="label">
+			<description>red recording text fo</description>
+			<posx>497</posx>
+			<posy>28</posy>
+			<font>font11</font>
+			<textcolor>recording</textcolor>
+			<label>31049</label>
+			<visible>Control.HasFocus(3)</visible>
+			<visible>Player.Recording</visible>
+		</control>
+		<!-- End OSD Text if Player Can Record -->
+		<!-- End OSD Text -->
+		<control type="button" id="210">
+			<description>Skip Bwd</description>
+			<posx>23</posx>
+			<posy>26</posy>
+			<width>45</width>
+			<height>50</height>
+			<texturefocus>-</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<onclick>XBMC.PlayerControl(Previous)</onclick>
+			<label>-</label>
+			<font>-</font>
+			<onleft>3</onleft>
+			<onright>211</onright>
+			<onup>210</onup>
+			<ondown>210</ondown>
+		</control>
+		<control type="button" id="211">
+			<description>Rewind</description>
+			<posx>58</posx>
+			<posy>26</posy>
+			<width>45</width>
+			<height>50</height>
+			<texturefocus>-</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<label>-</label>
+			<font>-</font>
+			<onleft>210</onleft>
+			<onright>213</onright>
+			<onup>211</onup>
+			<ondown>211</ondown>
+			<onclick>XBMC.PlayerControl(Rewind)</onclick>
+		</control>
+		<control type="togglebutton" id="213">
+			<description>Play\Pause</description>
+			<posx>93</posx>
+			<posy>26</posy>
+			<width>45</width>
+			<height>50</height>
+			<texturefocus>-</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<usealttexture>Player.Paused | Player.Forwarding | Player.Rewinding</usealttexture>
+			<alttexturefocus>-</alttexturefocus>
+			<alttexturenofocus>-</alttexturenofocus>
+			<label>-</label>
+			<font>-</font>
+			<onleft>211</onleft>
+			<onright>214</onright>
+			<onup>213</onup>
+			<ondown>213</ondown>
+			<onclick>XBMC.PlayerControl(Play)</onclick>
+		</control>
+		<control type="button" id="214">
+			<description>Fast Forward</description>
+			<posx>128</posx>
+			<posy>26</posy>
+			<width>45</width>
+			<height>50</height>
+			<texturefocus>-</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<label>-</label>
+			<font>-</font>
+			<onleft>213</onleft>
+			<onright>215</onright>
+			<onup>214</onup>
+			<ondown>214</ondown>
+			<onclick>XBMC.PlayerControl(Forward)</onclick>
+		</control>
+		<control type="button" id="215">
+			<description>Skip Fwd</description>
+			<posx>163</posx>
+			<posy>26</posy>
+			<width>45</width>
+			<height>50</height>
+			<texturefocus>-</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<onclick>XBMC.PlayerControl(Next)</onclick>
+			<label>-</label>
+			<font>-</font>
+			<onleft>214</onleft>
+			<onright>499</onright>
+			<onup>215</onup>
+			<ondown>215</ondown>
+		</control>
+		<control type="button" id="499">
+			<description>playlist Button</description>
+			<posx>198</posx>
+			<posy>26</posy>
+			<width>45</width>
+			<height>50</height>
+			<texturefocus>-</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<onclick>XBMC.ActivateWindow(500)</onclick>
+			<label>-</label>
+			<font>-</font>
+			<onleft>215</onleft>
+			<onright>500</onright>
+			<onup>499</onup>
+			<ondown>499</ondown>
+		</control>
+		<control type="button" id="500">
+			<description>Popup Vis Select Button</description>
+			<posx>233</posx>
+			<posy>26</posy>
+			<width>45</width>
+			<height>50</height>
+			<texturefocus>-</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<label>-</label>
+			<font>-</font>
+			<onleft>499</onleft>
+			<onright>220</onright>
+			<onup>500</onup>
+			<ondown>500</ondown>
+		</control>
+		<control type="button" id="220">
+			<description>Popup Vis Preset List</description>
+			<posx>268</posx>
+			<posy>26</posy>
+			<width>45</width>
+			<height>50</height>
+			<texturefocus>-</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<label>-</label>
+			<font>-</font>
+			<onleft>500</onleft>
+			<onright>219</onright>
+			<onup>220</onup>
+			<ondown>220</ondown>
+			<onclick>XBMC.ActivateWindow(122)</onclick>
+		</control>
+		<control type="button" id="219">
+			<description>Popup Vis Settings</description>
+			<posx>303</posx>
+			<posy>26</posy>
+			<width>45</width>
+			<height>50</height>
+			<texturefocus>-</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<label>-</label>
+			<font>-</font>
+			<onleft>220</onleft>
+			<onright>2</onright>
+			<onup>219</onup>
+			<ondown>219</ondown>
+			<onclick>XBMC.ActivateWindow(121)</onclick>
+		</control>
+		<control type="selectbutton" id="503">
+			<description>Visualisation Select Button</description>
+			<posx>160</posx>
+			<posy>19</posy>
+			<width>200</width>
+			<height>100</height>
+			<label>-</label>
+			<font>font12</font>
+			<textcolor>button-text</textcolor>
+			<texturebg>osd-panel.png</texturebg>
+			<texturenofocus>-</texturenofocus>
+			<texturefocus>-</texturefocus>
+			<onleft>500</onleft>
+			<onright>500</onright>
+			<onup>500</onup>
+			<ondown>500</ondown>
+		</control>
+		<control type="button" id="2">
+			<description>Lyrics Button</description>
+			<posx>270</posx>
+			<posy>281</posy>
+			<width>200</width>
+			<height>35</height>
+			<label>-</label>
+			<font>font12</font>
+			<textcolor>button-text</textcolor>
+			<texturenofocus>-</texturenofocus>
+			<texturefocus>-</texturefocus>
+			<onclick>XBMC.RunScript(Q:\scripts\XBMC Lyrics\default.py)</onclick>
+			<onleft>219</onleft>
+			<onright>3</onright>
+			<onup>2</onup>
+			<ondown>2</ondown>
+		</control>
+		<control type="button" id="3">
+			<description>Record Button</description>
+			<posx>270</posx>
+			<posy>281</posy>
+			<width>200</width>
+			<height>35</height>
+			<label>-</label>
+			<font>font12</font>
+			<textcolor>button-text</textcolor>
+			<texturenofocus>-</texturenofocus>
+			<texturefocus>-</texturefocus>
+			<onclick>XBMC.PlayerControl(Record)</onclick>
+			<onleft>2</onleft>
+			<onright>210</onright>
+			<onup>3</onup>
+			<ondown>3</ondown>
+			<visible>Player.CanRecord</visible>
+		</control>
+	</controls>
+</window>             

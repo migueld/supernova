@@ -1,0 +1,298 @@
+﻿<window id="2006">
+	<defaultcontrol>2</defaultcontrol>
+	<allowoverlay>no</allowoverlay>
+	<visible>!Window.IsVisible(2004)</visible>
+	<controls>
+		<control type="visualisation" id="2">
+			<description>visualisation</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>720</width>
+			<height>576</height>
+		</control>
+		<!-- codec & viz infos -->
+		<control type="image">
+			<description>preset background image</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>760</width>
+			<height>120</height>
+			<texture>sub-background-label.png</texture>
+			<visible>!Skin.HasSetting(np-vis)</visible>
+			<visible>Player.ShowCodec</visible>
+			<animation effect="fade" time="300">VisibleChange</animation>
+		</control>
+		<control type="label">
+			<description>Codecinfo</description>
+			<width>600</width>
+			<posx>75</posx>
+			<posy>10</posy>
+			<label>Audio | $INFO[musicplayer.Codec,Codec:,]$INFO[musicplayer.Bitrate, - Bitrate:,kbps]$INFO[musicplayer.bitspersample, - Bits:,bit]$INFO[musicplayer.Samplerate, - Freq.: ,kHz]$INFO[musicplayer.Channels, - Channels: ]</label>
+			<align>left</align>
+			<font>font12</font>
+			<visible>!Skin.HasSetting(np-vis)</visible>
+			<visible>Player.ShowCodec</visible>
+			<animation effect="fade" time="300">VisibleChange</animation>
+		</control>
+		<control type="label">
+			<description>Presets label</description>
+			<posx>75</posx>
+			<posy>35</posy>
+			<width>560</width>
+			<label>Visual | fps: $INFO[System.FPS] -</label>
+			<font>font12</font>
+			<align>left</align>
+			<visible>!Skin.HasSetting(np-vis)</visible>
+			<visible>Player.ShowCodec</visible>
+			<animation effect="fade" time="300">VisibleChange</animation>
+		</control>
+		<control type="label">
+			<description>Presets label</description>
+			<posx>225</posx>
+			<posy>35</posy>
+			<width>420</width>
+			<label>$INFO[Visualisation.Name]$INFO[Visualisation.Preset, - ]</label>
+			<font>font12</font>
+			<align>left</align>
+			<visible>!Skin.HasSetting(np-vis)</visible>
+			<visible>Player.ShowCodec</visible>
+			<animation effect="fade" time="300">VisibleChange</animation>
+		</control>
+		<control type="label">
+			<description>Preset locked image</description>
+			<posx>210</posx>
+			<posy>36</posy>
+			<width>12</width>
+			<height>15</height>
+			<visible>!Skin.HasSetting(np-vis)</visible>
+			<visible>Visualisation.Locked + Player.ShowCodec</visible>
+			<animation effect="fade" time="300">VisibleChange</animation>
+			<texture>arenaitem-private.png</texture>
+		</control>
+		<!-- media infos -->
+		<control type="image">
+			<description>media info background image</description>
+			<posx>-10</posx>
+			<posy>446</posy>
+			<width>760</width>
+			<height>150</height>
+			<texture>sub-background.png</texture>
+			<visible>!Skin.HasSetting(np-vis)</visible>
+			<visible>Player.HasMedia + Player.ShowInfo</visible>
+			<animation effect="fade" time="500">VisibleChange</animation>
+		</control>
+		<control type="image">
+			<description>cover image</description>
+			<posx>25</posx>
+			<posy>455</posy>
+			<width>100</width>
+			<height>100</height>
+			<info>MusicPlayer.Cover</info>
+			<aspectratio>keep</aspectratio>
+			<visible>!Skin.HasSetting(np-vis)</visible>
+			<visible>Player.HasMedia + Player.ShowInfo</visible>
+			<animation effect="fade" time="500">VisibleChange</animation>
+		</control>
+		<control type="label">
+			<description>Artist label</description>
+			<width>445</width>
+			<posx>125</posx>
+			<posy>458</posy>
+			<info>MusicPlayer.Artist</info>
+			<align>left</align>
+			<font>special12</font>
+			<visible>!Skin.HasSetting(np-vis)</visible>
+			<visible>Player.HasMedia + Player.ShowInfo</visible>
+			<animation effect="fade" time="500">VisibleChange</animation>
+		</control>
+		<control type="label">
+			<description>Title label</description>
+			<width>430</width>
+			<posx>125</posx>
+			<posy>479</posy>
+			<info>MusicPlayer.Title</info>
+			<align>left</align>
+			<font>special13</font>
+			<visible>!Skin.HasSetting(np-vis)</visible>
+			<visible>Player.HasMedia + Player.ShowInfo</visible>
+			<animation effect="fade" time="500">VisibleChange</animation>
+		</control>
+		<control type="label">
+			<description>Album label</description>
+			<width>430</width>
+			<posx>125</posx>
+			<posy>507</posy>
+			<info>MusicPlayer.Album</info>
+			<align>left</align>
+			<font>font10</font>
+			<visible>!Skin.HasSetting(np-vis)</visible>
+			<visible>Player.HasMedia + Player.ShowInfo</visible>
+			<animation effect="fade" time="500">VisibleChange</animation>
+		</control>
+		<control type="label">
+			<description>time label</description>
+			<width>430</width>
+			<posx>125</posx>
+			<posy>528</posy>
+			<label>$INFO[musicplayer.Time]$INFO[musicplayer.Duration, / ]</label>
+			<align>left</align>
+			<font>font10</font>
+			<visible>!Skin.HasSetting(np-vis)</visible>
+			<visible>Player.HasMedia + Player.ShowInfo</visible>
+			<animation effect="fade" time="500">VisibleChange</animation>
+		</control>
+		<control type="label">
+			<description>Playlist</description>
+			<width>100</width>
+			<posx>680</posx>
+			<posy>556</posy>
+			<align>right</align>
+			<label>$INFO[musicplayer.Playlistposition,Track ]$INFO[musicplayer.Playlistlength, / ]</label>
+			<font>font10</font>
+			<visible>!Skin.HasSetting(np-vis)</visible>
+			<visible>Player.HasMedia + Player.ShowInfo</visible>
+			<animation effect="fade" time="500">VisibleChange</animation>
+		</control>
+		<control type="label">
+			<description>PartyMode Enabled</description>
+			<width>200</width>
+			<posx>680</posx>
+			<posy>541</posy>
+			<label>589</label>
+			<visible>!Skin.HasSetting(np-vis)</visible>
+			<visible>Player.ShowInfo + MusicPartyMode.Enabled</visible>
+			<animation effect="fade" time="1000">VisibleChange</animation>
+			<align>right</align>
+			<font>font10</font>
+		</control>
+		<!-- "Now Playing" Stuff -->
+		<control type="image">
+			<description>background</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>720</width>
+			<height>576</height>
+			<texture>background.png</texture>
+			<colordiffuse>D1FFFFFF</colordiffuse>
+			<visible>!Skin.String(custom-background)</visible>
+			<visible>Skin.HasSetting(np-vis)</visible>
+		</control>
+		<control type="image">
+			<description>custom background</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>720</width>
+			<height>576</height>
+			<info>Skin.String(custom-background)</info>
+			<colordiffuse>D1FFFFFF</colordiffuse>
+			<visible>Skin.HasSetting(np-vis)</visible>
+		</control>
+		<!-- Start Tilted Album Cover -->
+		<control type="image">
+			<description>Album Cover</description>
+			<posx>395</posx>
+			<posy>210</posy>
+			<width>205</width>
+			<height>224</height>
+			<info>MusicPlayer.Cover</info>
+			<visible>Skin.HasSetting(np-vis) + Skin.HasSetting(tilted-icons)</visible>
+			<visible>![Window.IsActive(script-XBMC_Lyrics-main.xml) | Window.IsActive(script-XBMC_Lyrics-settings.xml)]</visible>
+			<animation effect="rotatey" start="20" end="20" time="0" condition="Skin.HasSetting(tilted-icons)">Conditional</animation>
+		</control>
+		<control type="image">
+			<description>Cover reflection</description>
+			<posx>395</posx>
+			<posy>434</posy>
+			<width>205</width>
+			<height>224</height>
+			<texture flipy="true" diffuse="fade2.png">-</texture>
+			<info>MusicPlayer.Cover</info>
+			<visible>Skin.HasSetting(np-vis) + Skin.HasSetting(tilted-icons)</visible>
+			<visible>![Window.IsActive(script-XBMC_Lyrics-main.xml) | Window.IsActive(script-XBMC_Lyrics-settings.xml)]</visible>
+			<animation effect="rotatey" start="20" end="20" time="0" condition="Skin.HasSetting(tilted-icons)">Conditional</animation>
+		</control>
+		<!-- End Tilted Album Cover -->
+		<!-- Start Album Cover -->
+		<control type="image">
+			<description>Album Cover</description>
+			<posx>375</posx>
+			<posy>190</posy>
+			<width>275</width>
+			<height>300</height>
+			<info>MusicPlayer.Cover</info>
+			<visible>Skin.HasSetting(np-vis) | Skin.HasSetting(tilted-icons)</visible>
+			<visible>!Skin.HasSetting(tilted-icons)</visible>
+			<visible>![Window.IsActive(script-XBMC_Lyrics-main.xml) | Window.IsActive(script-XBMC_Lyrics-settings.xml)]</visible>
+		</control>
+		<control type="image">
+			<description>Cover reflection</description>
+			<posx>375</posx>
+			<posy>495</posy>
+			<width>275</width>
+			<height>300</height>
+			<texture flipy="true" diffuse="fade2.png">-</texture>
+			<info>MusicPlayer.Cover</info>
+			<visible>Skin.HasSetting(np-vis)</visible>
+			<visible>!Skin.HasSetting(tilted-icons)</visible>
+			<visible>![Window.IsActive(script-XBMC_Lyrics-main.xml) | Window.IsActive(script-XBMC_Lyrics-settings.xml)]</visible>
+		</control>
+		<!-- End Album Cover -->
+		<control type="label">
+			<description>Title label</description>
+			<width>350</width>
+			<posx>360</posx>
+			<posy>355</posy>
+			<info>MusicPlayer.Title</info>
+			<align>right</align>
+			<font>font28</font>
+			<visible>Skin.HasSetting(np-vis)</visible>
+			<visible>![Window.IsActive(script-XBMC_Lyrics-main.xml) | Window.IsActive(script-XBMC_Lyrics-settings.xml)]</visible>
+		</control>
+		<control type="label">
+			<description>Artist label</description>
+			<width>430</width>
+			<posx>360</posx>
+			<posy>400</posy>
+			<info>MusicPlayer.Artist</info>
+			<align>right</align>
+			<font>special12</font>
+			<visible>Skin.HasSetting(np-vis)</visible>
+			<visible>![Window.IsActive(script-XBMC_Lyrics-main.xml) | Window.IsActive(script-XBMC_Lyrics-settings.xml)]</visible>
+		</control>
+		<control type="label">
+			<description>Album label</description>
+			<width>430</width>
+			<posx>360</posx>
+			<posy>425</posy>
+			<info>MusicPlayer.Album</info>
+			<align>right</align>
+			<font>font10</font>
+			<visible>Skin.HasSetting(np-vis)</visible>
+			<visible>![Window.IsActive(script-XBMC_Lyrics-main.xml) | Window.IsActive(script-XBMC_Lyrics-settings.xml)]</visible>
+		</control>
+		<control type="label">
+			<description>Time label</description>
+			<posx>360</posx>
+			<posy>455</posy>
+			<label>$INFO[MusicPlayer.Time]$INFO[MusicPlayer.Duration, / ]</label>
+			<align>right</align>
+			<font>font10</font>
+			<visible>Skin.HasSetting(np-vis)</visible>
+			<visible>![Window.IsActive(script-XBMC_Lyrics-main.xml) | Window.IsActive(script-XBMC_Lyrics-settings.xml)]</visible>
+		</control>
+		<control type="progress">
+			<posx>30</posx>
+			<posy>460</posy>
+			<width>250</width>
+			<height>15</height>
+			<info>Player.Progress</info>
+			<texturebg>progressbar-background-blue-alpha.png</texturebg>
+			<lefttexture>progress-left.png</lefttexture>
+			<midtexture>progress-middle.png</midtexture>
+			<righttexture>progress-right.png</righttexture>
+			<overlaytexture>-</overlaytexture>
+			<visible>Skin.HasSetting(np-vis)</visible>
+			<visible>![Window.IsActive(script-XBMC_Lyrics-main.xml) | Window.IsActive(script-XBMC_Lyrics-settings.xml)]</visible>
+		</control>
+	</controls>
+</window>

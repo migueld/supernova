@@ -1,0 +1,538 @@
+<window id="2600">
+	<defaultcontrol>3</defaultcontrol>
+	<allowoverlay>yes</allowoverlay>
+	<controls>
+		<include>background</include>
+		<include>Fake-Overlay</include>
+		<control type="image">
+			<description>Settings Logo</description>
+			<include>icon-header-commons</include>
+			<texture>icon-settings.png</texture>
+			<visible>!Skin.HasSetting(home-weather)</visible>
+		</control>
+		<control type="image">
+			<description>Photos Logo</description>
+			<include>icon-header-commons</include>
+			<include>icon-ani</include>
+			<texture>icon-weather.png</texture>
+			<visible>Skin.HasSetting(home-weather)</visible>
+		</control>
+		<control type="image">
+			<description>Photos Logo Reflection</description>
+			<include>icon-header-reflect-commons</include>
+			<include>icon-reflection-ani</include>
+			<texture flipy="true" diffuse="fade.png">icon-weather.png</texture>
+			<visible>Skin.HasSetting(home-weather)</visible>
+		</control>
+		<control type="label">
+			<description>weather Label</description>
+			<posx>535</posx>
+			<posy>40</posy>
+			<label>31005</label>
+			<font>font20</font>
+			<textcolor>button-text</textcolor>
+		</control>
+		<!-- Start Buttons -->
+		<control type="image">
+			<description>fake button texture for location spincontrol</description>
+			<posx>405</posx>
+			<posy>90</posy>
+			<width>285</width>
+			<height>37</height>
+			<texture>default-button.png</texture>
+			<visible>Control.HasFocus(3)</visible>
+		</control>
+		<control type="spincontrol" id="3">
+			<description>weather location select spincontrol</description>
+			<posx>645</posx>
+			<posy>100</posy>
+			<width>17</width>
+			<height>17</height>
+			<font>-</font>
+			<reverse>yes</reverse>
+			<onup>4</onup>
+			<ondown>1</ondown>
+			<onleft>3</onleft>
+			<onright>3</onright>
+			<disabledcolor>ffffffff</disabledcolor>
+			<textoffsetx>0</textoffsetx>
+			<textoffsety>0</textoffsety>
+		</control>
+		<control type="label">
+			<description>weather location select label</description>
+			<posx>427</posx>
+			<posy>93</posy>
+			<width>213</width>
+			<height>15</height>
+			<font>font13</font>
+			<scroll>true</scroll>
+			<disabledcolor>ffffffff</disabledcolor>
+			<info>Weather.Location</info>
+			<textcolor>button-text</textcolor>
+		</control>
+		<control type="button" id="1">
+			<description>current</description>
+			<posx>405</posx>
+			<posy>129</posy>
+			<width>285</width>
+			<height>37</height>
+			<texturefocus>default-button.png</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<label>Current</label>
+			<font>font13</font>
+			<onleft>1</onleft>
+			<onright>1</onright>
+			<onup>3</onup>
+			<ondown>31</ondown>
+		</control>
+		<control type="button" id="31">
+			<description>day 1</description>
+			<posx>405</posx>
+			<posy>168</posy>
+			<width>285</width>
+			<height>37</height>
+			<texturefocus>default-button.png</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<label>-</label>
+			<font>font13</font>
+			<onleft>31</onleft>
+			<onright>31</onright>
+			<onup>1</onup>
+			<ondown>41</ondown>
+		</control>
+		<control type="button" id="41">
+			<description>day 2</description>
+			<posx>405</posx>
+			<posy>207</posy>
+			<width>285</width>
+			<height>37</height>
+			<texturefocus>default-button.png</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<label>-</label>
+			<font>font13</font>
+			<onleft>41</onleft>
+			<onright>41</onright>
+			<onup>31</onup>
+			<ondown>51</ondown>
+		</control>
+		<control type="button" id="51">
+			<description>day 3</description>
+			<posx>405</posx>
+			<posy>246</posy>
+			<width>285</width>
+			<height>37</height>
+			<texturefocus>default-button.png</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<label>-</label>
+			<font>font13</font>
+			<onleft>51</onleft>
+			<onright>51</onright>
+			<onup>41</onup>
+			<ondown>61</ondown>
+		</control>
+		<control type="button" id="61">
+			<description>day 4</description>
+			<posx>405</posx>
+			<posy>285</posy>
+			<width>285</width>
+			<height>37</height>
+			<texturefocus>default-button.png</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<label>-</label>
+			<font>font13</font>
+			<onleft>61</onleft>
+			<onright>61</onright>
+			<onup>51</onup>
+			<ondown>2</ondown>
+		</control>
+		<control type="button" id="2">
+			<description>Refresh Button</description>
+			<posx>405</posx>
+			<posy>324</posy>
+			<width>285</width>
+			<height>37</height>
+			<label>184</label>
+			<textoffsetx>22</textoffsetx>
+			<texturefocus>default-button.png</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<onleft>2</onleft>
+			<onright>2</onright>
+			<onup>61</onup>
+			<ondown>4</ondown>
+			<textcolor>button-text</textcolor>
+		</control>
+		<control type="button" id="4">
+			<description>Settings Button</description>
+			<posx>405</posx>
+			<posy>363</posy>
+			<width>285</width>
+			<height>37</height>
+			<label>5</label>
+			<textoffsetx>22</textoffsetx>
+			<texturefocus>default-button.png</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<onleft>4</onleft>
+			<onright>4</onright>
+			<onup>2</onup>
+			<ondown>3</ondown>
+			<onclick>ActivateWindow(MyWeatherSettings)</onclick>
+			<textcolor>button-text</textcolor>
+		</control>
+		<control type="image">
+			<description>Settings arrow image</description>
+			<posx>655</posx>
+			<posy>345</posy>
+			<width>25</width>
+			<height>75</height>
+			<texture>home-buttonarrow-alpha.png</texture>
+		</control>
+		<control type="image">
+			<description>Settings focus arrow image</description>
+			<posx>655</posx>
+			<posy>345</posy>
+			<width>25</width>
+			<height>75</height>
+			<texture>home-buttonarrow.png</texture>
+			<visible>Control.HasFocus(4)</visible>
+		</control>
+		<!-- End Buttons -->
+		<!-- Start Condition Icons -->
+		<control type="group">
+			<animation effect="fade" start="0" delay="150" time="50" condition="Window.Previous(Home)">WindowOpen</animation>
+			<animation effect="fade" start="0" time="10" condition="Window. Next(Home)">WindowClose</animation>
+				<control type="image" id="21">
+					<description>current weather icon</description>
+					<posx>80</posx>
+					<posy>50</posy>
+					<height>250</height>
+					<width>250</width>
+					<aspectratio>keep</aspectratio>
+					<texture>background-myweather.png</texture>
+					<visible>Control.HasFocus(1) | Control.HasFocus(2) | Control.HasFocus(3) | Control.HasFocus(4)</visible>
+				</control>
+				<control type="image" id="35">
+					<description>day 1 icon</description>
+					<posx>80</posx>
+					<posy>50</posy>
+					<height>250</height>
+					<width>250</width>
+					<aspectratio>keep</aspectratio>
+					<texture>background-myweather.png</texture>
+					<visible>Control.HasFocus(31)</visible>
+				</control>
+				<control type="image" id="45">
+					<description>day 2 icon</description>
+					<posx>80</posx>
+					<posy>50</posy>
+					<height>250</height>
+					<width>250</width>
+					<aspectratio>keep</aspectratio>
+					<texture>background-myweather.png</texture>
+					<visible>Control.HasFocus(41)</visible>
+				</control>
+				<control type="image" id="55">
+					<description>day 3 icon</description>
+					<posx>80</posx>
+					<posy>50</posy>
+					<height>250</height>
+					<width>250</width>
+					<aspectratio>keep</aspectratio>
+					<texture>background-myweather.png</texture>
+					<visible>Control.HasFocus(51)</visible>
+				</control>
+				<control type="image" id="65">
+					<description>day 4 icon</description>
+					<posx>80</posx>
+					<posy>50</posy>
+					<height>250</height>
+					<width>250</width>
+					<aspectratio>keep</aspectratio>
+					<texture>background-myweather.png</texture>
+					<visible>Control.HasFocus(61)</visible>
+				</control>
+			<!-- End Condition Icons -->
+			<!-- Start Condition Labels -->
+				<control type="label" id="22">
+					<description>current condition label</description>
+					<posx>45</posx>
+					<posy>330</posy>
+					<width>310</width>
+					<height>200</height>
+					<scroll>true</scroll>
+					<label>-</label>
+					<font>font12</font>
+					<visible>Control.HasFocus(1) | Control.HasFocus(2) | Control.HasFocus(3) | Control.HasFocus(4)</visible>
+				</control>
+				<control type="label" id="34">
+					<description>day 1 condition label</description>
+					<posx>45</posx>
+					<posy>330</posy>
+					<width>310</width>
+					<height>200</height>
+					<scroll>true</scroll>
+					<label>-</label>
+					<font>font12</font>
+					<visible>Control.HasFocus(31)</visible>
+				</control>
+				<control type="label" id="44">
+					<description>day 2 condition label</description>
+					<posx>45</posx>
+					<posy>330</posy>
+					<width>310</width>
+					<height>200</height>
+					<scroll>true</scroll>
+					<label>-</label>
+					<font>font12</font>
+					<visible>Control.HasFocus(41)</visible>
+				</control>
+				<control type="label" id="54">
+					<description>day 3 condition label</description>
+					<posx>45</posx>
+					<posy>330</posy>
+					<width>310</width>
+					<height>200</height>
+					<scroll>true</scroll>
+					<label>-</label>
+					<font>font12</font>
+					<visible>Control.HasFocus(51)</visible>
+				</control>
+				<control type="label" id="64">
+					<description>day 4 condition label</description>
+					<posx>45</posx>
+					<posy>330</posy>
+					<width>310</width>
+					<height>200</height>
+					<scroll>true</scroll>
+					<label>-</label>
+					<font>font12</font>
+					<visible>Control.HasFocus(61)</visible>
+				</control>
+			<!-- End Condition Labels -->
+			<!-- Start Common High/Low Labels -->
+				<control type="label">
+					<posx>45</posx>
+					<posy>370</posy>
+					<label>31064</label>
+					<font>font11</font>
+					<visible>Control.HasFocus(31) | Control.HasFocus(41) | Control.HasFocus(51) | Control.HasFocus(61)</visible>
+				</control>
+				<control type="label">
+					<posx>45</posx>
+					<posy>390</posy>
+					<label>31065</label>
+					<font>font11</font>
+					<visible>Control.HasFocus(31) | Control.HasFocus(41) | Control.HasFocus(51) | Control.HasFocus(61)</visible>
+				</control>
+			<!-- End Common High/Low Labels -->
+			<!-- Start Separators -->
+				<control type="image">
+					<description>top seperator(all focused)</description>
+					<posx>45</posx>
+					<posy>360</posy>
+					<width>310</width>
+					<height>5</height>
+					<texture>separator.png</texture>
+					<visible>-</visible>
+				</control>
+				<control type="image">
+					<description>bottom seperator(current day)</description>
+					<posx>45</posx>
+					<posy>500</posy>
+					<width>310</width>
+					<height>5</height>
+					<texture>separator.png</texture>
+					<visible>![Control.HasFocus(31) | Control.HasFocus(41) | Control.HasFocus(51) | Control.HasFocus(61)]</visible>
+				</control>
+				<control type="image">
+					<description>bottom seperator(days 1-4)</description>
+					<posx>45</posx>
+					<posy>420</posy>
+					<width>310</width>
+					<height>5</height>
+					<texture>separator.png</texture>
+					<visible>Control.HasFocus(31) | Control.HasFocus(41) | Control.HasFocus(51) | Control.HasFocus(61)</visible>
+				</control>
+			<!-- End Separators -->
+			<!-- Start Current Day Info -->
+				<control type="label" id="223">
+					<description>current temp static label</description>
+					<posx>45</posx>
+					<posy>370</posy>
+					<label>Temp</label>
+					<font>font11</font>
+					<visible>Control.HasFocus(1) | Control.HasFocus(2) | Control.HasFocus(3) | Control.HasFocus(4)</visible>
+				</control>
+				<control type="label" id="23">
+					<description>current temp value</description>
+					<posx>140</posx>
+					<posy>370</posy>
+					<label>-</label>
+					<font>font11</font>
+					<textcolor>FF9E9E9E</textcolor>
+					<visible>Control.HasFocus(1) | Control.HasFocus(2) | Control.HasFocus(3) | Control.HasFocus(4)</visible>
+				</control>
+				<control type="label" id="224">
+					<description>current feels like static label</description>
+					<posx>45</posx>
+					<posy>390</posy>
+					<label>-</label>
+					<font>font11</font>
+					<visible>Control.HasFocus(1) | Control.HasFocus(2) | Control.HasFocus(3) | Control.HasFocus(4)</visible>
+				</control>
+				<control type="label" id="24">
+					<description>current feels like value</description>
+					<posx>140</posx>
+					<posy>390</posy>
+					<label>-</label>
+					<font>font11</font>
+					<textcolor>FF9E9E9E</textcolor>
+					<visible>Control.HasFocus(1) | Control.HasFocus(2) | Control.HasFocus(3) | Control.HasFocus(4)</visible>
+				</control>
+				<control type="label" id="225">
+					<description>current UV Index static label</description>
+					<posx>45</posx>
+					<posy>410</posy>
+					<label>-</label>
+					<font>font11</font>
+					<visible>Control.HasFocus(1) | Control.HasFocus(2) | Control.HasFocus(3) | Control.HasFocus(4)</visible>
+				</control>
+				<control type="label" id="25">
+					<description>current UV Index value</description>
+					<posx>140</posx>
+					<posy>410</posy>
+					<label>-</label>
+					<font>font11</font>
+					<textcolor>FF9E9E9E</textcolor>
+					<visible>Control.HasFocus(1) | Control.HasFocus(2) | Control.HasFocus(3) | Control.HasFocus(4)</visible>
+				</control>
+				<control type="label" id="226">
+					<description>current wind static label</description>
+					<posx>45</posx>
+					<posy>430</posy>
+					<label>-</label>
+					<font>font11</font>
+					<visible>Control.HasFocus(1) | Control.HasFocus(2) | Control.HasFocus(3) | Control.HasFocus(4)</visible>
+				</control>
+				<control type="label" id="26">
+					<description>current wind value</description>
+					<posx>140</posx>
+					<posy>430</posy>
+					<label>-</label>
+					<font>font11</font>
+					<textcolor>FF9E9E9E</textcolor>
+					<visible>Control.HasFocus(1) | Control.HasFocus(2) | Control.HasFocus(3) | Control.HasFocus(4)</visible>
+				</control>
+				<control type="label" id="227">
+					<description>current dew static label</description>
+					<posx>45</posx>
+					<posy>450</posy>
+					<label>-</label>
+					<font>font11</font>
+					<visible>Control.HasFocus(1) | Control.HasFocus(2) | Control.HasFocus(3) | Control.HasFocus(4)</visible>
+				</control>
+				<control type="label" id="27">
+					<description>current dew value</description>
+					<posx>140</posx>
+					<posy>450</posy>
+					<label>-</label>
+					<font>font11</font>
+					<textcolor>FF9E9E9E</textcolor>
+					<visible>Control.HasFocus(1) | Control.HasFocus(2) | Control.HasFocus(3) | Control.HasFocus(4)</visible>
+				</control>
+				<control type="label" id="228">
+					<description>current humidity static label</description>
+					<posx>45</posx>
+					<posy>470</posy>
+					<label>-</label>
+					<font>font11</font>
+					<visible>Control.HasFocus(1) | Control.HasFocus(2) | Control.HasFocus(3) | Control.HasFocus(4)</visible>
+				</control>
+				<control type="label" id="28">
+					<description>current humidity value</description>
+					<posx>140</posx>
+					<posy>470</posy>
+					<label>-</label>
+					<font>font11</font>
+					<textcolor>FF9E9E9E</textcolor>
+					<visible>Control.HasFocus(1) | Control.HasFocus(2) | Control.HasFocus(3) | Control.HasFocus(4)</visible>
+				</control>
+			<!-- Day 1 -->
+				<control type="label" id="32">
+					<description>day 1 Hi label</description>
+					<posx>140</posx>
+					<posy>370</posy>
+					<label>-</label>
+					<font>font11</font>
+					<textcolor>FF9E9E9E</textcolor>
+					<visible>Control.HasFocus(31)</visible>
+				</control>
+				<control type="label" id="33">
+					<description>day 1 low label</description>
+					<posx>140</posx>
+					<posy>390</posy>
+					<label>-</label>
+					<font>font11</font>
+					<textcolor>FF9E9E9E</textcolor>
+					<visible>Control.HasFocus(31)</visible>
+				</control>
+			<!-- Day 2 -->
+				<control type="label" id="42">
+					<description>day 2 Hi label</description>
+					<posx>140</posx>
+					<posy>370</posy>
+					<label>-</label>
+					<font>font10</font>
+					<textcolor>FF9E9E9E</textcolor>
+					<visible>Control.HasFocus(41)</visible>
+				</control>
+				<control type="label" id="43">
+					<description>day 2 low label</description>
+					<posx>140</posx>
+					<posy>390</posy>
+					<label>-</label>
+					<font>font11</font>
+					<textcolor>FF9E9E9E</textcolor>
+					<visible>Control.HasFocus(41)</visible>
+				</control>
+			<!-- Day 3 -->
+				<control type="label" id="52">
+					<description>day 3 Hi label</description>
+					<posx>140</posx>
+					<posy>370</posy>
+					<label>-</label>
+					<font>font10</font>
+					<textcolor>FF9E9E9E</textcolor>
+					<visible>Control.HasFocus(51)</visible>
+				</control>
+				<control type="label" id="53">
+					<description>day 3 low label</description>
+					<posx>140</posx>
+					<posy>390</posy>
+					<label>-</label>
+					<font>font11</font>
+					<textcolor>FF9E9E9E</textcolor>
+					<visible>Control.HasFocus(51)</visible>
+				</control>
+			<!-- Day 4 -->
+				<control type="label" id="62">
+					<description>day 4 Hi label</description>
+					<posx>140</posx>
+					<posy>370</posy>
+					<label>-</label>
+					<font>font10</font>
+					<textcolor>FF9E9E9E</textcolor>
+					<visible>Control.HasFocus(61)</visible>
+				</control>
+				<control type="label" id="63">
+					<description>day 4 low label</description>
+					<posx>140</posx>
+					<posy>390</posy>
+					<label>-</label>
+					<font>font11</font>
+					<textcolor>FF9E9E9E</textcolor>
+					<visible>Control.HasFocus(61)</visible>
+				</control>
+		</control>
+		<include>page-info</include>
+	</controls>
+</window>   

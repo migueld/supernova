@@ -1,0 +1,1401 @@
+<includes>
+	<include name="ListView">
+		<control type="list" id="50">
+			<posx>405</posx>
+			<posy>90</posy>
+			<width>285</width>
+			<height>421</height>
+			<onleft>2</onleft>
+			<onright>23</onright>
+			<onup>50</onup>
+			<ondown>50</ondown>
+			<include>list-fade</include>
+			<scrolltime>1</scrolltime>
+			<viewtype label="List">List</viewtype>
+			<pagecontrol>23</pagecontrol>
+			<itemlayout height="32">
+				<control type="image">
+					<width>285</width>
+					<height>30</height>
+					<posx>0</posx>
+					<posy>1</posy>
+				</control>
+				<control type="label">
+					<posx>13</posx>
+					<posy>-4</posy>
+					<width>253</width>
+					<height>37</height>
+					<font>font12</font>
+					<align>left</align>
+					<aligny>center</aligny>
+					<textcolor>button-text</textcolor>
+					<selectedcolor>listselectedtext</selectedcolor>
+					<info>ListItem.Label</info>
+				</control>
+			</itemlayout>
+			<focusedlayout height="32">
+				<control type="image">
+					<width>280</width>
+					<height>37</height>
+					<posx>0</posx>
+					<posy>-4</posy>
+					<texture>default-button.png</texture>
+				</control>
+				<control type="label">
+					<posx>13</posx>
+					<posy>-4</posy>
+					<width>253</width>
+					<height>37</height>
+					<font>font12</font>
+					<align>left</align>
+					<aligny>center</aligny>
+					<textcolor>button-text</textcolor>
+					<selectedcolor>listselectedtext</selectedcolor>
+					<info>ListItem.Label</info>
+				</control>
+			</focusedlayout>
+		</control>
+	</include>
+
+	<include name="List2">
+		<control type="list" id="51">
+			<posx>405</posx>
+			<posy>90</posy>
+			<width>285</width>
+			<height>421</height>
+			<onleft>2</onleft>
+			<onright>23</onright>
+			<onup>51</onup>
+			<ondown>51</ondown>
+			<include>list-fade</include>
+			<scrolltime>200</scrolltime>
+			<viewtype label="List2">List2</viewtype>
+			<pagecontrol>23</pagecontrol>
+			<itemlayout height="32">
+				<control type="image">
+					<width>285</width>
+					<height>30</height>
+					<posx>0</posx>
+					<posy>1</posy>
+				</control>
+				<control type="label">
+					<posx>13</posx>
+					<posy>-4</posy>
+					<width>253</width>
+					<height>37</height>
+					<font>font12</font>
+					<align>left</align>
+					<aligny>center</aligny>
+					<textcolor>button-text</textcolor>
+					<selectedcolor>listselectedtext</selectedcolor>
+					<info>ListItem.Label</info>
+				</control>
+			</itemlayout>
+			<focusedlayout height="32">
+				<control type="image">
+					<width>280</width>
+					<height>37</height>
+					<posx>0</posx>
+					<posy>-4</posy>
+					<texture>default-button.png</texture>
+				</control>
+				<control type="label">
+					<posx>13</posx>
+					<posy>-4</posy>
+					<width>253</width>
+					<height>37</height>
+					<font>font12</font>
+					<align>left</align>
+					<aligny>center</aligny>
+					<textcolor>button-text</textcolor>
+					<selectedcolor>listselectedtext</selectedcolor>
+					<info>ListItem.Label</info>
+				</control>
+			</focusedlayout>
+		</control>
+		<control type="group" id="3002">
+			<include>list-fade</include>
+			<visible>Container(51).OnPrevious</visible>
+			<animation effect="fade" start="100" end="100" time="200" reversible="false">Hidden</animation>
+			<control type="group">
+				<posx>30</posx>
+				<posy>150</posy>
+				<width>50</width>
+				<height>100</height>
+				<visible>Container(51).OnPrevious</visible>
+				<animation effect="slide" end="-100,0" time="200" reversible="false">Hidden</animation>
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>50</width>
+					<height>50</height>
+					<info>Container(51).Listitem(3).Icon</info>
+					<aspectratio aligny="bottom">keep</aspectratio>
+				</control>
+				<control type="image">
+					<posx>0</posx>
+					<posy>50</posy>
+					<width>50</width>
+					<height>50</height>
+					<texture flipy="true" diffuse="fade.png" />
+					<info>Container(51).Listitem(3).Icon</info>
+					<aspectratio aligny="top">keep</aspectratio>
+				</control>
+			</control>
+			<control type="group">
+				<posx>95</posx>
+				<posy>160</posy>
+				<width>65</width>
+				<height>130</height>
+				<visible>Container(51).OnPrevious</visible>
+				<animation effect="zoom" start="95,160,65,130" end="30,150,50,100" time="200" reversible="false">Hidden</animation>
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>65</width>
+					<height>65</height>
+					<info>Container(51).Listitem(2).Icon</info>
+					<aspectratio aligny="bottom">keep</aspectratio>
+				</control>
+				<control type="image">
+					<posx>0</posx>
+					<posy>65</posy>
+					<width>65</width>
+					<height>65</height>
+					<texture flipy="true" diffuse="fade.png" />
+					<info>Container(51).Listitem(2).Icon</info>
+					<aspectratio aligny="top">keep</aspectratio>
+				</control>
+			</control>
+			<control type="group">
+				<posx>140</posx>
+				<posy>145</posy>
+				<width>230</width>
+				<height>460</height>
+				<visible>Container(51).OnPrevious</visible>
+				<animation effect="zoom" start="140,145,230,460" end="95,160,65,130" time="200" reversible="false">Hidden</animation>
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>230</width>
+					<height>230</height>
+					<info>Container(51).Listitem(1).Icon</info>
+					<aspectratio aligny="bottom">keep</aspectratio>
+				</control>
+				<control type="image">
+					<posx>0</posx>
+					<posy>230</posy>
+					<width>230</width>
+					<height>230</height>
+					<texture flipy="true" diffuse="fade.png" />
+					<info>Container(51).Listitem(1).Icon</info>
+					<aspectratio aligny="top">keep</aspectratio>
+				</control>
+			</control>
+			<control type="group">
+				<posx>-340</posx>
+				<posy>225</posy>
+				<width>230</width>
+				<height>460</height>
+				<visible>Container(51).OnPrevious</visible>
+				<animation effect="slide" start="0,0" end="400,-80" delay="50" time="150" reversible="false">Hidden</animation>
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>230</width>
+					<height>230</height>
+					<info>Container(51).Listitem(0).Icon</info>
+					<aspectratio aligny="bottom">keep</aspectratio>
+				</control>
+				<control type="image">
+					<posx>0</posx>
+					<posy>230</posy>
+					<width>230</width>
+					<height>230</height>
+					<texture flipy="true" diffuse="fade.png" />
+					<info>Container(51).Listitem(0).Icon</info>
+					<aspectratio aligny="top">keep</aspectratio>
+				</control>
+			</control>
+		</control>
+
+		<control type="group" id="3001">
+			<include>list-fade</include>
+			<visible>Container(51).OnNext</visible>
+			<animation effect="fade" start="100" end="100" time="200" reversible="false">Hidden</animation>
+			<control type="group">
+				<posx>-70</posx>
+				<posy>150</posy>
+				<width>50</width>
+				<height>100</height>
+				<visible>Container(51).OnNext</visible>
+				<animation effect="slide" end="100,0" time="200" reversible="false">Hidden</animation>
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>50</width>
+					<height>50</height>
+					<info>Container(51).Listitem(2).Icon</info>
+					<aspectratio aligny="bottom">keep</aspectratio>
+				</control>
+				<control type="image">
+					<posx>0</posx>
+					<posy>50</posy>
+					<width>50</width>
+					<height>50</height>
+					<texture flipy="true" diffuse="fade.png" />
+					<info>Container(51).Listitem(2).Icon</info>
+					<aspectratio aligny="top">keep</aspectratio>
+				</control>
+			</control>
+			<control type="group">
+				<posx>30</posx>
+				<posy>150</posy>
+				<width>50</width>
+				<height>100</height>
+				<visible>Container(51).OnNext</visible>
+				<animation effect="zoom" start="30,150,50,100" end="95,160,65,130" time="200" reversible="false">Hidden</animation>
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>50</width>
+					<height>50</height>
+					<info>Container(51).Listitem(1).Icon</info>
+					<aspectratio aligny="bottom">keep</aspectratio>
+				</control>
+				<control type="image">
+					<posx>0</posx>
+					<posy>50</posy>
+					<width>50</width>
+					<height>50</height>
+					<texture flipy="true" diffuse="fade.png" />
+					<info>Container(51).Listitem(1).Icon</info>
+					<aspectratio aligny="top">keep</aspectratio>
+				</control>
+			</control>
+			<control type="group">
+				<posx>95</posx>
+				<posy>160</posy>
+				<width>65</width>
+				<height>130</height>
+				<visible>Container(51).OnNext</visible>
+				<animation effect="zoom" start="95,160,65,130" end="140,145,230,460" time="200" reversible="false">Hidden</animation>
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>65</width>
+					<height>65</height>
+					<info>Container(51).Listitem(0).Icon</info>
+					<aspectratio aligny="bottom">keep</aspectratio>
+				</control>
+				<control type="image">
+					<posx>0</posx>
+					<posy>65</posy>
+					<width>65</width>
+					<height>65</height>
+					<texture flipy="true" diffuse="fade.png" />
+					<info>Container(51).Listitem(0).Icon</info>
+					<aspectratio aligny="top">keep</aspectratio>
+				</control>
+			</control>
+			<control type="group">
+				<posx>140</posx>
+				<posy>145</posy>
+				<width>230</width>
+				<height>460</height>
+				<visible>Container(51).OnNext</visible>
+				<animation effect="slide" start="0,0" end="-400,80" time="150" reversible="false">Hidden</animation>
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>230</width>
+					<height>230</height>
+					<info>Container(51).Listitem(-1).Icon</info>
+					<aspectratio aligny="bottom">keep</aspectratio>
+				</control>
+				<control type="image">
+					<posx>0</posx>
+					<posy>230</posy>
+					<width>230</width>
+					<height>230</height>
+					<texture flipy="true" diffuse="fade.png" />
+					<info>Container(51).Listitem(-1).Icon</info>
+					<aspectratio aligny="top">keep</aspectratio>
+				</control>
+			</control>
+		</control>
+
+		<control type="group">
+			<include>list-fade</include>
+			<visible>!Control.IsVisible(3001)  + !Control.IsVisible(3002)</visible>
+			<control type="group">
+				<posx>30</posx>
+				<posy>150</posy>
+				<width>50</width>
+				<height>100</height>
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>50</width>
+					<height>50</height>
+					<info>Container(51).Listitem(2).Icon</info>
+					<aspectratio aligny="bottom">keep</aspectratio>
+				</control>
+				<control type="image">
+					<posx>0</posx>
+					<posy>50</posy>
+					<width>50</width>
+					<height>50</height>
+					<texture flipy="true" diffuse="fade.png" />
+					<info>Container(51).Listitem(2).Icon</info>
+					<aspectratio aligny="top">keep</aspectratio>
+				</control>
+			</control>
+			<control type="group">
+				<posx>95</posx>
+				<posy>160</posy>
+				<width>65</width>
+				<height>130</height>
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>65</width>
+					<height>65</height>
+					<info>Container(51).Listitem(1).Icon</info>
+					<aspectratio aligny="bottom">keep</aspectratio>
+				</control>
+				<control type="image">
+					<posx>0</posx>
+					<posy>65</posy>
+					<width>65</width>
+					<height>65</height>
+					<texture flipy="true" diffuse="fade.png" />
+					<info>Container(51).Listitem(1).Icon</info>
+					<aspectratio aligny="top">keep</aspectratio>
+				</control>
+			</control>
+			<control type="group">
+				<posx>140</posx>
+				<posy>145</posy>
+				<width>230</width>
+				<height>460</height>
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>230</width>
+					<height>230</height>
+					<info>Container(51).Listitem(0).Icon</info>
+					<aspectratio aligny="bottom">keep</aspectratio>
+				</control>
+				<control type="image">
+					<posx>0</posx>
+					<posy>230</posy>
+					<width>230</width>
+					<height>230</height>
+					<texture flipy="true" diffuse="fade.png" />
+					<info>Container(51).Listitem(0).Icon</info>
+					<aspectratio aligny="top">keep</aspectratio>
+				</control>
+			</control>
+		</control>
+	</include>
+
+	<include name="WrapView">
+		<control type="wraplist" id="54">
+			<viewtype label="Wrap">Wraplist</viewtype>
+			<posx>-80</posx>
+			<posy>150</posy>
+			<width>800</width>
+			<height>420</height>
+			<onleft>54</onleft>
+			<onright>54</onright>
+			<onup>2</onup>
+			<ondown>2</ondown>
+			<include>list-fade</include>
+			<focusposition>2</focusposition>
+			<orientation>horizontal</orientation>
+			<itemlayout height="390" width="140">
+				<control type="image">
+					<posx>-15</posx>
+					<posy>105</posy>
+					<width>140</width>
+					<height>140</height>
+					<info>ListItem.Icon</info>
+					<aspectratio>keep</aspectratio>
+				</control>
+				<control type="image">
+					<posx>-15</posx>
+					<posy>245</posy>
+					<width>140</width>
+					<height>140</height>
+					<texture flipy="true" diffuse="fade.png">-</texture>
+					<info>ListItem.Icon</info>
+					<aspectratio>keep</aspectratio>
+				</control>
+				<control type="image">
+					<posx>121</posx>
+					<posy>221</posy>
+					<width>25</width>
+					<height>25</height>
+					<info>ListItem.Overlay</info>
+				</control>
+				<control type="image">
+					<posx>121</posx>
+					<posy>246</posy>
+					<width>25</width>
+					<height>25</height>
+					<texture flipy="true" diffuse="fade.png">-</texture>
+					<info>ListItem.Overlay</info>
+				</control>
+			</itemlayout>
+			<focusedlayout height="410" width="320">
+				<control type="image">
+					<posx>185</posx>
+					<posy>35</posy>
+					<width>240</width>
+					<height>240</height>
+					<aspectratio>keep</aspectratio>
+					<info>ListItem.Icon</info>
+					<animation effect="zoom" end="-5,5,300,300" time="0">Focus</animation>
+				</control>
+				<control type="image">
+					<posx>185</posx>
+					<posy>235</posy>
+					<width>240</width>
+					<height>240</height>
+					<texture flipy="true" diffuse="fade2.png">-</texture>
+					<aspectratio>keep</aspectratio>
+					<info>ListItem.Icon</info>
+					<animation effect="zoom" end="-5,305,300,300" time="0">Focus</animation>
+				</control>
+				<control type="image">
+					<posx>250</posx>
+					<posy>247</posy>
+					<width>60</width>
+					<height>60</height>
+					<info>ListItem.Overlay</info>
+				</control>
+				<control type="image">
+					<posx>249</posx>
+					<posy>303</posy>
+					<width>60</width>
+					<height>60</height>
+					<texture flipy="true" diffuse="fade.png">-</texture>
+					<info>ListItem.Overlay</info>
+				</control>
+			</focusedlayout>
+		</control>
+		<control type="label">
+			<posx>10</posx>
+			<posy>545</posy>
+			<width>500</width>
+			<height>30</height>
+			<font>font12</font>
+			<align>left</align>
+			<textcolor>button-text</textcolor>
+			<selectedcolor>listselectedtext</selectedcolor>
+			<scroll>true</scroll>
+			<info>ListItem.Label</info>
+			<textoffsetx>0</textoffsetx>
+			<visible>Control.IsVisible(54)</visible>
+		</control>
+	</include>
+	<include name="IconView">
+		<control type="panel" id="52">
+			<posx>0</posx>
+			<posy>120</posy>
+			<width>700</width>
+			<height>394</height>
+			<onleft>2</onleft>
+			<onright>23</onright>
+			<onup>52</onup>
+			<ondown>52</ondown>
+			<include>list-fade</include>
+			<viewtype label="Icons">Icons</viewtype>
+			<scrolltime>200</scrolltime>
+			<pagecontrol>23</pagecontrol>
+			<itemlayout height="130" width="115">
+				<control type="image">
+					<width>100</width>
+					<height>100</height>
+					<posx>5</posx>
+					<posy>5</posy>
+					<texture>-</texture>
+				</control>
+				<control type="image">
+					<posx>10</posx>
+					<posy>10</posy>
+					<width>90</width>
+					<height>90</height>
+					<info>ListItem.Icon</info>
+				</control>
+				<control type="image">
+					<posx>75</posx>
+					<posy>75</posy>
+					<width>28</width>
+					<height>28</height>
+					<info>ListItem.Overlay</info>
+				</control>
+				<control type="label">
+					<posx>55</posx>
+					<posy>105</posy>
+					<width>100</width>
+					<height>22</height>
+					<font>font13</font>
+					<textcolor>button-text</textcolor>
+					<selectedcolor>listselectedtext</selectedcolor>
+					<align>center</align>
+					<info>ListItem.Label</info>
+				</control>
+			</itemlayout>
+			<focusedlayout height="130" width="115">
+				<control type="image">
+					<width>100</width>
+					<height>100</height>
+					<posx>5</posx>
+					<posy>5</posy>
+					<texture>folder-focus.png</texture>
+					<animation effect="zoom" end="0,0,110,110" time="100">focus</animation>
+				</control>
+				<control type="image">
+					<posx>10</posx>
+					<posy>10</posy>
+					<width>90</width>
+					<height>90</height>
+					<info>ListItem.Icon</info>
+					<animation effect="zoom" end="5,5,100,100" time="100">focus</animation>
+				</control>
+				<control type="image">
+					<posx>80</posx>
+					<posy>80</posy>
+					<width>28</width>
+					<height>28</height>
+					<info>ListItem.Overlay</info>
+				</control>
+				<control type="image">
+					<width>100</width>
+					<height>100</height>
+					<posx>5</posx>
+					<posy>5</posy>
+					<texture>folder-focus2.png</texture>
+					<animation effect="zoom" end="0,0,110,110" time="100">focus</animation>
+				</control>
+				<control type="label">
+					<posx>55</posx>
+					<posy>108</posy>
+					<width>100</width>
+					<height>22</height>
+					<font>font13</font>
+					<textcolor>button-text</textcolor>
+					<selectedcolor>listselectedtext</selectedcolor>
+					<align>center</align>
+					<info>ListItem.Label</info>
+				</control>
+			</focusedlayout>
+		</control>
+	</include>
+	<include name="BigIconView">
+		<control type="panel" id="53">
+			<posx>50</posx>
+			<posy>120</posy>
+			<width>700</width>
+			<height>430</height>
+			<onleft>2</onleft>
+			<onright>23</onright>
+			<onup>52</onup>
+			<ondown>52</ondown>
+			<viewtype label="Big Icons">Big Icons</viewtype>
+			<scrolltime>200</scrolltime>
+			<include>list-fade</include>
+			<pagecontrol>23</pagecontrol>
+			<itemlayout height="220" width="200">
+				<control type="image">
+					<width>190</width>
+					<height>190</height>
+					<posx>5</posx>
+					<posy>5</posy>
+					<texture>-</texture>
+				</control>
+				<control type="image">
+					<posx>10</posx>
+					<posy>10</posy>
+					<width>180</width>
+					<height>180</height>
+					<info>ListItem.Icon</info>
+				</control>
+				<control type="image">
+					<posx>145</posx>
+					<posy>155</posy>
+					<width>38</width>
+					<height>38</height>
+					<info>ListItem.Overlay</info>
+				</control>
+				<control type="label">
+					<posx>95</posx>
+					<posy>187</posy>
+					<width>170</width>
+					<height>22</height>
+					<font>font12</font>
+					<textcolor>button-text</textcolor>
+					<selectedcolor>listselectedtext</selectedcolor>
+					<align>center</align>
+					<info>ListItem.Label</info>
+				</control>
+			</itemlayout>
+			<focusedlayout height="230" width="230">
+				<control type="image">
+					<width>180</width>
+					<height>180</height>
+					<posx>5</posx>
+					<posy>5</posy>
+					<texture>folder-focus.png</texture>
+					<animation effect="zoom" end="0,0,210,210" time="100">focus</animation>
+				</control>
+				<control type="image">
+					<posx>10</posx>
+					<posy>10</posy>
+					<width>180</width>
+					<height>180</height>
+					<info>ListItem.Icon</info>
+					<animation effect="zoom" end="5,5,200,200" time="100">focus</animation>
+				</control>
+				<control type="image">
+					<width>180</width>
+					<height>180</height>
+					<posx>5</posx>
+					<posy>5</posy>
+					<texture>folder-focus2.png</texture>
+					<animation effect="zoom" end="0,0,210,210" time="100">focus</animation>
+				</control>
+				<control type="image">
+					<posx>165</posx>
+					<posy>165</posy>
+					<width>38</width>
+					<height>38</height>
+					<info>ListItem.Overlay</info>
+				</control>
+				<control type="label">
+					<posx>105</posx>
+					<posy>205</posy>
+					<width>180</width>
+					<height>22</height>
+					<font>font12</font>
+					<textcolor>button-text</textcolor>
+					<selectedcolor>listselectedtext</selectedcolor>
+					<align>center</align>
+					<info>ListItem.Label</info>
+				</control>
+			</focusedlayout>
+		</control>
+	</include>
+	<include name="WideIconView">
+		<control type="panel" id="55">
+			<viewtype label="Wide Icons">Wide Icons</viewtype>
+			<posx>15</posx>
+			<posy>120</posy>
+			<width>700</width>
+			<height>394</height>
+			<onleft>2</onleft>
+			<onright>23</onright>
+			<onup>55</onup>
+			<ondown>55</ondown>
+			<scrolltime>200</scrolltime>
+			<pagecontrol>23</pagecontrol>
+			<include>list-fade</include>
+			<focusposition>1</focusposition>
+			<itemlayout height="110" width="350">
+				<control type="image">
+					<posx>5</posx>
+					<posy>20</posy>
+					<width>290</width>
+					<height>70</height>
+					<info>ListItem.Icon</info>
+				</control>
+				<control type="image">
+					<posx>470</posx>
+					<posy>65</posy>
+					<width>32</width>
+					<height>32</height>
+					<info>ListItem.Overlay</info>
+				</control>
+			</itemlayout>
+			<focusedlayout height="120" width="320">
+				<control type="image">
+					<posx>-7</posx>
+					<posy>8</posy>
+					<width>345</width>
+					<height>98</height>
+					<texture>wide-focus.png</texture>
+				</control>
+				<control type="image">
+					<posx>4</posx>
+					<posy>10</posy>
+					<width>320</width>
+					<height>90</height>
+					<info>ListItem.Icon</info>
+				</control>
+				<control type="image">
+					<posx>280</posx>
+					<posy>30</posy>
+					<width>32</width>
+					<height>32</height>
+					<info>ListItem.Overlay</info>
+				</control>
+				<control type="label">
+					<posx>3</posx>
+					<posy>103</posy>
+					<width>290</width>
+					<height>16</height>
+					<font>font12</font>
+					<align>left</align>
+					<scroll>true</scroll>
+					<textcolor>button-text</textcolor>
+					<selectedcolor>listselectedtext</selectedcolor>
+					<info>ListItem.Label</info>
+					<visible>!Skin.HasSetting(widelabels)</visible>
+				</control>
+			</focusedlayout>
+		</control>
+	</include>
+	<include name="BigWideView">
+		<control type="wraplist" id="56">
+			<viewtype label="Big Wide">Wide Icons</viewtype>
+			<posx>0</posx>
+			<posy>90</posy>
+			<width>700</width>
+			<height>470</height>
+			<onleft>2</onleft>
+			<onright>23</onright>
+			<onup>56</onup>
+			<ondown>56</ondown>
+			<orientation>vertical</orientation>
+			<scrolltime>200</scrolltime>
+			<pagecontrol>23</pagecontrol>
+			<include>list-fade</include>
+			<focusposition>1</focusposition>
+			<itemlayout height="150" width="500">
+				<control type="image">
+					<posx>100</posx>
+					<posy>0</posy>
+					<width>490</width>
+					<height>150</height>
+					<info>ListItem.Icon</info>
+				</control>
+				<control type="image">
+					<posx>470</posx>
+					<posy>65</posy>
+					<width>32</width>
+					<height>32</height>
+					<info>ListItem.Overlay</info>
+				</control>
+			</itemlayout>
+			<focusedlayout height="180" width="600">
+				<control type="image">
+					<posx>65</posx>
+					<posy>0</posy>
+					<width>570</width>
+					<height>180</height>
+					<info>ListItem.Icon</info>
+				</control>
+				<control type="image">
+					<posx>280</posx>
+					<posy>30</posy>
+					<width>32</width>
+					<height>32</height>
+					<info>ListItem.Overlay</info>
+				</control>
+			</focusedlayout>
+		</control>
+		<control type="image">
+			<posx>28</posx>
+			<posy>257</posy>
+			<width>40</width>
+			<height>150</height>
+			<texture>wide-focus-left.png</texture>
+			<include>list-fade</include>
+			<visible>Control.IsVisible(56)</visible>
+		</control>
+		<control type="image">
+			<posx>633</posx>
+			<posy>257</posy>
+			<width>40</width>
+			<height>150</height>
+			<texture>wide-focus-right.png</texture>
+			<include>list-fade</include>
+			<visible>Control.IsVisible(56)</visible>
+		</control>
+	</include>
+
+	<!-- Start Video Window Specific Views -->
+	<include name="VideoWrapView">
+		<control type="wraplist" id="54">
+			<viewtype label="Wrap">Wraplist</viewtype>
+			<posx>-68</posx>
+			<posy>150</posy>
+			<width>1000</width>
+			<height>420</height>
+			<onleft>54</onleft>
+			<onright>54</onright>
+			<onup>2</onup>
+			<ondown>2</ondown>
+			<include>list-fade</include>
+			<focusposition>4</focusposition>
+			<orientation>horizontal</orientation>
+			<itemlayout height="390" width="87">
+				<control type="image">
+					<posx>3</posx>
+					<posy>130</posy>
+					<width>81</width>
+					<height>170</height>
+					<texture>dvdcase-back.png</texture>
+					<aspectratio>stretch</aspectratio>
+				</control>
+				<control type="image">
+					<posx>3</posx>
+					<posy>134</posy>
+					<width>79</width>
+					<height>162</height>
+					<info>ListItem.Icon</info>
+					<aspectratio>stretch</aspectratio>
+				</control>
+				<control type="image">
+					<posx>3</posx>
+					<posy>130</posy>
+					<width>81</width>
+					<height>170</height>
+					<texture>dvdcase-front.png</texture>
+					<aspectratio>stretch</aspectratio>
+				</control>
+				<control type="image">
+					<posx>3</posx>
+					<posy>300</posy>
+					<width>81</width>
+					<height>170</height>
+					<texture flipy="true" diffuse="fade.png">dvdcase-back.png</texture>
+					<aspectratio>stretch</aspectratio>
+				</control>
+				<control type="image">
+					<posx>3</posx>
+					<posy>304</posy>
+					<width>79</width>
+					<height>170</height>
+					<texture flipy="true" diffuse="fade.png">-</texture>
+					<info>ListItem.Icon</info>
+					<aspectratio>stretch</aspectratio>
+				</control>
+				<control type="image">
+					<posx>3</posx>
+					<posy>304</posy>
+					<width>75</width>
+					<height>162</height>
+					<texture flipy="true" diffuse="fade.png">dvdcase-front.png</texture>
+					<aspectratio>stretch</aspectratio>
+				</control>
+			</itemlayout>
+			<focusedlayout height="410" width="165">
+				<control type="image">
+					<posx>5</posx>
+					<posy>0</posy>
+					<width>155</width>
+					<height>300</height>
+					<aspectratio>stretch</aspectratio>
+					<texture>dvdcase-back.png</texture>
+				</control>
+				<control type="image">
+					<posx>5</posx>
+					<posy>8</posy>
+					<width>150</width>
+					<height>285</height>
+					<aspectratio>stretch</aspectratio>
+					<info>ListItem.Icon</info>
+				</control>
+				<control type="image">
+					<posx>5</posx>
+					<posy>0</posy>
+					<width>155</width>
+					<height>300</height>
+					<aspectratio>stretch</aspectratio>
+					<texture>dvdcase-front.png</texture>
+				</control>
+				<control type="image">
+					<posx>5</posx>
+					<posy>300</posy>
+					<width>155</width>
+					<height>300</height>
+					<aspectratio>stretch</aspectratio>
+					<texture flipy="true" diffuse="fade2.png">dvdcase-back.png</texture>
+				</control>
+				<control type="image">
+					<posx>5</posx>
+					<posy>308</posy>
+					<width>150</width>
+					<height>285</height>
+					<texture flipy="true" diffuse="fade2.png">-</texture>
+					<aspectratio>stretch</aspectratio>
+					<info>ListItem.Icon</info>
+				</control>
+				<control type="image">
+					<posx>5</posx>
+					<posy>300</posy>
+					<width>155</width>
+					<height>300</height>
+					<aspectratio>stretch</aspectratio>
+					<texture flipy="true" diffuse="fade2.png">dvdcase-front.png</texture>
+				</control>
+			</focusedlayout>
+		</control>
+		<control type="label">
+			<posx>10</posx>
+			<posy>545</posy>
+			<width>500</width>
+			<height>30</height>
+			<font>font12</font>
+			<align>left</align>
+			<textcolor>button-text</textcolor>
+			<selectedcolor>listselectedtext</selectedcolor>
+			<scroll>true</scroll>
+			<info>ListItem.Label</info>
+			<textoffsetx>0</textoffsetx>
+			<visible>Control.IsVisible(54)</visible>
+		</control>
+	</include>
+	<!-- End Video Window Specific Views -->
+
+	<!-- Start Video Library Views -->
+	<include name="WrapView2">
+		<control type="wraplist" id="54">
+			<viewtype label="Wrap">Wraplist</viewtype>
+			<posx>-80</posx>
+			<posy>150</posy>
+			<width>800</width>
+			<height>420</height>
+			<onleft>54</onleft>
+			<onright>54</onright>
+			<include>list-fade</include>
+			<onup>2</onup>
+			<ondown>2</ondown>
+			<focusposition>2</focusposition>
+			<orientation>horizontal</orientation>
+			<itemlayout height="390" width="140">
+				<control type="image">
+					<posx>-15</posx>
+					<posy>105</posy>
+					<width>140</width>
+					<height>140</height>
+					<info>ListItem.Icon</info>
+					<aspectratio>keep</aspectratio>
+				</control>
+				<control type="image">
+					<posx>-15</posx>
+					<posy>245</posy>
+					<width>140</width>
+					<height>140</height>
+					<texture flipy="true" diffuse="fade.png">-</texture>
+					<info>ListItem.Icon</info>
+					<aspectratio>keep</aspectratio>
+				</control>
+				<control type="image">
+					<posx>121</posx>
+					<posy>221</posy>
+					<width>25</width>
+					<height>25</height>
+					<info>ListItem.Overlay</info>
+					<visible>!Skin.HasSetting(watched-overlay)</visible>
+				</control>
+				<control type="image">
+					<posx>121</posx>
+					<posy>246</posy>
+					<width>25</width>
+					<height>25</height>
+					<texture flipy="true" diffuse="fade.png">-</texture>
+					<info>ListItem.Overlay</info>
+					<visible>!Skin.HasSetting(watched-overlay)</visible>
+				</control>
+			</itemlayout>
+			<focusedlayout height="410" width="320">
+				<control type="image">
+					<posx>185</posx>
+					<posy>35</posy>
+					<width>240</width>
+					<height>240</height>
+					<aspectratio>keep</aspectratio>
+					<info>ListItem.Icon</info>
+					<animation effect="zoom" end="-5,5,300,300" time="0">Focus</animation>
+				</control>
+				<control type="image">
+					<posx>185</posx>
+					<posy>235</posy>
+					<width>240</width>
+					<height>240</height>
+					<texture flipy="true" diffuse="fade2.png">-</texture>
+					<aspectratio>keep</aspectratio>
+					<info>ListItem.Icon</info>
+					<animation effect="zoom" end="-5,305,300,300" time="0">Focus</animation>
+				</control>
+				<control type="image">
+					<posx>250</posx>
+					<posy>247</posy>
+					<width>60</width>
+					<height>60</height>
+					<info>ListItem.Overlay</info>
+					<visible>!Skin.HasSetting(watched-overlay)</visible>
+				</control>
+				<control type="image">
+					<posx>249</posx>
+					<posy>303</posy>
+					<width>60</width>
+					<height>60</height>
+					<texture flipy="true" diffuse="fade.png">-</texture>
+					<info>ListItem.Overlay</info>
+					<visible>!Skin.HasSetting(watched-overlay)</visible>
+				</control>
+			</focusedlayout>
+		</control>
+		<control type="label">
+			<posx>10</posx>
+			<posy>545</posy>
+			<width>500</width>
+			<height>30</height>
+			<font>font12</font>
+			<align>left</align>
+			<textcolor>button-text</textcolor>
+			<selectedcolor>listselectedtext</selectedcolor>
+			<scroll>true</scroll>
+			<info>ListItem.Label</info>
+			<textoffsetx>0</textoffsetx>
+			<visible>Control.IsVisible(54)</visible>
+			<include>list-fade</include>
+		</control>
+	</include>
+	<include name="IconView2">
+		<control type="panel" id="52">
+			<posx>0</posx>
+			<posy>120</posy>
+			<width>700</width>
+			<height>394</height>
+			<onleft>2</onleft>
+			<onright>23</onright>
+			<onup>52</onup>
+			<ondown>52</ondown>
+			<viewtype label="Icons">Icons</viewtype>
+			<scrolltime>200</scrolltime>
+			<include>list-fade</include>
+			<pagecontrol>23</pagecontrol>
+			<itemlayout height="130" width="115">
+				<control type="image">
+					<width>100</width>
+					<height>100</height>
+					<posx>5</posx>
+					<posy>5</posy>
+					<texture>-</texture>
+				</control>
+				<control type="image">
+					<posx>10</posx>
+					<posy>10</posy>
+					<width>90</width>
+					<height>90</height>
+					<info>ListItem.Icon</info>
+				</control>
+				<control type="image">
+					<posx>75</posx>
+					<posy>75</posy>
+					<width>28</width>
+					<height>28</height>
+					<info>ListItem.Overlay</info>
+					<visible>!Skin.HasSetting(watched-overlay)</visible>
+				</control>
+				<control type="label">
+					<posx>55</posx>
+					<posy>105</posy>
+					<width>100</width>
+					<height>22</height>
+					<font>font13</font>
+					<textcolor>button-text</textcolor>
+					<selectedcolor>listselectedtext</selectedcolor>
+					<align>center</align>
+					<info>ListItem.Label</info>
+				</control>
+			</itemlayout>
+			<focusedlayout height="130" width="115">
+				<control type="image">
+					<width>100</width>
+					<height>100</height>
+					<posx>5</posx>
+					<posy>5</posy>
+					<texture>folder-focus.png</texture>
+					<animation effect="zoom" end="0,0,110,110" time="100">focus</animation>
+				</control>
+				<control type="image">
+					<posx>10</posx>
+					<posy>10</posy>
+					<width>90</width>
+					<height>90</height>
+					<info>ListItem.Icon</info>
+					<animation effect="zoom" end="5,5,100,100" time="100">focus</animation>
+				</control>
+				<control type="image">
+					<posx>80</posx>
+					<posy>80</posy>
+					<width>28</width>
+					<height>28</height>
+					<info>ListItem.Overlay</info>
+					<visible>!Skin.HasSetting(watched-overlay)</visible>
+				</control>
+				<control type="image">
+					<width>100</width>
+					<height>100</height>
+					<posx>5</posx>
+					<posy>5</posy>
+					<texture>folder-focus2.png</texture>
+					<animation effect="zoom" end="0,0,110,110" time="100">focus</animation>
+				</control>
+				<control type="label">
+					<posx>55</posx>
+					<posy>108</posy>
+					<width>100</width>
+					<height>22</height>
+					<font>font13</font>
+					<textcolor>button-text</textcolor>
+					<selectedcolor>listselectedtext</selectedcolor>
+					<align>center</align>
+					<info>ListItem.Label</info>
+				</control>
+			</focusedlayout>
+		</control>
+	</include>
+	<include name="BigIconView2">
+		<control type="panel" id="53">
+			<posx>50</posx>
+			<posy>120</posy>
+			<width>700</width>
+			<height>430</height>
+			<onleft>2</onleft>
+			<onright>23</onright>
+			<onup>52</onup>
+			<ondown>52</ondown>
+			<viewtype label="Big Icons">Big Icons</viewtype>
+			<scrolltime>200</scrolltime>
+			<include>list-fade</include>
+			<pagecontrol>23</pagecontrol>
+			<itemlayout height="220" width="200">
+				<control type="image">
+					<width>190</width>
+					<height>190</height>
+					<posx>5</posx>
+					<posy>5</posy>
+					<texture>-</texture>
+				</control>
+				<control type="image">
+					<posx>10</posx>
+					<posy>10</posy>
+					<width>180</width>
+					<height>180</height>
+					<info>ListItem.Icon</info>
+				</control>
+				<control type="image">
+					<posx>145</posx>
+					<posy>155</posy>
+					<width>38</width>
+					<height>38</height>
+					<info>ListItem.Overlay</info>
+					<visible>!Skin.HasSetting(watched-overlay)</visible>
+				</control>
+				<control type="label">
+					<posx>95</posx>
+					<posy>187</posy>
+					<width>170</width>
+					<height>22</height>
+					<font>font12</font>
+					<textcolor>button-text</textcolor>
+					<selectedcolor>listselectedtext</selectedcolor>
+					<align>center</align>
+					<info>ListItem.Label</info>
+				</control>
+			</itemlayout>
+			<focusedlayout height="230" width="230">
+				<control type="image">
+					<width>180</width>
+					<height>180</height>
+					<posx>5</posx>
+					<posy>5</posy>
+					<texture>folder-focus.png</texture>
+					<animation effect="zoom" end="0,0,210,210" time="100">focus</animation>
+				</control>
+				<control type="image">
+					<posx>10</posx>
+					<posy>10</posy>
+					<width>180</width>
+					<height>180</height>
+					<info>ListItem.Icon</info>
+					<animation effect="zoom" end="5,5,200,200" time="100">focus</animation>
+				</control>
+				<control type="image">
+					<posx>165</posx>
+					<posy>165</posy>
+					<width>38</width>
+					<height>38</height>
+					<info>ListItem.Overlay</info>
+					<visible>!Skin.HasSetting(watched-overlay)</visible>
+				</control>
+				<control type="label">
+					<posx>105</posx>
+					<posy>205</posy>
+					<width>180</width>
+					<height>22</height>
+					<font>font12</font>
+					<textcolor>button-text</textcolor>
+					<selectedcolor>listselectedtext</selectedcolor>
+					<align>center</align>
+					<info>ListItem.Label</info>
+				</control>
+			</focusedlayout>
+		</control>
+	</include>
+	<include name="WideIconView2">
+		<control type="panel" id="55">
+			<viewtype label="Wide Icons">Wide Icons</viewtype>
+			<posx>15</posx>
+			<posy>120</posy>
+			<width>700</width>
+			<height>394</height>
+			<onleft>2</onleft>
+			<onright>23</onright>
+			<onup>55</onup>
+			<ondown>55</ondown>
+			<scrolltime>200</scrolltime>
+			<pagecontrol>23</pagecontrol>
+			<focusposition>1</focusposition>
+			<include>list-fade</include>
+			<itemlayout height="110" width="350">
+				<control type="image">
+					<posx>5</posx>
+					<posy>20</posy>
+					<width>290</width>
+					<height>70</height>
+					<info>ListItem.Icon</info>
+				</control>
+				<control type="image">
+					<posx>470</posx>
+					<posy>65</posy>
+					<width>32</width>
+					<height>32</height>
+					<info>ListItem.Overlay</info>
+					<visible>!Skin.HasSetting(watched-overlay)</visible>
+				</control>
+			</itemlayout>
+			<focusedlayout height="120" width="320">
+				<control type="image">
+					<posx>-7</posx>
+					<posy>8</posy>
+					<width>345</width>
+					<height>98</height>
+					<texture>wide-focus.png</texture>
+				</control>
+				<control type="image">
+					<posx>4</posx>
+					<posy>10</posy>
+					<width>320</width>
+					<height>90</height>
+					<info>ListItem.Icon</info>
+				</control>
+				<control type="image">
+					<posx>280</posx>
+					<posy>30</posy>
+					<width>32</width>
+					<height>32</height>
+					<info>ListItem.Overlay</info>
+					<visible>!Skin.HasSetting(watched-overlay)</visible>
+				</control>
+				<control type="label">
+					<posx>3</posx>
+					<posy>103</posy>
+					<width>290</width>
+					<height>16</height>
+					<font>font12</font>
+					<align>left</align>
+					<scroll>true</scroll>
+					<textcolor>button-text</textcolor>
+					<selectedcolor>listselectedtext</selectedcolor>
+					<info>ListItem.Label</info>
+					<visible>!Skin.HasSetting(widelabels)</visible>
+				</control>
+			</focusedlayout>
+		</control>
+	</include>
+	<!-- End Video Library Views -->
+	<include name="PlaylistView">
+		<control type="list" id="50">
+			<posx>405</posx>
+			<posy>90</posy>
+			<width>285</width>
+			<height>424</height>
+			<onleft>20</onleft>
+			<onright>23</onright>
+			<onup>50</onup>
+			<ondown>50</ondown>
+			<include>list-fade</include>
+			<scrolltime>1</scrolltime>
+			<viewtype label="535">list</viewtype>
+			<pagecontrol>23</pagecontrol>
+			<itemlayout height="32">
+				<control type="image">
+					<width>285</width>
+					<height>30</height>
+					<posx>0</posx>
+					<posy>1</posy>
+				</control>
+				<control type="label">
+					<posx>10</posx>
+					<posy>4</posy>
+					<width>315</width>
+					<height>30</height>
+					<font>font12</font>
+					<align>left</align>
+					<textcolor>button-text</textcolor>
+					<selectedcolor>listselectedtext</selectedcolor>
+					<info>ListItem.Label</info>
+				</control>
+			</itemlayout>
+			<focusedlayout height="32">
+				<control type="image">
+					<width>285</width>
+					<height>35</height>
+					<posx>0</posx>
+					<posy>-3</posy>
+					<texture>default-button.png</texture>
+				</control>
+				<control type="label">
+					<posx>10</posx>
+					<posy>1</posy>
+					<width>312</width>
+					<height>22</height>
+					<font>font13</font>
+					<align>left</align>
+					<textcolor>button-text</textcolor>
+					<selectedcolor>listselectedtext</selectedcolor>
+					<scroll>true</scroll>
+					<info>ListItem.Label</info>
+				</control>
+			</focusedlayout>
+		</control>
+	</include>
+	<include name="PageControl">
+		<control type="scrollbar" id="23">
+			<posx>700</posx>
+			<posy>90</posy>
+			<width>17</width>
+			<height>424</height>
+			<texturesliderbackground border="4">scrollbar_background.png</texturesliderbackground>
+			<texturesliderbar border="3">scrollbar_bar.png</texturesliderbar>
+			<texturesliderbarfocus border="3">scrollbar_bar_focus.png</texturesliderbarfocus>
+			<textureslidernib>-</textureslidernib>
+			<textureslidernibfocus>-</textureslidernibfocus>
+			<onleft>50</onleft>
+			<onright>2</onright>
+			<include>list-fade</include>
+			<showonepage>false</showonepage>
+			<orientation>vertical</orientation>
+			<visible>Skin.HasSetting(sbar) + !Control.HasFocus(54)</visible>
+		</control>
+	</include>
+</includes>

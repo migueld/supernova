@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-16"?>
+<!---------------------------------------------------------------------------
+IncludesModuleMenu.xml: CenterStageProject - User Interface [PAL]
+-----------------------------------------------------------------------------
+Copyright (C) 2008 The CenterStage Project Development Team
+
+$Id$
+
+Authors:
+    Jan Litzinger [tragnar]
+    Faustino E. Osuna [riqueDaFreak]
+
+This program is free software; you can redistribute it and/or modify it
+under the terms of the GNU General Public License as published by the Free
+Software Foundation; either version 2 of the License, or (at your option)
+any later version.
+
+This program is distributed in the hope that it will be useful, but WITHOUT
+ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
+FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for
+more details.
+
+You should have received a copy of the GNU General Public License along with
+this program; if not, write to the Free Software Foundation, Inc., 51
+Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
+--------------------------------------------------------------------------->
+<includes>
+    <include name="module-menu-main-list-box">
+        <animation effect="fade" time="800" delay="400" start="0" end="100">WindowOpen</animation>
+        <pulseonselect>yes</pulseonselect>
+    
+    	<posx>113</posx>
+    	<posy>133</posy>
+    	<height>381</height>
+    	<width>494</width>
+    	<itemlayout height="63">
+            <!-- <control type="image">
+                <posx>0</posx>
+                <posy>13</posy>
+                <width>39</width>
+                <height>37</height>
+                <info>ListItem.Icon</info>
+                <aspectratio>keep</aspectratio>
+            </control> -->
+            <control type="image">
+                <posx>47</posx>
+                <posy>8</posy>
+                <width>425</width>
+                <height>48</height>
+                <texture>Module-Menu/List-Item-Normal.png</texture>
+            </control>
+    		<control type="label">
+    			<posx>65</posx>
+    			<posy>8</posy>
+    			<width>425</width>
+    			<height>48</height>
+    			<info>ListItem.label</info>
+    			<aligny>center</aligny>
+    			<font>font13</font>
+    			<textcolor>button-text</textcolor>
+    		</control>
+    	</itemlayout>
+    	<focusedlayout height="63">
+            <!-- <control type="image">
+                <posx>0</posx>
+                <posy>13</posy>
+                <width>39</width>
+                <height>37</height>
+                <info>ListItem.Icon</info>
+                <aspectratio>keep</aspectratio>
+            </control> -->
+            <control type="image">
+                <posx>47</posx>
+                <posy>8</posy>
+                <width>425</width>
+                <height>48</height>
+                <texture>Module-Menu/List-Item-Selected.png</texture>
+                <visible>[Control.IsVisible(56) + Control.HasFocus(56)]</visible>
+            </control>
+            <control type="image">
+                <posx>47</posx>
+                <posy>8</posy>
+                <width>425</width>
+                <height>48</height>
+                <texture>Module-Menu/List-Item-Normal.png</texture>
+                <visible>[Control.IsVisible(56) + !Control.HasFocus(56)]</visible>
+            </control>
+    		<control type="label">
+    			<posx>65</posx>
+    			<posy>8</posy>
+    			<width>425</width>
+    			<height>48</height>
+    			<info>ListItem.label</info>
+    			<aligny>center</aligny>
+    			<font>font13</font>
+    			<textcolor>button-text</textcolor>
+    		</control>
+    	</focusedlayout>
+    </include>
+    
+    <include name="module-menu-file-list-box">
+        <pulseonselect>yes</pulseonselect>
+    
+    	<posx>113</posx>
+    	<posy>133</posy>
+    	<height>381</height>
+    	<width>494</width>
+    	<itemlayout height="63">
+    		<control type="image">
+    			<posx>0</posx>
+    			<posy>13</posy>
+    			<width>39</width>
+    			<height>37</height>
+    			<info>ListItem.Icon</info>
+    			<aspectratio>keep</aspectratio>
+    		</control>
+            <control type="image">
+                <posx>47</posx>
+                <posy>8</posy>
+                <width>425</width>
+                <height>48</height>
+                <texture>Module-Menu/List-Item-Normal.png</texture>
+            </control>
+    		<control type="label">
+    			<posx>65</posx>
+    			<posy>8</posy>
+    			<width>425</width>
+    			<height>48</height>
+    			<info>ListItem.label</info>
+    			<aligny>center</aligny>
+    			<font>font13</font>
+    			<textcolor>button-text</textcolor>
+    		</control>
+    	</itemlayout>
+    	<focusedlayout height="63">
+    		<control type="image">
+    			<posx>0</posx>
+    			<posy>13</posy>
+    			<width>39</width>
+    			<height>37</height>
+    			<info>ListItem.Icon</info>
+    			<aspectratio>keep</aspectratio>
+    		</control>
+            <control type="image">
+                <posx>47</posx>
+                <posy>8</posy>
+                <width>425</width>
+                <height>48</height>
+                <texture>Module-Menu/List-Item-Selected.png</texture>
+                <visible>[Control.IsVisible(56) + Control.HasFocus(56)]</visible>
+            </control>
+            <control type="image">
+                <posx>47</posx>
+                <posy>8</posy>
+                <width>425</width>
+                <height>48</height>
+                <texture>Module-Menu/List-Item-Normal.png</texture>
+                <visible>[Control.IsVisible(56) + !Control.HasFocus(56)]</visible>
+            </control>
+    		<control type="label">
+    			<posx>65</posx>
+    			<posy>8</posy>
+    			<width>425</width>
+    			<height>48</height>
+    			<info>ListItem.label</info>
+    			<aligny>center</aligny>
+    			<font>font13</font>
+    			<textcolor>button-text</textcolor>
+    		</control>
+    	</focusedlayout>
+    </include>
+    <include name="module-menu-spotlight">
+    	<control type="image">
+    	    <posx>0</posx>
+    	    <posy>0</posy>
+    	    <width>720</width>
+    	    <height>576</height>
+    	    <texture>Module-Menu/Spotlight.png</texture>
+        </control>
+    </include>
+
+    <include name="module-menu-title-and-breadcrumb-background">
+        <!-- Breadcrumb Background -->
+        <control type="image">
+            <animation effect="slide" time="400" delay="100" start="0,-30" end="0,0" tween="cubic">WindowOpen</animation>
+            <posx>0</posx>
+            <posy>54</posy>
+            <width>720</width>
+            <height>27</height>
+            <texture>Module-Menu/Breadcrumb-Background.png</texture>
+        </control>
+
+	    <!-- Title background -->
+        <control type="image">
+    	    <animation type="WindowOpen">
+                <effect type="fade" time="100" delay="0" start="0" end="100" />
+                <effect type="slide" time="300" delay="0" start="0,-10" end="0,0" tween="cubic"/>
+            </animation>
+            <posx>0</posx>
+            <posy>6</posy>
+            <width>720</width>
+            <height>57</height>
+            <texture>Module-Menu/Title-Background.png</texture>
+        </control>
+    </include>
+
+    <include name="module-menu-title-edging-overlay">
+        <control type="image">
+    	    <animation type="WindowOpen">
+                <effect type="fade" time="100" delay="0" start="0" end="100" />
+                <effect type="slide" time="300" delay="0" start="0,-10" end="0,0" tween="cubic"/>
+            </animation>
+            <posx>0</posx>
+            <posy>0</posy>
+            <width>720</width>
+            <height>54</height>
+		    <texture>Module-Menu/Title-Edging.png</texture>
+	    </control>
+    </include>
+    
+    <include name="module-menu-title-animation">
+        <animation type="WindowOpen">
+            <effect type="fade" time="100" delay="150" start="0" end="100" />
+            <effect type="slide" time="300" delay="150" start="-50,0" end="0,0" tween="cubic"/>
+        </animation>
+    </include>
+    
+    <include name="module-menu-breadcrumb-button">
+        <posy>54</posy>
+        <width>116</width>
+        <height>27</height>
+        <texturefocus>Module-Menu/Breadcrumb-Button-Selected.png</texturefocus>
+        <texturenofocus>Module-Menu/Breadcrumb-Button-Normal.png</texturenofocus>
+        <pulseonselect>no</pulseonselect>
+        <font>font11</font>
+        <textoffsetx>20</textoffsetx>
+        <textoffsety>5</textoffsety>
+        <textcolor>breadcrumb-text</textcolor>
+        <disabledcolor>breadcrumb-text</disabledcolor>
+    </include>
+</includes>

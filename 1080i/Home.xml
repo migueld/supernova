@@ -1,0 +1,233 @@
+<!---------------------------------------------------------------------------
+Home.xml: CenterStageProject - User Interface [1080i]
+-----------------------------------------------------------------------------
+Copyright (C) 2008 The CenterStage Project Development Team
+
+$Id$
+
+Authors:
+    Jan Litzinger [tragnar]
+    Faustino E. Osuna [riqueDaFreak]
+
+This program is free software; you can redistribute it and/or modify it
+under the terms of the GNU General Public License as published by the Free
+Software Foundation; either version 2 of the License, or (at your option)
+any later version.
+
+This program is distributed in the hope that it will be useful, but WITHOUT
+ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
+FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for
+more details.
+
+You should have received a copy of the GNU General Public License along with
+this program; if not, write to the Free Software Foundation, Inc., 51
+Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
+--------------------------------------------------------------------------->
+<window id="0">
+    <defaultcontrol always="false">5</defaultcontrol>
+    <allowoverlay>yes</allowoverlay>
+    <controls>
+        <!-- Background stage floor -->
+        <control type="image">
+            <description>Stage floor</description>
+            <posx>0</posx>
+            <posy>0</posy>
+            <width>1920</width>
+            <height>1080</height>
+            <texture>Main-Menu/StageFloor16x9.png</texture>
+        </control>
+    
+        <!-- Main controller that drives the main display, this control is hidden -->
+        <control type="wraplist" id="5">
+            <onup>5</onup>
+            <ondown>5</ondown>
+            <orientation>horizontal</orientation>
+            <focusposition>2</focusposition>
+            <posx>-288</posx>
+            <posy>229</posy>
+            <width>2496</width>
+            <height>856</height>
+            <focusedlayout width="552" height="856">
+                <control type="image">
+                    <animation reversible="false" effect="zoom" center="120,10" start="100" end="115" time="100">focus</animation>
+                    <animation reversible="false" effect="zoom" center="120,10" start="115" end="85" time="100">unfocus</animation>
+                    <posx>61</posx>
+                    <width>430</width>
+                    <height>856</height>
+                    <info>ListItem.ActualIcon</info>
+                </control>
+            </focusedlayout>
+            <itemlayout width="486" height="728">
+                <control type="image">
+                    <posx>70</posx>
+                    <width>364</width>
+                    <height>728</height>
+                    <info>ListItem.ActualIcon</info>
+                </control>
+            </itemlayout>
+            <!-- Control elements -->
+            <content>
+                <item>
+                    <!-- Reload Skin -->
+                    <label>20183</label>
+                    <onclick>XBMC.ReloadSkin()</onclick>
+                </item>
+                <item>
+                    <!-- My Pictures (2) -->
+                    <icon>Icons/Main-Menu-Photo.png</icon>
+                    <thumb>Icons/Main-Menu-Photo-No-Shadow.png</thumb>
+                    <label>31001</label>
+                    <onclick>ActivateWindow(MyPictures)</onclick>
+                </item>
+                <item>
+                    <!-- My Music (500,501) -->
+                    <icon>Icons/Main-Menu-Music.png</icon>
+                    <thumb>Icons/Main-Menu-Music-No-Shadow.png</thumb>
+                    <label>31002</label>
+                    <onclick>ActivateWindow(MyMusic)</onclick>
+                </item>
+                <item>
+                    <!-- My Videos (24,25) -->
+                    <icon>Icons/Main-Menu-Movies.png</icon>
+                    <thumb>Icons/Main-Menu-Movies-No-Shadow.png</thumb>
+                    <label>31003</label>
+                    <onclick>ActivateWindow(MyVideoFiles, "F:\")</onclick>
+                </item>
+                <item>
+                    <!-- Settings (4) -->
+                    <icon>Icons/Main-Menu-Preferences.png</icon>
+                    <thumb>Icons/Main-Menu-Preferences-No-Shadow.png</thumb>
+                    <label>31004</label>
+                    <onclick>ActivateWindow(Settings)</onclick>
+                </item>
+                <item>
+                    <!-- DVD (Unk)-->
+                    <icon>Icons/Main-Menu-DVDDisc.png</icon>
+                    <thumb>Icons/Main-Menu-DVDDisc-No-Shadow.png</thumb>
+                    <label>31005</label>
+                    <onclick>XBMC.PlayDVD</onclick>
+                    <visible>System.HasMediaDVD</visible>
+                </item>
+            </content>
+        </control>
+        
+        <!-- Spot light overlay -->
+        <control type="image">
+            <description>Spot light overlay</description>
+            <posx>0</posx>
+            <posy>0</posy>
+            <width>1920</width>
+            <height>1080</height>
+            <aspectratio/>
+            <texture>Main-Menu/Spotlight16x9.png</texture> 
+        </control>
+
+        <!-- Currently selected item's label -->
+        <control type="label">
+            <posx>0</posx>
+            <posy>110</posy>
+            <width>1920</width>
+            <height>17</height>
+            <info>Container(5).ListItem.Label</info>
+            <align>center</align>
+            <aligny>center</aligny>
+            <font>font-main-menu-title</font>
+            <textcolor>button-text</textcolor>
+        </control>
+
+        <!-- Widget bar -->
+        <!-- <control type="group"> -->
+            <!-- Status bar background -->
+            <!-- <control type="image">
+                <posx>0</posx>
+                <posy>461</posy>
+                <width>720</width>
+                <height>63</height>
+                <aspectratio>keep</aspectratio>
+                <texture>Main-Menu/Statusbar-Background.png</texture>
+            </control> -->
+
+            <!-- Last Played Widget -->
+            <!-- <control type="group">
+                <control type="image">
+                    <posx>110</posx>
+                    <posy>505</posy>
+                    <width>156</width>
+                    <height>14</height>
+                    <texture>Main-Menu/Statusbar-Timeline.png</texture>
+                </control>
+                <control type="image">
+                    <posx>200</posx>
+                    <posy>506</posy>
+                    <width>7</width>
+                    <height>11</height>
+                    <texture>Main-Menu/Statusbar-Timeline-Slider.png</texture>
+                </control>
+                <control type="label">
+                    <posx>230</posx>
+                    <posy>504</posy>
+                    <width>36</width>
+                    <align>center</align>
+                    <label>[B]1:30:10[/B]</label>
+                    <font>font10</font>
+                    <textcolor>ff000000</textcolor>
+                </control>
+                <control type="label">
+                    <posx>110</posx>
+                    <posy>470</posy>
+                    <label>Last Played</label>
+                    <font>font12</font>
+                    <textcolor>dfdedede</textcolor>
+                </control>
+                <control type="label">
+                    <posx>110</posx>
+                    <posy>487</posy>
+                    <label>Star Wars: Clone Wars</label>
+                    <font>font11</font>
+                    <textcolor>55555555</textcolor>
+                </control>
+            </control> -->
+        <!-- </control> -->
+        
+        <!-- RSS Scrolling Feed -->
+        <control type="group">
+            <!-- RSS Feed -->
+    		<control type="rss">
+    			<description>rss feed</description>
+    			<posx>0</posx>
+    			<posy>1010</posy>
+    			<width>1920</width>
+    			<font>font28</font>
+    			<urlset>1</urlset>
+    			<textcolor>info-text</textcolor>
+    			<titlecolor>rss-title-text</titlecolor>
+    			<headlinecolor>rss-headline-text</headlinecolor>
+    		</control>
+    		
+    		<!-- RSS Spotlight -->
+    		<control type="image">
+    		    <posx>0</posx>
+    		    <posy>980</posy>
+    		    <width>1920</width>
+    		    <height>100</height>
+    		    <aspectratio>keep</aspectratio>
+    		    <texture>Main-Menu/RSS-Spotlight.png</texture>
+		    </control>
+		</control>
+
+        <control type="image" id="6">
+            <posy>229</posy>
+            <posx>736</posx>
+            <width>495</width>
+            <height>492</height>
+            <info>Container(5).ListItem(0).Thumb</info>
+            <visible>Window.Next(24) | Window.Next(25) | Window.Next(2) | Window.Next(4) | Window.Next(500) | Window.Next(501)</visible>
+            <animation type="Conditional" condition="Control.IsVisible(6)" reversible="false">
+                <effect type="zoom" time="600" start="100" end="500" tween="cubic" easing="inout" acceleration="10" center="auto"/>
+                <effect type="fade" time="400" start="100" end="0"/>
+            </animation>
+        </control>
+
+        <include>window-fader</include>
+    </controls>
+</window>

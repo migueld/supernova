@@ -1,0 +1,48 @@
+﻿<window id="2004">
+	<defaultcontrol always="true">420(hehe)</defaultcontrol>
+	<visible>false</visible>
+	<!--<include>timeout</include>-->
+	<visible>Player.HasVideo + !Skin.HasSetting(now-playing) + !Window.IsActive(2004)</visible>
+	<animation effect="fade" time="1000">WindowOpen</animation>
+	<animation effect="fade" time="1000">WindowClose</animation>
+	<controls>
+		<include>background</include>
+		<control type="videowindow">
+			<description>video preview window</description>
+			<posx>375</posx>
+			<posy>190</posy>
+			<width>275</width>
+			<height>300</height>
+		</control>
+		<control type="label">
+			<description>Video Title label</description>
+			<width>350</width>
+			<posx>360</posx>
+			<posy>355</posy>
+			<info>VideoPlayer.Title</info>
+			<align>right</align>
+			<font>font28</font>
+			<scroll>true</scroll>
+		</control>
+		<control type="label">
+			<description>Time label</description>
+			<posx>360</posx>
+			<posy>455</posy>
+			<label>$INFO[VideoPlayer.Time]</label>
+			<align>right</align>
+			<font>font11</font>
+		</control>
+		<control type="progress">
+			<posx>30</posx>
+			<posy>460</posy>
+			<width>250</width>
+			<height>15</height>
+			<info>Player.Progress</info>
+			<texturebg>progressbar-background-blue-alpha.png</texturebg>
+			<lefttexture>progress-left.png</lefttexture>
+			<midtexture>progress-middle.png</midtexture>
+			<righttexture>progress-right.png</righttexture>
+			<overlaytexture>-</overlaytexture>
+		</control>
+	</controls>
+</window>

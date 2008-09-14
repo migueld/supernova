@@ -1,0 +1,94 @@
+﻿<window id="29">
+	<defaultcontrol always="true">52</defaultcontrol>
+	<allowoverlay>no</allowoverlay>
+	<coordinates>
+		<system>1</system>
+		<posx>0</posx>
+		<posy>0</posy>
+	</coordinates>
+	<controls>
+		<control type="image">
+			<description>Background image</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>720</width>
+			<height>576</height>
+			<texture>background.png</texture>
+			<animation effect="fade" end="0" time="600">WindowClose</animation>
+		</control>
+		<control type="wraplist" id="52">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>720</width>
+			<height>576</height>
+			<onleft>52</onleft>
+			<onright>52</onright>
+			<onup>2</onup>
+			<ondown>2</ondown>
+			<scrolltime>200</scrolltime>
+			<focusposition>0</focusposition>
+			<orientation>horizontal</orientation>
+			<animation effect="fade" end="0" time="600">WindowClose</animation>
+			<itemlayout height="140" width="160">
+				<control type="image">
+					<posx>20</posx>
+					<posy>300</posy>
+					<width>140</width>
+					<height>140</height>
+					<info>ListItem.Icon</info>
+					<aspectratio>keep</aspectratio>
+				</control>
+				<control type="image">
+					<posx>20</posx>
+					<posy>440</posy>
+					<width>140</width>
+					<height>140</height>
+					<texture flipy="true" diffuse="fade.png">-</texture>
+					<info>ListItem.Icon</info>
+					<aspectratio>keep</aspectratio>
+				</control>
+			</itemlayout>
+			<focusedlayout height="370" width="385">
+				<control type="image">
+					<posx>10</posx>
+					<posy>70</posy>
+					<width>370</width>
+					<height>370</height>
+					<aspectratio>keep</aspectratio>
+					<info>ListItem.Icon</info>
+				</control>
+				<control type="image">
+					<posx>10</posx>
+					<posy>440</posy>
+					<width>370</width>
+					<height>370</height>
+					<texture flipy="true" diffuse="fade2.png">-</texture>
+					<aspectratio>keep</aspectratio>
+					<info>ListItem.Icon</info>
+				</control>
+			</focusedlayout>
+		</control>
+		<control type="label">
+			<description>Profile Name</description>
+			<posx>20</posx>
+			<posy>540</posy>
+			<width>550</width>
+			<align>left</align>
+			<info>ListItem.Label</info>
+			<font>font20</font>
+			<textcolor>button-text</textcolor>
+			<animation effect="fade" end="0" time="600">WindowClose</animation>
+		</control>
+		<control type="label" id="3">
+			<description>Profile Count Label</description>
+			<posx>710</posx>
+			<posy>540</posy>
+			<width>420</width>
+			<align>right</align>
+			<label>-</label>
+			<font>font20</font>
+			<textcolor>button-text</textcolor>
+			<animation effect="fade" end="0" time="600">WindowClose</animation>
+		</control>
+	</controls>
+</window>

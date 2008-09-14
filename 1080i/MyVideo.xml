@@ -1,0 +1,128 @@
+<!---------------------------------------------------------------------------
+MyVideo.xml: CenterStageProject - User Interface [PAL]
+-----------------------------------------------------------------------------
+Copyright (C) 2008 The CenterStage Project Development Team
+
+$Id$
+
+Authors:
+    Jan Litzinger [tragnar]
+    Faustino E. Osuna [riqueDaFreak]
+
+This program is free software; you can redistribute it and/or modify it
+under the terms of the GNU General Public License as published by the Free
+Software Foundation; either version 2 of the License, or (at your option)
+any later version.
+
+This program is distributed in the hope that it will be useful, but WITHOUT
+ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
+FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for
+more details.
+
+You should have received a copy of the GNU General Public License along with
+this program; if not, write to the Free Software Foundation, Inc., 51
+Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
+--------------------------------------------------------------------------->
+<window id="6">
+	<defaultcontrol always="true">56</defaultcontrol>
+	<allowoverlay>yes</allowoverlay>
+	<previouswindow>Home</previouswindow>
+	<controls>
+	    <!-- List of Library Sort Options -->
+        <defaultcontrol>56</defaultcontrol>
+ 		<control type="list" id="56">
+ 		    <include>module-menu-main-list-box</include>
+    	    <onup>3000</onup>
+    	    <ondown>3000</ondown>
+    	    <visible>Container.Content(movies)</visible>
+		</control>
+ 		<control type="list" id="56">
+ 		    <include>module-menu-file-list-box</include>
+    	    <onup>3000</onup>
+    	    <ondown>3000</ondown>
+    	    <visible>!Container.Content(movies)</visible>
+		</control>
+		
+		<!-- List of Library Sort Options -->
+
+	    <!-- Spotlight -->
+        <include>module-menu-spotlight</include>
+	    
+	    <!-- Title -->
+	    <control type="group">
+            <include>module-menu-title-and-breadcrumb-background</include>
+
+            <!-- Title text -->
+            <control type="group">
+                <include>module-menu-title-animation</include>
+
+                <!-- Movies Headline -->
+                <control type="label">
+        		    <posx>13</posx>
+        		    <posy>-10</posy>
+        		    <height>47</height>
+        		    <width>707</width>
+        		    <aligny>bottom</aligny>
+        		    <textcolor>color-module-menu-title</textcolor>
+        		    <font>font-module-menu-title</font>
+        		    <label>31003</label>
+                </control>
+                
+                <include>module-menu-title-edging-overlay</include>
+    	    </control>
+	    </control>
+
+        <control type="button" id="3001">
+            <include>module-menu-breadcrumb-button</include>
+            
+            <animation effect="slide" tween="cubic" time="600" delay="500" start="-116,0" end="0,0" acceleration="+1.5">WindowOpen</animation>
+            <posx>88</posx>
+            <label>36000</label>
+
+            <visible>true</visible>
+            <enable>Control.IsVisible(3002)</enable>
+            <onclick>ReplaceWindow(6)</onclick>
+            <onup>56</onup>
+            <ondown>56</ondown>
+            <onleft>3000</onleft>
+            <onright>3000</onright>
+        </control>
+
+        <control type="group">
+            <animation effect="slide" tween="cubic" time="600" delay="200" start="-105,0" end="0,0" acceleration="+1.5">WindowOpen</animation>
+            <posx>0</posx>
+            <posy>54</posy>
+            <width>105</width>
+            <height>27</height>
+            <control type="button" id="3000">
+                <posx>0</posx>
+                <posy>0</posy>
+                <width>105</width> 
+                <height>27</height>
+                <visible>true</visible>
+                <texturefocus>Module-Menu/Breadcrumb-Button-Selected.png</texturefocus>
+                <texturenofocus>Module-Menu/Breadcrumb-Button-Normal.png</texturenofocus>
+                <label>Main Menu</label>
+                <font>font11</font>
+                <textcolor>breadcrumb-text</textcolor>
+                <disabledcolor>breadcrumb-text</disabledcolor>
+                <textoffsetx>35</textoffsetx>
+                <textoffsety>5</textoffsety>
+                <pulseonselect>no</pulseonselect>
+                <onclick>ReplaceWindow(0)</onclick>
+                <onleft>3001</onleft>
+                <onright>3001</onright>
+                <onup>56</onup>
+                <ondown>56</ondown>
+                <enable>Control.IsVisible(3001)</enable>
+            </control>
+            <control type="image">
+                <posx>18</posx>
+                <posy>6</posy>
+                <width>10</width> 
+                <height>14</height>
+                <texture>Icons/Breadcrumb-Home.png</texture>
+            </control>
+        </control>
+	</controls>
+</window>

@@ -28,7 +28,6 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
 	<controls>
     	<control type="button" id="1">
     		<onfocus>ReplaceWindow(Home)</onfocus>
-    		<animation effect="fade" time="1000">Focus</animation>
     	</control>
 	</controls>
 </window>

@@ -1,0 +1,55 @@
+﻿<window id="112">
+	<defaultcontrol>402</defaultcontrol>
+	<animation effect="slide" start="0,-400" time="300">WindowOpen</animation>
+	<animation effect="slide" end="0,-400" time="300">WindowClose</animation>
+	<coordinates>
+		<system>1</system>
+		<posx>50</posx>
+		<posy>27</posy>
+	</coordinates>
+	<controls>
+		<control type="image" id="1">
+			<description>Popup Music Scan Dialog Background</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>400</width>
+			<height>90</height>
+			<texture>button-menu-background.png</texture>
+		</control>
+		<control type="label" id="401">
+			<description>Caption Label</description>
+			<posx>27</posx>
+			<posy>21</posy>
+			<font>font12</font>
+			<textcolor>button-text</textcolor>
+			<align>left</align>
+			<width>291</width>
+			<height>20</height>
+		</control>
+		<control type="label" id="402">
+			<description>Current Directory Label</description>
+			<posx>27</posx>
+			<posy>43</posy>
+			<width>291</width>
+			<haspath>yes</haspath>
+			<font>font10</font>
+			<textcolor>button-text</textcolor>
+			<onleft>402</onleft>
+			<onright>402</onright>
+			<onup>402</onup>
+			<ondown>402</ondown>
+		</control>
+		<control type="progress" id="403">
+			<description>progress control</description>
+			<posx>27</posx>
+			<posy>70</posy>
+			<width>291</width>
+			<height>15</height>
+			<texturebg>progressbar-background-blue-alpha.png</texturebg>
+			<lefttexture>progress-left.png</lefttexture>
+			<midtexture>progress-middle.png</midtexture>
+			<righttexture>progress-right.png</righttexture>
+			<overlaytexture>-</overlaytexture>
+		</control>
+	</controls>
+</window>

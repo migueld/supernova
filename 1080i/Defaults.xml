@@ -1,0 +1,12 @@
+<includes>
+	<default type="progress">
+		<description>default progress control </description>
+        <width>525</width>
+        <height>23</height>
+        <texturebg border="1">OSD-Menu/Progress-Bar-Background.png</texturebg>
+        <lefttexture>OSD-Menu/Progress-Bar-Left.png</lefttexture>
+        <midtexture>OSD-Menu/Progress-Bar.png</midtexture>
+        <righttexture>OSD-Menu/Progress-Bar-Right.png</righttexture> 
+		<overlaytexture>-</overlaytexture>
+	</default>
+</includes>
