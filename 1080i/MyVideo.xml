@@ -1,5 +1,5 @@
 <!---------------------------------------------------------------------------
-MyVideo.xml: CenterStageProject - User Interface [PAL]
+MyVideo.xml: CenterStageProject - User Interface [1080i]
 -----------------------------------------------------------------------------
 Copyright (C) 2008 The CenterStage Project Development Team
 
@@ -58,10 +58,10 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
 
                 <!-- Movies Headline -->
                 <control type="label">
-        		    <posx>13</posx>
-        		    <posy>-10</posy>
-        		    <height>47</height>
-        		    <width>707</width>
+        		    <posx>43</posx>
+        		    <posy>-22</posy>
+        		    <height>89</height>
+        		    <width>1977</width>
         		    <aligny>bottom</aligny>
         		    <textcolor>color-module-menu-title</textcolor>
         		    <font>font-module-menu-title</font>
@@ -76,7 +76,7 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
             <include>module-menu-breadcrumb-button</include>
             
             <animation effect="slide" tween="cubic" time="600" delay="500" start="-116,0" end="0,0" acceleration="+1.5">WindowOpen</animation>
-            <posx>88</posx>
+            <posx>263</posx>
             <label>36000</label>
 
             <visible>true</visible>
@@ -91,19 +91,19 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
         <control type="group">
             <animation effect="slide" tween="cubic" time="600" delay="200" start="-105,0" end="0,0" acceleration="+1.5">WindowOpen</animation>
             <posx>0</posx>
-            <posy>54</posy>
-            <width>105</width>
-            <height>27</height>
+            <posy>102</posy>
+            <width>308</width>
+            <height>50</height>
             <control type="button" id="3000">
                 <posx>0</posx>
                 <posy>0</posy>
-                <width>105</width> 
-                <height>27</height>
+                <width>308</width> 
+                <height>50</height>
                 <visible>true</visible>
                 <texturefocus>Module-Menu/Breadcrumb-Button-Selected.png</texturefocus>
                 <texturenofocus>Module-Menu/Breadcrumb-Button-Normal.png</texturenofocus>
                 <label>Main Menu</label>
-                <font>font11</font>
+                <font>font-module-menu-breadcrumb</font>
                 <textcolor>breadcrumb-text</textcolor>
                 <disabledcolor>breadcrumb-text</disabledcolor>
                 <textoffsetx>35</textoffsetx>
