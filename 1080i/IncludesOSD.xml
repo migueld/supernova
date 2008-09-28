@@ -1,0 +1,171 @@
+<!---------------------------------------------------------------------------
+IncludesOSD.xml: CenterStageProject - User Interface [1080i]
+-----------------------------------------------------------------------------
+Copyright (C) 2008 The CenterStage Project Development Team
+
+$Id$
+
+Authors:
+    Jan Litzinger [tragnar]
+    Faustino E. Osuna [riqueDaFreak]
+
+This program is free software; you can redistribute it and/or modify it
+under the terms of the GNU General Public License as published by the Free
+Software Foundation; either version 2 of the License, or (at your option)
+any later version.
+
+This program is distributed in the hope that it will be useful, but WITHOUT
+ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
+FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for
+more details.
+
+You should have received a copy of the GNU General Public License along with
+this program; if not, write to the Free Software Foundation, Inc., 51
+Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
+--------------------------------------------------------------------------->
+<includes>
+    <include name="osd-menu-button">
+        <pulseonselect>no</pulseonselect>
+        <posy>0</posy>
+        <width>175</width> 
+        <height>188</height>
+        <texturefocus>OSD-Menu/Button-Selected.png</texturefocus>
+        <texturenofocus>-</texturenofocus>
+        <font>font-osd-menu-text</font>
+        <textcolor>color-osd-menu-text</textcolor>
+        <disabledcolor>color-osd-menu-text</disabledcolor>
+        <shadowcolor>99000000</shadowcolor>
+        <align>center</align>
+        <aligny>center</aligny>
+    </include>
+    <include name="osd-menu-button-icon">
+        <posy>46</posy>
+        <width>175</width> 
+        <height>100</height>
+        <align>center</align>
+        <aligny>center</aligny>
+        <aspectratio>keep</aspectratio>
+    </include>    
+    <include name="osd-menu-rewind-button">
+        <control type="image">
+            <include>osd-menu-button-icon</include>
+            <texture>Icons/OSD-Menu-Fast-Backward.png</texture>
+            <visible>!Player.Rewinding</visible>
+        </control>
+        <control type="group">
+            <control type="group">
+                <posy>90</posy>
+                <posx>93</posx>
+                <include>osd-menu-fast-badge</include>
+            </control>
+            <control type="image">
+                <include>osd-menu-button-icon</include>
+                <texture>Icons/OSD-Menu-Fast-Backward-On.png</texture>
+            </control>
+            <visible>Player.Rewinding</visible>
+        </control>
+    </include>
+    <include name="osd-menu-play-pause-button">
+        <control type="image" id="600">
+            <include>osd-menu-button-icon</include>
+            <texture>Icons/OSD-Menu-Play.png</texture>
+            <visible>Player.Paused | Player.Rewinding | Player.Forwarding</visible>
+        </control>
+        <control type="image">
+            <include>osd-menu-button-icon</include>
+            <texture>Icons/OSD-Menu-Pause.png</texture>
+            <visible>!Control.IsVisible(600)</visible>
+        </control>
+    </include>
+    <include name="osd-menu-stop-button">
+        <control type="image">
+            <include>osd-menu-button-icon</include>
+            <texture>Icons/OSD-Menu-Stop.png</texture>
+        </control>
+    </include>
+    <include name="osd-menu-forward-button">
+        <control type="image">
+            <include>osd-menu-button-icon</include>
+            <texture>Icons/OSD-Menu-Fast-Forward.png</texture>
+            <visible>!Player.Forwarding</visible>
+        </control>
+        <control type="group">
+            <control type="group">
+                <posy>90</posy>
+                <posx>42</posx>
+                <include>osd-menu-fast-badge</include>
+            </control>
+            <control type="image">
+                <include>osd-menu-button-icon</include>
+                <texture>Icons/OSD-Menu-Fast-Forward-On.png</texture>
+            </control>
+            <visible>Player.Forwarding</visible>
+        </control>
+    </include>
+
+    <include name="osd-menu-noninteractive">
+        <coordinates>
+            <system>1</system>
+            <posx>0</posx>
+            <posy>0</posy>
+        </coordinates>
+    </include>
+    <include name="osd-menu-noninteractive-background">
+        <animation effect="slide" time="250" delay="0" start="0,-189" end="0,0" tween="cubic">WindowOpen</animation>
+        <animation effect="slide" time="500" delay="0" start="0,0" end="0,-189" tween="cubic">WindowClose</animation>
+        <control type="image">
+            <posx>0</posx>
+            <posy>0</posy>
+            <width>1920</width>
+            <height>188</height>
+            <texture>OSD-Menu/NonInteractive-Background.png</texture>
+        </control>
+    </include>
+    <include name="osd-menu-interactive">
+        <coordinates>
+            <system>1</system>
+            <posx>0</posx>
+            <posy>892</posy>
+        </coordinates>
+    </include>
+    <include name="osd-menu-interactive-background">
+        <coordinates>
+            <system>1</system>
+            <posx>0</posx>
+            <posy>892</posy>
+        </coordinates>
+        <animation effect="slide" time="250" delay="0" start="0,189" end="0,0" tween="cubic">WindowOpen</animation>
+        <animation effect="slide" time="250" delay="0" start="0,0" end="0,189" tween="cubic">WindowClose</animation>
+        <control type="image">
+            <posx>0</posx>
+            <posy>0</posy>
+            <width>1920</width>
+            <height>188</height>
+            <texture>OSD-Menu/Interactive-Background.png</texture>
+        </control>
+    </include>
+    <include name="osd-menu-fast-badge">
+        <width>39</width>
+        <height>39</height>
+        <control type="image">
+            <texture>Icons/OSD-Menu-Fast-Badge-2.png</texture>
+            <visible>Player.Forwarding2x | Player.Rewinding2x</visible>
+        </control>
+        <control type="image">
+            <texture>Icons/OSD-Menu-Fast-Badge-4.png</texture>
+            <visible>Player.Forwarding4x | Player.Rewinding4x</visible>
+        </control>
+        <control type="image">
+            <texture>Icons/OSD-Menu-Fast-Badge-8.png</texture>
+            <visible>Player.Forwarding8x | Player.Rewinding8x</visible>
+        </control>
+        <control type="image">
+            <texture>Icons/OSD-Menu-Fast-Badge-16.png</texture>
+            <visible>Player.Forwarding16x | Player.Rewinding16x</visible>
+        </control>
+        <control type="image">
+            <texture>Icons/OSD-Menu-Fast-Badge-32.png</texture>
+            <visible>Player.Forwarding32x | Player.Rewinding32x</visible>
+        </control>
+    </include>
+</includes>

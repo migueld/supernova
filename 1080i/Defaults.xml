@@ -1,8 +1,34 @@
+<!---------------------------------------------------------------------------
+Defaults.xml: CenterStageProject - User Interface [1080i]
+-----------------------------------------------------------------------------
+Copyright (C) 2008 The CenterStage Project Development Team
+
+$Id$
+
+Authors:
+    Jan Litzinger [tragnar]
+    Faustino E. Osuna [riqueDaFreak]
+
+This program is free software; you can redistribute it and/or modify it
+under the terms of the GNU General Public License as published by the Free
+Software Foundation; either version 2 of the License, or (at your option)
+any later version.
+
+This program is distributed in the hope that it will be useful, but WITHOUT
+ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
+FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for
+more details.
+
+You should have received a copy of the GNU General Public License along with
+this program; if not, write to the Free Software Foundation, Inc., 51
+Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
+--------------------------------------------------------------------------->
 <includes>
 	<default type="progress">
-		<description>default progress control </description>
-        <width>525</width>
-        <height>23</height>
+	    <posx>259</posx>
+	    <posy>66</posy>
+        <width>1401</width>
+        <height>44</height>
         <texturebg border="1">OSD-Menu/Progress-Bar-Background.png</texturebg>
         <lefttexture>OSD-Menu/Progress-Bar-Left.png</lefttexture>
         <midtexture>OSD-Menu/Progress-Bar.png</midtexture>
