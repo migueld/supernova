@@ -109,10 +109,10 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
             <posx>0</posx>
             <posy>0</posy>
         </coordinates>
-    </include>
-    <include name="osd-menu-noninteractive-background">
         <animation effect="slide" time="250" delay="0" start="0,-189" end="0,0" tween="cubic">WindowOpen</animation>
         <animation effect="slide" time="500" delay="0" start="0,0" end="0,-189" tween="cubic">WindowClose</animation>
+    </include>
+    <include name="osd-menu-noninteractive-background">
         <control type="image">
             <posx>0</posx>
             <posy>0</posy>
@@ -121,14 +121,8 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
             <texture>OSD-Menu/NonInteractive-Background.png</texture>
         </control>
     </include>
+
     <include name="osd-menu-interactive">
-        <coordinates>
-            <system>1</system>
-            <posx>0</posx>
-            <posy>892</posy>
-        </coordinates>
-    </include>
-    <include name="osd-menu-interactive-background">
         <coordinates>
             <system>1</system>
             <posx>0</posx>
@@ -136,6 +130,8 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
         </coordinates>
         <animation effect="slide" time="250" delay="0" start="0,189" end="0,0" tween="cubic">WindowOpen</animation>
         <animation effect="slide" time="250" delay="0" start="0,0" end="0,189" tween="cubic">WindowClose</animation>
+    </include>
+    <include name="osd-menu-interactive-background">
         <control type="image">
             <posx>0</posx>
             <posy>0</posy>
