@@ -53,6 +53,12 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
             <size>26</size>
             <style>bold</style>
         </font>
+        <font>
+            <name>font-main-menu-widget-weather-location</name>
+            <filename>Trebuchet MS Bold.ttf</filename>
+            <size>18</size>
+            <style>bold</style>
+        </font>
 
         <font>
             <name>font10</name>
