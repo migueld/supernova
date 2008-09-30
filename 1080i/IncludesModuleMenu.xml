@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="UTF-16"?>
 <!---------------------------------------------------------------------------
-IncludesModuleMenu.xml: CenterStageProject - User Interface [PAL]
+IncludesModuleMenu.xml: CenterStageProject - User Interface [1080i]
 -----------------------------------------------------------------------------
 Copyright (C) 2008 The CenterStage Project Development Team
 
@@ -28,12 +27,13 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
     <include name="module-menu-main-list-box">
         <animation effect="fade" time="800" delay="400" start="0" end="100">WindowOpen</animation>
         <pulseonselect>yes</pulseonselect>
-    
-    	<posx>113</posx>
-    	<posy>133</posy>
-    	<height>381</height>
-    	<width>494</width>
-    	<itemlayout height="63">
+
+        <!-- <posx>493</posx> -->
+        <posx>466</posx>
+        <posy>282</posy>
+        <width>1084</width>
+        <height>655</height>
+        <itemlayout height="64">
             <!-- <control type="image">
                 <posx>0</posx>
                 <posy>13</posy>
@@ -43,24 +43,24 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
                 <aspectratio>keep</aspectratio>
             </control> -->
             <control type="image">
-                <posx>47</posx>
-                <posy>8</posy>
-                <width>425</width>
-                <height>48</height>
+                <posx>0</posx>
+                <posy>2</posy>
+                <width>1084</width>
+                <height>60</height>
                 <texture>Module-Menu/List-Item-Normal.png</texture>
             </control>
-    		<control type="label">
-    			<posx>65</posx>
-    			<posy>8</posy>
-    			<width>425</width>
-    			<height>48</height>
-    			<info>ListItem.label</info>
-    			<aligny>center</aligny>
-    			<font>font13</font>
-    			<textcolor>button-text</textcolor>
-    		</control>
-    	</itemlayout>
-    	<focusedlayout height="63">
+            <control type="label">
+                <posx>33</posx>
+                <posy>2</posy>
+                <width>1084</width>
+                <height>60</height>
+                <info>ListItem.label</info>
+                <aligny>center</aligny>
+                <font>font-module-menu-list-text</font>
+                <textcolor>color-module-menu-list-text</textcolor>
+            </control>
+        </itemlayout>
+        <focusedlayout height="64">
             <!-- <control type="image">
                 <posx>0</posx>
                 <posy>13</posy>
@@ -70,112 +70,41 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
                 <aspectratio>keep</aspectratio>
             </control> -->
             <control type="image">
-                <posx>47</posx>
-                <posy>8</posy>
-                <width>425</width>
-                <height>48</height>
+                <posx>0</posx>
+                <posy>2</posy>
+                <width>1084</width>
+                <height>60</height>
                 <texture>Module-Menu/List-Item-Selected.png</texture>
-                <visible>[Control.IsVisible(56) + Control.HasFocus(56)]</visible>
+                <visible>Control.IsVisible(56) + Control.HasFocus(56)</visible>
             </control>
             <control type="image">
-                <posx>47</posx>
-                <posy>8</posy>
-                <width>425</width>
-                <height>48</height>
+                <posx>0</posx>
+                <posy>2</posy>
+                <width>1084</width>
+                <height>60</height>
                 <texture>Module-Menu/List-Item-Normal.png</texture>
-                <visible>[Control.IsVisible(56) + !Control.HasFocus(56)]</visible>
+                <visible>Control.IsVisible(56) + !Control.HasFocus(56)</visible>
             </control>
-    		<control type="label">
-    			<posx>65</posx>
-    			<posy>8</posy>
-    			<width>425</width>
-    			<height>48</height>
-    			<info>ListItem.label</info>
-    			<aligny>center</aligny>
-    			<font>font13</font>
-    			<textcolor>button-text</textcolor>
-    		</control>
-    	</focusedlayout>
+            <control type="label">
+                <posx>33</posx>
+                <posy>2</posy>
+                <width>1018</width>
+                <height>60</height>
+                <info>ListItem.label</info>
+                <aligny>center</aligny>
+                <font>font-module-menu-list-text</font>
+                <textcolor>color-module-menu-list-text</textcolor>
+            </control>
+        </focusedlayout>
     </include>
-    
-    <include name="module-menu-file-list-box">
-        <pulseonselect>yes</pulseonselect>
-    
-    	<posx>113</posx>
-    	<posy>133</posy>
-    	<height>381</height>
-    	<width>494</width>
-    	<itemlayout height="63">
-    		<control type="image">
-    			<posx>0</posx>
-    			<posy>13</posy>
-    			<width>39</width>
-    			<height>37</height>
-    			<info>ListItem.Icon</info>
-    			<aspectratio>keep</aspectratio>
-    		</control>
-            <control type="image">
-                <posx>47</posx>
-                <posy>8</posy>
-                <width>425</width>
-                <height>48</height>
-                <texture>Module-Menu/List-Item-Normal.png</texture>
-            </control>
-    		<control type="label">
-    			<posx>65</posx>
-    			<posy>8</posy>
-    			<width>425</width>
-    			<height>48</height>
-    			<info>ListItem.label</info>
-    			<aligny>center</aligny>
-    			<font>font13</font>
-    			<textcolor>button-text</textcolor>
-    		</control>
-    	</itemlayout>
-    	<focusedlayout height="63">
-    		<control type="image">
-    			<posx>0</posx>
-    			<posy>13</posy>
-    			<width>39</width>
-    			<height>37</height>
-    			<info>ListItem.Icon</info>
-    			<aspectratio>keep</aspectratio>
-    		</control>
-            <control type="image">
-                <posx>47</posx>
-                <posy>8</posy>
-                <width>425</width>
-                <height>48</height>
-                <texture>Module-Menu/List-Item-Selected.png</texture>
-                <visible>[Control.IsVisible(56) + Control.HasFocus(56)]</visible>
-            </control>
-            <control type="image">
-                <posx>47</posx>
-                <posy>8</posy>
-                <width>425</width>
-                <height>48</height>
-                <texture>Module-Menu/List-Item-Normal.png</texture>
-                <visible>[Control.IsVisible(56) + !Control.HasFocus(56)]</visible>
-            </control>
-    		<control type="label">
-    			<posx>65</posx>
-    			<posy>8</posy>
-    			<width>425</width>
-    			<height>48</height>
-    			<info>ListItem.label</info>
-    			<aligny>center</aligny>
-    			<font>font13</font>
-    			<textcolor>button-text</textcolor>
-    		</control>
-    	</focusedlayout>
-    </include>
+
     <include name="module-menu-spotlight">
-    	<control type="image">
-    	    <posx>0</posx>
-    	    <posy>0</posy>
-    	    <width>720</width>
-    	    <height>576</height>
-    	    <texture>Module-Menu/Spotlight.png</texture>
+        <control type="image">
+            <posx>0</posx>
+            <posy>0</posy>
+            <width>1920</width>
+            <height>1080</height>
+            <texture>Module-Menu/Spotlight.png</texture>
         </control>
     </include>
 
@@ -184,58 +113,108 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
         <control type="image">
             <animation effect="slide" time="400" delay="100" start="0,-30" end="0,0" tween="cubic">WindowOpen</animation>
             <posx>0</posx>
-            <posy>54</posy>
-            <width>720</width>
-            <height>27</height>
+            <posy>102</posy>
+            <width>1920</width>
+            <height>50</height>
             <texture>Module-Menu/Breadcrumb-Background.png</texture>
         </control>
 
-	    <!-- Title background -->
+        <!-- Title background -->
         <control type="image">
-    	    <animation type="WindowOpen">
+            <animation type="WindowOpen">
                 <effect type="fade" time="100" delay="0" start="0" end="100" />
                 <effect type="slide" time="300" delay="0" start="0,-10" end="0,0" tween="cubic"/>
             </animation>
             <posx>0</posx>
-            <posy>6</posy>
-            <width>720</width>
-            <height>57</height>
+            <posy>12</posy>
+            <width>1920</width>
+            <height>89</height>
             <texture>Module-Menu/Title-Background.png</texture>
         </control>
     </include>
 
     <include name="module-menu-title-edging-overlay">
         <control type="image">
-    	    <animation type="WindowOpen">
+            <animation type="WindowOpen">
                 <effect type="fade" time="100" delay="0" start="0" end="100" />
                 <effect type="slide" time="300" delay="0" start="0,-10" end="0,0" tween="cubic"/>
             </animation>
             <posx>0</posx>
             <posy>0</posy>
-            <width>720</width>
-            <height>54</height>
-		    <texture>Module-Menu/Title-Edging.png</texture>
-	    </control>
+            <width>1920</width>
+            <height>101</height>
+            <texture>Module-Menu/Title-Edging.png</texture>
+        </control>
     </include>
-    
+
     <include name="module-menu-title-animation">
         <animation type="WindowOpen">
             <effect type="fade" time="100" delay="150" start="0" end="100" />
             <effect type="slide" time="300" delay="150" start="-50,0" end="0,0" tween="cubic"/>
         </animation>
     </include>
-    
+
+    <include name="module-menu-title-headline">
+        <posx>43</posx>
+        <posy>-22</posy>
+        <height>89</height>
+        <width>1977</width>
+        <aligny>bottom</aligny>
+        <textcolor>color-module-menu-title</textcolor>
+        <font>font-module-menu-title</font>
+    </include>
+
     <include name="module-menu-breadcrumb-button">
-        <posy>54</posy>
-        <width>116</width>
-        <height>27</height>
+        <posy>102</posy>
+        <width>308</width>
+        <height>50</height>
+        <visible>true</visible>
         <texturefocus>Module-Menu/Breadcrumb-Button-Selected.png</texturefocus>
         <texturenofocus>Module-Menu/Breadcrumb-Button-Normal.png</texturenofocus>
+        <font>font-module-menu-breadcrumb</font>
+        <textcolor>color-module-menu-breadcrumb</textcolor>
+        <disabledcolor>color-module-menu-breadcrumb</disabledcolor>
+        <textoffsetx>40</textoffsetx>
+        <textoffsety>6</textoffsety>
         <pulseonselect>no</pulseonselect>
-        <font>font11</font>
-        <textoffsetx>20</textoffsetx>
-        <textoffsety>5</textoffsety>
-        <textcolor>breadcrumb-text</textcolor>
-        <disabledcolor>breadcrumb-text</disabledcolor>
+    </include>
+
+    <include name="module-menu-breadcrumb-home-button">
+        <control type="group">
+            <animation effect="slide" tween="cubic" time="600" delay="200" start="-308,0" end="0,0" acceleration="+1.5">WindowOpen</animation>
+            <posx>0</posx>
+            <posy>102</posy>
+            <width>308</width>
+            <height>50</height>
+            <control type="button" id="3000">
+                <posx>0</posx>
+                <posy>0</posy>
+                <width>308</width>
+                <height>50</height>
+                <visible>true</visible>
+                <texturefocus>Module-Menu/Breadcrumb-Button-Selected.png</texturefocus>
+                <texturenofocus>Module-Menu/Breadcrumb-Button-Normal.png</texturenofocus>
+                <label>36007</label>
+                <font>font-module-menu-breadcrumb</font>
+                <textcolor>color-module-menu-breadcrumb</textcolor>
+                <disabledcolor>color-module-menu-breadcrumb</disabledcolor>
+                <textoffsetx>68</textoffsetx>
+                <textoffsety>6</textoffsety>
+                <pulseonselect>no</pulseonselect>
+                <onclick>ReplaceWindow(0)</onclick>
+                <onleft>3001</onleft>
+                <onright>3001</onright>
+                <onup>56</onup>
+                <ondown>56</ondown>
+                <enable>Control.IsVisible(3001)</enable>
+            </control>
+            <control type="image">
+                <posx>24</posx>
+                <posy>8</posy>
+                <width>26</width>
+                <height>27</height>
+                <texture>Icons/Breadcrumb-Home.png</texture>
+            </control>
+        </control>
     </include>
 </includes>

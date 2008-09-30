@@ -21,27 +21,28 @@ FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for
 more details.
 
 You should have received a copy of the GNU General Public License along with
-this program; if not, write to the Free Software Foundation, Inc., 51
+    his program; if not, write to the Free Software Foundation, Inc., 51
 Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
 --------------------------------------------------------------------------->
 <colors>
     <color name="color-module-menu-title">FF1C1C1C</color>
     <color name="color-osd-menu-text">FFFFFFFF</color>
+    <color name="color-module-menu-list-text">FFFDFDFC</color>
+    <color name="color-module-menu-breadcrumb">E6A1A0A0</color>
 
-	<color name="button-text">FFFFFFFF</color>
-	<color name="breadcrumb-text">E6A1A0A0</color>
-	
-	<color name="rss-headline-text">ffffffff</color>
-	<color name="rss-title-text">ff0066cc</color>
-	
-	<color name="info-text">ff0066cc</color>
-	<color name="listselectedtext">ff0066cc</color>
-	<color name="listselectedcolor">ff0066cc</color>
-	<color name="kai-text-alpha">55FFFFFF</color>
-	<color name="kai-text">FFFF0000</color>
-	<color name="disabled-text">FFFFFFFF</color>
-	<color name="osd-nf">77FFFFFF</color>
-	<color name="recording-nf">77EE0000</color>
-	<color name="recording">FFEE0000</color>
-	<color name="shutdown-text">FFFFFFFF</color>
+    <color name="button-text">FFFFFFFF</color>
+
+    <color name="rss-headline-text">ffffffff</color>
+    <color name="rss-title-text">ff0066cc</color>
+
+    <color name="info-text">ff0066cc</color>
+    <color name="listselectedtext">ff0066cc</color>
+    <color name="listselectedcolor">ff0066cc</color>
+    <color name="kai-text-alpha">55FFFFFF</color>
+    <color name="kai-text">FFFF0000</color>
+    <color name="disabled-text">FFFFFFFF</color>
+    <color name="osd-nf">77FFFFFF</color>
+    <color name="recording-nf">77EE0000</color>
+    <color name="recording">FFEE0000</color>
+    <color name="shutdown-text">FFFFFFFF</color>
 </colors>

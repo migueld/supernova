@@ -1,9 +1,45 @@
-﻿<fonts>
-	<fontset id="Default" unicode="true">
-	    <font>
-	        <name>font-module-menu-title</name>
-			<filename>Trebuchet MS Bold.ttf</filename>
-			<size>60</size>
+﻿<!---------------------------------------------------------------------------
+Font.xml: CenterStageProject - User Interface [1080i]
+-----------------------------------------------------------------------------
+Copyright (C) 2008 The CenterStage Project Development Team
+
+$Id$
+
+Authors:
+    Jan Litzinger [tragnar]
+    Faustino E. Osuna [riqueDaFreak]
+
+This program is free software; you can redistribute it and/or modify it
+under the terms of the GNU General Public License as published by the Free
+Software Foundation; either version 2 of the License, or (at your option)
+any later version.
+
+This program is distributed in the hope that it will be useful, but WITHOUT
+ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
+FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for
+more details.
+
+You should have received a copy of the GNU General Public License along with
+this program; if not, write to the Free Software Foundation, Inc., 51
+Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
+--------------------------------------------------------------------------->
+<fonts>
+    <fontset id="Default" unicode="true">
+        <font>
+            <name>font-module-menu-title</name>
+            <filename>Trebuchet MS Bold.ttf</filename>
+            <size>120</size>
+        </font>
+        <font>
+            <name>font-module-menu-breadcrumb</name>
+            <filename>Microsoft Sans Serif.ttf</filename>
+            <size>28</size>
+        </font>
+        <font>
+            <name>font-module-menu-list-text</name>
+            <filename>Microsoft Sans Serif.ttf</filename>
+            <size>30</size>
+            <style>bold</style>
         </font>
         <font>
             <name>font-main-menu-title</name>
@@ -11,49 +47,55 @@
             <size>45</size>
             <style>bold</style>
         </font>
-        
-		<font>
-			<name>font10</name>
-			<filename>Microsoft Sans Serif.ttf</filename>
-			<size>13</size>
-		</font>
-		<font>
-			<name>font11</name>
-			<filename>Microsoft Sans Serif.ttf</filename>
-			<size>14</size>
-		</font>
-		<font>
-			<name>font12</name>
-			<filename>Microsoft Sans Serif.ttf</filename>
-			<size>15</size>
-		</font>
-		<font>
-			<name>font13</name>
-			<filename>Microsoft Sans Serif.ttf</filename>
-			<size>16</size>
-		</font>
-		<font>
-			<name>font18</name>
-			<filename>Microsoft Sans Serif.ttf</filename>
-			<size>18</size>
-			
-		</font>
-		<font>
-			<name>font20</name>
-			<filename>Microsoft Sans Serif.ttf</filename>
-			<size>20</size>
-			<style>bold</style>
-			
-		</font>
-		<font>
-			<name>font22</name>
-			<filename>Microsoft Sans Serif.ttf</filename>
-			<size>22</size>
-		</font>
-		<font>
-			<name>font28</name>
-			<filename>Microsoft Sans Serif.ttf</filename>
-			<size>28</size>
-		</font>
-	</fontset>
+        <font>
+            <name>font-osd-menu-text</name>
+            <filename>Microsoft Sans Serif.ttf</filename>
+            <size>26</size>
+            <style>bold</style>
+        </font>
+
+        <font>
+            <name>font10</name>
+            <filename>Microsoft Sans Serif.ttf</filename>
+            <size>13</size>
+        </font>
+        <font>
+            <name>font11</name>
+            <filename>Microsoft Sans Serif.ttf</filename>
+            <size>14</size>
+        </font>
+        <font>
+            <name>font12</name>
+            <filename>Microsoft Sans Serif.ttf</filename>
+            <size>15</size>
+        </font>
+        <font>
+            <name>font13</name>
+            <filename>Microsoft Sans Serif.ttf</filename>
+            <size>16</size>
+        </font>
+        <font>
+            <name>font18</name>
+            <filename>Microsoft Sans Serif.ttf</filename>
+            <size>18</size>
+
+        </font>
+        <font>
+            <name>font20</name>
+            <filename>Microsoft Sans Serif.ttf</filename>
+            <size>20</size>
+            <style>bold</style>
+
+        </font>
+        <font>
+            <name>font22</name>
+            <filename>Microsoft Sans Serif.ttf</filename>
+            <size>22</size>
+        </font>
+        <font>
+            <name>font28</name>
+            <filename>Microsoft Sans Serif.ttf</filename>
+            <size>28</size>
+        </font>
+    </fontset>
 </fonts>
