@@ -25,8 +25,8 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
 --------------------------------------------------------------------------->
 <window id="104">
     <include>osd-menu-noninteractive</include>
-	<controls>
-	    <control type="group">
+    <controls>
+        <control type="group">
             <include>osd-menu-noninteractive-background</include>
 
             <!-- Icons -->
@@ -38,7 +38,7 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
                 <height>100</height>
                 <texture>Icons/OSD-Menu-Volume-Min.png</texture>
             </control>
-            
+
             <!-- Maximum Volume -->
             <control type="image">
                 <posx>1697</posx>
@@ -53,5 +53,5 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
                 <info>Player.Volume</info>
             </control>
         </control>
-	</controls>
+    </controls>
 </window>

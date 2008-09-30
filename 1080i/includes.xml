@@ -25,10 +25,10 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
 --------------------------------------------------------------------------->
 <includes>
     <include file="Defaults.xml" />
-	<include file="IncludesModuleMenu.xml" />
-	<include file="IncludesOSD.xml" />
+    <include file="IncludesModuleMenu.xml" />
+    <include file="IncludesOSD.xml" />
 
-	<include name="window-fader">
+    <include name="window-fader">
         <!-- The following image is used to hide the display so that it an be faded in and out -->
         <control type="image">
             <posx>0</posx>

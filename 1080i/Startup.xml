@@ -24,10 +24,10 @@ this program; if not, write to the Free Software Foundation, Inc., 51
 Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
 --------------------------------------------------------------------------->
 <window>
-	<defaultcontrol always="true">1</defaultcontrol>
-	<controls>
-    	<control type="button" id="1">
-    		<onfocus>ReplaceWindow(Home)</onfocus>
-    	</control>
-	</controls>
+    <defaultcontrol always="true">1</defaultcontrol>
+    <controls>
+        <control type="button" id="1">
+            <onfocus>ReplaceWindow(Home)</onfocus>
+        </control>
+    </controls>
 </window>

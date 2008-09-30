@@ -24,15 +24,15 @@ this program; if not, write to the Free Software Foundation, Inc., 51
 Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
 --------------------------------------------------------------------------->
 <includes>
-	<default type="progress">
-	    <posx>259</posx>
-	    <posy>66</posy>
+    <default type="progress">
+        <posx>259</posx>
+        <posy>66</posy>
         <width>1401</width>
         <height>44</height>
         <texturebg border="1">OSD-Menu/Progress-Bar-Background.png</texturebg>
         <lefttexture>OSD-Menu/Progress-Bar-Left.png</lefttexture>
         <midtexture>OSD-Menu/Progress-Bar.png</midtexture>
         <righttexture>OSD-Menu/Progress-Bar-Right.png</righttexture> 
-		<overlaytexture>-</overlaytexture>
-	</default>
+        <overlaytexture>-</overlaytexture>
+    </default>
 </includes>
