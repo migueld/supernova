@@ -1,18 +1,22 @@
 <?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
 <strings>
-	<!-- Home.xml (WindowId = 0) Strings -->
-	<string id="31001">Pictures</string>
-	<string id="31002">Music</string>
-	<string id="31003">Movies</string>
-	<string id="31004">Settings</string>
-	<string id="31005">Disc</string>
+    <!-- Home.xml (WindowId = 0) Strings -->
+    <string id="31001">Pictures</string>
+    <string id="31002">Music</string>
+    <string id="31003">Movies</string>
+    <string id="31004">Settings</string>
+    <string id="31005">Disc</string>
 
     <!-- MyVideo.xml (WindowId = 6) Strings -->
     <string id="36000">Movies Menu</string>
-	<string id="36001">Library</string>
-	<string id="36002">Actors</string>
-	<string id="36003">Directors</string>
-	<string id="36004">Genres</string>
-	<string id="36005">Playlist</string>
-	<string id="36006">Disc</string>
+    <string id="36001">Library</string>
+    <string id="36002">Actors</string>
+    <string id="36003">Directors</string>
+    <string id="36004">Genres</string>
+    <string id="36005">Playlist</string>
+    <string id="36006">Disc</string>
+    <string id="36007">Main Menu</string>
+
+    <!-- Dialogs -->
+    <string id="37000">Menu</string>
 </strings>
