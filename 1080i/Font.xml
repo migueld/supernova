@@ -24,16 +24,22 @@ this program; if not, write to the Free Software Foundation, Inc., 51
 Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
 --------------------------------------------------------------------------->
 <fonts>
-	<fontset id="Default" unicode="true">
-	    <font>
-	        <name>font-module-menu-title</name>
-			<filename>Trebuchet MS Bold.ttf</filename>
-			<size>120</size>
+    <fontset id="Default" unicode="true">
+        <font>
+            <name>font-module-menu-title</name>
+            <filename>Trebuchet MS Bold.ttf</filename>
+            <size>120</size>
         </font>
         <font>
             <name>font-module-menu-breadcrumb</name>
             <filename>Microsoft Sans Serif.ttf</filename>
             <size>28</size>
+        </font>
+        <font>
+            <name>font-module-menu-list-text</name>
+            <filename>Microsoft Sans Serif.ttf</filename>
+            <size>30</size>
+            <style>bold</style>
         </font>
         <font>
             <name>font-main-menu-title</name>
@@ -47,49 +53,49 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
             <size>26</size>
             <style>bold</style>
         </font>
-        
-		<font>
-			<name>font10</name>
-			<filename>Microsoft Sans Serif.ttf</filename>
-			<size>13</size>
-		</font>
-		<font>
-			<name>font11</name>
-			<filename>Microsoft Sans Serif.ttf</filename>
-			<size>14</size>
-		</font>
-		<font>
-			<name>font12</name>
-			<filename>Microsoft Sans Serif.ttf</filename>
-			<size>15</size>
-		</font>
-		<font>
-			<name>font13</name>
-			<filename>Microsoft Sans Serif.ttf</filename>
-			<size>16</size>
-		</font>
-		<font>
-			<name>font18</name>
-			<filename>Microsoft Sans Serif.ttf</filename>
-			<size>18</size>
-			
-		</font>
-		<font>
-			<name>font20</name>
-			<filename>Microsoft Sans Serif.ttf</filename>
-			<size>20</size>
-			<style>bold</style>
-			
-		</font>
-		<font>
-			<name>font22</name>
-			<filename>Microsoft Sans Serif.ttf</filename>
-			<size>22</size>
-		</font>
-		<font>
-			<name>font28</name>
-			<filename>Microsoft Sans Serif.ttf</filename>
-			<size>28</size>
-		</font>
-	</fontset>
+
+        <font>
+            <name>font10</name>
+            <filename>Microsoft Sans Serif.ttf</filename>
+            <size>13</size>
+        </font>
+        <font>
+            <name>font11</name>
+            <filename>Microsoft Sans Serif.ttf</filename>
+            <size>14</size>
+        </font>
+        <font>
+            <name>font12</name>
+            <filename>Microsoft Sans Serif.ttf</filename>
+            <size>15</size>
+        </font>
+        <font>
+            <name>font13</name>
+            <filename>Microsoft Sans Serif.ttf</filename>
+            <size>16</size>
+        </font>
+        <font>
+            <name>font18</name>
+            <filename>Microsoft Sans Serif.ttf</filename>
+            <size>18</size>
+
+        </font>
+        <font>
+            <name>font20</name>
+            <filename>Microsoft Sans Serif.ttf</filename>
+            <size>20</size>
+            <style>bold</style>
+
+        </font>
+        <font>
+            <name>font22</name>
+            <filename>Microsoft Sans Serif.ttf</filename>
+            <size>22</size>
+        </font>
+        <font>
+            <name>font28</name>
+            <filename>Microsoft Sans Serif.ttf</filename>
+            <size>28</size>
+        </font>
+    </fontset>
 </fonts>
