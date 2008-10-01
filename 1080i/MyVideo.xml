@@ -63,6 +63,52 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
             <include>module-menu-title-edging-overlay</include>
         </control>
 
+        <!-- View Switch Icons -->
+        <!-- for now switches to the home page, not sure if this should be in an include file? -->
+        <control type="group">
+            <posx>1643</posx>
+            <posy>35</posy>
+            <animation effect="fade" time="800" delay="400" start="0" end="100">WindowOpen</animation>
+
+            <!-- Should consider changes these buttons to togglebuttons -->
+            <control type="button" id="4000">
+                <posx>0</posx>
+                <width>46</width> 
+                <height>41</height>
+                <onclick>ReplaceWindow(0)</onclick>
+                <onup>4000</onup>
+                <ondown>4000</ondown>
+                <onleft>3000</onleft>
+                <onright>4001</onright>
+                <texturefocus>Module-Menu/View-Stage-Selected.png</texturefocus>
+                <texturenofocus>Module-Menu/View-Stage-Normal.png</texturenofocus>
+            </control>
+            <control type="button" id="4001">
+                <posx>94</posx>
+                <width>46</width> 
+                <height>41</height>
+                <onclick>ReplaceWindow(0)</onclick>
+                <onup>4001</onup>
+                <ondown>4001</ondown>
+                <onleft>4000</onleft>
+                <onright>4002</onright>
+                <texturefocus>Module-Menu/View-Icon-Selected.png</texturefocus>
+                <texturenofocus>Module-Menu/View-Icon-Normal.png</texturenofocus>
+            </control>
+            <control type="button" id="4002">
+                <posx>186</posx>
+                <width>46</width> 
+                <height>41</height>
+                <onclick>ReplaceWindow(0)</onclick>
+                <onup>4002</onup>
+                <ondown>4002</ondown>
+                <onleft>4001</onleft>
+                <onright>4002</onright>
+                <texturefocus>Module-Menu/View-List-Selected.png</texturefocus>
+                <texturenofocus>Module-Menu/View-List-Normal.png</texturenofocus>
+            </control>
+        </control>
+
         <!-- Bread Crumb Buttons -->
         <control type="button" id="3001">
             <animation effect="slide" tween="cubic" time="600" delay="500" start="-308,0" end="0,0" acceleration="+1.5">WindowOpen</animation>
@@ -79,51 +125,5 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
         <include>module-menu-breadcrumb-home-button</include>
 
         <include>window-fader</include>
-        
-        <!-- View Switch Icons -->
-        <!-- for now switches to the home page, not sure if this should be in an include file? -->
-        <control type="group">
-        <animation effect="fade" time="800" delay="400" start="0" end="100">WindowOpen</animation>
-            <control type="button" id="4000">
-                <posx>1643</posx>
-                <posy>35</posy>
-                <width>46</width> 
-                <height>41</height>
-                <onclick>ReplaceWindow(0)</onclick>
-                <onup>4000</onup>							
-                <ondown>4000</ondown>
-                <onleft>3000</onleft>
-                <onright>4001</onright>
-                <texturefocus>Module-Menu/Main-Stage-View-on.png</texturefocus>
-                <texturenofocus>Module-Menu/Main-Stage-View-off.png</texturenofocus>
-            </control>
-            <control type="button" id="4001">
-                <posx>1737</posx>
-                <posy>35</posy>
-                <width>46</width> 
-                <height>41</height>
-                <onclick>ReplaceWindow(0)</onclick>
-                <onup>4001</onup>
-                <ondown>4001</ondown>
-                <onleft>4000</onleft>
-                <onright>4002</onright>
-                <texturefocus>Module-Menu/Main-Icon-View-on.png</texturefocus>
-                <texturenofocus>Module-Menu/Main-Icon-View-off.png</texturenofocus>
-            </control>
-            <control type="button" id="4002">
-                <posx>1829</posx>
-                <posy>35</posy>
-                <width>46</width> 
-                <height>41</height>
-                <onclick>ReplaceWindow(0)</onclick>
-                <onup>4002</onup>
-                <ondown>4002</ondown>
-                <onleft>4001</onleft>
-                <onright>4002</onright>
-                <texturefocus>Module-Menu/Main-List-View-on.png</texturefocus>
-                <texturenofocus>Module-Menu/Main-List-View-off.png</texturenofocus>
-            </control>
-        </control>
-        
     </controls>
 </window>
