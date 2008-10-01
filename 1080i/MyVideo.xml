@@ -70,7 +70,7 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
             <posx>263</posx>
             <label>36000</label>
             <onclick>ReplaceWindow(6)</onclick>
-            <onup>56</onup>
+            <onup>4000</onup>
             <ondown>56</ondown>
             <onleft>3000</onleft>
             <onright>3000</onright>
@@ -79,5 +79,50 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
         <include>module-menu-breadcrumb-home-button</include>
 
         <include>window-fader</include>
+        
+        <!-- View Switch Icons -->
+        <!-- for now switches to the home page, not sure if this should be in an include file? -->
+        <control type="group">
+            <control type="button" id="4000">
+                <posx>1643</posx>
+                <posy>35</posy>
+                <width>46</width> 
+                <height>41</height>
+                <onclick>ReplaceWindow(0)</onclick>
+                <onup></onup>							
+                <ondown></ondown>
+                <onleft>3000</onleft>
+                <onright>4001</onright>
+                <texturefocus>Module-Menu/Main-Stage-View-on.png</texturefocus>
+                <texturenofocus>Module-Menu/Main-Stage-View-off.png</texturenofocus>
+            </control>
+            <control type="button" id="4001">
+                <posx>1737</posx>
+                <posy>35</posy>
+                <width>46</width> 
+                <height>41</height>
+                <onclick>ReplaceWindow(0)</onclick>
+                <onup></onup>
+                <ondown></ondown>
+                <onleft>4000</onleft>
+                <onright>4002</onright>
+                <texturefocus>Module-Menu/Main-Icon-View-on.png</texturefocus>
+                <texturenofocus>Module-Menu/Main-Icon-View-off.png</texturenofocus>
+            </control>
+            <control type="button" id="4002">
+                <posx>1829</posx>
+                <posy>35</posy>
+                <width>46</width> 
+                <height>41</height>
+                <onclick>ReplaceWindow(0)</onclick>
+                <onup></onup>
+                <ondown></ondown>
+                <onleft>4001</onleft>
+                <onright></onright>
+                <texturefocus>Module-Menu/Main-List-View-on.png</texturefocus>
+                <texturenofocus>Module-Menu/Main-List-View-off.png</texturenofocus>
+            </control>
+        </control>
+        
     </controls>
 </window>
