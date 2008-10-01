@@ -83,14 +83,15 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
         <!-- View Switch Icons -->
         <!-- for now switches to the home page, not sure if this should be in an include file? -->
         <control type="group">
+        <animation effect="fade" time="800" delay="400" start="0" end="100">WindowOpen</animation>
             <control type="button" id="4000">
                 <posx>1643</posx>
                 <posy>35</posy>
                 <width>46</width> 
                 <height>41</height>
                 <onclick>ReplaceWindow(0)</onclick>
-                <onup></onup>							
-                <ondown></ondown>
+                <onup>4000</onup>							
+                <ondown>4000</ondown>
                 <onleft>3000</onleft>
                 <onright>4001</onright>
                 <texturefocus>Module-Menu/Main-Stage-View-on.png</texturefocus>
@@ -102,8 +103,8 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
                 <width>46</width> 
                 <height>41</height>
                 <onclick>ReplaceWindow(0)</onclick>
-                <onup></onup>
-                <ondown></ondown>
+                <onup>4001</onup>
+                <ondown>4001</ondown>
                 <onleft>4000</onleft>
                 <onright>4002</onright>
                 <texturefocus>Module-Menu/Main-Icon-View-on.png</texturefocus>
@@ -115,10 +116,10 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
                 <width>46</width> 
                 <height>41</height>
                 <onclick>ReplaceWindow(0)</onclick>
-                <onup></onup>
-                <ondown></ondown>
+                <onup>4002</onup>
+                <ondown>4002</ondown>
                 <onleft>4001</onleft>
-                <onright></onright>
+                <onright>4002</onright>
                 <texturefocus>Module-Menu/Main-List-View-on.png</texturefocus>
                 <texturenofocus>Module-Menu/Main-List-View-off.png</texturenofocus>
             </control>
