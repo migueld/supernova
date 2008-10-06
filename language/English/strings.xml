@@ -17,6 +17,10 @@
     <string id="36006">Disc</string>
     <string id="36007">Main Menu</string>
 
+    <!-- Settings.xml (WindowId = 4) Strings -->
+    <string id="34000">Settings Menu</string>
+
+
     <!-- Dialogs -->
     <string id="37000">Menu</string>
 </strings>
