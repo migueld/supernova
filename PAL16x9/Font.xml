@@ -5,7 +5,7 @@
 			<filename>Trebuchet MS Bold.ttf</filename>
 			<size>60</size>
         </font>
-        
+
 		<font>
 			<name>font10</name>
 			<filename>Microsoft Sans Serif.ttf</filename>
@@ -30,14 +30,14 @@
 			<name>font18</name>
 			<filename>Microsoft Sans Serif.ttf</filename>
 			<size>18</size>
-			
+
 		</font>
 		<font>
 			<name>font20</name>
 			<filename>Microsoft Sans Serif.ttf</filename>
 			<size>20</size>
 			<style>bold</style>
-			
+
 		</font>
 		<font>
 			<name>font22</name>

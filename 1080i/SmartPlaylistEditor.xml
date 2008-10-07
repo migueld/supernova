@@ -174,7 +174,7 @@
 				<ondown>16</ondown>
 			</control>
 		</control>
-		
+
 		<control type="spincontrolex" id="16">
 			<posx>10</posx>
 			<posy>230</posy>
@@ -188,7 +188,7 @@
 			<onup>10</onup>
 			<ondown>17</ondown>
 		</control>
-		
+
 		<control type="spincontrolex" id="17">
 			<posx>10</posx>
 			<posy>270</posy>

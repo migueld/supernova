@@ -10,7 +10,7 @@
                 <texturebg>OSD-Menu/Progress-Bar-Background.png</texturebg>
                 <lefttexture>OSD-Menu/Progress-Bar-Left.png</lefttexture>
                 <midtexture>OSD-Menu/Progress-Bar.png</midtexture>
-                <righttexture>OSD-Menu/Progress-Bar-Right.png</righttexture> 
+                <righttexture>OSD-Menu/Progress-Bar-Right.png</righttexture>
                 <!-- <overlaytexture>-</overlaytexture> -->
             </control>
         </control>
