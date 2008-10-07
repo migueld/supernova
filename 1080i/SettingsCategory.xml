@@ -51,7 +51,7 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
 				<posy>0</posy>
 				<width>1084</width>
 				<height>60</height>
-				<itemgap>4</itemgap>
+				<itemgap>6</itemgap>
 				<onleft>3</onleft>
 				<onright>3</onright>
 				<onup>3001</onup>
@@ -70,9 +70,10 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
 				<align>center</align>
 				<aligny>center</aligny>
 				<textoffsetx>33</textoffsetx>
-				<texturefocus>Module-Menu/List-Item-Selected.png</texturefocus>
-				<texturenofocus>Module-Menu/List-Item-Normal.png</texturenofocus>
+				<texturefocus>Module-Menu/Subnav-List-Item-Selected.png</texturefocus>
+				<texturenofocus>Module-Menu/Subnav-List-Item-Normal.png</texturenofocus>
 				<textcolor>color-module-menu-list-text</textcolor>
+		        <pulseonselect>no</pulseonselect>
 			</control>
 
 			<!-- Settings area -->
@@ -81,7 +82,7 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
 				<posy>132</posy>
 				<width>1084</width>
 				<height>655</height>
-				<itemgap>4</itemgap>
+				<itemgap>6</itemgap>
 				<onleft>5</onleft>
 				<onright>5</onright>
 				<onup>3</onup>
@@ -118,7 +119,7 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
 				<textureradionofocus>Icons/Settings-Button-Unchecked.png</textureradionofocus>
 				<textcolor>color-module-menu-list-text</textcolor>
 				<disabledcolor>color-module-menu-list-text-disabled</disabledcolor>
-				<radioposx>0</radioposx>
+				<radioposx>1020</radioposx>
 				<radioposy>0</radioposy>
 				<radiowidth>25%</radiowidth>
 				<radioheight>25%</radioheight>
