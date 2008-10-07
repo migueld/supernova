@@ -42,12 +42,12 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
     	    <ondown>3000</ondown>
     	    <visible>!Container.Content(movies)</visible>
 		</control>
-		
+
 		<!-- List of Library Sort Options -->
 
 	    <!-- Spotlight -->
         <include>module-menu-spotlight</include>
-	    
+
 	    <!-- Title -->
 	    <control type="group">
             <include>module-menu-title-and-breadcrumb-background</include>
@@ -67,14 +67,14 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
         		    <font>font-module-menu-title</font>
         		    <label>31003</label>
                 </control>
-                
+
                 <include>module-menu-title-edging-overlay</include>
     	    </control>
 	    </control>
 
         <control type="button" id="3001">
             <include>module-menu-breadcrumb-button</include>
-            
+
             <animation effect="slide" tween="cubic" time="600" delay="500" start="-116,0" end="0,0" acceleration="+1.5">WindowOpen</animation>
             <posx>88</posx>
             <label>36000</label>
@@ -97,7 +97,7 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
             <control type="button" id="3000">
                 <posx>0</posx>
                 <posy>0</posy>
-                <width>105</width> 
+                <width>105</width>
                 <height>27</height>
                 <visible>true</visible>
                 <texturefocus>Module-Menu/Breadcrumb-Button-Selected.png</texturefocus>
@@ -119,7 +119,7 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
             <control type="image">
                 <posx>18</posx>
                 <posy>6</posy>
-                <width>10</width> 
+                <width>10</width>
                 <height>14</height>
                 <texture>Icons/Breadcrumb-Home.png</texture>
             </control>

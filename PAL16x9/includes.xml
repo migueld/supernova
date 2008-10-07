@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-16"?>
 <!---------------------------------------------------------------------------
 Includes.xml: CenterStageProject - User Interface [PAL]
 -----------------------------------------------------------------------------
@@ -42,7 +41,7 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
     <include name="osd-menu-button">
         <pulseonselect>no</pulseonselect>
         <posy>0</posy>
-        <width>65</width> 
+        <width>65</width>
         <height>100</height>
         <texturefocus>OSD-Menu/Button-Selected.png</texturefocus>
         <texturenofocus>-</texturenofocus>
@@ -55,11 +54,11 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
     </include>
     <include name="osd-menu-button-icon">
         <posy>0</posy>
-        <width>65</width> 
+        <width>65</width>
         <height>100</height>
         <align>center</align>
         <aligny>center</aligny>
-    </include>    
+    </include>
     <include name="osd-menu-interactive">
         <animation effect="slide" time="250" delay="0" start="0,101" end="0,0" tween="cubic">WindowOpen</animation>
         <animation effect="slide" time="250" delay="0" start="0,0" end="0,101" tween="cubic">WindowClose</animation>

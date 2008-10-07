@@ -38,7 +38,7 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
             <posy>282</posy>
             <width>1084</width>
             <height>655</height>
-			
+
 			<control type="button" id="3">
 				<description>Appearance</description>
 				<posx>0</posx>
@@ -88,7 +88,7 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
                 <font>font-module-menu-list-text</font>
                 <textcolor>color-module-menu-list-text</textcolor>
             </control>
-			
+
 			<control type="button" id="8">
 				<description>My Programs</description>
 				<posx>0</posx>
@@ -113,7 +113,7 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
                 <font>font-module-menu-list-text</font>
                 <textcolor>color-module-menu-list-text</textcolor>
             </control>
-			
+
 			<control type="button" id="7">
 				<description>My Music</description>
 				<posx>0</posx>
@@ -163,7 +163,7 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
                 <font>font-module-menu-list-text</font>
                 <textcolor>color-module-menu-list-text</textcolor>
             </control>
-			
+
 			<control type="button" id="10">
 				<description>My Weather</description>
 				<posx>0</posx>
@@ -188,7 +188,7 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
                 <font>font-module-menu-list-text</font>
                 <textcolor>color-module-menu-list-text</textcolor>
             </control>
-		
+
 			<control type="button" id="2">
 				<description>Network</description>
 				<posx>0</posx>
@@ -213,7 +213,7 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
                 <font>font-module-menu-list-text</font>
                 <textcolor>color-module-menu-list-text</textcolor>
             </control>
-			
+
 			<control type="button" id="4">
 				<description>System</description>
 				<posx>0</posx>
@@ -239,7 +239,7 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
                 <textcolor>color-module-menu-list-text</textcolor>
             </control>
         </control>
-        
+
         <!-- Spotlight -->
         <include>module-menu-spotlight</include>
 
@@ -273,8 +273,8 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
             <enable>false</enable>
         </control>
         <include>module-menu-breadcrumb-home-button</include>
-        
-        <include>window-fader</include>		
-		
-    </controls>    
+
+        <include>window-fader</include>
+
+    </controls>
 </window>

@@ -37,7 +37,7 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
             <aspectratio/>
             <texture>Main-Menu/StageFloor16x9.png</texture>
         </control>
-    
+
         <!-- Main controller that drives the main display, this control is hidden -->
         <control type="wraplist" id="5">
             <onup>5</onup>
@@ -111,7 +111,7 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
                 </item>
             </content>
         </control>
-        
+
         <!-- Spot light overlay -->
         <control type="image">
             <description>Spot light overlay</description>
@@ -189,7 +189,7 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
                 </control>
             </control> -->
         <!-- </control> -->
-        
+
         <!-- RSS Scrolling Feed -->
         <control type="group">
             <!-- RSS Feed -->
@@ -204,7 +204,7 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
     			<titlecolor>rss-title-text</titlecolor>
     			<headlinecolor>rss-headline-text</headlinecolor>
     		</control>
-    		
+
     		<!-- RSS Spotlight -->
     		<control type="image">
     		    <posx>0</posx>

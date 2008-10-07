@@ -29,16 +29,16 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
 	<previouswindow>settings</previouswindow>
 	<controls>
 		<defaultcontrol>56</defaultcontrol>
-		
-		<control type="group" id="56"> <!-- without this id you cannot jump down 
-		                                    from home menu to the settings, 
-		                                    problem: now you cannot select anything below 
+
+		<control type="group" id="56"> <!-- without this id you cannot jump down
+		                                    from home menu to the settings,
+		                                    problem: now you cannot select anything below
 		                                    the rss news feed setting anymore -->
 			<posx>466</posx>
 			<posy>282</posy>
 			<width>1084</width>
 			<height>655</height>
-		
+
 		    <!-- ??? -->
 			<!-- control type="label">
 				<description>Settings Label</description>
@@ -48,7 +48,7 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
 				<font>font-module-menu-list-text</font>
 				<textcolor>color-module-menu-list-text</textcolor>
 			</control -->
-			
+
 			<!-- Subnavigation area horizontal -->
 			<control type="grouplist" id="3">
 				<description>button area</description>
@@ -63,7 +63,7 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
 				<ondown>5</ondown>
 				<orientation>horizontal</orientation>
 			</control>
-		
+
 			<!-- Subnavigation list bars -->
 			<control type="button" id="10">
 				<posx>0</posx>
@@ -74,13 +74,13 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
 				<font>font-module-menu-list-text</font>
 				<align>center</align>
 				<aligny>center</aligny>
-				<textoffsetx>33</textoffsetx>	
+				<textoffsetx>33</textoffsetx>
 				<texturefocus>Module-Menu/List-Item-Selected.png</texturefocus>
 				<texturenofocus>Module-Menu/List-Item-Normal.png</texturenofocus>
 				<textcolor>color-module-menu-list-text</textcolor>
 			</control>
-			
-			
+
+
 			<!-- Settings area -->
 			<control type="grouplist" id="5">
 				<posx>0</posx>
@@ -93,7 +93,7 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
 				<onup>3</onup>
 				<ondown>5</ondown>
 			</control>
-			
+
 			<!-- Defenition of the three possible settings controls -->
 			<control type="button" id="7">
 				<description>Button</description>
@@ -148,7 +148,7 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
 				<disabledcolor>color-module-menu-list-text-disabled</disabledcolor>
 			</control>
 		</control>
-		
+
 	  <!-- Spotlight -->
 		<include>module-menu-spotlight</include>
 
@@ -182,8 +182,8 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
 			<enable>false</enable>
 		</control>
 		<include>module-menu-breadcrumb-home-button</include>
-		
-		<include>window-fader</include>		
-		
-	</controls>	   
+
+		<include>window-fader</include>
+
+	</controls>
 </window>
