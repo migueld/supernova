@@ -1,1 +1,1 @@
-*.xml set crlf to input
+*.xml   crlf=input
