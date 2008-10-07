@@ -111,18 +111,26 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
 
         <!-- Bread Crumb Buttons -->
         <control type="button" id="3001">
-            <animation effect="slide" tween="cubic" time="600" delay="500" start="-308,0" end="0,0" acceleration="+1.5">WindowOpen</animation>
-            <include>module-menu-breadcrumb-button</include>
-            <posx>263</posx>
+            <include>module-menu-breadcrumb-button1</include>
             <label>36000</label>
-            <onclick>ReplaceWindow(6)</onclick>
-            <onup>4000</onup>
+            <!-- <onclick>ReplaceWindow(0)</onclick>
+            <onup>40000</onup>
+            <ondown>40000</ondown>
+            <onleft>3000</onleft>
+            <onright>3001</onright> -->
+            <enable>false</enable>
+        </control>
+
+        <control type="button" id="3000">
+            <include>module-menu-breadcrumb-button0</include>
+            <label>36007</label>
+            <onclick>ReplaceWindow(0)</onclick>
+            <onup>56</onup>
             <ondown>56</ondown>
             <onleft>3000</onleft>
             <onright>3000</onright>
-            <enable>false</enable>
         </control>
-        <include>module-menu-breadcrumb-home-button</include>
+        <include>module-menu-breadcrumb-button0-icon</include>
 
         <include>window-fader</include>
     </controls>

@@ -24,16 +24,11 @@ this program; if not, write to the Free Software Foundation, Inc., 51
 Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
 --------------------------------------------------------------------------->
 <window id="12">
-	<defaultcontrol always="true">56</defaultcontrol>
+	<defaultcontrol always="true">4000</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
 	<previouswindow>settings</previouswindow>
 	<controls>
-		<defaultcontrol>56</defaultcontrol>
-
-		<control type="group" id="56"> <!-- without this id you cannot jump down
-		                                    from home menu to the settings,
-		                                    problem: now you cannot select anything below
-		                                    the rss news feed setting anymore -->
+		<control type="group" id="4000">
 			<posx>466</posx>
 			<posy>282</posy>
 			<width>1084</width>
@@ -59,7 +54,7 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
 				<itemgap>4</itemgap>
 				<onleft>3</onleft>
 				<onright>3</onright>
-				<onup>3000</onup>
+				<onup>3001</onup>
 				<ondown>5</ondown>
 				<orientation>horizontal</orientation>
 			</control>
@@ -79,7 +74,6 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
 				<texturenofocus>Module-Menu/List-Item-Normal.png</texturenofocus>
 				<textcolor>color-module-menu-list-text</textcolor>
 			</control>
-
 
 			<!-- Settings area -->
 			<control type="grouplist" id="5">
@@ -169,21 +163,38 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
 		</control>
 
 		<!-- Bread Crumb Buttons -->
-		<control type="button" id="3001">
-			<animation effect="slide" tween="cubic" time="600" delay="500" start="-308,0" end="0,0" acceleration="+1.5">WindowOpen</animation>
-			<include>module-menu-breadcrumb-button</include>
-			<posx>263</posx>
-			<label>34000</label>
-			<onclick>ReplaceWindow(6)</onclick>
-			<onup>-</onup>
-			<ondown>-</ondown>
-			<onleft>-</onleft>
-			<onright>-</onright>
-			<enable>false</enable>
-		</control>
-		<include>module-menu-breadcrumb-home-button</include>
+        <control type="button" id="3003">
+            <include>module-menu-breadcrumb-button2</include>
+            <label>Appearance</label>
+            <!-- <onclick>ReplaceWindow(0)</onclick>
+            <onup>40000</onup>
+            <ondown>40000</ondown>
+            <onleft>3000</onleft>
+            <onright>3001</onright> -->
+            <enable>false</enable>
+        </control>
+
+        <control type="button" id="3001">
+            <include>module-menu-breadcrumb-button1</include>
+            <label>34000</label>
+            <onclick>ReplaceWindow(Settings)</onclick>
+            <onup>40000</onup>
+            <ondown>40000</ondown>
+            <onleft>3000</onleft>
+            <onright>3000</onright>
+        </control>
+
+        <control type="button" id="3000">
+            <include>module-menu-breadcrumb-button0</include>
+            <label>36007</label>
+            <onclick>ReplaceWindow(Home)</onclick>
+            <onup>4000</onup>
+            <ondown>4000</ondown>
+            <onleft>3000</onleft>
+            <onright>3001</onright>
+        </control>
+        <include>module-menu-breadcrumb-button0-icon</include>
 
 		<include>window-fader</include>
-
 	</controls>
 </window>

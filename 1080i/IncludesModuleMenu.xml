@@ -179,42 +179,57 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
         <pulseonselect>no</pulseonselect>
     </include>
 
-    <include name="module-menu-breadcrumb-home-button">
-        <control type="group">
+    <include name="module-menu-breadcrumb-button0">
+        <animation effect="slide" tween="cubic" time="600" delay="200" start="-308,0" end="0,0" acceleration="+1.5">WindowOpen</animation>
+    	<textoffsetx>68</textoffsetx>
+    	<include>module-menu-breadcrumb-button</include>
+    	<posx>0</posx>
+	</include>
+
+	<include name="module-menu-breadcrumb-button0-icon">
+	    <control type="image">
             <animation effect="slide" tween="cubic" time="600" delay="200" start="-308,0" end="0,0" acceleration="+1.5">WindowOpen</animation>
-            <posx>0</posx>
-            <posy>102</posy>
-            <width>308</width>
-            <height>50</height>
-            <control type="button" id="3000">
-                <posx>0</posx>
-                <posy>0</posy>
-                <width>308</width>
-                <height>50</height>
-                <visible>true</visible>
-                <texturefocus>Module-Menu/Breadcrumb-Button-Selected.png</texturefocus>
-                <texturenofocus>Module-Menu/Breadcrumb-Button-Normal.png</texturenofocus>
-                <label>36007</label>
-                <font>font-module-menu-breadcrumb</font>
-                <textcolor>color-module-menu-breadcrumb</textcolor>
-                <disabledcolor>color-module-menu-breadcrumb</disabledcolor>
-                <textoffsetx>68</textoffsetx>
-                <textoffsety>6</textoffsety>
-                <pulseonselect>no</pulseonselect>
-                <onclick>ReplaceWindow(0)</onclick>
-                <onleft>3001</onleft>
-                <onright>3001</onright>
-                <onup>4002</onup>
-                <ondown>56</ondown>
-                <enable>Control.IsVisible(3001)</enable>
-            </control>
-            <control type="image">
-                <posx>24</posx>
-                <posy>8</posy>
-                <width>26</width>
-                <height>27</height>
-                <texture>Icons/Breadcrumb-Home.png</texture>
-            </control>
+            <posx>24</posx>
+            <posy>110</posy>
+            <width>26</width>
+            <height>27</height>
+            <texture>Icons/Breadcrumb-Home.png</texture>
         </control>
     </include>
+
+    <include name="module-menu-breadcrumb-button1">
+        <animation effect="slide" tween="cubic" time="600" delay="500" start="-308,0" end="0,0" acceleration="+1.5">WindowOpen</animation>
+    	<include>module-menu-breadcrumb-button</include>
+    	<posx>263</posx>
+	</include>
+
+    <include name="module-menu-breadcrumb-button2">
+        <animation effect="slide" tween="cubic" time="600" delay="800" start="-308,0" end="0,0" acceleration="+1.5">WindowOpen</animation>
+    	<include>module-menu-breadcrumb-button</include>
+    	<posx>525</posx>
+	</include>
+
+    <include name="module-menu-breadcrumb-button3">
+        <animation effect="slide" tween="cubic" time="600" delay="1100" start="-308,0" end="0,0" acceleration="+1.5">WindowOpen</animation>
+    	<include>module-menu-breadcrumb-button</include>
+    	<posx>789</posx>
+	</include>
+
+    <include name="module-menu-breadcrumb-button4">
+        <animation effect="slide" tween="cubic" time="600" delay="1400" start="-308,0" end="0,0" acceleration="+1.5">WindowOpen</animation>
+    	<include>module-menu-breadcrumb-button</include>
+    	<posx>1052</posx>
+	</include>
+
+    <include name="module-menu-breadcrumb-button5">
+        <animation effect="slide" tween="cubic" time="600" delay="1700" start="-308,0" end="0,0" acceleration="+1.5">WindowOpen</animation>
+    	<include>module-menu-breadcrumb-button</include>
+    	<posx>1315</posx>
+	</include>
+
+    <include name="module-menu-breadcrumb-button6">
+        <animation effect="slide" tween="cubic" time="600" delay="2000" start="-308,0" end="0,0" acceleration="+1.5">WindowOpen</animation>
+    	<include>module-menu-breadcrumb-button</include>
+    	<posx>1578</posx>
+	</include>
 </includes>

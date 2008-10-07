@@ -24,16 +24,13 @@ this program; if not, write to the Free Software Foundation, Inc., 51
 Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
 --------------------------------------------------------------------------->
 <window id="4">
-    <defaultcontrol always="true">56</defaultcontrol>
+	<defaultcontrol always="true">4000</defaultcontrol>
     <allowoverlay>yes</allowoverlay>
     <previouswindow>Home</previouswindow>
     <controls>
-        <defaultcontrol>56</defaultcontrol>
-
-
         <!-- Settings List -->
         <!-- IDs are taken from the origin skin - they should probably be changed -->
-		<control type="group" id="56">
+		<control type="group" id="4000">
 		    <posx>466</posx>
             <posy>282</posy>
             <width>1084</width>
@@ -226,7 +223,7 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
 				<onleft>4</onleft>
 				<onright>4</onright>
 				<onup>2</onup>
-				<ondown>3</ondown>
+				<ondown>3000</ondown>
 			</control>
 			<control type="label">
 				<posx>33</posx>
@@ -261,20 +258,27 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
 
         <!-- Bread Crumb Buttons -->
         <control type="button" id="3001">
-            <animation effect="slide" tween="cubic" time="600" delay="500" start="-308,0" end="0,0" acceleration="+1.5">WindowOpen</animation>
-            <include>module-menu-breadcrumb-button</include>
-            <posx>263</posx>
+            <include>module-menu-breadcrumb-button1</include>
             <label>34000</label>
-            <onclick>ReplaceWindow(6)</onclick>
-            <onup>-</onup>
-            <ondown>-</ondown>
-            <onleft>-</onleft>
-            <onright>-</onright>
+            <!-- <onclick>ReplaceWindow(0)</onclick>
+            <onup>40000</onup>
+            <ondown>40000</ondown>
+            <onleft>3000</onleft>
+            <onright>3001</onright> -->
             <enable>false</enable>
         </control>
-        <include>module-menu-breadcrumb-home-button</include>
+
+        <control type="button" id="3000">
+            <include>module-menu-breadcrumb-button0</include>
+            <label>36007</label>
+            <onclick>ReplaceWindow(0)</onclick>
+            <onup>4000</onup>
+            <ondown>4000</ondown>
+            <onleft>3000</onleft>
+            <onright>3000</onright>
+        </control>
+        <include>module-menu-breadcrumb-button0-icon</include>
 
         <include>window-fader</include>
-
     </controls>
 </window>
