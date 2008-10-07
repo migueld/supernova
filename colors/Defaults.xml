@@ -27,8 +27,10 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
     <color name="color-module-menu-title">FF1C1C1C</color>
     <color name="color-osd-menu-text">FFFFFFFF</color>
     <color name="color-module-menu-list-text">FFFDFDFC</color>
+    <color name="color-module-menu-list-text-disabled">22FDFDFC</color>
     <color name="color-module-menu-breadcrumb">E6A1A0A0</color>
     <color name="color-main-menu-widget-text">FF9F9E9E</color>
+    
 
     <color name="button-text">FFFFFFFF</color>
 
