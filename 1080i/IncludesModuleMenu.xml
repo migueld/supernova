@@ -156,7 +156,7 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
 
     <include name="module-menu-title-headline">
         <posx>43</posx>
-        <posy>-22</posy>
+        <posy>-44</posy>
         <height>89</height>
         <width>1977</width>
         <aligny>bottom</aligny>

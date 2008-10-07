@@ -27,35 +27,35 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
     <fontset id="Default" unicode="true">
         <font>
             <name>font-module-menu-title</name>
-            <filename>Trebuchet MS Bold.ttf</filename>
+            <filename>DejaVuSans-Bold.ttf</filename>
             <size>120</size>
         </font>
         <font>
             <name>font-module-menu-breadcrumb</name>
-            <filename>Microsoft Sans Serif.ttf</filename>
-            <size>28</size>
+            <filename>DejaVuSans.ttf</filename>
+            <size>24</size>
         </font>
         <font>
             <name>font-module-menu-list-text</name>
-            <filename>Microsoft Sans Serif.ttf</filename>
-            <size>30</size>
-            <style>bold</style>
-        </font>
-        <font>
-            <name>font-main-menu-title</name>
-            <filename>Microsoft Sans Serif.ttf</filename>
-            <size>45</size>
-            <style>bold</style>
-        </font>
-        <font>
-            <name>font-osd-menu-text</name>
-            <filename>Microsoft Sans Serif.ttf</filename>
+            <filename>DejaVuSans.ttf</filename>
             <size>26</size>
             <style>bold</style>
         </font>
         <font>
+            <name>font-main-menu-title</name>
+            <filename>DejaVuSans.ttf</filename>
+            <size>42</size>
+            <style>bold</style>
+        </font>
+        <font>
+            <name>font-osd-menu-text</name>
+            <filename>DejaVuSans.ttf</filename>
+            <size>24</size>
+            <style>bold</style>
+        </font>
+        <font>
             <name>font-main-menu-widget-weather-location</name>
-            <filename>Trebuchet MS Bold.ttf</filename>
+            <filename>DejaVuSans.ttf</filename>
             <size>18</size>
             <style>bold</style>
         </font>
