@@ -51,7 +51,7 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
 				<posy>0</posy>
 				<width>1084</width>
 				<height>60</height>
-				<itemgap>4</itemgap>
+				<itemgap>6</itemgap>
 				<onleft>3</onleft>
 				<onright>3</onright>
 				<onup>3001</onup>
@@ -70,22 +70,22 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
 				<align>center</align>
 				<aligny>center</aligny>
 				<textoffsetx>33</textoffsetx>
-				<texturefocus>Module-Menu/List-Item-Selected.png</texturefocus>
-				<texturenofocus>Module-Menu/List-Item-Normal.png</texturenofocus>
+				<texturefocus>Module-Menu/Subnav-List-Item-Selected.png</texturefocus>
+				<texturenofocus>Module-Menu/Subnav-List-Item-Normal.png</texturenofocus>
 				<textcolor>color-module-menu-list-text</textcolor>
 			</control>
 
 			<!-- Settings area -->
 			<control type="grouplist" id="5">
 				<posx>0</posx>
-				<posy>132</posy>
+				<posy>112</posy>
 				<width>1084</width>
-				<height>655</height>
-				<itemgap>4</itemgap>
-				<onleft>Move(3, -1)</onleft>
-				<onright>Move(3, 1)</onright>
+				<height>535</height>
+				<itemgap>30</itemgap>
+				<onleft>5</onleft>
+				<onright>5</onright>
 				<onup>3</onup>
-				<ondown>3001</ondown>
+				<ondown>5</ondown>
 			</control>
 
 			<!-- Definition of the three possible settings controls -->

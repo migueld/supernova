@@ -33,7 +33,7 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
         <posy>282</posy>
         <width>1084</width>
         <height>655</height>
-        <itemlayout height="64">
+        <itemlayout height="90">
             <!-- <control type="image">
                 <posx>0</posx>
                 <posy>13</posy>
@@ -60,7 +60,7 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
                 <textcolor>color-module-menu-list-text</textcolor>
             </control>
         </itemlayout>
-        <focusedlayout height="64">
+        <focusedlayout height="90">
             <!-- <control type="image">
                 <posx>0</posx>
                 <posy>13</posy>
@@ -192,7 +192,7 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
 	    <control type="image">
             <animation effect="slide" tween="cubic" time="600" delay="200" start="-308,0" end="0,0" acceleration="+1.5" condition="Window.Previous(Home)">WindowOpen</animation>
             <posx>24</posx>
-            <posy>112</posy>
+            <posy>113</posy>
             <width>26</width>
             <height>27</height>
             <texture>Icons/Breadcrumb-Home.png</texture>
