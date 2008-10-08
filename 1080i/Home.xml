@@ -24,7 +24,7 @@ this program; if not, write to the Free Software Foundation, Inc., 51
 Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
 --------------------------------------------------------------------------->
 <window id="0">
-    <defaultcontrol always="false">5</defaultcontrol>
+    <defaultcontrol>5</defaultcontrol>
     <allowoverlay>yes</allowoverlay>
     <controls>
         <!-- Background stage floor -->
@@ -200,6 +200,7 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
                     <height>95</height>
                     <aspectratio>keep</aspectratio>
                     <info>Weather.Conditions</info>
+                    <visible>Weather.IsFetched</visible>
                 </control>
                 <control type="label">
                     <posx>351</posx>
