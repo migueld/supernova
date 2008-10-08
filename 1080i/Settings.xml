@@ -66,7 +66,7 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
             <control type="button" id="6">
                 <description>My Videos</description>
                 <posx>0</posx>
-                <posy>66</posy>
+                <posy>92</posy>
                 <width>1084</width>
                 <height>60</height>
                 <texturefocus>Module-Menu/List-Item-Selected.png</texturefocus>
@@ -79,7 +79,7 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
             </control>
             <control type="label">
                 <posx>33</posx>
-                <posy>66</posy>
+                <posy>92</posy>
                 <width>1084</width>
                 <height>60</height>
                 <label>3</label>
@@ -91,7 +91,7 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
             <control type="button" id="8">
                 <description>My Programs</description>
                 <posx>0</posx>
-                <posy>130</posy>
+                <posy>182</posy>
                 <width>1084</width>
                 <height>60</height>
                 <texturefocus>Module-Menu/List-Item-Selected.png</texturefocus>
@@ -104,7 +104,7 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
             </control>
             <control type="label">
                 <posx>33</posx>
-                <posy>130</posy>
+                <posy>182</posy>
                 <width>1084</width>
                 <height>60</height>
                 <label>0</label>
@@ -116,7 +116,7 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
             <control type="button" id="7">
                 <description>My Music</description>
                 <posx>0</posx>
-                <posy>194</posy>
+                <posy>272</posy>
                 <width>1084</width>
                 <height>60</height>
                 <texturefocus>Module-Menu/List-Item-Selected.png</texturefocus>
@@ -129,7 +129,7 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
             </control>
             <control type="label">
                 <posx>33</posx>
-                <posy>194</posy>
+                <posy>272</posy>
                 <width>1084</width>
                 <height>60</height>
                 <label>2</label>
@@ -141,7 +141,7 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
             <control type="button" id="9">
                 <description>My Pictures</description>
                 <posx>0</posx>
-                <posy>258</posy>
+                <posy>362</posy>
                 <width>1084</width>
                 <height>60</height>
                 <texturefocus>Module-Menu/List-Item-Selected.png</texturefocus>
@@ -154,7 +154,7 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
             </control>
             <control type="label">
                 <posx>33</posx>
-                <posy>258</posy>
+                <posy>362</posy>
                 <width>1084</width>
                 <height>60</height>
                 <label>1</label>
@@ -166,7 +166,7 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
             <control type="button" id="10">
                 <description>My Weather</description>
                 <posx>0</posx>
-                <posy>322</posy>
+                <posy>452</posy>
                 <width>1084</width>
                 <height>60</height>
                 <texturefocus>Module-Menu/List-Item-Selected.png</texturefocus>
@@ -179,7 +179,7 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
             </control>
             <control type="label">
                 <posx>33</posx>
-                <posy>322</posy>
+                <posy>452</posy>
                 <width>1084</width>
                 <height>60</height>
                 <label>8</label>
@@ -191,7 +191,7 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
             <control type="button" id="2">
                 <description>Network</description>
                 <posx>0</posx>
-                <posy>386</posy>
+                <posy>542</posy>
                 <width>1084</width>
                 <height>60</height>
                 <texturefocus>Module-Menu/List-Item-Selected.png</texturefocus>
@@ -204,7 +204,7 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
             </control>
             <control type="label">
                 <posx>33</posx>
-                <posy>386</posy>
+                <posy>542</posy>
                 <width>1084</width>
                 <height>60</height>
                 <label>705</label>
@@ -216,7 +216,7 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
             <control type="button" id="4">
                 <description>System</description>
                 <posx>0</posx>
-                <posy>450</posy>
+                <posy>632</posy>
                 <width>1084</width>
                 <height>60</height>
                 <texturefocus>Module-Menu/List-Item-Selected.png</texturefocus>
@@ -229,7 +229,7 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
             </control>
             <control type="label">
                 <posx>33</posx>
-                <posy>450</posy>
+                <posy>632</posy>
                 <width>1084</width>
                 <height>60</height>
                 <label>13000</label>
