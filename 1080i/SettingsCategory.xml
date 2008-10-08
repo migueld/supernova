@@ -82,8 +82,8 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
 				<width>1084</width>
 				<height>655</height>
 				<itemgap>4</itemgap>
-				<onleft>5</onleft>
-				<onright>5</onright>
+				<onleft>Move(3, -1)</onleft>
+				<onright>Move(3, 1)</onright>
 				<onup>3</onup>
 				<ondown>3001</ondown>
 			</control>
@@ -143,26 +143,27 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
 			</control>
 		</control>
 
-	    <!-- Spotlight -->
-		<include>module-menu-spotlight</include>
+        <!-- Spotlight -->
+        <include>module-menu-spotlight</include>
 
-		<!-- Title -->
-		<include>module-menu-title-and-breadcrumb-background</include>
+        <!-- Title -->
+        <include>module-menu-title-background</include>
 
-		<!-- Title text -->
-		<control type="group">
-			<include>module-menu-title-animation</include>
+        <!-- Title text -->
+        <control type="group">
+            <include>module-menu-title-animation</include>
 
-			<!-- Appearance Headline -->
-			<control type="label">
-				<include>module-menu-title-headline</include>
-				<label>31004</label>
-			</control>
+            <!-- Settings Headline -->
+            <control type="label">
+                <include>module-menu-title-headline</include>
+                <label>31004</label>
+            </control>
 
-			<include>module-menu-title-edging-overlay</include>
-		</control>
+            <include>module-menu-title-edging-overlay</include>
+        </control>
 
-		<!-- Bread Crumb Buttons -->
+        <!-- Bread Crumb Buttons -->
+        <include>module-menu-breadcrumb-background</include>
         <control type="button" id="3003">
             <include>module-menu-breadcrumb-button2</include>
             <label>Label goes here</label>

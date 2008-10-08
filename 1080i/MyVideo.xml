@@ -47,14 +47,17 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
         <!-- Spotlight -->
         <include>module-menu-spotlight</include>
 
+        <!-- Spotlight -->
+        <include>module-menu-spotlight</include>
+
         <!-- Title -->
-        <include>module-menu-title-and-breadcrumb-background</include>
+        <include>module-menu-title-background</include>
 
         <!-- Title text -->
         <control type="group">
             <include>module-menu-title-animation</include>
 
-            <!-- Movies Headline -->
+            <!-- Settings Headline -->
             <control type="label">
                 <include>module-menu-title-headline</include>
                 <label>31003</label>
@@ -73,7 +76,7 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
             <!-- Should consider changes these buttons to togglebuttons -->
             <control type="button" id="4000">
                 <posx>0</posx>
-                <width>46</width> 
+                <width>46</width>
                 <height>41</height>
                 <onclick>ReplaceWindow(0)</onclick>
                 <onup>4000</onup>
@@ -85,7 +88,7 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
             </control>
             <control type="button" id="4001">
                 <posx>94</posx>
-                <width>46</width> 
+                <width>46</width>
                 <height>41</height>
                 <onclick>ReplaceWindow(0)</onclick>
                 <onup>4001</onup>
@@ -97,7 +100,7 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
             </control>
             <control type="button" id="4002">
                 <posx>186</posx>
-                <width>46</width> 
+                <width>46</width>
                 <height>41</height>
                 <onclick>ReplaceWindow(0)</onclick>
                 <onup>4002</onup>
@@ -110,6 +113,7 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
         </control>
 
         <!-- Bread Crumb Buttons -->
+        <include>module-menu-breadcrumb-background</include>
         <control type="button" id="3001">
             <include>module-menu-breadcrumb-button1</include>
             <label>36000</label>

@@ -108,17 +108,7 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
         </control>
     </include>
 
-    <include name="module-menu-title-and-breadcrumb-background">
-        <!-- Breadcrumb Background -->
-        <control type="image">
-            <animation effect="slide" time="400" delay="100" start="0,-30" end="0,0" tween="cubic" condition="Window.Previous(Home)">WindowOpen</animation>
-            <posx>0</posx>
-            <posy>102</posy>
-            <width>1920</width>
-            <height>50</height>
-            <texture>Module-Menu/Breadcrumb-Background.png</texture>
-        </control>
-
+    <include name="module-menu-title-background">
         <!-- Title background -->
         <control type="image">
             <animation condition="Window.Previous(Home)" type="WindowOpen">
@@ -164,6 +154,18 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
         <font>font-module-menu-title</font>
     </include>
 
+    <include name="module-menu-breadcrumb-background">
+        <!-- Breadcrumb Background -->
+        <control type="image">
+            <animation effect="slide" time="400" delay="100" start="0,-30" end="0,0" tween="cubic" condition="Window.Previous(Home)">WindowOpen</animation>
+            <posx>0</posx>
+            <posy>102</posy>
+            <width>1920</width>
+            <height>50</height>
+            <texture>Module-Menu/Breadcrumb-Background.png</texture>
+        </control>
+    </include>
+
     <include name="module-menu-breadcrumb-button">
         <posy>102</posy>
         <width>308</width>
@@ -190,7 +192,7 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
 	    <control type="image">
             <animation effect="slide" tween="cubic" time="600" delay="200" start="-308,0" end="0,0" acceleration="+1.5" condition="Window.Previous(Home)">WindowOpen</animation>
             <posx>24</posx>
-            <posy>110</posy>
+            <posy>112</posy>
             <width>26</width>
             <height>27</height>
             <texture>Icons/Breadcrumb-Home.png</texture>

@@ -49,8 +49,6 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
                 <onright>3</onright>
                 <onup>3000</onup>
                 <ondown>6</ondown>
-                <onfocus>Skin.SetBool(supress-fade)</onfocus>
-                <onunfocus>Skin.ToggleSetting(supress-fade)</onunfocus>
             </control>
             <control type="label">
                 <posx>33</posx>
@@ -238,12 +236,12 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
                 <textcolor>color-module-menu-list-text</textcolor>
             </control>
         </control>
-        
+
         <!-- Spotlight -->
         <include>module-menu-spotlight</include>
 
         <!-- Title -->
-        <include>module-menu-title-and-breadcrumb-background</include>
+        <include>module-menu-title-background</include>
 
         <!-- Title text -->
         <control type="group">
@@ -259,6 +257,7 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
         </control>
 
         <!-- Bread Crumb Buttons -->
+        <include>module-menu-breadcrumb-background</include>
         <control type="button" id="3001">
             <include>module-menu-breadcrumb-button1</include>
             <label>34000</label>
