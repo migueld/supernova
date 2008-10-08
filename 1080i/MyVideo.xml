@@ -57,7 +57,7 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
         <control type="group">
             <include>module-menu-title-animation</include>
 
-            <!-- Settings Headline -->
+            <!-- Movies Headline -->
             <control type="label">
                 <include>module-menu-title-headline</include>
                 <label>31003</label>
