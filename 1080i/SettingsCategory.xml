@@ -51,7 +51,7 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
 				<posy>0</posy>
 				<width>1084</width>
 				<height>60</height>
-				<itemgap>6</itemgap>
+				<itemgap>4</itemgap>
 				<onleft>3</onleft>
 				<onright>3</onright>
 				<onup>3001</onup>
@@ -70,10 +70,9 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
 				<align>center</align>
 				<aligny>center</aligny>
 				<textoffsetx>33</textoffsetx>
-				<texturefocus>Module-Menu/Subnav-List-Item-Selected.png</texturefocus>
-				<texturenofocus>Module-Menu/Subnav-List-Item-Normal.png</texturenofocus>
+				<texturefocus>Module-Menu/List-Item-Selected.png</texturefocus>
+				<texturenofocus>Module-Menu/List-Item-Normal.png</texturenofocus>
 				<textcolor>color-module-menu-list-text</textcolor>
-		        <pulseonselect>no</pulseonselect>
 			</control>
 
 			<!-- Settings area -->
@@ -82,14 +81,14 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
 				<posy>132</posy>
 				<width>1084</width>
 				<height>655</height>
-				<itemgap>6</itemgap>
+				<itemgap>4</itemgap>
 				<onleft>5</onleft>
 				<onright>5</onright>
 				<onup>3</onup>
-				<ondown>5</ondown>
+				<ondown>3001</ondown>
 			</control>
 
-			<!-- Defenition of the three possible settings controls -->
+			<!-- Definition of the three possible settings controls -->
 			<control type="button" id="7">
 				<description>Button</description>
 				<posx>0</posx>
@@ -119,7 +118,7 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
 				<textureradionofocus>Icons/Settings-Button-Unchecked.png</textureradionofocus>
 				<textcolor>color-module-menu-list-text</textcolor>
 				<disabledcolor>color-module-menu-list-text-disabled</disabledcolor>
-				<radioposx>1020</radioposx>
+				<radioposx>0</radioposx>
 				<radioposy>0</radioposy>
 				<radiowidth>25%</radiowidth>
 				<radioheight>25%</radioheight>
@@ -144,7 +143,7 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
 			</control>
 		</control>
 
-	  <!-- Spotlight -->
+	    <!-- Spotlight -->
 		<include>module-menu-spotlight</include>
 
 		<!-- Title -->
@@ -154,7 +153,7 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
 		<control type="group">
 			<include>module-menu-title-animation</include>
 
-			<!-- Headline -->
+			<!-- Appearance Headline -->
 			<control type="label">
 				<include>module-menu-title-headline</include>
 				<label>31004</label>
@@ -166,7 +165,7 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
 		<!-- Bread Crumb Buttons -->
         <control type="button" id="3003">
             <include>module-menu-breadcrumb-button2</include>
-            <label>Appearance</label>
+            <label>Label goes here</label>
             <!-- <onclick>ReplaceWindow(0)</onclick>
             <onup>40000</onup>
             <ondown>40000</ondown>
@@ -179,8 +178,8 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
             <include>module-menu-breadcrumb-button1</include>
             <label>34000</label>
             <onclick>ReplaceWindow(Settings)</onclick>
-            <onup>40000</onup>
-            <ondown>40000</ondown>
+            <onup>5</onup>
+            <ondown>3</ondown>
             <onleft>3000</onleft>
             <onright>3000</onright>
         </control>
@@ -189,8 +188,8 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
             <include>module-menu-breadcrumb-button0</include>
             <label>36007</label>
             <onclick>ReplaceWindow(Home)</onclick>
-            <onup>4000</onup>
-            <ondown>4000</ondown>
+            <onup>5</onup>
+            <ondown>3</ondown>
             <onleft>3000</onleft>
             <onright>3001</onright>
         </control>

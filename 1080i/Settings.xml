@@ -24,213 +24,215 @@ this program; if not, write to the Free Software Foundation, Inc., 51
 Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
 --------------------------------------------------------------------------->
 <window id="4">
-	<defaultcontrol always="true">4000</defaultcontrol>
+    <defaultcontrol always="true">4000</defaultcontrol>
     <allowoverlay>yes</allowoverlay>
     <previouswindow>Home</previouswindow>
     <controls>
         <!-- Settings List -->
         <!-- IDs are taken from the origin skin - they should probably be changed -->
-		<control type="group" id="4000">
-		    <posx>466</posx>
+        <control type="group" id="4000">
+            <posx>466</posx>
             <posy>282</posy>
             <width>1084</width>
             <height>655</height>
 
-			<control type="button" id="3">
-				<description>Appearance</description>
-				<posx>0</posx>
-				<posy>2</posy>
-				<width>1084</width>
+            <control type="button" id="3">
+                <description>Appearance</description>
+                <posx>0</posx>
+                <posy>2</posy>
+                <width>1084</width>
                 <height>60</height>
-				<texturefocus>Module-Menu/List-Item-Selected.png</texturefocus>
-				<texturenofocus>Module-Menu/List-Item-Normal.png</texturenofocus>
-				<onclick>ActivateWindow(AppearanceSettings)</onclick>
-				<onleft>3</onleft>
-				<onright>3</onright>
-				<onup>3000</onup>
-				<ondown>6</ondown>
-			</control>
-			<control type="label">
-				<posx>33</posx>
-				<posy>2</posy>
-				<width>1084</width>
+                <texturefocus>Module-Menu/List-Item-Selected.png</texturefocus>
+                <texturenofocus>Module-Menu/List-Item-Normal.png</texturenofocus>
+                <onclick>ActivateWindow(AppearanceSettings)</onclick>
+                <onleft>3</onleft>
+                <onright>3</onright>
+                <onup>3000</onup>
+                <ondown>6</ondown>
+                <onfocus>Skin.SetBool(supress-fade)</onfocus>
+                <onunfocus>Skin.ToggleSetting(supress-fade)</onunfocus>
+            </control>
+            <control type="label">
+                <posx>33</posx>
+                <posy>2</posy>
+                <width>1084</width>
                 <height>60</height>
-				<label>480</label>
+                <label>480</label>
                 <aligny>center</aligny>
                 <font>font-module-menu-list-text</font>
                 <textcolor>color-module-menu-list-text</textcolor>
             </control>
 
-			<control type="button" id="6">
-				<description>My Videos</description>
-				<posx>0</posx>
-				<posy>66</posy>
-				<width>1084</width>
+            <control type="button" id="6">
+                <description>My Videos</description>
+                <posx>0</posx>
+                <posy>66</posy>
+                <width>1084</width>
                 <height>60</height>
-				<texturefocus>Module-Menu/List-Item-Selected.png</texturefocus>
-				<texturenofocus>Module-Menu/List-Item-Normal.png</texturenofocus>
-				<onclick>ActivateWindow(MyVideosSettings)</onclick>
-				<onleft>6</onleft>
-				<onright>6</onright>
-				<onup>3</onup>
-				<ondown>8</ondown>
-			</control>
-			<control type="label">
-				<posx>33</posx>
-				<posy>66</posy>
-				<width>1084</width>
+                <texturefocus>Module-Menu/List-Item-Selected.png</texturefocus>
+                <texturenofocus>Module-Menu/List-Item-Normal.png</texturenofocus>
+                <onclick>ActivateWindow(MyVideosSettings)</onclick>
+                <onleft>6</onleft>
+                <onright>6</onright>
+                <onup>3</onup>
+                <ondown>8</ondown>
+            </control>
+            <control type="label">
+                <posx>33</posx>
+                <posy>66</posy>
+                <width>1084</width>
                 <height>60</height>
-				<label>3</label>
+                <label>3</label>
                 <aligny>center</aligny>
                 <font>font-module-menu-list-text</font>
                 <textcolor>color-module-menu-list-text</textcolor>
             </control>
 
-			<control type="button" id="8">
-				<description>My Programs</description>
-				<posx>0</posx>
-				<posy>130</posy>
-				<width>1084</width>
+            <control type="button" id="8">
+                <description>My Programs</description>
+                <posx>0</posx>
+                <posy>130</posy>
+                <width>1084</width>
                 <height>60</height>
-				<texturefocus>Module-Menu/List-Item-Selected.png</texturefocus>
-				<texturenofocus>Module-Menu/List-Item-Normal.png</texturenofocus>
-				<onclick>ActivateWindow(MyProgramsSettings)</onclick>
-				<onleft>8</onleft>
-				<onright>8</onright>
-				<onup>6</onup>
-				<ondown>7</ondown>
-			</control>
-			<control type="label">
-				<posx>33</posx>
-				<posy>130</posy>
-				<width>1084</width>
+                <texturefocus>Module-Menu/List-Item-Selected.png</texturefocus>
+                <texturenofocus>Module-Menu/List-Item-Normal.png</texturenofocus>
+                <onclick>ActivateWindow(MyProgramsSettings)</onclick>
+                <onleft>8</onleft>
+                <onright>8</onright>
+                <onup>6</onup>
+                <ondown>7</ondown>
+            </control>
+            <control type="label">
+                <posx>33</posx>
+                <posy>130</posy>
+                <width>1084</width>
                 <height>60</height>
-				<label>0</label>
+                <label>0</label>
                 <aligny>center</aligny>
                 <font>font-module-menu-list-text</font>
                 <textcolor>color-module-menu-list-text</textcolor>
             </control>
 
-			<control type="button" id="7">
-				<description>My Music</description>
-				<posx>0</posx>
-				<posy>194</posy>
-				<width>1084</width>
+            <control type="button" id="7">
+                <description>My Music</description>
+                <posx>0</posx>
+                <posy>194</posy>
+                <width>1084</width>
                 <height>60</height>
-				<texturefocus>Module-Menu/List-Item-Selected.png</texturefocus>
-				<texturenofocus>Module-Menu/List-Item-Normal.png</texturenofocus>
-				<onclick>ActivateWindow(MyMusicSettings)</onclick>
-				<onleft>7</onleft>
-				<onright>7</onright>
-				<onup>8</onup>
-				<ondown>9</ondown>
-			</control>
-			<control type="label">
-				<posx>33</posx>
-				<posy>194</posy>
-				<width>1084</width>
+                <texturefocus>Module-Menu/List-Item-Selected.png</texturefocus>
+                <texturenofocus>Module-Menu/List-Item-Normal.png</texturenofocus>
+                <onclick>ActivateWindow(MyMusicSettings)</onclick>
+                <onleft>7</onleft>
+                <onright>7</onright>
+                <onup>8</onup>
+                <ondown>9</ondown>
+            </control>
+            <control type="label">
+                <posx>33</posx>
+                <posy>194</posy>
+                <width>1084</width>
                 <height>60</height>
-				<label>2</label>
+                <label>2</label>
                 <aligny>center</aligny>
                 <font>font-module-menu-list-text</font>
                 <textcolor>color-module-menu-list-text</textcolor>
             </control>
 
-			<control type="button" id="9">
-				<description>My Pictures</description>
-				<posx>0</posx>
-				<posy>258</posy>
-				<width>1084</width>
+            <control type="button" id="9">
+                <description>My Pictures</description>
+                <posx>0</posx>
+                <posy>258</posy>
+                <width>1084</width>
                 <height>60</height>
-				<texturefocus>Module-Menu/List-Item-Selected.png</texturefocus>
-				<texturenofocus>Module-Menu/List-Item-Normal.png</texturenofocus>
-				<onclick>ActivateWindow(MyPicturesSettings)</onclick>
-				<onleft>9</onleft>
-				<onright>9</onright>
-				<onup>7</onup>
-				<ondown>10</ondown>
-			</control>
-			<control type="label">
-				<posx>33</posx>
-				<posy>258</posy>
-				<width>1084</width>
+                <texturefocus>Module-Menu/List-Item-Selected.png</texturefocus>
+                <texturenofocus>Module-Menu/List-Item-Normal.png</texturenofocus>
+                <onclick>ActivateWindow(MyPicturesSettings)</onclick>
+                <onleft>9</onleft>
+                <onright>9</onright>
+                <onup>7</onup>
+                <ondown>10</ondown>
+            </control>
+            <control type="label">
+                <posx>33</posx>
+                <posy>258</posy>
+                <width>1084</width>
                 <height>60</height>
-				<label>1</label>
+                <label>1</label>
                 <aligny>center</aligny>
                 <font>font-module-menu-list-text</font>
                 <textcolor>color-module-menu-list-text</textcolor>
             </control>
 
-			<control type="button" id="10">
-				<description>My Weather</description>
-				<posx>0</posx>
-				<posy>322</posy>
-				<width>1084</width>
+            <control type="button" id="10">
+                <description>My Weather</description>
+                <posx>0</posx>
+                <posy>322</posy>
+                <width>1084</width>
                 <height>60</height>
-				<texturefocus>Module-Menu/List-Item-Selected.png</texturefocus>
-				<texturenofocus>Module-Menu/List-Item-Normal.png</texturenofocus>
-				<onclick>ActivateWindow(MyWeatherSettings)</onclick>
-				<onleft>10</onleft>
-				<onright>10</onright>
-				<onup>9</onup>
-				<ondown>2</ondown>
-			</control>
-			<control type="label">
-				<posx>33</posx>
-				<posy>322</posy>
-				<width>1084</width>
+                <texturefocus>Module-Menu/List-Item-Selected.png</texturefocus>
+                <texturenofocus>Module-Menu/List-Item-Normal.png</texturenofocus>
+                <onclick>ActivateWindow(MyWeatherSettings)</onclick>
+                <onleft>10</onleft>
+                <onright>10</onright>
+                <onup>9</onup>
+                <ondown>2</ondown>
+            </control>
+            <control type="label">
+                <posx>33</posx>
+                <posy>322</posy>
+                <width>1084</width>
                 <height>60</height>
-				<label>8</label>
+                <label>8</label>
                 <aligny>center</aligny>
                 <font>font-module-menu-list-text</font>
                 <textcolor>color-module-menu-list-text</textcolor>
             </control>
 
-			<control type="button" id="2">
-				<description>Network</description>
-				<posx>0</posx>
-				<posy>386</posy>
-				<width>1084</width>
+            <control type="button" id="2">
+                <description>Network</description>
+                <posx>0</posx>
+                <posy>386</posy>
+                <width>1084</width>
                 <height>60</height>
-				<texturefocus>Module-Menu/List-Item-Selected.png</texturefocus>
-				<texturenofocus>Module-Menu/List-Item-Normal.png</texturenofocus>
-				<onclick>ActivateWindow(NetworkSettings)</onclick>
-				<onleft>2</onleft>
-				<onright>2</onright>
-				<onup>10</onup>
-				<ondown>4</ondown>
-			</control>
-			<control type="label">
-				<posx>33</posx>
-				<posy>386</posy>
-				<width>1084</width>
+                <texturefocus>Module-Menu/List-Item-Selected.png</texturefocus>
+                <texturenofocus>Module-Menu/List-Item-Normal.png</texturenofocus>
+                <onclick>ActivateWindow(NetworkSettings)</onclick>
+                <onleft>2</onleft>
+                <onright>2</onright>
+                <onup>10</onup>
+                <ondown>4</ondown>
+            </control>
+            <control type="label">
+                <posx>33</posx>
+                <posy>386</posy>
+                <width>1084</width>
                 <height>60</height>
-				<label>705</label>
+                <label>705</label>
                 <aligny>center</aligny>
                 <font>font-module-menu-list-text</font>
                 <textcolor>color-module-menu-list-text</textcolor>
             </control>
 
-			<control type="button" id="4">
-				<description>System</description>
-				<posx>0</posx>
-				<posy>450</posy>
-				<width>1084</width>
+            <control type="button" id="4">
+                <description>System</description>
+                <posx>0</posx>
+                <posy>450</posy>
+                <width>1084</width>
                 <height>60</height>
-				<texturefocus>Module-Menu/List-Item-Selected.png</texturefocus>
-				<texturenofocus>Module-Menu/List-Item-Normal.png</texturenofocus>
-				<onclick>ActivateWindow(SystemSettings)</onclick>
-				<onleft>4</onleft>
-				<onright>4</onright>
-				<onup>2</onup>
-				<ondown>3</ondown>
-			</control>
-			<control type="label">
-				<posx>33</posx>
-				<posy>450</posy>
-				<width>1084</width>
+                <texturefocus>Module-Menu/List-Item-Selected.png</texturefocus>
+                <texturenofocus>Module-Menu/List-Item-Normal.png</texturenofocus>
+                <onclick>ActivateWindow(SystemSettings)</onclick>
+                <onleft>4</onleft>
+                <onright>4</onright>
+                <onup>2</onup>
+                <ondown>3000</ondown>
+            </control>
+            <control type="label">
+                <posx>33</posx>
+                <posy>450</posy>
+                <width>1084</width>
                 <height>60</height>
-				<label>13000</label>
+                <label>13000</label>
                 <aligny>center</aligny>
                 <font>font-module-menu-list-text</font>
                 <textcolor>color-module-menu-list-text</textcolor>
@@ -247,7 +249,7 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
         <control type="group">
             <include>module-menu-title-animation</include>
 
-            <!-- Movies Headline -->
+            <!-- Settings Headline -->
             <control type="label">
                 <include>module-menu-title-headline</include>
                 <label>31004</label>
@@ -272,8 +274,8 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
             <include>module-menu-breadcrumb-button0</include>
             <label>36007</label>
             <onclick>ReplaceWindow(0)</onclick>
-            <onup>4000</onup>
-            <ondown>4000</ondown>
+            <onup>4</onup>
+            <ondown>3</ondown>
             <onleft>3000</onleft>
             <onright>3000</onright>
         </control>
