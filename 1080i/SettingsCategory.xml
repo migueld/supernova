@@ -174,7 +174,7 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
             <enable>false</enable>
         </control>
         <control type="label" id="2">
-            <animation effect="slide" tween="cubic" time="600" delay="0" start="-308,0" end="0,0" acceleration="+1.5" condition="Window.Previous(Settings)">WindowOpen</animation>
+            <animation effect="slide" tween="cubic" time="300" delay="0" start="-308,0" end="0,0" acceleration="+1.5" condition="Window.Previous(Settings)">WindowOpen</animation>
             <posx>565</posx>
             <posy>100</posy>
             <width>235</width>

@@ -183,6 +183,7 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
 
     <include name="module-menu-breadcrumb-button0">
         <animation effect="slide" tween="cubic" time="600" delay="200" start="-308,0" end="0,0" acceleration="+1.5" condition="Window.Previous(Home)">WindowOpen</animation>
+        <animation effect="slide" tween="cubic" time="600" delay="300" start="0,0" end="-308,0" acceleration="+1.5" condition="Window.Next(Home)">WindowClose</animation>
     	<textoffsetx>68</textoffsetx>
     	<include>module-menu-breadcrumb-button</include>
     	<posx>0</posx>
@@ -191,6 +192,7 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
 	<include name="module-menu-breadcrumb-button0-icon">
 	    <control type="image">
             <animation effect="slide" tween="cubic" time="600" delay="200" start="-308,0" end="0,0" acceleration="+1.5" condition="Window.Previous(Home)">WindowOpen</animation>
+            <animation effect="slide" tween="cubic" time="600" delay="300" start="0,0" end="-308,0" acceleration="+1.5" condition="Window.Next(Home)">WindowClose</animation>
             <posx>24</posx>
             <posy>113</posy>
             <width>26</width>
@@ -201,12 +203,14 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
 
     <include name="module-menu-breadcrumb-button1">
         <animation effect="slide" tween="cubic" time="600" delay="500" start="-308,0" end="0,0" acceleration="+1.5" condition="Window.Previous(Home)">WindowOpen</animation>
+        <animation effect="slide" tween="cubic" time="600" delay="0" start="0,0" end="-308,0" acceleration="+1.5" condition="Window.Next(Home)">WindowClose</animation>
+        <animation effect="fade" time="100" delay="0" start="100" end="0" condition="Window.Next(Home)">WindowClose</animation>
     	<include>module-menu-breadcrumb-button</include>
     	<posx>263</posx>
 	</include>
 
     <include name="module-menu-breadcrumb-button2">
-        <animation effect="slide" tween="cubic" time="600" delay="0" start="-308,0" end="0,0" acceleration="+1.5" condition="Window.Previous(Settings)">WindowOpen</animation>
+        <animation effect="slide" tween="cubic" time="300" delay="0" start="-308,0" end="0,0" acceleration="+1.5" condition="Window.Previous(Settings)">WindowOpen</animation>
     	<include>module-menu-breadcrumb-button</include>
     	<posx>525</posx>
 	</include>

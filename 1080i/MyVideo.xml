@@ -29,8 +29,6 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
     <previouswindow>Home</previouswindow>
     <controls>
         <!-- List of Library Sort Options -->
-        <defaultcontrol>56</defaultcontrol>
-
         <control type="list" id="56">
             <include>module-menu-main-list-box</include>
             <onup>3000</onup>
