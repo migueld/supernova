@@ -166,13 +166,23 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
         <include>module-menu-breadcrumb-background</include>
         <control type="button" id="3003">
             <include>module-menu-breadcrumb-button2</include>
-            <label>Label goes here</label>
             <!-- <onclick>ReplaceWindow(0)</onclick>
             <onup>40000</onup>
             <ondown>40000</ondown>
             <onleft>3000</onleft>
             <onright>3001</onright> -->
             <enable>false</enable>
+        </control>
+        <control type="label" id="2">
+            <animation effect="slide" tween="cubic" time="600" delay="0" start="-308,0" end="0,0" acceleration="+1.5" condition="Window.Previous(Settings)">WindowOpen</animation>
+            <posx>565</posx>
+            <posy>100</posy>
+            <width>235</width>
+            <height>50</height>
+            <aligny>center</aligny>
+            <font>font-module-menu-breadcrumb</font>
+            <textcolor>color-module-menu-breadcrumb</textcolor>
+            <disabledcolor>color-module-menu-breadcrumb</disabledcolor>
         </control>
 
         <control type="button" id="3001">
@@ -191,7 +201,7 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
             <onclick>ReplaceWindow(Home)</onclick>
             <onup>5</onup>
             <ondown>3</ondown>
-            <onleft>3000</onleft>
+            <onleft>3001</onleft>
             <onright>3001</onright>
         </control>
         <include>module-menu-breadcrumb-button0-icon</include>
