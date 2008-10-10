@@ -131,10 +131,10 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
 				<height>60</height>
 				<texturefocus>Module-Menu/List-Item-Selected.png</texturefocus>
 				<texturenofocus>Module-Menu/List-Item-Normal.png</texturenofocus>
-				<textureup>scroll-up.png</textureup>
-				<texturedown>scroll-down.png</texturedown>
-				<textureupfocus>scroll-up-focus.png</textureupfocus>
-				<texturedownfocus>scroll-down-focus.png</texturedownfocus>
+				<textureup>Icons/Settings-Selector-Up-Normal.png</textureup>
+				<texturedown>Icons/Settings-Selector-Down-Normal.png</texturedown>
+				<textureupfocus>Icons/Settings-Selector-Up-Selected.png</textureupfocus>
+				<texturedownfocus>Icons/Settings-Selector-Down-Selected.png</texturedownfocus>
 				<font>font-module-menu-list-text</font>
 				<textoffsetx>33</textoffsetx>
 				<aligny>center</aligny>
