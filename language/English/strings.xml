@@ -7,6 +7,16 @@
     <string id="31004">Settings</string>
     <string id="31005">Disc</string>
 
+    <!-- MyPics.xml (WindowId = 2) Strings -->
+    <string id="32000">Pictures Menu</string>
+    <string id="32001">Library</string>
+    <string id="32002">Actors</string>
+    <string id="32003">Directors</string>
+    <string id="32004">Genres</string>
+    <string id="32005">Playlist</string>
+    <string id="32006">Disc</string>
+    <string id="32007">Main Menu</string>
+    
     <!-- MyVideo.xml (WindowId = 6) Strings -->
     <string id="36000">Movies Menu</string>
     <string id="36001">Library</string>
