@@ -69,6 +69,8 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
             <content>
                 <item>
                     <!-- Reload Skin -->
+                    <icon>Icons/Main-Menu-Reload.png</icon>
+
                     <label>20183</label>
                     <onclick>XBMC.ReloadSkin()</onclick>
                 </item>
