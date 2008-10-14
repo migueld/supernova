@@ -16,6 +16,16 @@
     <string id="36005">Playlist</string>
     <string id="36006">Disc</string>
     <string id="36007">Main Menu</string>
+    
+    <!-- MyMusicSongs.xml (WindowId = 501) Strings -->
+    <string id="35000">Music Menu</string>
+    <string id="35001">Library</string>
+    <string id="35002">Actors</string>
+    <string id="35003">Directors</string>
+    <string id="35004">Genres</string>
+    <string id="35005">Playlist</string>
+    <string id="35006">Disc</string>
+    <string id="35007">Main Menu</string>
 
     <!-- Settings.xml (WindowId = 4) Strings -->
     <string id="34000">Settings Menu</string>
