@@ -78,11 +78,12 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
                 <height>41</height>
                 <onclick>ReplaceWindow(0)</onclick>
                 <onup>4000</onup>
-                <ondown>4000</ondown>
-                <onleft>3000</onleft>
+                <ondown>3000</ondown>
+                <onleft>4000</onleft>
                 <onright>4001</onright>
                 <texturefocus>Module-Menu/View-Stage-Selected.png</texturefocus>
                 <texturenofocus>Module-Menu/View-Stage-Normal.png</texturenofocus>
+                <visible>false</visible>
             </control>
             <control type="button" id="4001">
                 <posx>94</posx>
@@ -90,19 +91,20 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
                 <height>41</height>
                 <onclick>ReplaceWindow(0)</onclick>
                 <onup>4001</onup>
-                <ondown>4001</ondown>
+                <ondown>3000</ondown>
                 <onleft>4000</onleft>
                 <onright>4002</onright>
                 <texturefocus>Module-Menu/View-Icon-Selected.png</texturefocus>
                 <texturenofocus>Module-Menu/View-Icon-Normal.png</texturenofocus>
+                <visible>false</visible>
             </control>
             <control type="button" id="4002">
                 <posx>186</posx>
                 <width>46</width>
                 <height>41</height>
-                <onclick>ReplaceWindow(0)</onclick>
+                <onclick>ReplaceWindow(videolibrary)</onclick>
                 <onup>4002</onup>
-                <ondown>4002</ondown>
+                <ondown>3000</ondown>
                 <onleft>4001</onleft>
                 <onright>4002</onright>
                 <texturefocus>Module-Menu/View-List-Selected.png</texturefocus>
@@ -127,7 +129,8 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
             <include>module-menu-breadcrumb-button0</include>
             <label>36007</label>
             <onclick>ReplaceWindow(0)</onclick>
-            <onup>SetFocus(56, -1)</onup>
+            <onup>4002</onup>
+            <!-- onup>SetFocus(56, -1)</onup -->
             <ondown>SetFocus(56, 0)</ondown>
             <onleft>3000</onleft>
             <onright>3000</onright>

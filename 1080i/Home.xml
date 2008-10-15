@@ -86,14 +86,14 @@ Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
                     <icon>Icons/Main-Menu-Music.png</icon>
                     <thumb>Icons/Main-Menu-Music-No-Shadow.png</thumb>
                     <label>31002</label>
-                    <onclick>ActivateWindow(MyMusic)</onclick>
+                    <onclick>ActivateWindow(music)</onclick>
                 </item>
                 <item>
                     <!-- My Videos (24,25) -->
                     <icon>Icons/Main-Menu-Movies.png</icon>
                     <thumb>Icons/Main-Menu-Movies-No-Shadow.png</thumb>
                     <label>31003</label>
-                    <onclick>ActivateWindow(MyVideoFiles)</onclick>
+                    <onclick>ActivateWindow(video)</onclick>
                 </item>
                 <item>
                     <!-- Settings (4) -->
